@@ -75,7 +75,7 @@ void main() {
       expect(find.text(section), findsOneWidget, reason: 'missing $section');
     }
     // Real values — not fabricated.
-    expect(find.text('v2'), findsOneWidget); // kSeedVersion
+    expect(find.text('v3'), findsOneWidget); // kSeedVersion
     expect(find.textContaining('2 plugins'), findsOneWidget);
     // Live accessibility status (test env: animations enabled, scale 100%).
     expect(find.text('Off'), findsOneWidget); // reduced motion

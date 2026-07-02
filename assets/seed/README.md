@@ -1,24 +1,25 @@
-# Seed dataset (PILOT MIGRATION — seedVersion 2)
+# Seed dataset (seedVersion 3 — first content release)
 
-The first reviewed slice of the curated dataset, migrated from the
-`2026 — FL Studio Plugin ~ DEEPER DIVES` research corpus per
-`.claude/commands/migrate-content.md`. Covers three plugins: **FLEX**, **Sytrus**,
-and **Fruity Parametric EQ 2**.
+The curated, reviewed dataset migrated from the `2026 — FL Studio Plugin ~ DEEPER DIVES`
+research corpus per `.claude/commands/migrate-content.md`. **30 plugins**: the pilot
+(FLEX, Sytrus, Fruity Parametric EQ 2) plus 27 promoted from staging on 2026-07-02.
 
-- Plugin identities and behaviors are factual, cited to the official FL Studio
-  manual and the DEEPER DIVES research corpus (`source_references.json`).
-- Preset params and recipe tips are **illustrative** and labeled as such in their
-  own `notes`/`tip` fields — they are not captured factory values.
+- Plugin identities and behaviors are factual, cited to the official FL Studio manual
+  and the DEEPER DIVES research corpus (`source_references.json`).
+- Descriptions and notes are **re-authored in Tonary's own words**, never reproduced
+  from the manual, per `.claude/rules/content-policy.md`.
+- Factory preset files / exact factory-value dumps are **not** included; preset params
+  present are illustrative and labeled in their own `notes`/`tip` fields.
 - Every record (except user data) carries a non-empty, resolvable `sources[]`.
-- Governed by `.claude/rules/data-modeling-rules.md` (no fabrication) and validated
-  at load by `SeedValidator` (fail closed).
+- Governed by `.claude/rules/data-modeling-rules.md` (no fabrication) and validated at
+  load by `SeedValidator` (fail closed).
 
-⚠️ **Publishing note:** shipping this data publicly is still gated on the content
-licensing/attribution question (`.claude/memory/open-questions.md` OQ-12). It is
-safe to bundle for local development. Bump `kSeedVersion` in `bootstrap.dart`
-whenever these files change so devices re-hydrate.
+**Publishing:** The owner authorized the initial content release under the conservative
+content policy (OQ-12 gate #5, 2026-07-02); a non-affiliation disclaimer ships in
+Settings ▸ About. Bump `kSeedVersion` in `bootstrap.dart` whenever these files change so
+devices re-hydrate.
 
-Next migration batches: expand coverage per `.claude/outputs/migration-map.md`.
+Further batches append directly here per `.claude/outputs/migration-map.md`.
 
-Files (one per record type): `source_references.json`, `plugins.json`,
-`presets.json`, `workflow_recipes.json`, `sound_design_notes.json`.
+Files (one per record type): `source_references.json`, `plugins.json`, `presets.json`,
+`workflow_recipes.json`, `sound_design_notes.json`.

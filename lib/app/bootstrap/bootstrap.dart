@@ -12,7 +12,9 @@ import 'providers.dart';
 /// Bundled seed dataset version. Bump when `assets/seed/*.json` changes so
 /// devices re-hydrate (see `assets/seed/README.md`).
 /// v2: pilot migration — FLEX, Sytrus, Fruity Parametric EQ 2 from DEEPER DIVES.
-const int kSeedVersion = 2;
+/// v3: first content release — 27 reviewed plugins promoted from staging
+///     (owner-authorized OQ-12 gate #5, 2026-07-02); 30 plugins total.
+const int kSeedVersion = 3;
 
 /// App bootstrap. Runs before the first frame: opens the offline database and
 /// hydrates it from the bundled seed (offline-first — the DB is the source of

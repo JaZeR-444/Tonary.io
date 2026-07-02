@@ -6,8 +6,10 @@
 > Inherits [global-rules.md](global-rules.md); enforced alongside [content-migration-rules.md](content-migration-rules.md)
 > and [data-modeling-rules.md](data-modeling-rules.md).
 >
-> **Not legal advice.** A human/legal sign-off on this policy is still required before the first public
-> release (gate #5 — the one item this project cannot self-certify).
+> **Not legal advice.** Gate #5 is a human decision. **The project owner authorized the initial content
+> release on 2026-07-02** under this conservative policy (rephrase-not-reproduce, no preset files,
+> non-affiliation disclaimer shipped). Obtaining formal legal counsel before a public store release remains
+> recommended; that is the owner's call.
 
 Adopted **2026-07-02** as the conservative content policy. Fail publishing review if any rule is violated.
 

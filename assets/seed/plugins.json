@@ -7,11 +7,26 @@
     "type": "Generator",
     "tier": "Free",
     "description": "A preset-driven synthesizer combining subtractive, wavetable, multisample, FM and AM engines, played through a fixed set of designer-defined macros and a master FX chain (filter, delay, reverb, limiter).",
-    "tags": ["synth", "presets", "macros", "rompler", "hybrid"],
-    "capabilities": ["preset-packs", "macro-controls", "ahdsr-envelope", "master-fx-chain", "midi-dump"],
+    "tags": [
+      "synth",
+      "presets",
+      "macros",
+      "rompler",
+      "hybrid"
+    ],
+    "capabilities": [
+      "preset-packs",
+      "macro-controls",
+      "ahdsr-envelope",
+      "master-fx-chain",
+      "midi-dump"
+    ],
     "color": "#a78bfa",
     "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FLEX.htm",
-    "sources": ["src-flex-manual", "src-flex-dive"],
+    "sources": [
+      "src-flex-manual",
+      "src-flex-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
@@ -23,11 +38,26 @@
     "type": "Generator",
     "tier": "Free",
     "description": "An advanced hybrid synthesizer built on six operators with FM, ring modulation and subtractive synthesis, routed through a modulation matrix, per-operator envelopes, three filters and built-in effects.",
-    "tags": ["synth", "fm", "operators", "modulation-matrix", "sound-design"],
-    "capabilities": ["fm-synthesis", "ring-modulation", "modulation-matrix", "per-operator-envelopes", "built-in-fx"],
+    "tags": [
+      "synth",
+      "fm",
+      "operators",
+      "modulation-matrix",
+      "sound-design"
+    ],
+    "capabilities": [
+      "fm-synthesis",
+      "ring-modulation",
+      "modulation-matrix",
+      "per-operator-envelopes",
+      "built-in-fx"
+    ],
     "color": "#38bdf8",
     "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sytrus.htm",
-    "sources": ["src-sytrus-manual", "src-sytrus-dive"],
+    "sources": [
+      "src-sytrus-manual",
+      "src-sytrus-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
@@ -39,11 +69,852 @@
     "type": "Effect",
     "tier": "Free",
     "description": "A 7-band parametric equalizer with adjustable frequency, gain and bandwidth per band, multiple filter types and slopes, optional high-quality and linear-phase modes, and a spectral analyzer for precise tonal shaping.",
-    "tags": ["eq", "mixing", "filter", "mastering"],
-    "capabilities": ["parametric-eq", "spectrum-analyzer", "linear-phase-mode", "high-quality-mode", "per-band-slope"],
+    "tags": [
+      "eq",
+      "mixing",
+      "filter",
+      "mastering"
+    ],
+    "capabilities": [
+      "parametric-eq",
+      "spectrum-analyzer",
+      "linear-phase-mode",
+      "high-quality-mode",
+      "per-band-slope"
+    ],
     "color": "#33d17a",
     "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm",
-    "sources": ["src-eq2-manual", "src-eq2-dive"],
+    "sources": [
+      "src-eq2-manual",
+      "src-eq2-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fpc",
+    "name": "FPC",
+    "vendor": "Image-Line",
+    "category": "Drum Machine / Pad Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A pad-based drum sampler with an MPC-inspired layout. Each pad stacks multiple sample layers with velocity ranges (for automatic ghost notes and round-robins), custom ADSR per layer, a pattern manager for loading MIDI loops, and independent mixer routing per pad.",
+    "tags": [
+      "drums",
+      "sampler",
+      "pads",
+      "mpc",
+      "performance"
+    ],
+    "capabilities": [
+      "multi-layer-sampling",
+      "velocity-ranges",
+      "per-pad-mixer-routing",
+      "pattern-manager",
+      "per-layer-adsr"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FPC.htm",
+    "sources": [
+      "src-fpc-manual",
+      "src-fpc-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-blood-overdrive",
+    "name": "Fruity Blood Overdrive",
+    "vendor": "Image-Line",
+    "category": "Distortion / Overdrive",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An aggressive overdrive/distortion. A pre-amp control sets input drive into the clipping stage, a Color control is a bandpass filter that focuses which frequencies are distorted, and post-gain sets the output level. It excels at harsh, buzzy bass and lead tones.",
+    "tags": [
+      "distortion",
+      "overdrive",
+      "saturation",
+      "bass",
+      "aggressive"
+    ],
+    "capabilities": [
+      "pre-amp-drive",
+      "color-bandpass",
+      "post-gain"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Blood%20Overdrive.htm",
+    "sources": [
+      "src-fruity-blood-overdrive-manual",
+      "src-fruity-blood-overdrive-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-compressor",
+    "name": "Fruity Compressor",
+    "vendor": "Image-Line",
+    "category": "Dynamics / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A straightforward single-band compressor for everyday dynamics control. Threshold and ratio set when and how much it compresses, selectable knee types (Hard, Medium, Soft and Vintage) change the shape of the compression curve, and gain makeup restores level after reduction.",
+    "tags": [
+      "compressor",
+      "dynamics",
+      "mixing",
+      "glue",
+      "knee"
+    ],
+    "capabilities": [
+      "threshold-ratio",
+      "variable-knee",
+      "attack-release",
+      "gain-makeup"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Compressor.htm",
+    "sources": [
+      "src-fruity-compressor-manual",
+      "src-fruity-compressor-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-convolver",
+    "name": "Fruity Convolver",
+    "vendor": "Image-Line",
+    "category": "Convolution Reverb",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A convolution reverb and linear-phase processor. It applies impulse responses (halls, rooms, plates) in real time at low latency, includes a spectral linear-phase EQ that shapes the reverb or dry signal without phase shift, can stretch the impulse's length and pitch, and shapes the tail's volume, pan and stereo width with envelopes.",
+    "tags": [
+      "reverb",
+      "convolution",
+      "impulse-response",
+      "linear-phase",
+      "space"
+    ],
+    "capabilities": [
+      "real-time-convolution",
+      "impulse-library",
+      "linear-phase-eq",
+      "ir-time-stretch",
+      "tail-envelopes"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Convolver.htm",
+    "sources": [
+      "src-fruity-convolver-manual",
+      "src-fruity-convolver-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-3",
+    "name": "Fruity Delay 3",
+    "vendor": "Image-Line",
+    "category": "Delay / Creative",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A tape- and analog-style delay. Changing the delay time slides pitch like a varispeed tape machine; it adds distortion and saturation to echoes, high- and low-pass filtering (bandpass) in the feedback path, wow-and-flutter modulation, diffusion that smears transients into ambient textures, and BPM sync that holds time through tempo automation.",
+    "tags": [
+      "delay",
+      "tape",
+      "analog",
+      "modulation",
+      "creative"
+    ],
+    "capabilities": [
+      "varispeed-tape",
+      "feedback-distortion",
+      "bandpass-filtering",
+      "wow-flutter",
+      "diffusion"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%203.htm",
+    "sources": [
+      "src-fruity-delay-3-manual",
+      "src-fruity-delay-3-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-dx10",
+    "name": "Fruity DX10",
+    "vendor": "Image-Line",
+    "category": "FM Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "An approachable 2-operator-style FM synthesizer. Simple Coarse and Fine controls set the modulation ratio, a master Wave Brightness control scales overall harmonic richness, and a built-in vibrato LFO adds organic pitch movement - a fast route to FM bells, e-pianos and basses.",
+    "tags": [
+      "synth",
+      "fm",
+      "simple",
+      "bells",
+      "epiano"
+    ],
+    "capabilities": [
+      "2-operator-fm",
+      "coarse-fine-ratio",
+      "wave-brightness",
+      "vibrato-lfo"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20DX10.htm",
+    "sources": [
+      "src-fruity-dx10-manual",
+      "src-fruity-dx10-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-filter",
+    "name": "Fruity Filter",
+    "vendor": "Image-Line",
+    "category": "Filter / Tone Shaping",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A lightweight state-variable filter for quick tone shaping. It offers low-pass, high-pass and band-pass types with a resonance control to emphasise the cutoff, and 2x oversampling to reduce aliasing during fast cutoff automation, at a very low CPU cost.",
+    "tags": [
+      "filter",
+      "tone",
+      "state-variable",
+      "cutoff",
+      "lightweight"
+    ],
+    "capabilities": [
+      "lp-hp-bp-types",
+      "resonance",
+      "2x-oversampling",
+      "low-cpu"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Filter.htm",
+    "sources": [
+      "src-fruity-filter-manual",
+      "src-fruity-filter-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-granulizer",
+    "name": "Fruity Granulizer",
+    "vendor": "Image-Line",
+    "category": "Granular Synth / Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A granular synthesizer and sampler that plays a sample back as a stream of small grains. Grain Attack, Hold and Spacing controls reshape the texture; because playback position and pitch are decoupled, you can time-stretch a sample down toward 1 percent speed while holding pitch, or pitch-shift without changing duration.",
+    "tags": [
+      "granular",
+      "sampler",
+      "texture",
+      "time-stretch",
+      "experimental"
+    ],
+    "capabilities": [
+      "grain-attack-hold-spacing",
+      "time-stretching",
+      "pitch-shifting",
+      "sample-playback"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Granulizer.htm",
+    "sources": [
+      "src-fruity-granulizer-manual",
+      "src-fruity-granulizer-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-limiter",
+    "name": "Fruity Limiter",
+    "vendor": "Image-Line",
+    "category": "Dynamics / Mastering",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A dual-stage dynamics processor: a compressor stage feeds a limiter stage, with a separate noise gate. It provides a dedicated sidechain input for pumping effects, lookahead in the limiter to catch transients, and visual feedback of input, output and gain reduction.",
+    "tags": [
+      "limiter",
+      "compressor",
+      "gate",
+      "dynamics",
+      "mastering"
+    ],
+    "capabilities": [
+      "compressor-stage",
+      "limiter-stage",
+      "noise-gate",
+      "sidechain-input",
+      "lookahead"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Limiter.htm",
+    "sources": [
+      "src-fruity-limiter-manual",
+      "src-fruity-limiter-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-love-philter",
+    "name": "Fruity Love Philter",
+    "vendor": "Image-Line",
+    "category": "Filter Bank / Modulation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-unit filter bank with deep modulation. Each filter unit has hand-drawn envelopes and LFO shapes, a built-in waveshaper for per-unit distortion, and an X/Y controller for real-time performance. A pattern sequencer can trigger different envelope patterns from the piano roll for rhythmic, gated filtering.",
+    "tags": [
+      "filter",
+      "modulation",
+      "gate",
+      "creative",
+      "sequenced"
+    ],
+    "capabilities": [
+      "multi-filter-units",
+      "custom-envelopes-lfo",
+      "pattern-sequencer",
+      "per-unit-waveshaper",
+      "xy-control"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Love%20Philter.htm",
+    "sources": [
+      "src-fruity-love-philter-manual",
+      "src-fruity-love-philter-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-reeverb-2",
+    "name": "Fruity Reeverb 2",
+    "vendor": "Image-Line",
+    "category": "Algorithmic Reverb",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An algorithmic reverb modelling acoustic spaces from rooms to halls and cathedrals. It offers mid/side processing to widen the stereo edges without muddying the centre, a bass multiplier to set low-frequency decay independently of the highs, and tempo-synced LFO modulation of the reverb time for organic movement.",
+    "tags": [
+      "reverb",
+      "algorithmic",
+      "space",
+      "mixing",
+      "mid-side"
+    ],
+    "capabilities": [
+      "acoustic-space-modeling",
+      "mid-side-processing",
+      "bass-multiplier",
+      "tempo-modulation"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb%202.htm",
+    "sources": [
+      "src-fruity-reeverb-2-manual",
+      "src-fruity-reeverb-2-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-slicer",
+    "name": "Fruity Slicer",
+    "vendor": "Image-Line",
+    "category": "Beat Slicer / Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A simple beat slicer and sampler. It detects transients to cut a loop into slices you can play from the keyboard, time-stretches the sample to match project BPM automatically, and dumps the sliced groove to the piano roll as a note sequence for re-arranging.",
+    "tags": [
+      "slicer",
+      "sampler",
+      "drums",
+      "loops",
+      "beat"
+    ],
+    "capabilities": [
+      "auto-slicing",
+      "bpm-time-stretch",
+      "midi-dump",
+      "keyboard-mapping"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Slicer.htm",
+    "sources": [
+      "src-fruity-slicer-manual",
+      "src-fruity-slicer-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-vocoder",
+    "name": "Fruity Vocoder",
+    "vendor": "Image-Line",
+    "category": "Vocoder / Filter Bank",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A zero-latency vocoder and filter bank. It imposes a modulator's spectrum (usually a voice) onto a carrier in real time, making it suitable for live performance and tracking. Formant shifting changes vocal character, and a hold function freezes the modulator's spectral state for sustained pads.",
+    "tags": [
+      "vocoder",
+      "voice",
+      "filter-bank",
+      "robot",
+      "live"
+    ],
+    "capabilities": [
+      "zero-latency",
+      "formant-shifting",
+      "spectral-hold",
+      "carrier-modulator"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Vocoder.htm",
+    "sources": [
+      "src-fruity-vocoder-manual",
+      "src-fruity-vocoder-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-waveshaper",
+    "name": "Fruity WaveShaper",
+    "vendor": "Image-Line",
+    "category": "Waveshaper / Distortion",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A waveshaping distortion driven by a hand-drawn transfer-function graph. A spline curve maps input amplitude to output for anything from gentle saturation to hard clipping; unipolar/bipolar modes process the full wave or the positive and negative halves independently, and oversampling reduces aliasing on extreme shapes.",
+    "tags": [
+      "waveshaper",
+      "distortion",
+      "saturation",
+      "transfer-function",
+      "clipping"
+    ],
+    "capabilities": [
+      "spline-transfer-function",
+      "unipolar-bipolar-modes",
+      "oversampling"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20WaveShaper.htm",
+    "sources": [
+      "src-fruity-waveshaper-manual",
+      "src-fruity-waveshaper-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "gross-beat",
+    "name": "Gross Beat",
+    "vendor": "Image-Line",
+    "category": "Time & Volume / Creative Effect",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A time-and-volume shaper built on a continuously recording 2-bar rolling buffer. Time envelopes manipulate playback position for stutters, scratches and reverse; volume envelopes gate and swell the signal. Envelopes are recalled from 36 time and 36 volume slots triggered by MIDI notes.",
+    "tags": [
+      "time",
+      "volume",
+      "buffer",
+      "glitch",
+      "rhythmic"
+    ],
+    "capabilities": [
+      "rolling-buffer-2bar",
+      "time-envelope",
+      "volume-envelope",
+      "72-slots",
+      "midi-triggering"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Gross%20Beat.htm",
+    "sources": [
+      "src-gross-beat-manual",
+      "src-gross-beat-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmless",
+    "name": "Harmless",
+    "vendor": "Image-Line",
+    "category": "Additive-Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A synthesizer that applies subtractive-style filtering and effects to an additive harmonic core before the sound is rendered. A single-page, colour-coded interface exposes harmonic masking (which partials are allowed to sound), a specialized pluck filter that models string decay, and an unusual phaser that can shift pitch and create resonant shapes.",
+    "tags": [
+      "synth",
+      "additive",
+      "subtractive",
+      "harmonic",
+      "modern"
+    ],
+    "capabilities": [
+      "additive-core",
+      "harmonic-masking",
+      "pluck-filter",
+      "phaser",
+      "single-page-ui"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Harmless.htm",
+    "sources": [
+      "src-harmless-manual",
+      "src-harmless-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmor",
+    "name": "Harmor",
+    "vendor": "Image-Line",
+    "category": "Additive Synth / Resynthesizer",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An additive synthesizer and resynthesizer that builds each voice from up to 516 sine partials across two independent engines (A and B). It can resynthesize imported audio and images into editable additive data, with pitch-independent time-stretch and formant shift, plus signature Prism, Pluck, Blur and Strum processors and hand-drawn filter shapes.",
+    "tags": [
+      "synth",
+      "additive",
+      "resynthesis",
+      "image-synthesis",
+      "spectral"
+    ],
+    "capabilities": [
+      "additive-516-partials",
+      "dual-engine",
+      "audio-resynthesis",
+      "image-synthesis",
+      "time-stretch",
+      "formant-shift",
+      "custom-filter-shapes"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Harmor.htm",
+    "sources": [
+      "src-harmor-manual",
+      "src-harmor-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "maximus",
+    "name": "Maximus",
+    "vendor": "Image-Line",
+    "category": "Dynamics / Mastering",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A multiband dynamics processor and maximizer. It splits the signal into Low, Mid and High bands plus a Master stage, each shaped by a user-drawn spline compression/expansion curve with per-band pre/post gain, adaptive release, and optional multiband saturation.",
+    "tags": [
+      "dynamics",
+      "mastering",
+      "multiband",
+      "limiter",
+      "maximizer"
+    ],
+    "capabilities": [
+      "multiband-low-mid-high-master",
+      "spline-envelopes",
+      "multiband-saturation",
+      "adaptive-release",
+      "crossover-control"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Maximus.htm",
+    "sources": [
+      "src-maximus-manual",
+      "src-maximus-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "morphine",
+    "name": "Morphine",
+    "vendor": "Image-Line",
+    "category": "Additive Synth / Resynthesizer",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An additive synthesizer that builds each voice from up to 128 harmonics, with harmonic breakpoints for evolving spectra, sample resynthesis that imports WAV/AIFF into editable harmonics, 128 keyboard zones for layering different sounds, specialized PWM spectral filters for unison and width, and a noise generator for realistic attacks and grit.",
+    "tags": [
+      "synth",
+      "additive",
+      "resynthesis",
+      "harmonic",
+      "layering"
+    ],
+    "capabilities": [
+      "additive-128-harmonics",
+      "harmonic-breakpoints",
+      "sample-resynthesis",
+      "keyboard-zones",
+      "noise-generator"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Morphine.htm",
+    "sources": [
+      "src-morphine-manual",
+      "src-morphine-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "newtone",
+    "name": "Newtone",
+    "vendor": "Image-Line",
+    "category": "Pitch Correction / Melody Editor",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A pitch-correction and melody editor. It analyses monophonic audio into editable notes you can drag to new pitches with snap-to-grid, redraw the pitch contour to tame vibrato and drift, shift formants independently of pitch, and smooth transitions between notes. Global Center and Variation controls apply quick overall corrections.",
+    "tags": [
+      "pitch-correction",
+      "vocal",
+      "melody",
+      "tuning",
+      "editor"
+    ],
+    "capabilities": [
+      "note-editing",
+      "pitch-contour-editing",
+      "formant-shift",
+      "transition-control",
+      "global-tuning"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Newtone.htm",
+    "sources": [
+      "src-newtone-manual",
+      "src-newtone-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "patcher",
+    "name": "Patcher",
+    "vendor": "Image-Line",
+    "category": "Modular Routing",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A modular routing environment that hosts other generators and effects on a visual patch canvas. You wire nodes to define audio and MIDI signal flow, chain any number of plugins inside one instance, split signals by frequency or amplitude for multiband processing, and design a custom control surface (knobs, sliders, XY pads) that exposes the whole patch as a single instrument or effect.",
+    "tags": [
+      "modular",
+      "routing",
+      "container",
+      "control-surface",
+      "multiband"
+    ],
+    "capabilities": [
+      "visual-node-routing",
+      "unlimited-plugin-chaining",
+      "custom-control-surface",
+      "multiband-split",
+      "midi-routing"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Patcher.htm",
+    "sources": [
+      "src-patcher-manual",
+      "src-patcher-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "poizone",
+    "name": "PoiZone",
+    "vendor": "Image-Line",
+    "category": "Subtractive / Trance Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A subtractive synthesizer built for trance and analog styles. It pairs a 4-voice unison engine (stereo spread and detune) with a 16-step trance gate for instant rhythmic movement, a full arpeggiator, and built-in delay, chorus and reverb effects.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "analog",
+      "trance",
+      "unison"
+    ],
+    "capabilities": [
+      "4-voice-unison",
+      "16-step-trance-gate",
+      "arpeggiator",
+      "built-in-fx"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/PoiZone.htm",
+    "sources": [
+      "src-poizone-manual",
+      "src-poizone-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sawer",
+    "name": "Sawer",
+    "vendor": "Image-Line",
+    "category": "Subtractive / Vintage Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A vintage-styled subtractive synth modelled on the Polivoks character. It pairs a 12/24 dB LP/BP/HP Polivoks-style filter with saw, sub and noise oscillators, hard sync for tearing leads, 8-voice unison for width, a modulation matrix for LFO and envelope routing, and vintage chorus, phaser, delay and reverb effects.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "analog",
+      "vintage",
+      "polivoks"
+    ],
+    "capabilities": [
+      "polivoks-filter",
+      "hard-sync",
+      "8-voice-unison",
+      "modulation-matrix",
+      "vintage-fx"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sawer.htm",
+    "sources": [
+      "src-sawer-manual",
+      "src-sawer-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "slicex",
+    "name": "Slicex",
+    "vendor": "Image-Line",
+    "category": "Beat Slicer / Sampler",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A beat slicer and sampler that auto-detects transients to cut a loop into playable slices, each editable in a built-in wave editor. It provides dual decks for layering or crossfading two loops, eight articulation slots (filters and envelopes) assignable to slices, and one-click dump of the sliced groove to the piano roll as MIDI.",
+    "tags": [
+      "slicer",
+      "sampler",
+      "drums",
+      "loops",
+      "beat"
+    ],
+    "capabilities": [
+      "auto-slicing-transient-detection",
+      "per-slice-wave-editor",
+      "dual-decks",
+      "articulation-slots",
+      "midi-dump"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Slicex.htm",
+    "sources": [
+      "src-slicex-manual",
+      "src-slicex-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "soundgoodizer",
+    "name": "Soundgoodizer",
+    "vendor": "Image-Line",
+    "category": "Maximizer / Exciter",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A one-knob stereo maximizer and multiband exciter powered by the Maximus engine. A single amount knob blends the processing from 0 to 100 percent, and four character modes (A-D) preset different multiband curves for instant loudness and polish at negligible CPU cost.",
+    "tags": [
+      "maximizer",
+      "exciter",
+      "mastering",
+      "loudness",
+      "one-knob"
+    ],
+    "capabilities": [
+      "maximus-engine",
+      "four-character-modes",
+      "single-knob-amount",
+      "multiband-processing",
+      "cpu-efficient"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Soundgoodizer.htm",
+    "sources": [
+      "src-soundgoodizer-manual",
+      "src-soundgoodizer-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "toxic-biohazard",
+    "name": "Toxic Biohazard",
+    "vendor": "Image-Line",
+    "category": "FM / Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An FM and subtractive hybrid synthesizer. An FM matrix routes operators into one another, feeding an analog-modelled LP/BP/HP filter with its own envelope, 8-voice stereo unison, and an integrated FX rack (multi-tap delay, chorus, phaser, reverb, EQ and distortion). Custom waveforms can be loaded from WAV/AIFF files.",
+    "tags": [
+      "synth",
+      "fm",
+      "subtractive",
+      "analog",
+      "unison"
+    ],
+    "capabilities": [
+      "fm-matrix",
+      "analog-modeled-filter",
+      "8-voice-unison",
+      "integrated-fx-rack",
+      "custom-waveforms"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Toxic%20Biohazard.htm",
+    "sources": [
+      "src-toxic-biohazard-manual",
+      "src-toxic-biohazard-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vocodex",
+    "name": "Vocodex",
+    "vendor": "Image-Line",
+    "category": "Vocoder / Voice",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A vocoder that imposes the spectral character of a modulator (typically a voice) onto a carrier signal. It includes a built-in Sytrus-based internal carrier so no external synth is required, band contouring for speech intelligibility, band unison for thickness, an envelope follower for hold/release control, and a built-in Soundgoodizer maximizer on the output.",
+    "tags": [
+      "vocoder",
+      "voice",
+      "spectral",
+      "creative",
+      "robot"
+    ],
+    "capabilities": [
+      "internal-sytrus-carrier",
+      "band-contouring",
+      "band-unison",
+      "envelope-follower",
+      "output-maximizer"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vocodex.htm",
+    "sources": [
+      "src-vocodex-manual",
+      "src-vocodex-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   }

@@ -2,55 +2,768 @@
   {
     "id": "flex-macro-locking-tip",
     "topic": "Lock values while browsing FLEX presets",
-    "subjectRefs": ["flex"],
+    "subjectRefs": [
+      "flex"
+    ],
     "body": "FLEX exposes a small set of macros instead of raw synth parameters, so auditioning is fast. Enable panel locks (or lock Master Volume) to keep loudness and effect levels consistent while you browse presets, so sounds compare fairly.",
     "evidenceLevel": "Documented",
     "noteType": "Tip",
-    "sources": ["src-flex-manual", "src-flex-dive"],
+    "sources": [
+      "src-flex-manual",
+      "src-flex-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
   {
     "id": "flex-bass-mono-tip",
     "topic": "Keep FLEX bass mono and dry",
-    "subjectRefs": ["flex"],
+    "subjectRefs": [
+      "flex"
+    ],
     "body": "For low end, keep FLEX bass centered (mono) and free of reverb/delay. Wide or wet bass causes phase cancellation and loses power on club systems; check the vectorscope for a near-vertical line before exporting.",
     "evidenceLevel": "Community",
     "noteType": "Caveat",
-    "sources": ["src-flex-dive"],
+    "sources": [
+      "src-flex-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
   {
     "id": "eq2-bandwidth-inverted",
     "topic": "Bandwidth is inverted on Fruity Parametric EQ 2",
-    "subjectRefs": ["fruity-parametric-eq-2"],
+    "subjectRefs": [
+      "fruity-parametric-eq-2"
+    ],
     "body": "On Fruity Parametric EQ 2 the bandwidth (Q) control is inverted relative to intuition: a lower percentage is a wider band and a higher percentage is narrower. Keep this in mind when dialing surgical cuts versus broad tonal shaping.",
     "evidenceLevel": "Documented",
     "noteType": "Caveat",
-    "sources": ["src-eq2-manual", "src-eq2-dive"],
+    "sources": [
+      "src-eq2-manual",
+      "src-eq2-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
   {
     "id": "eq2-highpass-cleanup-note",
     "topic": "Use Band 1 to clean low-end rumble",
-    "subjectRefs": ["fruity-parametric-eq-2"],
+    "subjectRefs": [
+      "fruity-parametric-eq-2"
+    ],
     "body": "A high-pass on Band 1 removes sub-fundamental rumble that muddies a mix and frees headroom. The spectral display helps place the cutoff just below the note's fundamental. Avoid boosting Band 1 unless you are deliberately designing bass.",
     "evidenceLevel": "Documented",
     "noteType": "Explanation",
-    "sources": ["src-eq2-dive"],
+    "sources": [
+      "src-eq2-dive"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   },
   {
     "id": "sytrus-ratio-vs-fixed",
     "topic": "Ratio vs Fixed operator frequency in Sytrus",
-    "subjectRefs": ["sytrus"],
+    "subjectRefs": [
+      "sytrus"
+    ],
     "body": "Each Sytrus operator can run in Ratio or Fixed frequency mode. Ratio keeps the operator tuned to the played note (musical, tracks the keyboard) while Fixed holds a set frequency (useful for formants and metallic or noise-like textures). For tuned bass and leads, keep operators in Ratio mode.",
     "evidenceLevel": "Documented",
     "noteType": "Explanation",
-    "sources": ["src-sytrus-manual", "src-sytrus-dive"],
+    "sources": [
+      "src-sytrus-manual",
+      "src-sytrus-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fpc-multi-layer-velocity",
+    "topic": "Layered pads and velocity",
+    "subjectRefs": [
+      "fpc"
+    ],
+    "body": "Each FPC pad can hold several sample layers mapped to velocity ranges, so a light hit triggers a ghost-note sample and a hard hit triggers a full one automatically. Per-layer ADSR shapes each sound independently.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fpc-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fpc-routing-patterns",
+    "topic": "Mixer routing and patterns",
+    "subjectRefs": [
+      "fpc"
+    ],
+    "body": "Pads can be sent to independent mixer tracks for per-drum processing, and the pattern manager loads MIDI loops straight into the FPC workflow, making it quick to audition and swap grooves.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fpc-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-blood-overdrive-color",
+    "topic": "Focusing distortion with Color",
+    "subjectRefs": [
+      "fruity-blood-overdrive"
+    ],
+    "body": "The Color control is a bandpass filter placed before the clipping stage, so it decides which frequencies get distorted. Narrowing it onto the low-mids keeps a distorted bass from getting fizzy up top; opening it wide gives a full, aggressive buzz.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-blood-overdrive-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-compressor-knee",
+    "topic": "Knee types",
+    "subjectRefs": [
+      "fruity-compressor"
+    ],
+    "body": "The knee sets how gradually compression engages around the threshold. Hard knees clamp abruptly for control and punch; soft and vintage knees ease in for transparent glue. Pairing the knee with attack and release is what makes it pump or sit invisibly.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-compressor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-convolver-ir",
+    "topic": "Impulse-response reverb",
+    "subjectRefs": [
+      "fruity-convolver"
+    ],
+    "body": "Convolution reverb reproduces a real space by processing the signal with an impulse response - a recording of how that space responds to a click. Load hall, room or plate IRs (or FX impulses) and the dry signal takes on that space, in real time at low latency.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-convolver-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-convolver-linear-phase",
+    "topic": "Linear-phase EQ and tail shaping",
+    "subjectRefs": [
+      "fruity-convolver"
+    ],
+    "body": "A spectral linear-phase EQ shapes the reverb (or the dry signal) without introducing phase shift, which keeps transients tight on a mix bus. Time-stretch changes the impulse's length and pitch, and envelopes shape the tail's volume, pan and stereo width.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-convolver-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-3-tape",
+    "topic": "Tape varispeed behaviour",
+    "subjectRefs": [
+      "fruity-delay-3"
+    ],
+    "body": "Like a tape delay, changing the delay time while audio is in the buffer slides the pitch of the echoes (varispeed). Automating time is a quick way to get diving, warping repeats, and BPM sync keeps the timing intact through tempo changes.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-delay-3-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-3-texture",
+    "topic": "Colour and diffusion",
+    "subjectRefs": [
+      "fruity-delay-3"
+    ],
+    "body": "Distortion and saturation dirty the echoes, bandpass filtering (separate high- and low-pass) keeps repeats out of the way of the dry signal, wow and flutter add analog instability, and diffusion smears transients toward a reverb-like ambient tail.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-delay-3-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-dx10-fm-basics",
+    "topic": "Simple FM ratios",
+    "subjectRefs": [
+      "fruity-dx10"
+    ],
+    "body": "DX10 keeps FM approachable: the Coarse control sets the modulator-to-carrier ratio (integer ratios give harmonic, musical tones; non-integer ratios give clangorous, bell-like ones), while Wave Brightness scales how much of that harmonic content comes through. It is a good first FM synth for e-pianos and bells.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-dx10-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-filter-oversampling",
+    "topic": "Oversampling on fast sweeps",
+    "subjectRefs": [
+      "fruity-filter"
+    ],
+    "body": "2x oversampling reduces the aliasing artifacts that a resonant filter can produce when the cutoff is automated quickly, so sweeps stay clean. Because it is a lightweight state-variable design, it is cheap to place on many channels for simple tone shaping.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-filter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-granulizer-grains",
+    "topic": "Grain shaping",
+    "subjectRefs": [
+      "fruity-granulizer"
+    ],
+    "body": "Granulizer rebuilds a sample from many short grains. Attack and Hold shape each grain's envelope while Spacing sets how densely they overlap - tight spacing sounds smooth, wide spacing turns into stutter and texture. Decoupled position and pitch allow extreme time-stretch (down toward 1 percent) without repitching.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-granulizer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-limiter-dual-stage",
+    "topic": "Compressor into limiter",
+    "subjectRefs": [
+      "fruity-limiter"
+    ],
+    "body": "The signal passes a compressor stage and then a limiter stage, so you can glue dynamics gently first and catch the remaining peaks with the brickwall limiter. Lookahead in the limiter delays the signal slightly so fast transients are caught before they clip.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-limiter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-limiter-sidechain",
+    "topic": "Sidechain and gate",
+    "subjectRefs": [
+      "fruity-limiter"
+    ],
+    "body": "A dedicated sidechain input lets another track duck this one for the classic pumping effect, while the built-in noise gate cleans up hiss or bleed below a threshold. Input, output and gain-reduction meters make the amount of processing visible.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-limiter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-love-philter-sequenced",
+    "topic": "Sequenced filter patterns",
+    "subjectRefs": [
+      "fruity-love-philter"
+    ],
+    "body": "Love Philter's pattern sequencer lets the piano roll trigger different hand-drawn envelope shapes, so you can program rhythmic filter and gate movements that change per note or per bar - a fast route to dubstep-style talking filters and gated stabs.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-love-philter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-love-philter-units",
+    "topic": "Filter units with waveshaping",
+    "subjectRefs": [
+      "fruity-love-philter"
+    ],
+    "body": "Multiple filter units each carry their own envelopes, LFOs and a built-in waveshaper for distortion, so a single instance can stack filtering and drive. The X/Y controller maps two parameters for live performance.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-love-philter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-reeverb-2-bass-multiplier",
+    "topic": "Bass multiplier",
+    "subjectRefs": [
+      "fruity-reeverb-2"
+    ],
+    "body": "The bass multiplier sets how long low frequencies ring relative to the rest of the tail. Shortening the lows keeps a big reverb from turning boomy on a mix bus; lengthening them adds warmth to pads and vocals.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-reeverb-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-reeverb-2-mid-side",
+    "topic": "Mid/side width",
+    "subjectRefs": [
+      "fruity-reeverb-2"
+    ],
+    "body": "Mid/side processing lets the reverb sit wider on the stereo edges while keeping the centre clear, so a lead or vocal stays present. Tempo-synced LFO modulation of the reverb time adds subtle organic movement.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-reeverb-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-slicer-vs-slicex",
+    "topic": "Simple slicing and dump",
+    "subjectRefs": [
+      "fruity-slicer"
+    ],
+    "body": "Fruity Slicer is the lighter cousin of Slicex: it auto-detects transients, maps slices across the keyboard, and can dump the groove to the piano roll so the loop becomes editable MIDI. BPM-matched time-stretch keeps a chopped loop in time when the tempo changes.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-slicer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-vocoder-vs-vocodex",
+    "topic": "Zero-latency vocoding",
+    "subjectRefs": [
+      "fruity-vocoder"
+    ],
+    "body": "Fruity Vocoder is the simpler, zero-latency vocoder (Vocodex is the deeper one). Its low latency suits tracking and live use; formant shifting reshapes vocal character, and the hold function freezes the modulator's spectrum so you can sustain a vowel-like pad under held carrier notes.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-fruity-vocoder-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-waveshaper-transfer",
+    "topic": "Drawing the transfer function",
+    "subjectRefs": [
+      "fruity-waveshaper"
+    ],
+    "body": "The graph is a transfer function: the horizontal axis is the incoming level and the vertical axis is what comes out. A gentle S adds warmth; steep steps or folds create hard clipping and wavefolding textures. Bipolar mode shapes positive and negative halves independently for asymmetric, tube-like distortion.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-waveshaper-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "gross-beat-rolling-buffer",
+    "topic": "2-bar rolling buffer",
+    "subjectRefs": [
+      "gross-beat"
+    ],
+    "body": "Gross Beat continuously records the incoming audio into a circular 2-bar buffer (about 4 seconds at 120 BPM), overwriting the oldest audio. Effects come from replaying that buffer at a manipulated position rather than from generating new sound.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-gross-beat-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "gross-beat-envelopes-slots",
+    "topic": "Time / volume envelopes and slots",
+    "subjectRefs": [
+      "gross-beat"
+    ],
+    "body": "A time envelope maps playback position over two bars on a 2D grid; a 45-degree diagonal is normal playback, and deviations create stutter, reverse or scratch effects. A volume envelope shapes amplitude for gating and swells. Both are stored across 72 slots (36 time, 36 volume) and triggered by MIDI notes, with grid snap from 1/4 down to 1/32 or freehand.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-gross-beat-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmless-additive-subtractive",
+    "topic": "Additive engine, subtractive workflow",
+    "subjectRefs": [
+      "harmless"
+    ],
+    "body": "Harmless generates an additive harmonic spectrum but presents subtractive-style controls - filters and effects act on the harmonics before rendering. This gives the familiar feel of a subtractive synth while avoiding aliasing, since the maths happens on the partials rather than on a sampled waveform.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-harmless-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmless-harmonic-masking",
+    "topic": "Harmonic masking and pluck",
+    "subjectRefs": [
+      "harmless"
+    ],
+    "body": "Harmonic masking lets you choose which partials are allowed to sound, carving timbre at the source. The specialised pluck filter models string decay for realistic plucked and mallet tones, and the phaser can bend pitch as well as sweep resonances for less conventional textures.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-harmless-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmor-additive-engines",
+    "topic": "516 partials across two engines",
+    "subjectRefs": [
+      "harmor"
+    ],
+    "body": "Each Harmor voice is generated from up to 516 additive sine partials, spread across two independent engines (A and B) that can be layered or blended. This high partial count is what lets it resolve detailed, evolving timbres rather than a fixed set of oscillator shapes.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-harmor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmor-resynthesis",
+    "topic": "Audio and image resynthesis",
+    "subjectRefs": [
+      "harmor"
+    ],
+    "body": "Harmor can import audio (WAV, AIFF, MP3, FLAC, OGG) via FFT-based spectral analysis and images (PNG, BMP) where the X axis is time, the Y axis maps 20 Hz to 20 kHz, and brightness is amplitude. Because the sound is held as additive data, time-stretch and formant shift (about +/-12 semitones) stay pitch-independent and largely artifact-free.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-harmor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "harmor-prism-processor",
+    "topic": "Prism harmonic warping",
+    "subjectRefs": [
+      "harmor"
+    ],
+    "body": "The Prism unit multiplies partial frequencies to introduce inharmonic content across a 0-100% range, with Low, Full and Band depth modes. Small amounts add movement and body; larger amounts push toward metallic or bell-like tones.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-harmor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "maximus-band-structure",
+    "topic": "Low / Mid / High + Master bands",
+    "subjectRefs": [
+      "maximus"
+    ],
+    "body": "Maximus processes three crossover bands (Low, Mid, High) plus a Master stage independently, so you can compress, limit or saturate each frequency region on its own before the combined output. Crossover points set where the bands split.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-maximus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "maximus-spline-envelope",
+    "topic": "Spline dynamics envelope",
+    "subjectRefs": [
+      "maximus"
+    ],
+    "body": "Each band's dynamics are drawn as a spline curve mapping input level to output, so a single graph can compress, expand or gate. Pre gain drives the band into the curve; post gain sets makeup and ceiling; adaptive release trades pumping for transparency.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-maximus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "morphine-additive-harmonics",
+    "topic": "128 harmonics with breakpoints",
+    "subjectRefs": [
+      "morphine"
+    ],
+    "body": "Each Morphine voice is drawn from up to 128 harmonics. Harmonic breakpoints let you store multiple spectral snapshots and morph between them over time, so a single note can evolve from thin to full or shift timbre as it sustains.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-morphine-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "morphine-resynthesis-zones",
+    "topic": "Resynthesis and keyboard zones",
+    "subjectRefs": [
+      "morphine"
+    ],
+    "body": "Imported WAV/AIFF audio is converted into editable harmonics for resynthesis, and up to 128 keyboard zones can hold different sounds across the range - useful for multisampled instruments or split layers. A noise generator adds untuned attack transients.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-morphine-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "newtone-note-editing",
+    "topic": "Notes and pitch contour",
+    "subjectRefs": [
+      "newtone"
+    ],
+    "body": "Newtone splits a monophonic recording into discrete notes on a piano-roll-style grid. Dragging a note moves its pitch; editing the contour line inside a note reshapes vibrato and drift without hard-tuning the whole phrase, so corrections can stay natural.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-newtone-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "newtone-formant-transitions",
+    "topic": "Formants and transitions",
+    "subjectRefs": [
+      "newtone"
+    ],
+    "body": "Formant shifting changes vocal timbre independently of pitch (useful for gender/character tweaks), while transition control smooths the slides between adjacent notes. Global Center and Variation knobs apply a quick overall tuning pass before manual edits.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-newtone-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "patcher-visual-routing",
+    "topic": "Visual node routing",
+    "subjectRefs": [
+      "patcher"
+    ],
+    "body": "Patcher hosts other plugins as nodes on a canvas; you draw connections to set how audio and MIDI flow between them. Because there is no fixed slot count, an entire multi-plugin chain lives inside a single Patcher instance that you can save and reuse as one preset.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-patcher-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "patcher-control-surface",
+    "topic": "Custom control surface",
+    "subjectRefs": [
+      "patcher"
+    ],
+    "body": "A patch can expose its own control surface - knobs, sliders and XY pads mapped to parameters inside the chain - so a complex network is played and automated as if it were one instrument or effect. Combined with frequency/amplitude splits, this makes Patcher a way to build reusable multiband racks.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-patcher-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "poizone-trance-gate",
+    "topic": "Trance gate and arpeggiator",
+    "subjectRefs": [
+      "poizone"
+    ],
+    "body": "The 16-step trance gate chops a sustained pad into rhythmic pulses locked to tempo, the classic instant-movement trick for trance chords. The built-in arpeggiator turns held notes into melodic patterns, so a single chord can drive a whole section.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-poizone-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "poizone-unison",
+    "topic": "Unison width",
+    "subjectRefs": [
+      "poizone"
+    ],
+    "body": "Four-voice unison with stereo spread and detune thickens leads and supersaws; built-in delay, chorus and reverb finish the sound inside the plugin.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-poizone-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sawer-polivoks-filter",
+    "topic": "Polivoks-style filter",
+    "subjectRefs": [
+      "sawer"
+    ],
+    "body": "Sawer's filter models the aggressive, gritty character of the Soviet Polivoks synth, available at 12 or 24 dB/octave in LP/BP/HP. Pushing resonance is where its distinctive bite comes from, which suits raw leads and basses.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-sawer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sawer-sync-unison",
+    "topic": "Hard sync and unison",
+    "subjectRefs": [
+      "sawer"
+    ],
+    "body": "Saw, sub and noise oscillators feed hard sync for tearing, formant-like leads, and 8-voice unison widens the result. A modulation matrix routes LFOs and envelopes to taste, with vintage-voiced chorus, phaser, delay and reverb to finish.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-sawer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "slicex-auto-slicing",
+    "topic": "Auto-slicing and MIDI dump",
+    "subjectRefs": [
+      "slicex"
+    ],
+    "body": "Slicex analyzes a loop for transients and cuts it into individual slices you can trigger from the keyboard or the piano roll. A one-click dump writes the original groove out as MIDI, so you can re-sequence, swap or quantize the slices without re-chopping by hand.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-slicex-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "slicex-articulations",
+    "topic": "Articulation slots",
+    "subjectRefs": [
+      "slicex"
+    ],
+    "body": "Eight articulation slots hold filter and envelope settings that can be assigned to individual slices, letting one loop carry several distinct playback voices - for example a filtered stab on one slice and a clean hit on another.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-slicex-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "soundgoodizer-maximus-basis",
+    "topic": "Maximus under one knob",
+    "subjectRefs": [
+      "soundgoodizer"
+    ],
+    "body": "Soundgoodizer is a simplified front end for the Maximus multiband engine. The four modes (A-D) load different multiband compression, saturation and exciter curves, and the single amount knob sets how hard they push - a quick polish for a bus or master without dialing a full dynamics chain.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-soundgoodizer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "toxic-biohazard-fm-matrix",
+    "topic": "FM matrix and filter",
+    "subjectRefs": [
+      "toxic-biohazard"
+    ],
+    "body": "A grid-style FM matrix sets how operators modulate each other, so you can dial in bright metallic or bell tones and then tame them through the analog-modelled LP/BP/HP filter, which has its own dedicated envelope for movement.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-toxic-biohazard-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "toxic-biohazard-unison-fx",
+    "topic": "Unison and FX rack",
+    "subjectRefs": [
+      "toxic-biohazard"
+    ],
+    "body": "Eight-voice stereo unison thickens leads and pads, and the built-in FX rack (multi-tap delay, chorus, phaser, reverb, EQ, distortion) finishes the sound without leaving the plugin.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-toxic-biohazard-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vocodex-carrier-modulator",
+    "topic": "Carrier and modulator",
+    "subjectRefs": [
+      "vocodex"
+    ],
+    "body": "A vocoder shapes a carrier (a harmonically rich synth tone) with the moving spectrum of a modulator (usually speech). Vocodex ships with a built-in Sytrus-based internal carrier, so a talking synth can be built inside one plugin without routing an external instrument.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-vocodex-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vocodex-intelligibility",
+    "topic": "Intelligibility and thickness",
+    "subjectRefs": [
+      "vocodex"
+    ],
+    "body": "Band contouring emphasises the frequency bands that carry consonants and vowels, keeping vocoded speech readable; band unison thickens the result; and the built-in Soundgoodizer maximiser lifts the final level. The envelope follower's hold and release times set how tightly the output tracks the modulator.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-vocodex-manual"
+    ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
   }
