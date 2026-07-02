@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-love-philter",
+    "name": "Fruity Love Philter",
+    "vendor": "Image-Line",
+    "category": "Filter Bank / Modulation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-unit filter bank with deep modulation. Each filter unit has hand-drawn envelopes and LFO shapes, a built-in waveshaper for per-unit distortion, and an X/Y controller for real-time performance. A pattern sequencer can trigger different envelope patterns from the piano roll for rhythmic, gated filtering.",
+    "tags": ["filter", "modulation", "gate", "creative", "sequenced"],
+    "capabilities": ["multi-filter-units", "custom-envelopes-lfo", "pattern-sequencer", "per-unit-waveshaper", "xy-control"],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Love%20Philter.htm",
+    "sources": ["src-fruity-love-philter-manual", "src-fruity-love-philter-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

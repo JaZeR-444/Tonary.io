@@ -1,0 +1,24 @@
+[
+  {
+    "id": "poizone-trance-gate",
+    "topic": "Trance gate and arpeggiator",
+    "subjectRefs": ["poizone"],
+    "body": "The 16-step trance gate chops a sustained pad into rhythmic pulses locked to tempo, the classic instant-movement trick for trance chords. The built-in arpeggiator turns held notes into melodic patterns, so a single chord can drive a whole section.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-poizone-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "poizone-unison",
+    "topic": "Unison width",
+    "subjectRefs": ["poizone"],
+    "body": "Four-voice unison with stereo spread and detune thickens leads and supersaws; built-in delay, chorus and reverb finish the sound inside the plugin.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-poizone-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

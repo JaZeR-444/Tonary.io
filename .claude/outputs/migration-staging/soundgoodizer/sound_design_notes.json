@@ -1,0 +1,13 @@
+[
+  {
+    "id": "soundgoodizer-maximus-basis",
+    "topic": "Maximus under one knob",
+    "subjectRefs": ["soundgoodizer"],
+    "body": "Soundgoodizer is a simplified front end for the Maximus multiband engine. The four modes (A-D) load different multiband compression, saturation and exciter curves, and the single amount knob sets how hard they push - a quick polish for a bus or master without dialing a full dynamics chain.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-soundgoodizer-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

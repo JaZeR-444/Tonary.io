@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-compressor",
+    "name": "Fruity Compressor",
+    "vendor": "Image-Line",
+    "category": "Dynamics / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A straightforward single-band compressor for everyday dynamics control. Threshold and ratio set when and how much it compresses, selectable knee types (Hard, Medium, Soft and Vintage) change the shape of the compression curve, and gain makeup restores level after reduction.",
+    "tags": ["compressor", "dynamics", "mixing", "glue", "knee"],
+    "capabilities": ["threshold-ratio", "variable-knee", "attack-release", "gain-makeup"],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Compressor.htm",
+    "sources": ["src-fruity-compressor-manual", "src-fruity-compressor-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

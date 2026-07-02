@@ -26,10 +26,16 @@
 | [`fpc/`](fpc/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`fruity-convolver/`](fruity-convolver/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`fruity-delay-3/`](fruity-delay-3/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`poizone/`](poizone/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-love-philter/`](fruity-love-philter/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-reeverb-2/`](fruity-reeverb-2/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`soundgoodizer/`](soundgoodizer/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-compressor/`](fruity-compressor/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-filter/`](fruity-filter/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
 
 **Deferred (won't guess a commercial fact):** Edison, DirectWave — DEEPER DIVES capability lists are doc
-templates (not real facts); Transient Processor — tier (Free vs Premium) unverified. Skipped rather than
-fabricate (no-fabrication rule); revisit when the manual fact is confirmed.
+templates (not real facts); Transient Processor, Effector — tier (Free vs Premium) unverified. Skipped rather
+than fabricate (no-fabrication rule); revisit when the manual fact is confirmed.
 
 ## Gate #4 checklist (applies to every candidate above)
 - No verbatim/near-verbatim manual text — all descriptions/notes re-authored from the underlying facts.

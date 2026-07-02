@@ -1,0 +1,18 @@
+[
+  {
+    "id": "poizone",
+    "name": "PoiZone",
+    "vendor": "Image-Line",
+    "category": "Subtractive / Trance Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A subtractive synthesizer built for trance and analog styles. It pairs a 4-voice unison engine (stereo spread and detune) with a 16-step trance gate for instant rhythmic movement, a full arpeggiator, and built-in delay, chorus and reverb effects.",
+    "tags": ["synth", "subtractive", "analog", "trance", "unison"],
+    "capabilities": ["4-voice-unison", "16-step-trance-gate", "arpeggiator", "built-in-fx"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/PoiZone.htm",
+    "sources": ["src-poizone-manual", "src-poizone-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

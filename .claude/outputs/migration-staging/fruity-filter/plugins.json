@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-filter",
+    "name": "Fruity Filter",
+    "vendor": "Image-Line",
+    "category": "Filter / Tone Shaping",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A lightweight state-variable filter for quick tone shaping. It offers low-pass, high-pass and band-pass types with a resonance control to emphasise the cutoff, and 2x oversampling to reduce aliasing during fast cutoff automation, at a very low CPU cost.",
+    "tags": ["filter", "tone", "state-variable", "cutoff", "lightweight"],
+    "capabilities": ["lp-hp-bp-types", "resonance", "2x-oversampling", "low-cpu"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Filter.htm",
+    "sources": ["src-fruity-filter-manual", "src-fruity-filter-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

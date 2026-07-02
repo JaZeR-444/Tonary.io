@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fruity-filter-oversampling",
+    "topic": "Oversampling on fast sweeps",
+    "subjectRefs": ["fruity-filter"],
+    "body": "2x oversampling reduces the aliasing artifacts that a resonant filter can produce when the cutoff is automated quickly, so sweeps stay clean. Because it is a lightweight state-variable design, it is cheap to place on many channels for simple tone shaping.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-fruity-filter-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

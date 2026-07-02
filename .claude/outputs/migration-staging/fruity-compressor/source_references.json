@@ -1,0 +1,24 @@
+[
+  {
+    "id": "src-fruity-compressor-manual",
+    "title": "Fruity Compressor - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Compressor.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Primary reference for Fruity Compressor's threshold/ratio, knee types, and makeup."
+  },
+  {
+    "id": "src-fruity-compressor-dive",
+    "title": "Fruity Compressor - DEEPER DIVES research compilation",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": null,
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Internal research cross-checked to the official manual; prose re-authored, not reproduced."
+  }
+]
