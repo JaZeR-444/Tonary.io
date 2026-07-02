@@ -1,0 +1,24 @@
+[
+  {
+    "id": "src-harmor-manual",
+    "title": "Harmor - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Harmor.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Primary reference for Harmor's additive engine, resynthesis, and processor facts."
+  },
+  {
+    "id": "src-harmor-dive",
+    "title": "Harmor - DEEPER DIVES research compilation",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": null,
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Internal research (02-Data specs tagged [SRC: IL-MAN]); facts cross-checked to the official manual before migration. Prose re-authored, not reproduced."
+  }
+]

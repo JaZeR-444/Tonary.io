@@ -36,6 +36,7 @@
 ## Migration log
 - **2026-07-02 — Pilot batch 1 (seedVersion 2). ✅ DONE.** Migrated **FLEX, Sytrus, Fruity Parametric EQ 2** from DEEPER DIVES into `Tonary.io/assets/seed/`: 3 Plugin Records, 3 Preset Records (illustrative params, labeled), 3 Workflow Recipes, 5 Sound Design Notes, 6 Source References (official manual + DEEPER DIVES research corpus). Validated by `SeedValidator` (fail-closed) and an in-memory SQLite integration test. Publishing still gated on OQ-12 (licensing).
   - Next batches: expand from the priority list (Harmor, Maximus, Patcher, Edison, Slicex, Vocodex, Gross Beat, Newtone, DirectWave) once the licensing question clears.
+- **2026-07-02 — Harmor candidate STAGED (not shipped).** Re-keyed Harmor from DEEPER DIVES into schema-shaped JSON at [`migration-staging/harmor/`](migration-staging/harmor/): 1 Plugin Record, 3 Sound Design Notes, 2 Source References (presets deferred per content-policy §3). Rephrased-not-reproduced, all cited, passes the real `SeedValidator` (`test/data/harmor_candidate_validation_test.dart`) and the gate #4 legal-content checklist. **Held out of `assets/seed/` pending OQ-12 gate #5 sign-off** — see the staging README. This proves the post-legal migration path end-to-end without publishing.
 
 ## Recommended migration sequence
 1. **Pilot vertical slice** — ✅ DONE 2026-07-02 (see Migration log). FLEX, Sytrus, Fruity Parametric EQ 2 each taken through `plugin-record` → `preset-record`s → `workflow-recipe`s → `source-reference`s. Schemas proven end-to-end.
