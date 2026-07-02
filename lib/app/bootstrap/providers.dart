@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../data/repositories/app_meta_repository.dart';
+import '../../data/repositories/saved_items_repository.dart';
 import '../../data/repositories/vault_repository.dart';
 import '../../data/sources/drift/tonary_database.dart';
 
@@ -18,4 +19,9 @@ final vaultRepositoryProvider = Provider<VaultRepository>(
 /// Durable key-value flags (e.g. onboarding-complete).
 final appMetaRepositoryProvider = Provider<AppMetaRepository>(
   (ref) => AppMetaRepositoryImpl(ref.watch(databaseProvider)),
+);
+
+/// User Saved Items (favorites) — the one user-writable record type.
+final savedItemsRepositoryProvider = Provider<SavedItemsRepository>(
+  (ref) => SavedItemsRepositoryImpl(ref.watch(databaseProvider)),
 );

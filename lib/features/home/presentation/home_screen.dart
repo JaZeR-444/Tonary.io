@@ -65,6 +65,12 @@ class HomeScreen extends ConsumerWidget {
               subtitle: 'Find a plugin by name, tag, tier or type.',
               onTap: () => context.push('/search'),
             ),
+            _ModuleCard(
+              icon: Icons.bookmark_border,
+              title: 'Saved',
+              subtitle: 'Your favorited plugins, in one place.',
+              onTap: () => context.push('/saved'),
+            ),
           ],
         ),
       ),

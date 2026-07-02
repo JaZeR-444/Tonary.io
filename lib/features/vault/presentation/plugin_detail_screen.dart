@@ -5,6 +5,7 @@ import '../../../design_system/colors/tonary_colors.dart';
 import '../../../design_system/components/tonary_badge.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
 import '../../../shared/widgets/async_value_view.dart';
+import '../../saved/application/saved_providers.dart';
 import '../application/vault_providers.dart';
 
 /// Plugin detail — identity, metadata, presets, notes, and the evidence trail.
@@ -17,7 +18,10 @@ class PluginDetailScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final detail = ref.watch(pluginDetailProvider(pluginId));
     return Scaffold(
-      appBar: AppBar(title: const Text('Plugin')),
+      appBar: AppBar(
+        title: const Text('Plugin'),
+        actions: [_SaveAction(pluginId: pluginId)],
+      ),
       body: SafeArea(
         child: AsyncValueView<PluginDetail>(
           value: detail,
@@ -26,6 +30,26 @@ class PluginDetailScreen extends ConsumerWidget {
           data: (d) => _Body(detail: d),
         ),
       ),
+    );
+  }
+}
+
+/// Bookmark toggle for saving this plugin (User Saved Item). Saved state is
+/// shown by icon SHAPE (filled vs outline) plus colour — never colour alone.
+class _SaveAction extends ConsumerWidget {
+  const _SaveAction({required this.pluginId});
+  final String pluginId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final c = context.tonaryColors;
+    final saved = ref.watch(isPluginSavedProvider(pluginId)).value ?? false;
+    return IconButton(
+      icon: Icon(saved ? Icons.bookmark : Icons.bookmark_border),
+      color: saved ? c.accentPrimary : c.textSecondary,
+      tooltip: saved ? 'Saved' : 'Save',
+      onPressed: () =>
+          ref.read(savedItemsControllerProvider).togglePlugin(pluginId),
     );
   }
 }
