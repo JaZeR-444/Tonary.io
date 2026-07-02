@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fruity-blood-overdrive-color",
+    "topic": "Focusing distortion with Color",
+    "subjectRefs": ["fruity-blood-overdrive"],
+    "body": "The Color control is a bandpass filter placed before the clipping stage, so it decides which frequencies get distorted. Narrowing it onto the low-mids keeps a distorted bass from getting fizzy up top; opening it wide gives a full, aggressive buzz.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-fruity-blood-overdrive-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

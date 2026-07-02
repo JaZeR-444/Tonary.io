@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-waveshaper",
+    "name": "Fruity WaveShaper",
+    "vendor": "Image-Line",
+    "category": "Waveshaper / Distortion",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A waveshaping distortion driven by a hand-drawn transfer-function graph. A spline curve maps input amplitude to output for anything from gentle saturation to hard clipping; unipolar/bipolar modes process the full wave or the positive and negative halves independently, and oversampling reduces aliasing on extreme shapes.",
+    "tags": ["waveshaper", "distortion", "saturation", "transfer-function", "clipping"],
+    "capabilities": ["spline-transfer-function", "unipolar-bipolar-modes", "oversampling"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20WaveShaper.htm",
+    "sources": ["src-fruity-waveshaper-manual", "src-fruity-waveshaper-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

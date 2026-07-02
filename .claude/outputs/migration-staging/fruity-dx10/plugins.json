@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-dx10",
+    "name": "Fruity DX10",
+    "vendor": "Image-Line",
+    "category": "FM Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "An approachable 2-operator-style FM synthesizer. Simple Coarse and Fine controls set the modulation ratio, a master Wave Brightness control scales overall harmonic richness, and a built-in vibrato LFO adds organic pitch movement - a fast route to FM bells, e-pianos and basses.",
+    "tags": ["synth", "fm", "simple", "bells", "epiano"],
+    "capabilities": ["2-operator-fm", "coarse-fine-ratio", "wave-brightness", "vibrato-lfo"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20DX10.htm",
+    "sources": ["src-fruity-dx10-manual", "src-fruity-dx10-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

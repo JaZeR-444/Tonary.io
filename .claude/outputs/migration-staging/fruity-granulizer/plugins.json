@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-granulizer",
+    "name": "Fruity Granulizer",
+    "vendor": "Image-Line",
+    "category": "Granular Synth / Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A granular synthesizer and sampler that plays a sample back as a stream of small grains. Grain Attack, Hold and Spacing controls reshape the texture; because playback position and pitch are decoupled, you can time-stretch a sample down toward 1 percent speed while holding pitch, or pitch-shift without changing duration.",
+    "tags": ["granular", "sampler", "texture", "time-stretch", "experimental"],
+    "capabilities": ["grain-attack-hold-spacing", "time-stretching", "pitch-shifting", "sample-playback"],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Granulizer.htm",
+    "sources": ["src-fruity-granulizer-manual", "src-fruity-granulizer-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

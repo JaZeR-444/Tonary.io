@@ -1,0 +1,24 @@
+[
+  {
+    "id": "src-fruity-granulizer-manual",
+    "title": "Fruity Granulizer - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Granulizer.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Primary reference for Fruity Granulizer's grain controls and stretch/pitch behaviour."
+  },
+  {
+    "id": "src-fruity-granulizer-dive",
+    "title": "Fruity Granulizer - DEEPER DIVES research compilation",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": null,
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Internal research cross-checked to the official manual; prose re-authored, not reproduced."
+  }
+]

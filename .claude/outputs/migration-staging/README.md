@@ -32,6 +32,12 @@
 | [`soundgoodizer/`](soundgoodizer/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`fruity-compressor/`](fruity-compressor/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`fruity-filter/`](fruity-filter/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-dx10/`](fruity-dx10/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-granulizer/`](fruity-granulizer/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-slicer/`](fruity-slicer/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-vocoder/`](fruity-vocoder/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-blood-overdrive/`](fruity-blood-overdrive/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-waveshaper/`](fruity-waveshaper/) | 1 plugin · 1 note · 2 sources | deferred | ✅ pass | 🔴 pending |
 
 **Deferred (won't guess a commercial fact):** Edison, DirectWave — DEEPER DIVES capability lists are doc
 templates (not real facts); Transient Processor, Effector — tier (Free vs Premium) unverified. Skipped rather

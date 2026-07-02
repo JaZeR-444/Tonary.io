@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fruity-vocoder",
+    "name": "Fruity Vocoder",
+    "vendor": "Image-Line",
+    "category": "Vocoder / Filter Bank",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A zero-latency vocoder and filter bank. It imposes a modulator's spectrum (usually a voice) onto a carrier in real time, making it suitable for live performance and tracking. Formant shifting changes vocal character, and a hold function freezes the modulator's spectral state for sustained pads.",
+    "tags": ["vocoder", "voice", "filter-bank", "robot", "live"],
+    "capabilities": ["zero-latency", "formant-shifting", "spectral-hold", "carrier-modulator"],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Vocoder.htm",
+    "sources": ["src-fruity-vocoder-manual", "src-fruity-vocoder-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]
