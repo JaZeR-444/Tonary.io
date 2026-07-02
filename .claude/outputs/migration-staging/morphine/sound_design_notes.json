@@ -1,0 +1,24 @@
+[
+  {
+    "id": "morphine-additive-harmonics",
+    "topic": "128 harmonics with breakpoints",
+    "subjectRefs": ["morphine"],
+    "body": "Each Morphine voice is drawn from up to 128 harmonics. Harmonic breakpoints let you store multiple spectral snapshots and morph between them over time, so a single note can evolve from thin to full or shift timbre as it sustains.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-morphine-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "morphine-resynthesis-zones",
+    "topic": "Resynthesis and keyboard zones",
+    "subjectRefs": ["morphine"],
+    "body": "Imported WAV/AIFF audio is converted into editable harmonics for resynthesis, and up to 128 keyboard zones can hold different sounds across the range - useful for multisampled instruments or split layers. A noise generator adds untuned attack transients.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-morphine-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

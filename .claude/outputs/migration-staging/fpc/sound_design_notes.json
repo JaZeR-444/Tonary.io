@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fpc-multi-layer-velocity",
+    "topic": "Layered pads and velocity",
+    "subjectRefs": ["fpc"],
+    "body": "Each FPC pad can hold several sample layers mapped to velocity ranges, so a light hit triggers a ghost-note sample and a hard hit triggers a full one automatically. Per-layer ADSR shapes each sound independently.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-fpc-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fpc-routing-patterns",
+    "topic": "Mixer routing and patterns",
+    "subjectRefs": ["fpc"],
+    "body": "Pads can be sent to independent mixer tracks for per-drum processing, and the pattern manager loads MIDI loops straight into the FPC workflow, making it quick to audition and swap grooves.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-fpc-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

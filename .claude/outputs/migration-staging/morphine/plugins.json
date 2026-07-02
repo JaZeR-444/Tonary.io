@@ -1,0 +1,18 @@
+[
+  {
+    "id": "morphine",
+    "name": "Morphine",
+    "vendor": "Image-Line",
+    "category": "Additive Synth / Resynthesizer",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An additive synthesizer that builds each voice from up to 128 harmonics, with harmonic breakpoints for evolving spectra, sample resynthesis that imports WAV/AIFF into editable harmonics, 128 keyboard zones for layering different sounds, specialized PWM spectral filters for unison and width, and a noise generator for realistic attacks and grit.",
+    "tags": ["synth", "additive", "resynthesis", "harmonic", "layering"],
+    "capabilities": ["additive-128-harmonics", "harmonic-breakpoints", "sample-resynthesis", "keyboard-zones", "noise-generator"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Morphine.htm",
+    "sources": ["src-morphine-manual", "src-morphine-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

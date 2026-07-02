@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sawer",
+    "name": "Sawer",
+    "vendor": "Image-Line",
+    "category": "Subtractive / Vintage Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A vintage-styled subtractive synth modelled on the Polivoks character. It pairs a 12/24 dB LP/BP/HP Polivoks-style filter with saw, sub and noise oscillators, hard sync for tearing leads, 8-voice unison for width, a modulation matrix for LFO and envelope routing, and vintage chorus, phaser, delay and reverb effects.",
+    "tags": ["synth", "subtractive", "analog", "vintage", "polivoks"],
+    "capabilities": ["polivoks-filter", "hard-sync", "8-voice-unison", "modulation-matrix", "vintage-fx"],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sawer.htm",
+    "sources": ["src-sawer-manual", "src-sawer-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "toxic-biohazard",
+    "name": "Toxic Biohazard",
+    "vendor": "Image-Line",
+    "category": "FM / Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An FM and subtractive hybrid synthesizer. An FM matrix routes operators into one another, feeding an analog-modelled LP/BP/HP filter with its own envelope, 8-voice stereo unison, and an integrated FX rack (multi-tap delay, chorus, phaser, reverb, EQ and distortion). Custom waveforms can be loaded from WAV/AIFF files.",
+    "tags": ["synth", "fm", "subtractive", "analog", "unison"],
+    "capabilities": ["fm-matrix", "analog-modeled-filter", "8-voice-unison", "integrated-fx-rack", "custom-waveforms"],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Toxic%20Biohazard.htm",
+    "sources": ["src-toxic-biohazard-manual", "src-toxic-biohazard-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

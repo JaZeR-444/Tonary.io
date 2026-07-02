@@ -20,6 +20,12 @@
 | [`newtone/`](newtone/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`harmless/`](harmless/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`fruity-limiter/`](fruity-limiter/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`toxic-biohazard/`](toxic-biohazard/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`sawer/`](sawer/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`morphine/`](morphine/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fpc/`](fpc/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-convolver/`](fruity-convolver/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-delay-3/`](fruity-delay-3/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 
 **Deferred (won't guess a commercial fact):** Edison, DirectWave — DEEPER DIVES capability lists are doc
 templates (not real facts); Transient Processor — tier (Free vs Premium) unverified. Skipped rather than
