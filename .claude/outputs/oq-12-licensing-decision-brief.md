@@ -51,11 +51,11 @@ So the *residual* decision is mostly a **content policy + a human sign-off**, no
 
 ## 4. Gates to unblock publishing (checklist)
 Publishing Vault content beyond the pilot is unblocked when **all** of these are true:
-1. [ ] **Content policy adopted** (write it down): rephrase-not-reproduce; cite every fact; link-out when unsure; **no preset files / no exact factory-value dumps**; drop restrictively-licensed sources.
-2. [ ] **Every record cites a Source Reference** (already enforced by schema/validator).
-3. [ ] **In-app non-affiliation disclaimer + trademark attribution** shipped (Settings ▸ About is the natural home — small, buildable now).
-4. [ ] **Reviewed sample batch passes a legal-content check:** no verbatim manual text, all values sourced, no fabricated values, no shipped preset files.
-5. [ ] **Human/legal sign-off on the policy** — the one item Claude cannot self-certify. This is the actual 🔴 blocker.
+1. [x] **Content policy adopted** (written): [`../rules/content-policy.md`](../rules/content-policy.md) — rephrase-not-reproduce; cite every fact; link-out when unsure; no preset files / no exact factory-value dumps; drop restrictively-licensed sources.
+2. [x] **Every record cites a Source Reference** — enforced by schema/validator.
+3. [x] **In-app non-affiliation disclaimer + trademark attribution** — shipped in Settings ▸ About.
+4. [ ] **Reviewed sample batch passes a legal-content check:** no verbatim manual text, all values sourced, no fabricated values, no shipped preset files. *(Runs per batch at `/migrate-content` time — see the policy's pre-publish checklist.)*
+5. [ ] **Human/legal sign-off on the policy** — the one item Claude cannot self-certify. **This is the actual 🔴 blocker.**
 
 Items 1–4 are things I can implement/enforce; **item 5 is your call** (self-accept the conservative policy, or route to counsel — recommended before first public release).
 

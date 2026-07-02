@@ -80,5 +80,8 @@ void main() {
     // Live accessibility status (test env: animations enabled, scale 100%).
     expect(find.text('Off'), findsOneWidget); // reduced motion
     expect(find.text('100%'), findsOneWidget); // text size
+    // Legal gate #3: non-affiliation disclaimer is present.
+    expect(find.text('Not affiliated'), findsOneWidget);
+    expect(find.textContaining('trademarks'), findsOneWidget);
   });
 }

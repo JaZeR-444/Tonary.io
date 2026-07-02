@@ -33,6 +33,10 @@ Classify every source item into exactly one bucket in [../outputs/migration-map.
   The `02-Data` JSON is the richest migration target; the web "Plugin Page Setup" is discard.
 - Scale context: ~190 plugin folders exist; ~98 were standardized. Do not assume the other folders are complete or correct.
 
+## Publishing/legal policy
+- Before any batch ships, it must pass the publishing rules in [content-policy.md](content-policy.md)
+  (rephrase-not-reproduce, no preset files, cite/link, non-affiliation disclaimer). Satisfies the OQ-12 legal gate.
+
 ## Source attribution
 - Every migrated fact carries a **Source Reference** (see [data-modeling-rules.md](data-modeling-rules.md)).
 - **Attribute official-manual sources explicitly.** Prefer manufacturer/official docs over legacy prose when they conflict.

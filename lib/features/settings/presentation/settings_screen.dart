@@ -94,6 +94,25 @@ class SettingsScreen extends ConsumerWidget {
                       'Studio producers. Offline-first · single-device · no '
                       'account.',
                 ),
+                _SettingRow(
+                  icon: Icons.info_outline,
+                  title: 'Not affiliated',
+                  value: '',
+                  subtitle:
+                      'Tonary is independent — not affiliated with, endorsed '
+                      'by, or sponsored by Image-Line. “FL Studio” and '
+                      '“Image-Line” are trademarks of their respective owners, '
+                      'used here only to describe compatibility.',
+                ),
+                _SettingRow(
+                  icon: Icons.verified_outlined,
+                  title: 'Sources',
+                  value: '',
+                  subtitle:
+                      'Plugin facts are re-stated in Tonary’s own words and '
+                      'cite their sources; Tonary does not reproduce manuals '
+                      'or ship factory preset files.',
+                ),
               ],
             ),
           ],
