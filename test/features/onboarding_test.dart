@@ -37,12 +37,12 @@ class _FakeVaultRepository implements VaultRepository {
 }
 
 Widget _app(_FakeAppMeta meta) => ProviderScope(
-      overrides: [
-        appMetaRepositoryProvider.overrideWithValue(meta),
-        vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
-      ],
-      child: const TonaryApp(initialLocation: '/onboarding'),
-    );
+  overrides: [
+    appMetaRepositoryProvider.overrideWithValue(meta),
+    vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
+  ],
+  child: const TonaryApp(initialLocation: '/onboarding'),
+);
 
 const _homeTagline = 'Your dark-first sound-design intelligence layer.';
 
@@ -53,8 +53,9 @@ void main() {
     expect(meta.store[onboardingCompleteKey], 'true');
   });
 
-  testWidgets('paging to the end and Get started completes → Home',
-      (tester) async {
+  testWidgets('paging to the end and Get started completes → Home', (
+    tester,
+  ) async {
     final meta = _FakeAppMeta();
     await tester.pumpWidget(_app(meta));
     await tester.pumpAndSettle();

@@ -15,30 +15,37 @@ Plugin _plugin(
   PluginTier tier = PluginTier.free,
   List<String> tags = const [],
   List<String> capabilities = const [],
-}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: vendor,
-      category: category,
-      type: type,
-      tier: tier,
-      description: 'A $name plugin.',
-      tags: tags,
-      capabilities: capabilities,
-      sources: const ['src-x'],
-    );
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: vendor,
+  category: category,
+  type: type,
+  tier: tier,
+  description: 'A $name plugin.',
+  tags: tags,
+  capabilities: capabilities,
+  sources: const ['src-x'],
+);
 
 void main() {
   group('PluginComparison.build', () {
     test('produces the four factual rows with values copied verbatim', () {
       final a = _plugin('flex', 'FLEX');
-      final b = _plugin('sytrus', 'Sytrus',
-          tier: PluginTier.premium, category: 'FM Synth');
+      final b = _plugin(
+        'sytrus',
+        'Sytrus',
+        tier: PluginTier.premium,
+        category: 'FM Synth',
+      );
       final cmp = PluginComparison.build(a, b);
 
-      expect(cmp.rows.map((r) => r.label),
-          ['Type', 'Tier', 'Category', 'Vendor']);
+      expect(cmp.rows.map((r) => r.label), [
+        'Type',
+        'Tier',
+        'Category',
+        'Vendor',
+      ]);
       final tier = cmp.rows.firstWhere((r) => r.label == 'Tier');
       expect(tier.valueA, 'Free');
       expect(tier.valueB, 'Premium');
@@ -52,15 +59,25 @@ void main() {
       // Same type & category & vendor → not differing; tier differs.
       expect(cmp.rows.firstWhere((r) => r.label == 'Type').differs, isFalse);
       expect(cmp.rows.firstWhere((r) => r.label == 'Tier').differs, isTrue);
-      expect(cmp.rows.firstWhere((r) => r.label == 'Category').differs, isFalse);
+      expect(
+        cmp.rows.firstWhere((r) => r.label == 'Category').differs,
+        isFalse,
+      );
     });
 
     test('shared capabilities/tags are the case-insensitive intersection', () {
-      final a = _plugin('a', 'A',
-          capabilities: const ['Presets', 'Modulation'],
-          tags: const ['bass', 'lead']);
-      final b = _plugin('b', 'B',
-          capabilities: const ['presets', 'fx'], tags: const ['LEAD']);
+      final a = _plugin(
+        'a',
+        'A',
+        capabilities: const ['Presets', 'Modulation'],
+        tags: const ['bass', 'lead'],
+      );
+      final b = _plugin(
+        'b',
+        'B',
+        capabilities: const ['presets', 'fx'],
+        tags: const ['LEAD'],
+      );
       final cmp = PluginComparison.build(a, b);
 
       // "Presets" matches "presets" case-insensitively; keeps A's casing.

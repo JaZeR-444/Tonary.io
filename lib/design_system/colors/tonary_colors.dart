@@ -179,10 +179,16 @@ class TonaryColors extends ThemeExtension<TonaryColors> {
       textSecondary: Color.lerp(textSecondary, other.textSecondary, t)!,
       textMuted: Color.lerp(textMuted, other.textMuted, t)!,
       accentPrimary: Color.lerp(accentPrimary, other.accentPrimary, t)!,
-      accentPrimaryHover:
-          Color.lerp(accentPrimaryHover, other.accentPrimaryHover, t)!,
-      accentPrimaryActive:
-          Color.lerp(accentPrimaryActive, other.accentPrimaryActive, t)!,
+      accentPrimaryHover: Color.lerp(
+        accentPrimaryHover,
+        other.accentPrimaryHover,
+        t,
+      )!,
+      accentPrimaryActive: Color.lerp(
+        accentPrimaryActive,
+        other.accentPrimaryActive,
+        t,
+      )!,
       accentSuccess: Color.lerp(accentSuccess, other.accentSuccess, t)!,
       accentInfo: Color.lerp(accentInfo, other.accentInfo, t)!,
       accentCreative: Color.lerp(accentCreative, other.accentCreative, t)!,

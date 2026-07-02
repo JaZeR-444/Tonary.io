@@ -37,8 +37,11 @@ abstract final class PluginSearch {
     return [for (final entry in scored) entry.$1];
   }
 
-  static List<String> _tokenize(String query) =>
-      query.toLowerCase().split(RegExp(r'\s+')).where((t) => t.isNotEmpty).toList();
+  static List<String> _tokenize(String query) => query
+      .toLowerCase()
+      .split(RegExp(r'\s+'))
+      .where((t) => t.isNotEmpty)
+      .toList();
 
   /// Total score for [plugin] if it matches ALL [terms], else null (excluded).
   static int? _score(Plugin plugin, List<String> terms) {

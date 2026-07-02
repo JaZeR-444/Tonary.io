@@ -31,39 +31,50 @@ final class AppRouter {
         builder: (context, state, navigationShell) =>
             _RootShell(navigationShell: navigationShell),
         branches: [
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/home', builder: (_, _) => const HomeScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(
-              path: '/vault',
-              builder: (_, _) => const VaultScreen(),
-              routes: [
-                GoRoute(
-                  path: ':id',
-                  builder: (_, state) => PluginDetailScreen(
-                    pluginId: state.pathParameters['id']!,
+          StatefulShellBranch(
+            routes: [
+              GoRoute(path: '/home', builder: (_, _) => const HomeScreen()),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/vault',
+                builder: (_, _) => const VaultScreen(),
+                routes: [
+                  GoRoute(
+                    path: ':id',
+                    builder: (_, state) => PluginDetailScreen(
+                      pluginId: state.pathParameters['id']!,
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/scout', builder: (_, _) => const ScoutScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(path: '/briefs', builder: (_, _) => const BriefsScreen()),
-          ]),
-          StatefulShellBranch(routes: [
-            GoRoute(
-                path: '/settings', builder: (_, _) => const SettingsScreen()),
-          ]),
+                ],
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(path: '/scout', builder: (_, _) => const ScoutScreen()),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(path: '/briefs', builder: (_, _) => const BriefsScreen()),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/settings',
+                builder: (_, _) => const SettingsScreen(),
+              ),
+            ],
+          ),
         ],
       ),
       // First-run onboarding — full-screen, above the shell. Bootstrap opens
       // here when the onboarding-complete flag is unset.
-      GoRoute(
-          path: '/onboarding', builder: (_, _) => const OnboardingScreen()),
+      GoRoute(path: '/onboarding', builder: (_, _) => const OnboardingScreen()),
       // Search is a full-screen route above the shell (not a 6th tab), reached
       // from the Vault app bar — see `.claude/rules/mobile-first-rules.md`.
       GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),

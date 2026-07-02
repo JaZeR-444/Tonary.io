@@ -16,40 +16,42 @@ void main() {
   setUp(() => db = TonaryDatabase.forTesting(NativeDatabase.memory()));
   tearDown(() => db.close());
 
-  test('hydrates the bundled seed and reads it back via the repository',
-      () async {
-    final data = SeedLoader.parse(
-      sourceReferencesJson: read('source_references.json'),
-      pluginsJson: read('plugins.json'),
-      presetsJson: read('presets.json'),
-      workflowRecipesJson: read('workflow_recipes.json'),
-      soundDesignNotesJson: read('sound_design_notes.json'),
-    );
+  test(
+    'hydrates the bundled seed and reads it back via the repository',
+    () async {
+      final data = SeedLoader.parse(
+        sourceReferencesJson: read('source_references.json'),
+        pluginsJson: read('plugins.json'),
+        presetsJson: read('presets.json'),
+        workflowRecipesJson: read('workflow_recipes.json'),
+        soundDesignNotesJson: read('sound_design_notes.json'),
+      );
 
-    await SeedLoader(db).hydrate(data, seedVersion: 1);
+      await SeedLoader(db).hydrate(data, seedVersion: 1);
 
-    final repo = VaultRepositoryImpl(db);
+      final repo = VaultRepositoryImpl(db);
 
-    final plugins = await repo.listPlugins();
-    expect(plugins.map((p) => p.id), contains('flex'));
+      final plugins = await repo.listPlugins();
+      expect(plugins.map((p) => p.id), contains('flex'));
 
-    final flex = await repo.pluginById('flex');
-    expect(flex.name, 'FLEX');
-    expect(flex.tags, isNotEmpty);
-    expect(flex.sources, contains('src-flex-manual'));
+      final flex = await repo.pluginById('flex');
+      expect(flex.name, 'FLEX');
+      expect(flex.tags, isNotEmpty);
+      expect(flex.sources, contains('src-flex-manual'));
 
-    final presets = await repo.presetsForPlugin('flex');
-    expect(presets, isNotEmpty);
+      final presets = await repo.presetsForPlugin('flex');
+      expect(presets, isNotEmpty);
 
-    final notes = await repo.notesForSubject('flex');
-    expect(notes, isNotEmpty);
+      final notes = await repo.notesForSubject('flex');
+      expect(notes, isNotEmpty);
 
-    // Referential integrity: every plugin source resolves.
-    for (final id in flex.sources) {
-      final src = await repo.sourceById(id);
-      expect(src.id, id);
-    }
-  });
+      // Referential integrity: every plugin source resolves.
+      for (final id in flex.sources) {
+        final src = await repo.sourceById(id);
+        expect(src.id, id);
+      }
+    },
+  );
 
   test('re-hydration is idempotent (no duplicate rows)', () async {
     final data = SeedLoader.parse(

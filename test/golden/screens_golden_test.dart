@@ -22,18 +22,24 @@ void main() {
   testWidgets('onboarding (hero) golden', (tester) async {
     await _pumpAt(tester, '/onboarding');
     await expectLater(
-        find.byType(TonaryApp), matchesGoldenFile('goldens/onboarding.png'));
+      find.byType(TonaryApp),
+      matchesGoldenFile('goldens/onboarding.png'),
+    );
   });
 
   testWidgets('home hub golden', (tester) async {
     await _pumpAt(tester, '/home');
     await expectLater(
-        find.byType(TonaryApp), matchesGoldenFile('goldens/home.png'));
+      find.byType(TonaryApp),
+      matchesGoldenFile('goldens/home.png'),
+    );
   });
 
   testWidgets('vault list golden', (tester) async {
     await _pumpAt(tester, '/vault');
     await expectLater(
-        find.byType(TonaryApp), matchesGoldenFile('goldens/vault.png'));
+      find.byType(TonaryApp),
+      matchesGoldenFile('goldens/vault.png'),
+    );
   });
 }

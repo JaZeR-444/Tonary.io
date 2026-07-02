@@ -79,22 +79,22 @@ class PluginDto {
   final String? updatedAt;
 
   factory PluginDto.fromJson(Map<String, dynamic> j) => PluginDto(
-        id: j['id'] as String,
-        name: j['name'] as String,
-        vendor: j['vendor'] as String,
-        vendorName: j['vendorName'] as String?,
-        category: j['category'] as String,
-        type: j['type'] as String,
-        tier: j['tier'] as String,
-        description: j['description'] as String,
-        tags: _stringList(j['tags']),
-        capabilities: _stringList(j['capabilities']),
-        color: j['color'] as String?,
-        manualUrl: j['manualUrl'] as String?,
-        sources: _stringList(j['sources']),
-        createdAt: j['createdAt'] as String?,
-        updatedAt: j['updatedAt'] as String?,
-      );
+    id: j['id'] as String,
+    name: j['name'] as String,
+    vendor: j['vendor'] as String,
+    vendorName: j['vendorName'] as String?,
+    category: j['category'] as String,
+    type: j['type'] as String,
+    tier: j['tier'] as String,
+    description: j['description'] as String,
+    tags: _stringList(j['tags']),
+    capabilities: _stringList(j['capabilities']),
+    color: j['color'] as String?,
+    manualUrl: j['manualUrl'] as String?,
+    sources: _stringList(j['sources']),
+    createdAt: j['createdAt'] as String?,
+    updatedAt: j['updatedAt'] as String?,
+  );
 }
 
 class PresetDto {
@@ -123,17 +123,17 @@ class PresetDto {
   final String? createdAt;
 
   factory PresetDto.fromJson(Map<String, dynamic> j) => PresetDto(
-        id: j['id'] as String,
-        pluginId: j['pluginId'] as String,
-        name: j['name'] as String,
-        category: j['category'] as String,
-        params: (j['params'] as Map?)?.cast<String, dynamic>(),
-        useCases: _stringList(j['useCases']),
-        genreTags: _stringList(j['genreTags']),
-        notes: j['notes'] as String?,
-        sources: _stringList(j['sources']),
-        createdAt: j['createdAt'] as String?,
-      );
+    id: j['id'] as String,
+    pluginId: j['pluginId'] as String,
+    name: j['name'] as String,
+    category: j['category'] as String,
+    params: (j['params'] as Map?)?.cast<String, dynamic>(),
+    useCases: _stringList(j['useCases']),
+    genreTags: _stringList(j['genreTags']),
+    notes: j['notes'] as String?,
+    sources: _stringList(j['sources']),
+    createdAt: j['createdAt'] as String?,
+  );
 }
 
 class WorkflowStepDto {
@@ -150,18 +150,18 @@ class WorkflowStepDto {
   final String? tip;
 
   factory WorkflowStepDto.fromJson(Map<String, dynamic> j) => WorkflowStepDto(
-        order: (j['order'] as num).toInt(),
-        action: j['action'] as String,
-        pluginId: j['pluginId'] as String?,
-        tip: j['tip'] as String?,
-      );
+    order: (j['order'] as num).toInt(),
+    action: j['action'] as String,
+    pluginId: j['pluginId'] as String?,
+    tip: j['tip'] as String?,
+  );
 
   Map<String, dynamic> toJson() => {
-        'order': order,
-        'action': action,
-        if (pluginId != null) 'pluginId': pluginId,
-        if (tip != null) 'tip': tip,
-      };
+    'order': order,
+    'action': action,
+    if (pluginId != null) 'pluginId': pluginId,
+    if (tip != null) 'tip': tip,
+  };
 }
 
 class WorkflowRecipeDto {
@@ -197,9 +197,13 @@ class WorkflowRecipeDto {
         title: j['title'] as String,
         goal: j['goal'] as String,
         pluginChain: _stringList(j['pluginChain']),
-        steps: (j['steps'] as List?)
-                ?.map((e) =>
-                    WorkflowStepDto.fromJson((e as Map).cast<String, dynamic>()))
+        steps:
+            (j['steps'] as List?)
+                ?.map(
+                  (e) => WorkflowStepDto.fromJson(
+                    (e as Map).cast<String, dynamic>(),
+                  ),
+                )
                 .toList() ??
             const [],
         difficulty: j['difficulty'] as String,

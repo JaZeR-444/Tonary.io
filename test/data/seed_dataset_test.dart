@@ -8,8 +8,7 @@ import 'package:tonary/data/sources/seed/seed_validator.dart';
 /// files and asserts they pass validation. If someone edits the seed into an
 /// invalid state, this fails before it can reach a device.
 void main() {
-  String read(String name) =>
-      File('assets/seed/$name').readAsStringSync();
+  String read(String name) => File('assets/seed/$name').readAsStringSync();
 
   test('bundled seed parses and passes validation', () {
     final data = SeedLoader.parse(

@@ -24,8 +24,10 @@ class PluginDetail {
 }
 
 /// Loads a plugin plus its presets, notes, and resolved Source References.
-final pluginDetailProvider =
-    FutureProvider.family<PluginDetail, String>((ref, id) async {
+final pluginDetailProvider = FutureProvider.family<PluginDetail, String>((
+  ref,
+  id,
+) async {
   final repo = ref.watch(vaultRepositoryProvider);
   final plugin = await repo.pluginById(id);
   final presets = await repo.presetsForPlugin(id);

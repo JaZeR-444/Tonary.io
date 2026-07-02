@@ -46,7 +46,9 @@ class SeedValidator {
       }
       for (final s in sources) {
         if (!sourceIds.contains(s)) {
-          errors.add('$where: source "$s" does not resolve to a Source Reference.');
+          errors.add(
+            '$where: source "$s" does not resolve to a Source Reference.',
+          );
         }
       }
     }
@@ -95,10 +97,16 @@ class SeedValidator {
       final where = 'Preset "${p.id}"';
       checkId(p.id, where);
       if (!pluginIds.contains(p.pluginId)) {
-        errors.add('$where: pluginId "${p.pluginId}" does not resolve to a Plugin.');
+        errors.add(
+          '$where: pluginId "${p.pluginId}" does not resolve to a Plugin.',
+        );
       }
-      if (p.useCases.isEmpty) errors.add('$where: useCases[] must be non-empty.');
-      if (p.genreTags.isEmpty) errors.add('$where: genreTags[] must be non-empty.');
+      if (p.useCases.isEmpty) {
+        errors.add('$where: useCases[] must be non-empty.');
+      }
+      if (p.genreTags.isEmpty) {
+        errors.add('$where: genreTags[] must be non-empty.');
+      }
       checkSources(p.sources, where);
     }
 
@@ -115,7 +123,9 @@ class SeedValidator {
       }
       for (final pid in r.pluginChain) {
         if (!pluginIds.contains(pid)) {
-          errors.add('$where: pluginChain id "$pid" does not resolve to a Plugin.');
+          errors.add(
+            '$where: pluginChain id "$pid" does not resolve to a Plugin.',
+          );
         }
       }
       if (r.steps.isEmpty) {
@@ -148,7 +158,9 @@ class SeedValidator {
       }
       for (final ref in n.subjectRefs) {
         if (!pluginIds.contains(ref) && !presetIds.contains(ref)) {
-          errors.add('$where: subjectRef "$ref" does not resolve to a Plugin or Preset.');
+          errors.add(
+            '$where: subjectRef "$ref" does not resolve to a Plugin or Preset.',
+          );
         }
       }
       checkSources(n.sources, where);

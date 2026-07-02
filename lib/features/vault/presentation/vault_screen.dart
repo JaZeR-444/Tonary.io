@@ -38,10 +38,8 @@ class VaultScreen extends ConsumerWidget {
           data: (list) => ListView.separated(
             padding: const EdgeInsets.symmetric(vertical: TonarySpacing.sm),
             itemCount: list.length,
-            separatorBuilder: (_, _) => Divider(
-              height: 1,
-              color: context.tonaryColors.borderSubtle,
-            ),
+            separatorBuilder: (_, _) =>
+                Divider(height: 1, color: context.tonaryColors.borderSubtle),
             itemBuilder: (context, i) => PluginListTile(
               plugin: list[i],
               onTap: () => context.push('/vault/${list[i].id}'),

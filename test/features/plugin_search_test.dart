@@ -15,28 +15,40 @@ Plugin _plugin(
   PluginTier tier = PluginTier.free,
   List<String> tags = const [],
   List<String> capabilities = const [],
-}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: vendor,
-      category: category,
-      type: type,
-      tier: tier,
-      description: 'A $name plugin.',
-      tags: tags,
-      capabilities: capabilities,
-      sources: const ['src-x'],
-    );
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: vendor,
+  category: category,
+  type: type,
+  tier: tier,
+  description: 'A $name plugin.',
+  tags: tags,
+  capabilities: capabilities,
+  sources: const ['src-x'],
+);
 
 void main() {
-  final flex = _plugin('flex', 'FLEX',
-      category: 'Synth', tags: const ['rompler', 'preset']);
-  final eq2 = _plugin('fruity-parametric-eq-2', 'Fruity Parametric EQ 2',
-      category: 'EQ', type: PluginType.effect, tier: PluginTier.premium,
-      tags: const ['mixing', 'clarity']);
-  final sytrus = _plugin('sytrus', 'Sytrus',
-      category: 'Synth', tags: const ['fm', 'bass']);
+  final flex = _plugin(
+    'flex',
+    'FLEX',
+    category: 'Synth',
+    tags: const ['rompler', 'preset'],
+  );
+  final eq2 = _plugin(
+    'fruity-parametric-eq-2',
+    'Fruity Parametric EQ 2',
+    category: 'EQ',
+    type: PluginType.effect,
+    tier: PluginTier.premium,
+    tags: const ['mixing', 'clarity'],
+  );
+  final sytrus = _plugin(
+    'sytrus',
+    'Sytrus',
+    category: 'Synth',
+    tags: const ['fm', 'bass'],
+  );
   final all = [flex, eq2, sytrus];
 
   group('PluginSearch.run', () {
@@ -61,10 +73,12 @@ void main() {
     });
 
     test('matches by tier and by type keywords', () {
-      expect(PluginSearch.run(all, 'premium').map((p) => p.id),
-          ['fruity-parametric-eq-2']);
-      expect(PluginSearch.run(all, 'effect').map((p) => p.id),
-          ['fruity-parametric-eq-2']);
+      expect(PluginSearch.run(all, 'premium').map((p) => p.id), [
+        'fruity-parametric-eq-2',
+      ]);
+      expect(PluginSearch.run(all, 'effect').map((p) => p.id), [
+        'fruity-parametric-eq-2',
+      ]);
     });
 
     test('AND semantics: every term must match', () {

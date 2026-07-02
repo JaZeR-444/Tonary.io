@@ -12,17 +12,17 @@ import 'package:tonary/shared/models/enums.dart';
 import 'package:tonary/shared/models/models.dart';
 
 Plugin _plugin(String id, String name) => Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: 'Synth',
-      type: PluginType.generator,
-      tier: PluginTier.free,
-      description: 'A $name plugin.',
-      tags: const ['bass'],
-      capabilities: const ['presets'],
-      sources: const ['src-x'],
-    );
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: 'Synth',
+  type: PluginType.generator,
+  tier: PluginTier.free,
+  description: 'A $name plugin.',
+  tags: const ['bass'],
+  capabilities: const ['presets'],
+  sources: const ['src-x'],
+);
 
 class _FakeVaultRepository implements VaultRepository {
   @override
@@ -39,12 +39,12 @@ class _FakeVaultRepository implements VaultRepository {
       const [];
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: '$id Manual',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: '$id Manual',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
 class _FakeSaved implements SavedItemsRepository {
@@ -68,12 +68,12 @@ class _FakeSaved implements SavedItemsRepository {
 }
 
 Widget _app(_FakeSaved saved) => ProviderScope(
-      overrides: [
-        vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
-        savedItemsRepositoryProvider.overrideWithValue(saved),
-      ],
-      child: const TonaryApp(),
-    );
+  overrides: [
+    vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
+    savedItemsRepositoryProvider.overrideWithValue(saved),
+  ],
+  child: const TonaryApp(),
+);
 
 void main() {
   testWidgets('bookmark on detail toggles saved state', (tester) async {
@@ -98,10 +98,13 @@ void main() {
 
   testWidgets('Saved screen lists saved plugins', (tester) async {
     final saved = _FakeSaved()
-      ..items.add(const SavedItem(
+      ..items.add(
+        const SavedItem(
           refType: SavedItemRefType.plugin,
           refId: 'flex',
-          savedAt: '2026-07-02'));
+          savedAt: '2026-07-02',
+        ),
+      );
     // Tall surface so all Home cards render (the list is lazy).
     await tester.binding.setSurfaceSize(const Size(400, 1400));
     addTearDown(() => tester.binding.setSurfaceSize(null));
@@ -114,8 +117,9 @@ void main() {
     expect(find.text('FLEX'), findsOneWidget);
   });
 
-  testWidgets('Saved screen shows the empty state when nothing is saved',
-      (tester) async {
+  testWidgets('Saved screen shows the empty state when nothing is saved', (
+    tester,
+  ) async {
     await tester.binding.setSurfaceSize(const Size(400, 1400));
     addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(_app(_FakeSaved()));

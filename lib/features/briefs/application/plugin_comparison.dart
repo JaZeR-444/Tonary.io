@@ -41,8 +41,8 @@ class PluginComparison {
   static PluginComparison build(Plugin a, Plugin b) {
     String vendorLabel(Plugin p) =>
         (p.vendorName != null && p.vendorName!.isNotEmpty)
-            ? p.vendorName!
-            : p.vendor;
+        ? p.vendorName!
+        : p.vendor;
 
     ComparisonRow row(String label, String va, String vb) =>
         ComparisonRow(label: label, valueA: va, valueB: vb, differs: va != vb);

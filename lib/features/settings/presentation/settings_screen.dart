@@ -116,11 +116,19 @@ class _Section extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.fromLTRB(TonarySpacing.lg, TonarySpacing.lg,
-              TonarySpacing.lg, TonarySpacing.sm),
-          child: Text(title.toUpperCase(),
-              style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                  color: c.textSecondary, letterSpacing: 0.8)),
+          padding: const EdgeInsets.fromLTRB(
+            TonarySpacing.lg,
+            TonarySpacing.lg,
+            TonarySpacing.lg,
+            TonarySpacing.sm,
+          ),
+          child: Text(
+            title.toUpperCase(),
+            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              color: c.textSecondary,
+              letterSpacing: 0.8,
+            ),
+          ),
         ),
         ...children,
       ],
@@ -147,7 +155,9 @@ class _SettingRow extends StatelessWidget {
     final c = context.tonaryColors;
     return Padding(
       padding: const EdgeInsets.symmetric(
-          horizontal: TonarySpacing.lg, vertical: TonarySpacing.sm),
+        horizontal: TonarySpacing.lg,
+        vertical: TonarySpacing.sm,
+      ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -160,24 +170,28 @@ class _SettingRow extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: Text(title,
-                          style: Theme.of(context).textTheme.bodyLarge),
+                      child: Text(
+                        title,
+                        style: Theme.of(context).textTheme.bodyLarge,
+                      ),
                     ),
                     if (value.isNotEmpty)
-                      Text(value,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium
-                              ?.copyWith(color: c.textSecondary)),
+                      Text(
+                        value,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: c.textSecondary,
+                        ),
+                      ),
                   ],
                 ),
                 if (subtitle != null) ...[
                   const SizedBox(height: TonarySpacing.xs),
-                  Text(subtitle!,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.copyWith(color: c.textMuted)),
+                  Text(
+                    subtitle!,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                  ),
                 ],
               ],
             ),

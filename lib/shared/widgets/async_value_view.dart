@@ -58,11 +58,12 @@ class _Loading extends StatelessWidget {
           // Cyan = system/loading (color law).
           CircularProgressIndicator(color: c.accentInfo),
           const SizedBox(height: TonarySpacing.lg),
-          Text(label,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall
-                  ?.copyWith(color: c.textSecondary)),
+          Text(
+            label,
+            style: Theme.of(
+              context,
+            ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+          ),
         ],
       ),
     );
@@ -87,12 +88,13 @@ class _EmptyState extends StatelessWidget {
             const SizedBox(height: TonarySpacing.md),
             Text(title, style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: TonarySpacing.sm),
-            Text(message,
-                textAlign: TextAlign.center,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyMedium
-                    ?.copyWith(color: c.textSecondary)),
+            Text(
+              message,
+              textAlign: TextAlign.center,
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
+            ),
           ],
         ),
       ),
@@ -117,15 +119,18 @@ class _ErrorState extends StatelessWidget {
             // Red is reserved for exceptional/blocking states (color law).
             Icon(Icons.error_outline, size: 40, color: c.accentDanger),
             const SizedBox(height: TonarySpacing.md),
-            Text('Something went wrong',
-                style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              'Something went wrong',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: TonarySpacing.sm),
-            Text(message,
-                textAlign: TextAlign.center,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall
-                    ?.copyWith(color: c.textSecondary)),
+            Text(
+              message,
+              textAlign: TextAlign.center,
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+            ),
             if (onRetry != null) ...[
               const SizedBox(height: TonarySpacing.lg),
               OutlinedButton(onPressed: onRetry, child: const Text('Retry')),

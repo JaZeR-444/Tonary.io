@@ -15,7 +15,7 @@ typedef AssetReader = Future<String> Function(String assetPath);
 /// (`.claude/architecture/content-knowledge-base.md`).
 class SeedLoader {
   SeedLoader(this._db, {SeedValidator? validator})
-      : _validator = validator ?? SeedValidator();
+    : _validator = validator ?? SeedValidator();
 
   final TonaryDatabase _db;
   final SeedValidator _validator;
@@ -36,14 +36,17 @@ class SeedLoader {
         .toList();
 
     return SeedData(
-      sourceReferences:
-          arr(sourceReferencesJson).map(SourceReferenceDto.fromJson).toList(),
+      sourceReferences: arr(
+        sourceReferencesJson,
+      ).map(SourceReferenceDto.fromJson).toList(),
       plugins: arr(pluginsJson).map(PluginDto.fromJson).toList(),
       presets: arr(presetsJson).map(PresetDto.fromJson).toList(),
-      workflowRecipes:
-          arr(workflowRecipesJson).map(WorkflowRecipeDto.fromJson).toList(),
-      soundDesignNotes:
-          arr(soundDesignNotesJson).map(SoundDesignNoteDto.fromJson).toList(),
+      workflowRecipes: arr(
+        workflowRecipesJson,
+      ).map(WorkflowRecipeDto.fromJson).toList(),
+      soundDesignNotes: arr(
+        soundDesignNotesJson,
+      ).map(SoundDesignNoteDto.fromJson).toList(),
     );
   }
 
@@ -57,11 +60,17 @@ class SeedLoader {
     if (current == seedVersion) return; // already up to date
 
     final data = parse(
-      sourceReferencesJson: await readAsset('$seedAssetDir/source_references.json'),
+      sourceReferencesJson: await readAsset(
+        '$seedAssetDir/source_references.json',
+      ),
       pluginsJson: await readAsset('$seedAssetDir/plugins.json'),
       presetsJson: await readAsset('$seedAssetDir/presets.json'),
-      workflowRecipesJson: await readAsset('$seedAssetDir/workflow_recipes.json'),
-      soundDesignNotesJson: await readAsset('$seedAssetDir/sound_design_notes.json'),
+      workflowRecipesJson: await readAsset(
+        '$seedAssetDir/workflow_recipes.json',
+      ),
+      soundDesignNotesJson: await readAsset(
+        '$seedAssetDir/sound_design_notes.json',
+      ),
     );
 
     await hydrate(data, seedVersion: seedVersion);
@@ -89,16 +98,18 @@ class SeedLoader {
         b.insertAll(_db.soundDesignNotes, data.soundDesignNotes.map(_note));
       });
 
-      await _db.into(_db.appMeta).insertOnConflictUpdate(
+      await _db
+          .into(_db.appMeta)
+          .insertOnConflictUpdate(
             AppMetaCompanion.insert(key: _metaKey, value: '$seedVersion'),
           );
     });
   }
 
   Future<int?> _readSeedVersion() async {
-    final row = await (_db.select(_db.appMeta)
-          ..where((t) => t.key.equals(_metaKey)))
-        .getSingleOrNull();
+    final row = await (_db.select(
+      _db.appMeta,
+    )..where((t) => t.key.equals(_metaKey))).getSingleOrNull();
     return row == null ? null : int.tryParse(row.value);
   }
 
@@ -118,35 +129,35 @@ class SeedLoader {
       );
 
   static PluginsCompanion _plugin(PluginDto d) => PluginsCompanion.insert(
-        id: d.id,
-        name: d.name,
-        vendor: d.vendor,
-        vendorName: Value(d.vendorName),
-        category: d.category,
-        type: d.type,
-        tier: d.tier,
-        description: d.description,
-        tags: jsonEncode(d.tags),
-        capabilities: jsonEncode(d.capabilities),
-        color: Value(d.color),
-        manualUrl: Value(d.manualUrl),
-        sources: jsonEncode(d.sources),
-        createdAt: Value(d.createdAt),
-        updatedAt: Value(d.updatedAt),
-      );
+    id: d.id,
+    name: d.name,
+    vendor: d.vendor,
+    vendorName: Value(d.vendorName),
+    category: d.category,
+    type: d.type,
+    tier: d.tier,
+    description: d.description,
+    tags: jsonEncode(d.tags),
+    capabilities: jsonEncode(d.capabilities),
+    color: Value(d.color),
+    manualUrl: Value(d.manualUrl),
+    sources: jsonEncode(d.sources),
+    createdAt: Value(d.createdAt),
+    updatedAt: Value(d.updatedAt),
+  );
 
   static PresetsCompanion _preset(PresetDto d) => PresetsCompanion.insert(
-        id: d.id,
-        pluginId: d.pluginId,
-        name: d.name,
-        category: d.category,
-        params: Value(d.params == null ? null : jsonEncode(d.params)),
-        useCases: jsonEncode(d.useCases),
-        genreTags: jsonEncode(d.genreTags),
-        notes: Value(d.notes),
-        sources: jsonEncode(d.sources),
-        createdAt: Value(d.createdAt),
-      );
+    id: d.id,
+    pluginId: d.pluginId,
+    name: d.name,
+    category: d.category,
+    params: Value(d.params == null ? null : jsonEncode(d.params)),
+    useCases: jsonEncode(d.useCases),
+    genreTags: jsonEncode(d.genreTags),
+    notes: Value(d.notes),
+    sources: jsonEncode(d.sources),
+    createdAt: Value(d.createdAt),
+  );
 
   static WorkflowRecipesCompanion _recipe(WorkflowRecipeDto d) =>
       WorkflowRecipesCompanion.insert(

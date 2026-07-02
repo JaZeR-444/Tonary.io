@@ -5,66 +5,66 @@ import 'package:tonary/data/sources/seed/seed_validator.dart';
 /// A minimal valid dataset used as the baseline; individual tests mutate one
 /// thing to prove the corresponding rule fails closed.
 SeedData validFixture() => SeedData(
-      sourceReferences: [
-        SourceReferenceDto(
-          id: 'src-flex-manual',
-          title: 'FLEX manual',
-          sourceType: 'official-manual',
-          url: 'https://example.com/flex',
-          retrievedAt: '2026-07-02',
-          reliability: 'High',
-        ),
-      ],
-      plugins: [
-        PluginDto(
-          id: 'flex',
-          name: 'FLEX',
-          vendor: 'Image-Line',
-          category: 'Synth',
-          type: 'Generator',
-          tier: 'Free',
-          description: 'A preset synth.',
-          tags: const ['synth'],
-          capabilities: const ['presets'],
-          sources: const ['src-flex-manual'],
-        ),
-      ],
-      presets: [
-        PresetDto(
-          id: 'flex-pad-01',
-          pluginId: 'flex',
-          name: 'Pad',
-          category: 'Pad',
-          useCases: const ['atmosphere'],
-          genreTags: const ['cinematic'],
-          sources: const ['src-flex-manual'],
-        ),
-      ],
-      workflowRecipes: [
-        WorkflowRecipeDto(
-          id: 'flex-bass',
-          title: 'Bass',
-          goal: 'Make a bass.',
-          pluginChain: const ['flex'],
-          steps: [WorkflowStepDto(order: 1, action: 'Load preset.')],
-          difficulty: 'Beginner',
-          timeEstimate: 'PT5M',
-          genreTags: const ['trap'],
-          sources: const ['src-flex-manual'],
-        ),
-      ],
-      soundDesignNotes: [
-        SoundDesignNoteDto(
-          id: 'flex-note',
-          topic: 'Macros',
-          subjectRefs: const ['flex'],
-          body: 'Macros are fast.',
-          evidenceLevel: 'Documented',
-          sources: const ['src-flex-manual'],
-          createdAt: '2026-07-02',
-        ),
-      ],
-    );
+  sourceReferences: [
+    SourceReferenceDto(
+      id: 'src-flex-manual',
+      title: 'FLEX manual',
+      sourceType: 'official-manual',
+      url: 'https://example.com/flex',
+      retrievedAt: '2026-07-02',
+      reliability: 'High',
+    ),
+  ],
+  plugins: [
+    PluginDto(
+      id: 'flex',
+      name: 'FLEX',
+      vendor: 'Image-Line',
+      category: 'Synth',
+      type: 'Generator',
+      tier: 'Free',
+      description: 'A preset synth.',
+      tags: const ['synth'],
+      capabilities: const ['presets'],
+      sources: const ['src-flex-manual'],
+    ),
+  ],
+  presets: [
+    PresetDto(
+      id: 'flex-pad-01',
+      pluginId: 'flex',
+      name: 'Pad',
+      category: 'Pad',
+      useCases: const ['atmosphere'],
+      genreTags: const ['cinematic'],
+      sources: const ['src-flex-manual'],
+    ),
+  ],
+  workflowRecipes: [
+    WorkflowRecipeDto(
+      id: 'flex-bass',
+      title: 'Bass',
+      goal: 'Make a bass.',
+      pluginChain: const ['flex'],
+      steps: [WorkflowStepDto(order: 1, action: 'Load preset.')],
+      difficulty: 'Beginner',
+      timeEstimate: 'PT5M',
+      genreTags: const ['trap'],
+      sources: const ['src-flex-manual'],
+    ),
+  ],
+  soundDesignNotes: [
+    SoundDesignNoteDto(
+      id: 'flex-note',
+      topic: 'Macros',
+      subjectRefs: const ['flex'],
+      body: 'Macros are fast.',
+      evidenceLevel: 'Documented',
+      sources: const ['src-flex-manual'],
+      createdAt: '2026-07-02',
+    ),
+  ],
+);
 
 void main() {
   final validator = SeedValidator();
@@ -95,7 +95,10 @@ void main() {
       workflowRecipes: base.workflowRecipes,
       soundDesignNotes: base.soundDesignNotes,
     );
-    expect(validator.validate(data), contains(contains('sources[] must be non-empty')));
+    expect(
+      validator.validate(data),
+      contains(contains('sources[] must be non-empty')),
+    );
   });
 
   test('rejects a non-kebab-case id', () {
@@ -167,8 +170,10 @@ void main() {
       workflowRecipes: const [],
       soundDesignNotes: const [],
     );
-    expect(validator.validate(data),
-        contains(contains('does not resolve to a Plugin')));
+    expect(
+      validator.validate(data),
+      contains(contains('does not resolve to a Plugin')),
+    );
   });
 
   test('rejects a source[] pointing at a missing Source Reference', () {
@@ -193,8 +198,10 @@ void main() {
       workflowRecipes: const [],
       soundDesignNotes: const [],
     );
-    expect(validator.validate(data),
-        contains(contains('does not resolve to a Source Reference')));
+    expect(
+      validator.validate(data),
+      contains(contains('does not resolve to a Source Reference')),
+    );
   });
 
   test('rejects non-contiguous step ordering', () {
@@ -221,7 +228,6 @@ void main() {
       ],
       soundDesignNotes: const [],
     );
-    expect(validator.validate(data),
-        contains(contains('contiguous 1..N')));
+    expect(validator.validate(data), contains(contains('contiguous 1..N')));
   });
 }

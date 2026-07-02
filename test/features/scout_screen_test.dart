@@ -10,31 +10,37 @@ import 'package:tonary/data/repositories/vault_repository.dart';
 import 'package:tonary/shared/models/enums.dart';
 import 'package:tonary/shared/models/models.dart';
 
-Plugin _plugin(String id, String name,
-        {String category = 'Synth',
-        List<String> tags = const ['bass'],
-        List<String> capabilities = const ['presets']}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: category,
-      type: PluginType.generator,
-      tier: PluginTier.free,
-      description: 'A $name plugin.',
-      tags: tags,
-      capabilities: capabilities,
-      sources: const ['src-a', 'src-b'],
-    );
+Plugin _plugin(
+  String id,
+  String name, {
+  String category = 'Synth',
+  List<String> tags = const ['bass'],
+  List<String> capabilities = const ['presets'],
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: category,
+  type: PluginType.generator,
+  tier: PluginTier.free,
+  description: 'A $name plugin.',
+  tags: tags,
+  capabilities: capabilities,
+  sources: const ['src-a', 'src-b'],
+);
 
 class _FakeVaultRepository implements VaultRepository {
   @override
   Future<List<Plugin>> listPlugins() async => [
-        _plugin('flex', 'FLEX'),
-        _plugin('sytrus', 'Sytrus', tags: const ['bass', 'fm']),
-        _plugin('eq2', 'Fruity Parametric EQ 2',
-            category: 'EQ', tags: const ['mixing']),
-      ];
+    _plugin('flex', 'FLEX'),
+    _plugin('sytrus', 'Sytrus', tags: const ['bass', 'fm']),
+    _plugin(
+      'eq2',
+      'Fruity Parametric EQ 2',
+      category: 'EQ',
+      tags: const ['mixing'],
+    ),
+  ];
 
   @override
   Future<Plugin> pluginById(String id) async =>
@@ -52,20 +58,20 @@ class _FakeVaultRepository implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: '$id Manual',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: '$id Manual',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
 Widget _app() => ProviderScope(
-      overrides: [
-        vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
-      ],
-      child: const TonaryApp(),
-    );
+  overrides: [
+    vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
+  ],
+  child: const TonaryApp(),
+);
 
 Future<void> _openScout(WidgetTester tester) async {
   await tester.tap(find.text('Scout').first);
@@ -84,8 +90,9 @@ void main() {
     expect(find.widgetWithText(FilterChip, 'bass'), findsOneWidget);
   });
 
-  testWidgets('selecting a facet produces ranked matches with a reason',
-      (tester) async {
+  testWidgets('selecting a facet produces ranked matches with a reason', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app());
     await tester.pumpAndSettle();
     await _openScout(tester);

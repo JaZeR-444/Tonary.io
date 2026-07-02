@@ -24,20 +24,23 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     _OnboardPageData(
       icon: Icons.graphic_eq,
       title: 'Tonary',
-      body: 'Your dark-first sound-design intelligence layer for FL Studio — '
+      body:
+          'Your dark-first sound-design intelligence layer for FL Studio — '
           'organized, understood, and always offline.',
       hero: true,
     ),
     _OnboardPageData(
       icon: Icons.inventory_2_outlined,
       title: 'Organize what you know',
-      body: 'Browse and search a curated Vault of plugin, preset and chain '
+      body:
+          'Browse and search a curated Vault of plugin, preset and chain '
           'records — every fact traceable to its source.',
     ),
     _OnboardPageData(
       icon: Icons.compare_arrows,
       title: 'Understand and compare',
-      body: 'Scout matches plugins to your goal and Briefs compares them side '
+      body:
+          'Scout matches plugins to your goal and Briefs compares them side '
           'by side — evidence-backed, no guesswork.',
     ),
   ];
@@ -150,10 +153,9 @@ class _OnboardPage extends StatelessWidget {
           Text(
             data.body,
             textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .bodyLarge
-                ?.copyWith(color: c.textSecondary),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyLarge?.copyWith(color: c.textSecondary),
           ),
         ],
       ),

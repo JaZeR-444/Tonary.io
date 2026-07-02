@@ -74,8 +74,11 @@ class _SelectorRow extends ConsumerWidget {
             label: 'Plugin A',
             plugin: _byId(selection.aId),
             onTap: () async {
-              final id = await _pickPlugin(context, plugins,
-                  excludeId: selection.bId);
+              final id = await _pickPlugin(
+                context,
+                plugins,
+                excludeId: selection.bId,
+              );
               if (id != null) notifier.selectA(id);
             },
           ),
@@ -93,8 +96,11 @@ class _SelectorRow extends ConsumerWidget {
             label: 'Plugin B',
             plugin: _byId(selection.bId),
             onTap: () async {
-              final id = await _pickPlugin(context, plugins,
-                  excludeId: selection.aId);
+              final id = await _pickPlugin(
+                context,
+                plugins,
+                excludeId: selection.aId,
+              );
               if (id != null) notifier.selectB(id);
             },
           ),
@@ -106,8 +112,11 @@ class _SelectorRow extends ConsumerWidget {
 
 /// A single picker slot — shows the chosen plugin or a "Choose" affordance.
 class _SlotCard extends StatelessWidget {
-  const _SlotCard(
-      {required this.label, required this.plugin, required this.onTap});
+  const _SlotCard({
+    required this.label,
+    required this.plugin,
+    required this.onTap,
+  });
 
   final String label;
   final Plugin? plugin;
@@ -118,14 +127,16 @@ class _SlotCard extends StatelessWidget {
     final c = context.tonaryColors;
     return Semantics(
       button: true,
-      label:
-          plugin == null ? '$label, choose a plugin' : '$label, ${plugin!.name}',
+      label: plugin == null
+          ? '$label, choose a plugin'
+          : '$label, ${plugin!.name}',
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(8),
         child: Container(
-          constraints:
-              const BoxConstraints(minHeight: TonarySpacing.minTapTarget * 1.4),
+          constraints: const BoxConstraints(
+            minHeight: TonarySpacing.minTapTarget * 1.4,
+          ),
           padding: const EdgeInsets.all(TonarySpacing.md),
           decoration: BoxDecoration(
             color: c.surfaceCard,
@@ -135,16 +146,18 @@ class _SlotCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(label.toUpperCase(),
-                  style: Theme.of(context)
-                      .textTheme
-                      .labelSmall
-                      ?.copyWith(color: c.textSecondary)),
+              Text(
+                label.toUpperCase(),
+                style: Theme.of(
+                  context,
+                ).textTheme.labelSmall?.copyWith(color: c.textSecondary),
+              ),
               const SizedBox(height: TonarySpacing.xs),
               Text(
                 plugin?.name ?? 'Choose plugin',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: plugin == null ? c.textMuted : c.textPrimary),
+                  color: plugin == null ? c.textMuted : c.textPrimary,
+                ),
               ),
             ],
           ),
@@ -212,10 +225,16 @@ class _ComparisonResult extends ConsumerWidget {
             ],
             const SizedBox(height: TonarySpacing.xl),
             _WhySection(
-                plugin: cmp.pluginA, notes: d.notesA, sources: d.sourcesA),
+              plugin: cmp.pluginA,
+              notes: d.notesA,
+              sources: d.sourcesA,
+            ),
             const SizedBox(height: TonarySpacing.lg),
             _WhySection(
-                plugin: cmp.pluginB, notes: d.notesB, sources: d.sourcesB),
+              plugin: cmp.pluginB,
+              notes: d.notesB,
+              sources: d.sourcesB,
+            ),
             if (d.relatedRecipes.isNotEmpty) ...[
               const SizedBox(height: TonarySpacing.xl),
               _NextSteps(recipes: d.relatedRecipes),
@@ -233,12 +252,15 @@ class _SectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-        padding: const EdgeInsets.only(bottom: TonarySpacing.sm),
-        child: Text(title.toUpperCase(),
-            style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                color: context.tonaryColors.textSecondary,
-                letterSpacing: 0.8)),
-      );
+    padding: const EdgeInsets.only(bottom: TonarySpacing.sm),
+    child: Text(
+      title.toUpperCase(),
+      style: Theme.of(context).textTheme.labelSmall?.copyWith(
+        color: context.tonaryColors.textSecondary,
+        letterSpacing: 0.8,
+      ),
+    ),
+  );
 }
 
 class _ComparisonTable extends StatelessWidget {
@@ -248,8 +270,9 @@ class _ComparisonTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = context.tonaryColors;
-    final headStyle =
-        Theme.of(context).textTheme.labelLarge?.copyWith(color: c.textPrimary);
+    final headStyle = Theme.of(
+      context,
+    ).textTheme.labelLarge?.copyWith(color: c.textPrimary);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -257,11 +280,13 @@ class _ComparisonTable extends StatelessWidget {
           children: [
             const Expanded(flex: 3, child: SizedBox()),
             Expanded(
-                flex: 4,
-                child: Text(comparison.pluginA.name, style: headStyle)),
+              flex: 4,
+              child: Text(comparison.pluginA.name, style: headStyle),
+            ),
             Expanded(
-                flex: 4,
-                child: Text(comparison.pluginB.name, style: headStyle)),
+              flex: 4,
+              child: Text(comparison.pluginB.name, style: headStyle),
+            ),
           ],
         ),
         const SizedBox(height: TonarySpacing.sm),
@@ -281,9 +306,9 @@ class _TableRow extends StatelessWidget {
     // Differing rows: emphasise both values (weight) AND carry an explicit
     // "differs" icon+label — never signalled by colour alone (ui-ux-rules).
     final valueStyle = Theme.of(context).textTheme.bodyMedium?.copyWith(
-          color: row.differs ? c.textPrimary : c.textSecondary,
-          fontWeight: row.differs ? FontWeight.w600 : FontWeight.w400,
-        );
+      color: row.differs ? c.textPrimary : c.textSecondary,
+      fontWeight: row.differs ? FontWeight.w600 : FontWeight.w400,
+    );
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: TonarySpacing.xs),
       child: Row(
@@ -294,19 +319,23 @@ class _TableRow extends StatelessWidget {
             child: Row(
               children: [
                 Flexible(
-                  child: Text(row.label,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.copyWith(color: c.textMuted)),
+                  child: Text(
+                    row.label,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: c.textMuted),
+                  ),
                 ),
                 if (row.differs)
                   Padding(
                     padding: const EdgeInsets.only(left: TonarySpacing.xs),
                     child: Semantics(
                       label: 'differs',
-                      child: Icon(Icons.change_history,
-                          size: 12, color: c.accentInfo),
+                      child: Icon(
+                        Icons.change_history,
+                        size: 12,
+                        color: c.accentInfo,
+                      ),
                     ),
                   ),
               ],
@@ -372,21 +401,25 @@ class _WhySection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _SectionHeader('Why ${plugin.name}'),
-          Text(plugin.description,
-              style: Theme.of(context).textTheme.bodyMedium),
+          Text(
+            plugin.description,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           for (final note in notes) ...[
             const SizedBox(height: TonarySpacing.md),
-            Text(note.topic,
-                style: Theme.of(context)
-                    .textTheme
-                    .labelLarge
-                    ?.copyWith(color: c.textPrimary)),
+            Text(
+              note.topic,
+              style: Theme.of(
+                context,
+              ).textTheme.labelLarge?.copyWith(color: c.textPrimary),
+            ),
             const SizedBox(height: TonarySpacing.xs),
-            Text(note.body,
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall
-                    ?.copyWith(color: c.textSecondary)),
+            Text(
+              note.body,
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+            ),
           ],
           if (sources.isNotEmpty) ...[
             const SizedBox(height: TonarySpacing.md),
@@ -434,18 +467,21 @@ class _NextSteps extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Text(r.title,
-                            style: Theme.of(context).textTheme.labelLarge),
+                        child: Text(
+                          r.title,
+                          style: Theme.of(context).textTheme.labelLarge,
+                        ),
                       ),
                       TonaryBadge(r.difficulty.wire, tone: BadgeTone.creative),
                     ],
                   ),
                   const SizedBox(height: TonarySpacing.xs),
-                  Text(r.goal,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.copyWith(color: c.textSecondary)),
+                  Text(
+                    r.goal,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
                 ],
               ),
             ),
@@ -468,17 +504,18 @@ class _PromptState extends StatelessWidget {
         children: [
           Icon(Icons.compare_arrows, size: 40, color: c.textMuted),
           const SizedBox(height: TonarySpacing.md),
-          Text('Compare two plugins',
-              style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            'Compare two plugins',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           const SizedBox(height: TonarySpacing.sm),
           Text(
             'Pick a plugin for each slot to see a side-by-side Brief — '
             'what differs, what they share, and where to go next.',
             textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .bodyMedium
-                ?.copyWith(color: c.textSecondary),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
           ),
         ],
       ),

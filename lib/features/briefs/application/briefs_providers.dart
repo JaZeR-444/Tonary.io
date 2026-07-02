@@ -24,11 +24,13 @@ class BriefsSelectionNotifier extends Notifier<BriefsSelection> {
   @override
   BriefsSelection build() => const BriefsSelection();
 
-  void selectA(String id) => state =
-      state.bId == id ? BriefsSelection(aId: id, bId: state.aId) : state.copyWith(aId: id);
+  void selectA(String id) => state = state.bId == id
+      ? BriefsSelection(aId: id, bId: state.aId)
+      : state.copyWith(aId: id);
 
-  void selectB(String id) => state =
-      state.aId == id ? BriefsSelection(aId: state.bId, bId: id) : state.copyWith(bId: id);
+  void selectB(String id) => state = state.aId == id
+      ? BriefsSelection(aId: state.bId, bId: id)
+      : state.copyWith(bId: id);
 
   void swap() => state = BriefsSelection(aId: state.bId, bId: state.aId);
 
@@ -37,7 +39,8 @@ class BriefsSelectionNotifier extends Notifier<BriefsSelection> {
 
 final briefsSelectionProvider =
     NotifierProvider<BriefsSelectionNotifier, BriefsSelection>(
-        BriefsSelectionNotifier.new);
+      BriefsSelectionNotifier.new,
+    );
 
 /// Everything a comparison Brief renders, assembled from sourced Vault records:
 /// the factual [comparison], each plugin's sound-design notes and Source
@@ -62,36 +65,38 @@ class ComparisonData {
 }
 
 /// Resolves a full [ComparisonData] for an ordered (aId, bId) pair.
-final comparisonProvider =
-    FutureProvider.autoDispose.family<ComparisonData, (String, String)>(
-        (ref, pair) async {
-  final repo = ref.watch(vaultRepositoryProvider);
-  final (aId, bId) = pair;
+final comparisonProvider = FutureProvider.autoDispose
+    .family<ComparisonData, (String, String)>((ref, pair) async {
+      final repo = ref.watch(vaultRepositoryProvider);
+      final (aId, bId) = pair;
 
-  final a = await repo.pluginById(aId);
-  final b = await repo.pluginById(bId);
-  final notesA = await repo.notesForSubject(a.id);
-  final notesB = await repo.notesForSubject(b.id);
+      final a = await repo.pluginById(aId);
+      final b = await repo.pluginById(bId);
+      final notesA = await repo.notesForSubject(a.id);
+      final notesB = await repo.notesForSubject(b.id);
 
-  final recipes = await repo.listRecipes();
-  final related = recipes
-      .where((r) =>
-          r.pluginChain.contains(a.id) || r.pluginChain.contains(b.id))
-      .toList();
+      final recipes = await repo.listRecipes();
+      final related = recipes
+          .where(
+            (r) => r.pluginChain.contains(a.id) || r.pluginChain.contains(b.id),
+          )
+          .toList();
 
-  Future<List<SourceReference>> resolve(List<String> ids) async =>
-      [for (final id in ids) await repo.sourceById(id)];
+      Future<List<SourceReference>> resolve(List<String> ids) async => [
+        for (final id in ids) await repo.sourceById(id),
+      ];
 
-  return ComparisonData(
-    comparison: PluginComparison.build(a, b),
-    notesA: notesA,
-    notesB: notesB,
-    sourcesA: await resolve(a.sources),
-    sourcesB: await resolve(b.sources),
-    relatedRecipes: related,
-  );
-});
+      return ComparisonData(
+        comparison: PluginComparison.build(a, b),
+        notesA: notesA,
+        notesB: notesB,
+        sourcesA: await resolve(a.sources),
+        sourcesB: await resolve(b.sources),
+        relatedRecipes: related,
+      );
+    });
 
 /// All plugins, for the picker (reuses the Vault's offline list).
 final briefsPluginsProvider = FutureProvider<List<Plugin>>(
-    (ref) => ref.watch(vaultPluginsProvider.future));
+  (ref) => ref.watch(vaultPluginsProvider.future),
+);

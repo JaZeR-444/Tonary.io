@@ -28,7 +28,8 @@ class ScoutScreen extends ConsumerWidget {
         actions: [
           if (selected.isNotEmpty)
             TextButton(
-              onPressed: () => ref.read(scoutSelectionProvider.notifier).clear(),
+              onPressed: () =>
+                  ref.read(scoutSelectionProvider.notifier).clear(),
               child: const Text('Clear'),
             ),
         ],
@@ -52,15 +53,13 @@ class ScoutScreen extends ConsumerWidget {
               Text(
                 'Pick intent facets — Scout ranks plugins and shows why each fits.',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: context.tonaryColors.textSecondary),
+                  color: context.tonaryColors.textSecondary,
+                ),
               ),
               const SizedBox(height: TonarySpacing.lg),
               const _FacetPicker(),
               const SizedBox(height: TonarySpacing.xl),
-              if (selected.isEmpty)
-                const _PromptState()
-              else
-                const _Results(),
+              if (selected.isEmpty) const _PromptState() else const _Results(),
             ],
           ),
         ),
@@ -119,11 +118,13 @@ class _FacetGroup extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(kind.label.toUpperCase(),
-              style: Theme.of(context)
-                  .textTheme
-                  .labelSmall
-                  ?.copyWith(color: c.textSecondary, letterSpacing: 0.8)),
+          Text(
+            kind.label.toUpperCase(),
+            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              color: c.textSecondary,
+              letterSpacing: 0.8,
+            ),
+          ),
           const SizedBox(height: TonarySpacing.sm),
           Wrap(
             spacing: TonarySpacing.sm,
@@ -163,9 +164,12 @@ class _Results extends ConsumerWidget {
       data: (matches) => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('${matches.length} match${matches.length == 1 ? '' : 'es'}',
-              style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                  color: context.tonaryColors.textSecondary)),
+          Text(
+            '${matches.length} match${matches.length == 1 ? '' : 'es'}',
+            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              color: context.tonaryColors.textSecondary,
+            ),
+          ),
           const SizedBox(height: TonarySpacing.sm),
           for (final match in matches) _MatchTile(match: match),
         ],
@@ -201,8 +205,10 @@ class _MatchTile extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: Text(plugin.name,
-                        style: Theme.of(context).textTheme.titleMedium),
+                    child: Text(
+                      plugin.name,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
                   ),
                   TonaryBadge(plugin.category, tone: BadgeTone.neutral),
                 ],
@@ -214,8 +220,11 @@ class _MatchTile extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: TonarySpacing.xs),
-                    child: Icon(Icons.check_circle_outline,
-                        size: 14, color: c.accentSuccess),
+                    child: Icon(
+                      Icons.check_circle_outline,
+                      size: 14,
+                      color: c.accentSuccess,
+                    ),
                   ),
                   const SizedBox(width: TonarySpacing.xs),
                   Expanded(
@@ -233,10 +242,9 @@ class _MatchTile extends StatelessWidget {
               const SizedBox(height: TonarySpacing.sm),
               Text(
                 '$sourceCount Source Reference${sourceCount == 1 ? '' : 's'}',
-                style: Theme.of(context)
-                    .textTheme
-                    .labelSmall
-                    ?.copyWith(color: c.textMuted),
+                style: Theme.of(
+                  context,
+                ).textTheme.labelSmall?.copyWith(color: c.textMuted),
               ),
             ],
           ),
@@ -259,16 +267,17 @@ class _PromptState extends StatelessWidget {
         children: [
           Icon(Icons.travel_explore, size: 40, color: c.textMuted),
           const SizedBox(height: TonarySpacing.md),
-          Text('Pick what you’re going for',
-              style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            'Pick what you’re going for',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           const SizedBox(height: TonarySpacing.sm),
           Text(
             'Select one or more facets above to see ranked plugin matches.',
             textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .bodyMedium
-                ?.copyWith(color: c.textSecondary),
+            style: Theme.of(
+              context,
+            ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
           ),
         ],
       ),

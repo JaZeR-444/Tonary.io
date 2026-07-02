@@ -118,16 +118,17 @@ class _PromptState extends StatelessWidget {
           children: [
             Icon(Icons.search, size: 40, color: c.textMuted),
             const SizedBox(height: TonarySpacing.md),
-            Text('Search the Vault',
-                style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              'Search the Vault',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: TonarySpacing.sm),
             Text(
               'Find plugins by name, category, tag, tier, or type.',
               textAlign: TextAlign.center,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: c.textSecondary),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
             ),
           ],
         ),
@@ -153,17 +154,18 @@ class _NoResultsState extends StatelessWidget {
           children: [
             Icon(Icons.search_off, size: 40, color: c.textMuted),
             const SizedBox(height: TonarySpacing.md),
-            Text('No matches for “$query”',
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleLarge),
+            Text(
+              'No matches for “$query”',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             const SizedBox(height: TonarySpacing.sm),
             Text(
               'Try a plugin name, a category like “synth”, or a tier like “free”.',
               textAlign: TextAlign.center,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: c.textSecondary),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
             ),
           ],
         ),

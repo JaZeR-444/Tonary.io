@@ -14,38 +14,49 @@ Plugin _plugin(
   PluginTier tier = PluginTier.free,
   List<String> tags = const [],
   List<String> capabilities = const [],
-}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: category,
-      type: type,
-      tier: tier,
-      description: 'A $name plugin.',
-      tags: tags,
-      capabilities: capabilities,
-      sources: const ['src-x'],
-    );
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: category,
+  type: type,
+  tier: tier,
+  description: 'A $name plugin.',
+  tags: tags,
+  capabilities: capabilities,
+  sources: const ['src-x'],
+);
 
 void main() {
-  final flex = _plugin('flex', 'FLEX',
-      category: 'Synth', tags: const ['bass', 'lead'], capabilities: const ['presets']);
-  final sytrus = _plugin('sytrus', 'Sytrus',
-      category: 'Synth',
-      tier: PluginTier.premium,
-      tags: const ['bass', 'fm'],
-      capabilities: const ['fm', 'presets']);
-  final eq2 = _plugin('eq2', 'Fruity Parametric EQ 2',
-      category: 'EQ', type: PluginType.effect, tier: PluginTier.premium,
-      tags: const ['mixing']);
+  final flex = _plugin(
+    'flex',
+    'FLEX',
+    category: 'Synth',
+    tags: const ['bass', 'lead'],
+    capabilities: const ['presets'],
+  );
+  final sytrus = _plugin(
+    'sytrus',
+    'Sytrus',
+    category: 'Synth',
+    tier: PluginTier.premium,
+    tags: const ['bass', 'fm'],
+    capabilities: const ['fm', 'presets'],
+  );
+  final eq2 = _plugin(
+    'eq2',
+    'Fruity Parametric EQ 2',
+    category: 'EQ',
+    type: PluginType.effect,
+    tier: PluginTier.premium,
+    tags: const ['mixing'],
+  );
   final all = [flex, sytrus, eq2];
 
   group('ScoutMatcher.facetsFor', () {
     test('derives distinct facets from the seed (no hard-coded vocab)', () {
       final facets = ScoutMatcher.facetsFor(all);
-      bool has(ScoutFacetKind k, String v) =>
-          facets.contains(ScoutFacet(k, v));
+      bool has(ScoutFacetKind k, String v) => facets.contains(ScoutFacet(k, v));
 
       expect(has(ScoutFacetKind.category, 'Synth'), isTrue);
       expect(has(ScoutFacetKind.category, 'EQ'), isTrue);
@@ -55,8 +66,11 @@ void main() {
       expect(has(ScoutFacetKind.capability, 'fm'), isTrue);
       // No duplicate 'bass' facet even though two plugins carry it.
       expect(
-          facets.where((f) => f.kind == ScoutFacetKind.tag && f.value == 'bass').length,
-          1);
+        facets
+            .where((f) => f.kind == ScoutFacetKind.tag && f.value == 'bass')
+            .length,
+        1,
+      );
     });
   });
 
@@ -88,8 +102,10 @@ void main() {
         const ScoutFacet(ScoutFacetKind.category, 'Synth'),
       });
       final flexMatch = r.firstWhere((m) => m.plugin.id == 'flex');
-      expect(flexMatch.matched,
-          contains(const ScoutFacet(ScoutFacetKind.category, 'Synth')));
+      expect(
+        flexMatch.matched,
+        contains(const ScoutFacet(ScoutFacetKind.category, 'Synth')),
+      );
     });
 
     test('a facet nothing satisfies yields no matches', () {

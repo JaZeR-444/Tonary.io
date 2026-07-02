@@ -17,27 +17,33 @@ abstract final class TonaryTypography {
 
   /// Builds the Tonary [TextTheme] over a base (color applied by the theme).
   static TextTheme textTheme(Color onSurface) {
-    TextStyle ui(double size, double height, FontWeight weight,
-            {double spacing = 0}) =>
-        TextStyle(
-          fontFamily: fontUi,
-          fontSize: size,
-          height: height,
-          fontWeight: weight,
-          letterSpacing: spacing,
-          color: onSurface,
-        );
+    TextStyle ui(
+      double size,
+      double height,
+      FontWeight weight, {
+      double spacing = 0,
+    }) => TextStyle(
+      fontFamily: fontUi,
+      fontSize: size,
+      height: height,
+      fontWeight: weight,
+      letterSpacing: spacing,
+      color: onSurface,
+    );
 
-    TextStyle display(double size, double height,
-            {double spacing = 0, FontWeight weight = FontWeight.w700}) =>
-        TextStyle(
-          fontFamily: fontDisplay,
-          fontSize: size,
-          height: height,
-          fontWeight: weight,
-          letterSpacing: spacing,
-          color: onSurface,
-        );
+    TextStyle display(
+      double size,
+      double height, {
+      double spacing = 0,
+      FontWeight weight = FontWeight.w700,
+    }) => TextStyle(
+      fontFamily: fontDisplay,
+      fontSize: size,
+      height: height,
+      fontWeight: weight,
+      letterSpacing: spacing,
+      color: onSurface,
+    );
 
     return TextTheme(
       // Display face — H1–H3 / hero only.
@@ -45,7 +51,12 @@ abstract final class TonaryTypography {
       displayMedium: display(36, 1.17, spacing: -0.54), // type-heading-xl (H2)
       displaySmall: display(30, 1.20, spacing: -0.3), // type-heading-lg (H3)
       // UI face — everything else.
-      headlineSmall: ui(24, 1.25, FontWeight.w600, spacing: -0.24), // heading-md
+      headlineSmall: ui(
+        24,
+        1.25,
+        FontWeight.w600,
+        spacing: -0.24,
+      ), // heading-md
       titleLarge: ui(18, 1.55, FontWeight.w600), // lead
       bodyLarge: ui(18, 1.55, FontWeight.w400), // body-lg
       bodyMedium: ui(16, 1.50, FontWeight.w400), // body-md (default)

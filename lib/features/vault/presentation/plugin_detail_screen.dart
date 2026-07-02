@@ -80,8 +80,10 @@ class _Body extends StatelessWidget {
           ],
         ),
         const SizedBox(height: TonarySpacing.lg),
-        Text(p.description,
-            style: text.bodyMedium?.copyWith(color: c.textSecondary)),
+        Text(
+          p.description,
+          style: text.bodyMedium?.copyWith(color: c.textSecondary),
+        ),
 
         _Section(
           title: 'Category',
@@ -106,9 +108,10 @@ class _Body extends StatelessWidget {
                   ListTile(
                     contentPadding: EdgeInsets.zero,
                     title: Text(preset.name, style: text.labelLarge),
-                    subtitle: Text(preset.category,
-                        style:
-                            text.bodySmall?.copyWith(color: c.textSecondary)),
+                    subtitle: Text(
+                      preset.category,
+                      style: text.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
                   ),
               ],
             ),
@@ -122,18 +125,19 @@ class _Body extends StatelessWidget {
                 for (final note in detail.notes) ...[
                   Row(
                     children: [
-                      Expanded(
-                          child:
-                              Text(note.topic, style: text.labelLarge)),
+                      Expanded(child: Text(note.topic, style: text.labelLarge)),
                       // evidenceLevel as icon+label (never color alone).
-                      TonaryBadge(note.evidenceLevel.wire,
-                          tone: BadgeTone.info),
+                      TonaryBadge(
+                        note.evidenceLevel.wire,
+                        tone: BadgeTone.info,
+                      ),
                     ],
                   ),
                   const SizedBox(height: TonarySpacing.xs),
-                  Text(note.body,
-                      style:
-                          text.bodySmall?.copyWith(color: c.textSecondary)),
+                  Text(
+                    note.body,
+                    style: text.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
                   const SizedBox(height: TonarySpacing.md),
                 ],
               ],
@@ -159,8 +163,9 @@ class _Body extends StatelessWidget {
                             Text(s.title, style: text.bodySmall),
                             Text(
                               '${s.sourceType.wire} · ${s.reliability.wire}',
-                              style: text.labelSmall
-                                  ?.copyWith(color: c.textMuted),
+                              style: text.labelSmall?.copyWith(
+                                color: c.textMuted,
+                              ),
                             ),
                           ],
                         ),
@@ -192,9 +197,9 @@ class _Section extends StatelessWidget {
           Text(
             title.toUpperCase(),
             style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                  color: c.textMuted,
-                  letterSpacing: 0.8,
-                ),
+              color: c.textMuted,
+              letterSpacing: 0.8,
+            ),
           ),
           const SizedBox(height: TonarySpacing.sm),
           child,

@@ -9,7 +9,9 @@ const onboardingCompleteKey = 'onboardingComplete';
 /// Whether onboarding has been completed (durable, read from AppMeta). Used by
 /// bootstrap to pick the initial route; also re-readable in-app.
 final onboardingCompleteProvider = FutureProvider<bool>((ref) async {
-  final value = await ref.watch(appMetaRepositoryProvider).get(onboardingCompleteKey);
+  final value = await ref
+      .watch(appMetaRepositoryProvider)
+      .get(onboardingCompleteKey);
   return value == 'true';
 });
 

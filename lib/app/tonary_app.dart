@@ -20,8 +20,9 @@ class TonaryApp extends StatefulWidget {
 }
 
 class _TonaryAppState extends State<TonaryApp> {
-  late final GoRouter _router =
-      AppRouter.createRouter(initialLocation: widget.initialLocation);
+  late final GoRouter _router = AppRouter.createRouter(
+    initialLocation: widget.initialLocation,
+  );
 
   @override
   Widget build(BuildContext context) {

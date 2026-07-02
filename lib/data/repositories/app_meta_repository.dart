@@ -15,14 +15,17 @@ class AppMetaRepositoryImpl implements AppMetaRepository {
 
   @override
   Future<String?> get(String key) async {
-    final row = await (_db.select(_db.appMeta)..where((t) => t.key.equals(key)))
-        .getSingleOrNull();
+    final row = await (_db.select(
+      _db.appMeta,
+    )..where((t) => t.key.equals(key))).getSingleOrNull();
     return row?.value;
   }
 
   @override
   Future<void> set(String key, String value) async {
-    await _db.into(_db.appMeta).insertOnConflictUpdate(
+    await _db
+        .into(_db.appMeta)
+        .insertOnConflictUpdate(
           AppMetaCompanion.insert(key: key, value: value),
         );
   }

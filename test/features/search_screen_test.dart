@@ -34,33 +34,36 @@ class _FakeVaultRepository implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: 'Stub source $id',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: 'Stub source $id',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
-Plugin _plugin(String id, String name,
-        {String category = 'Synth', List<String> tags = const []}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: category,
-      type: PluginType.generator,
-      tier: PluginTier.free,
-      description: 'A $name plugin.',
-      tags: tags,
-      capabilities: const ['presets'],
-      sources: const ['src-x'],
-    );
+Plugin _plugin(
+  String id,
+  String name, {
+  String category = 'Synth',
+  List<String> tags = const [],
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: category,
+  type: PluginType.generator,
+  tier: PluginTier.free,
+  description: 'A $name plugin.',
+  tags: tags,
+  capabilities: const ['presets'],
+  sources: const ['src-x'],
+);
 
 Widget _app(VaultRepository repo) => ProviderScope(
-      overrides: [vaultRepositoryProvider.overrideWithValue(repo)],
-      child: const TonaryApp(),
-    );
+  overrides: [vaultRepositoryProvider.overrideWithValue(repo)],
+  child: const TonaryApp(),
+);
 
 Future<void> _openSearch(WidgetTester tester) async {
   await tester.tap(find.text('Vault').first);
@@ -73,12 +76,12 @@ void main() {
   final repo = _FakeVaultRepository([
     _plugin('flex', 'FLEX', tags: const ['rompler']),
     _plugin('sytrus', 'Sytrus', tags: const ['fm', 'bass']),
-    _plugin('fruity-parametric-eq-2', 'Fruity Parametric EQ 2',
-        category: 'EQ'),
+    _plugin('fruity-parametric-eq-2', 'Fruity Parametric EQ 2', category: 'EQ'),
   ]);
 
-  testWidgets('opens from Vault and shows the prompt state before typing',
-      (tester) async {
+  testWidgets('opens from Vault and shows the prompt state before typing', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app(repo));
     await tester.pumpAndSettle();
     await _openSearch(tester);
@@ -101,8 +104,9 @@ void main() {
     expect(find.text('Fruity Parametric EQ 2'), findsNothing);
   });
 
-  testWidgets('shows the no-results state for an unmatched query',
-      (tester) async {
+  testWidgets('shows the no-results state for an unmatched query', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app(repo));
     await tester.pumpAndSettle();
     await _openSearch(tester);

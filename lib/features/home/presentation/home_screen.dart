@@ -29,17 +29,20 @@ class HomeScreen extends ConsumerWidget {
             const SizedBox(height: TonarySpacing.sm),
             Text(
               'Your dark-first sound-design intelligence layer.',
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: c.textSecondary),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: c.textSecondary),
             ),
             const SizedBox(height: TonarySpacing.md),
             _DatasetStat(plugins: plugins),
             const SizedBox(height: TonarySpacing.xl2),
-            Text('MODULES',
-                style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                    color: c.textSecondary, letterSpacing: 0.8)),
+            Text(
+              'MODULES',
+              style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                color: c.textSecondary,
+                letterSpacing: 0.8,
+              ),
+            ),
             const SizedBox(height: TonarySpacing.sm),
             _ModuleCard(
               icon: Icons.inventory_2_outlined,
@@ -88,7 +91,8 @@ class _DatasetStat extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = context.tonaryColors;
     final label = plugins.when(
-      data: (list) => '${list.length} plugin${list.length == 1 ? '' : 's'} indexed · offline',
+      data: (list) =>
+          '${list.length} plugin${list.length == 1 ? '' : 's'} indexed · offline',
       loading: () => 'Indexing…',
       error: (_, _) => 'Offline dataset',
     );
@@ -97,11 +101,12 @@ class _DatasetStat extends StatelessWidget {
       children: [
         Icon(Icons.offline_bolt_outlined, size: 14, color: c.accentInfo),
         const SizedBox(width: TonarySpacing.xs),
-        Text(label,
-            style: Theme.of(context)
-                .textTheme
-                .labelSmall
-                ?.copyWith(color: c.textMuted)),
+        Text(
+          label,
+          style: Theme.of(
+            context,
+          ).textTheme.labelSmall?.copyWith(color: c.textMuted),
+        ),
       ],
     );
   }
@@ -134,7 +139,8 @@ class _ModuleCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           child: Container(
             constraints: const BoxConstraints(
-                minHeight: TonarySpacing.minTapTarget * 1.2),
+              minHeight: TonarySpacing.minTapTarget * 1.2,
+            ),
             padding: const EdgeInsets.all(TonarySpacing.lg),
             decoration: BoxDecoration(
               color: c.surfaceCard,
@@ -157,14 +163,17 @@ class _ModuleCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(title,
-                          style: Theme.of(context).textTheme.titleMedium),
+                      Text(
+                        title,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
                       const SizedBox(height: TonarySpacing.xs),
-                      Text(subtitle,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall
-                              ?.copyWith(color: c.textSecondary)),
+                      Text(
+                        subtitle,
+                        style: Theme.of(
+                          context,
+                        ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
                     ],
                   ),
                 ),

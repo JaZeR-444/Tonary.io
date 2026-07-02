@@ -21,10 +21,9 @@ Future<Widget> bootstrap() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final db = TonaryDatabase();
-  await SeedLoader(db).ensureSeeded(
-    readAsset: rootBundle.loadString,
-    seedVersion: kSeedVersion,
-  );
+  await SeedLoader(
+    db,
+  ).ensureSeeded(readAsset: rootBundle.loadString, seedVersion: kSeedVersion);
 
   // First run opens onboarding; thereafter, straight to Home.
   final meta = AppMetaRepositoryImpl(db);

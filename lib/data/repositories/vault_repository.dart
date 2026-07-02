@@ -24,25 +24,26 @@ class VaultRepositoryImpl implements VaultRepository {
 
   @override
   Future<List<Plugin>> listPlugins() async {
-    final rows = await (_db.select(_db.plugins)
-          ..orderBy([(t) => OrderingTerm(expression: t.name)]))
-        .get();
+    final rows = await (_db.select(
+      _db.plugins,
+    )..orderBy([(t) => OrderingTerm(expression: t.name)])).get();
     return rows.map(DomainMappers.plugin).toList();
   }
 
   @override
   Future<Plugin> pluginById(String id) async {
-    final row = await (_db.select(_db.plugins)..where((t) => t.id.equals(id)))
-        .getSingleOrNull();
+    final row = await (_db.select(
+      _db.plugins,
+    )..where((t) => t.id.equals(id))).getSingleOrNull();
     if (row == null) throw NotFoundFailure('Plugin "$id" not found.');
     return DomainMappers.plugin(row);
   }
 
   @override
   Future<List<Preset>> presetsForPlugin(String pluginId) async {
-    final rows = await (_db.select(_db.presets)
-          ..where((t) => t.pluginId.equals(pluginId)))
-        .get();
+    final rows = await (_db.select(
+      _db.presets,
+    )..where((t) => t.pluginId.equals(pluginId))).get();
     return rows.map(DomainMappers.preset).toList();
   }
 
@@ -65,9 +66,9 @@ class VaultRepositoryImpl implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async {
-    final row = await (_db.select(_db.sourceReferences)
-          ..where((t) => t.id.equals(id)))
-        .getSingleOrNull();
+    final row = await (_db.select(
+      _db.sourceReferences,
+    )..where((t) => t.id.equals(id))).getSingleOrNull();
     if (row == null) throw NotFoundFailure('Source "$id" not found.');
     return DomainMappers.sourceReference(row);
   }

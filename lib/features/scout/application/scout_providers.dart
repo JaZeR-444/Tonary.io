@@ -21,7 +21,8 @@ class ScoutSelectionNotifier extends Notifier<Set<ScoutFacet>> {
 
 final scoutSelectionProvider =
     NotifierProvider<ScoutSelectionNotifier, Set<ScoutFacet>>(
-        ScoutSelectionNotifier.new);
+      ScoutSelectionNotifier.new,
+    );
 
 /// The pickable facets, derived from the seeded plugins (offline, no fabrication).
 final scoutFacetsProvider = FutureProvider<List<ScoutFacet>>((ref) async {
@@ -39,4 +40,5 @@ final scoutResultsProvider = Provider<AsyncValue<List<ScoutMatch>>>((ref) {
 
 /// Convenience: all plugins for the empty/loading gate on the Scout screen.
 final scoutPluginsProvider = FutureProvider<List<Plugin>>(
-    (ref) => ref.watch(vaultPluginsProvider.future));
+  (ref) => ref.watch(vaultPluginsProvider.future),
+);

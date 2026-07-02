@@ -28,10 +28,9 @@ class PluginListTile extends StatelessWidget {
         padding: const EdgeInsets.only(top: TonarySpacing.xs),
         child: Text(
           plugin.category,
-          style: Theme.of(context)
-              .textTheme
-              .bodySmall
-              ?.copyWith(color: c.textSecondary),
+          style: Theme.of(
+            context,
+          ).textTheme.bodySmall?.copyWith(color: c.textSecondary),
         ),
       ),
       trailing: TierBadge(plugin.tier),

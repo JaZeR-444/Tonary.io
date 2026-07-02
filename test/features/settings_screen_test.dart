@@ -11,22 +11,24 @@ import 'package:tonary/shared/models/enums.dart';
 import 'package:tonary/shared/models/models.dart';
 
 Plugin _plugin(String id, String name) => Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: 'Synth',
-      type: PluginType.generator,
-      tier: PluginTier.free,
-      description: 'A $name plugin.',
-      tags: const ['bass'],
-      capabilities: const ['presets'],
-      sources: const ['src-x'],
-    );
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: 'Synth',
+  type: PluginType.generator,
+  tier: PluginTier.free,
+  description: 'A $name plugin.',
+  tags: const ['bass'],
+  capabilities: const ['presets'],
+  sources: const ['src-x'],
+);
 
 class _FakeVaultRepository implements VaultRepository {
   @override
-  Future<List<Plugin>> listPlugins() async =>
-      [_plugin('flex', 'FLEX'), _plugin('sytrus', 'Sytrus')];
+  Future<List<Plugin>> listPlugins() async => [
+    _plugin('flex', 'FLEX'),
+    _plugin('sytrus', 'Sytrus'),
+  ];
 
   @override
   Future<Plugin> pluginById(String id) async =>
@@ -44,24 +46,25 @@ class _FakeVaultRepository implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: '$id Manual',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: '$id Manual',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
 Widget _app() => ProviderScope(
-      overrides: [
-        vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
-      ],
-      child: const TonaryApp(),
-    );
+  overrides: [
+    vaultRepositoryProvider.overrideWithValue(_FakeVaultRepository()),
+  ],
+  child: const TonaryApp(),
+);
 
 void main() {
-  testWidgets('renders grounded sections and a real dataset summary',
-      (tester) async {
+  testWidgets('renders grounded sections and a real dataset summary', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app());
     await tester.pumpAndSettle();
 

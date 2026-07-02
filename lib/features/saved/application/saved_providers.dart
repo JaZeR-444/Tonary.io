@@ -7,7 +7,8 @@ import '../../../shared/models/models.dart';
 
 /// All User Saved Items, newest first (offline, from the local DB).
 final savedItemsProvider = FutureProvider<List<SavedItem>>(
-    (ref) => ref.watch(savedItemsRepositoryProvider).listSaved());
+  (ref) => ref.watch(savedItemsRepositoryProvider).listSaved(),
+);
 
 /// The saved *plugins*, resolved to full records for the Saved list. Silently
 /// skips any saved id whose record is missing (e.g. removed in a seed bump) —
@@ -29,10 +30,14 @@ final savedPluginsProvider = FutureProvider<List<Plugin>>((ref) async {
 
 /// Whether a given plugin is currently saved. Derived from [savedItemsProvider]
 /// so toggling one refreshes all.
-final isPluginSavedProvider = FutureProvider.family<bool, String>((ref, id) async {
+final isPluginSavedProvider = FutureProvider.family<bool, String>((
+  ref,
+  id,
+) async {
   final items = await ref.watch(savedItemsProvider.future);
   return items.any(
-      (i) => i.refType == SavedItemRefType.plugin && i.refId == id);
+    (i) => i.refType == SavedItemRefType.plugin && i.refId == id,
+  );
 });
 
 /// Mutations for saved items. Keeps storage writes out of the widget layer.
@@ -51,5 +56,6 @@ class SavedItemsController {
   }
 }
 
-final savedItemsControllerProvider =
-    Provider<SavedItemsController>((ref) => SavedItemsController(ref));
+final savedItemsControllerProvider = Provider<SavedItemsController>(
+  (ref) => SavedItemsController(ref),
+);

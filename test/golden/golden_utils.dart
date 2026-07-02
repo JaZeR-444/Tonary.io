@@ -35,9 +35,9 @@ Future<void> loadTonaryFonts() async {
 
   // Also load Material Icons so glyphs render in goldens instead of tofu boxes.
   try {
-    await (FontLoader('MaterialIcons')
-          ..addFont(rootBundle.load('fonts/MaterialIcons-Regular.otf')))
-        .load();
+    await (FontLoader(
+      'MaterialIcons',
+    )..addFont(rootBundle.load('fonts/MaterialIcons-Regular.otf'))).load();
   } catch (_) {
     // Path unavailable in this environment — icons fall back to boxes.
   }
@@ -51,32 +51,38 @@ void useGoldenCanvas(WidgetTester tester) {
   addTearDown(tester.view.resetDevicePixelRatio);
 }
 
-Plugin _plugin(String id, String name,
-        {String category = 'Synth',
-        PluginTier tier = PluginTier.free,
-        List<String> tags = const ['bass', 'lead']}) =>
-    Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: category,
-      type: PluginType.generator,
-      tier: tier,
-      description: 'A curated $name plugin record, sourced and offline.',
-      tags: tags,
-      capabilities: const ['presets', 'modulation'],
-      sources: const ['src-manual', 'src-dive'],
-    );
+Plugin _plugin(
+  String id,
+  String name, {
+  String category = 'Synth',
+  PluginTier tier = PluginTier.free,
+  List<String> tags = const ['bass', 'lead'],
+}) => Plugin(
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: category,
+  type: PluginType.generator,
+  tier: tier,
+  description: 'A curated $name plugin record, sourced and offline.',
+  tags: tags,
+  capabilities: const ['presets', 'modulation'],
+  sources: const ['src-manual', 'src-dive'],
+);
 
 /// Deterministic in-memory Vault for goldens — stable content, no DB.
 class GoldenVaultRepository implements VaultRepository {
   @override
   Future<List<Plugin>> listPlugins() async => [
-        _plugin('flex', 'FLEX'),
-        _plugin('sytrus', 'Sytrus', tier: PluginTier.premium),
-        _plugin('fruity-parametric-eq-2', 'Fruity Parametric EQ 2',
-            category: 'EQ', tags: const ['mixing']),
-      ];
+    _plugin('flex', 'FLEX'),
+    _plugin('sytrus', 'Sytrus', tier: PluginTier.premium),
+    _plugin(
+      'fruity-parametric-eq-2',
+      'Fruity Parametric EQ 2',
+      category: 'EQ',
+      tags: const ['mixing'],
+    ),
+  ];
 
   @override
   Future<Plugin> pluginById(String id) async =>
@@ -94,12 +100,12 @@ class GoldenVaultRepository implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: '$id reference',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: '$id reference',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
 class _FakeAppMeta implements AppMetaRepository {
@@ -123,10 +129,10 @@ class _FakeSaved implements SavedItemsRepository {
 
 /// The app rooted at [initialLocation] with deterministic fakes for goldens.
 Widget goldenApp(String initialLocation) => ProviderScope(
-      overrides: [
-        vaultRepositoryProvider.overrideWithValue(GoldenVaultRepository()),
-        appMetaRepositoryProvider.overrideWithValue(_FakeAppMeta()),
-        savedItemsRepositoryProvider.overrideWithValue(_FakeSaved()),
-      ],
-      child: TonaryApp(initialLocation: initialLocation),
-    );
+  overrides: [
+    vaultRepositoryProvider.overrideWithValue(GoldenVaultRepository()),
+    appMetaRepositoryProvider.overrideWithValue(_FakeAppMeta()),
+    savedItemsRepositoryProvider.overrideWithValue(_FakeSaved()),
+  ],
+  child: TonaryApp(initialLocation: initialLocation),
+);

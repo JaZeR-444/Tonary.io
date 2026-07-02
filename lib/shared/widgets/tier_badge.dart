@@ -14,7 +14,7 @@ class TierBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => TonaryBadge(
-        tier.wire,
-        tone: tier == PluginTier.free ? BadgeTone.success : BadgeTone.neutral,
-      );
+    tier.wire,
+    tone: tier == PluginTier.free ? BadgeTone.success : BadgeTone.neutral,
+  );
 }

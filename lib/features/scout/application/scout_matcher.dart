@@ -15,12 +15,12 @@ enum ScoutFacetKind {
   /// Relative weight — the more specific the intent signal, the stronger the
   /// match. Tags/capabilities express "what you're going for" best.
   int get weight => switch (this) {
-        ScoutFacetKind.capability => 3,
-        ScoutFacetKind.tag => 3,
-        ScoutFacetKind.category => 2,
-        ScoutFacetKind.type => 1,
-        ScoutFacetKind.tier => 1,
-      };
+    ScoutFacetKind.capability => 3,
+    ScoutFacetKind.tag => 3,
+    ScoutFacetKind.category => 2,
+    ScoutFacetKind.type => 1,
+    ScoutFacetKind.tier => 1,
+  };
 }
 
 /// One selectable intent facet, e.g. (tag, "bass") or (tier, "Free"). Value
@@ -78,7 +78,8 @@ abstract final class ScoutMatcher {
         xs.toList()..sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
 
     return [
-      for (final v in sortedCi(categories)) ScoutFacet(ScoutFacetKind.category, v),
+      for (final v in sortedCi(categories))
+        ScoutFacet(ScoutFacetKind.category, v),
       for (final v in sortedCi(types)) ScoutFacet(ScoutFacetKind.type, v),
       for (final v in sortedCi(tiers)) ScoutFacet(ScoutFacetKind.tier, v),
       for (final v in sortedCi(tags)) ScoutFacet(ScoutFacetKind.tag, v),
@@ -126,8 +127,9 @@ abstract final class ScoutMatcher {
       ScoutFacetKind.type => ci(plugin.type.wire, facet.value),
       ScoutFacetKind.tier => ci(plugin.tier.wire, facet.value),
       ScoutFacetKind.tag => plugin.tags.any((t) => ci(t, facet.value)),
-      ScoutFacetKind.capability =>
-        plugin.capabilities.any((c) => ci(c, facet.value)),
+      ScoutFacetKind.capability => plugin.capabilities.any(
+        (c) => ci(c, facet.value),
+      ),
     };
   }
 }

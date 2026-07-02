@@ -8,9 +8,10 @@ enum PluginTier {
   const PluginTier(this.wire);
   final String wire;
 
-  static PluginTier fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown PluginTier: $v'));
+  static PluginTier fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown PluginTier: $v'),
+  );
 }
 
 enum PluginType {
@@ -20,9 +21,10 @@ enum PluginType {
   const PluginType(this.wire);
   final String wire;
 
-  static PluginType fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown PluginType: $v'));
+  static PluginType fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown PluginType: $v'),
+  );
 }
 
 enum Difficulty {
@@ -33,9 +35,10 @@ enum Difficulty {
   const Difficulty(this.wire);
   final String wire;
 
-  static Difficulty fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown Difficulty: $v'));
+  static Difficulty fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown Difficulty: $v'),
+  );
 }
 
 enum EvidenceLevel {
@@ -47,9 +50,10 @@ enum EvidenceLevel {
   const EvidenceLevel(this.wire);
   final String wire;
 
-  static EvidenceLevel fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown EvidenceLevel: $v'));
+  static EvidenceLevel fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown EvidenceLevel: $v'),
+  );
 }
 
 enum SourceType {
@@ -61,9 +65,10 @@ enum SourceType {
   const SourceType(this.wire);
   final String wire;
 
-  static SourceType fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown SourceType: $v'));
+  static SourceType fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown SourceType: $v'),
+  );
 }
 
 enum Reliability {
@@ -74,9 +79,10 @@ enum Reliability {
   const Reliability(this.wire);
   final String wire;
 
-  static Reliability fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown Reliability: $v'));
+  static Reliability fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown Reliability: $v'),
+  );
 }
 
 /// Which record kind a User Saved Item points at.
@@ -89,7 +95,8 @@ enum SavedItemRefType {
   const SavedItemRefType(this.wire);
   final String wire;
 
-  static SavedItemRefType fromWire(String v) =>
-      values.firstWhere((e) => e.wire == v,
-          orElse: () => throw ArgumentError('Unknown SavedItemRefType: $v'));
+  static SavedItemRefType fromWire(String v) => values.firstWhere(
+    (e) => e.wire == v,
+    orElse: () => throw ArgumentError('Unknown SavedItemRefType: $v'),
+  );
 }

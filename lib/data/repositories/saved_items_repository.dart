@@ -17,18 +17,19 @@ abstract interface class SavedItemsRepository {
 
 class SavedItemsRepositoryImpl implements SavedItemsRepository {
   SavedItemsRepositoryImpl(this._db, {DateTime Function()? now})
-      : _now = now ?? DateTime.now;
+    : _now = now ?? DateTime.now;
 
   final TonaryDatabase _db;
   final DateTime Function() _now;
 
   @override
   Future<List<SavedItem>> listSaved() async {
-    final rows = await (_db.select(_db.savedItems)
-          ..orderBy([
-            (t) => OrderingTerm(expression: t.savedAt, mode: OrderingMode.desc),
-          ]))
-        .get();
+    final rows =
+        await (_db.select(_db.savedItems)..orderBy([
+              (t) =>
+                  OrderingTerm(expression: t.savedAt, mode: OrderingMode.desc),
+            ]))
+            .get();
     return rows.map(_toDomain).toList();
   }
 
@@ -41,7 +42,9 @@ class SavedItemsRepositoryImpl implements SavedItemsRepository {
   @override
   Future<void> save(SavedItemRefType refType, String refId) async {
     if (await _find(refType, refId) != null) return; // already saved
-    await _db.into(_db.savedItems).insert(
+    await _db
+        .into(_db.savedItems)
+        .insert(
           SavedItemsCompanion.insert(
             refType: refType.wire,
             refId: refId,
@@ -67,9 +70,9 @@ class SavedItemsRepositoryImpl implements SavedItemsRepository {
           .getSingleOrNull();
 
   SavedItem _toDomain(SavedItemRow r) => SavedItem(
-        rowId: r.rowId,
-        refType: SavedItemRefType.fromWire(r.refType),
-        refId: r.refId,
-        savedAt: r.savedAt,
-      );
+    rowId: r.rowId,
+    refType: SavedItemRefType.fromWire(r.refType),
+    refId: r.refId,
+    savedAt: r.savedAt,
+  );
 }

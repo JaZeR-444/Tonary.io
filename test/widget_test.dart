@@ -34,46 +34,49 @@ class _FakeVaultRepository implements VaultRepository {
 
   @override
   Future<SourceReference> sourceById(String id) async => SourceReference(
-        id: id,
-        title: 'Stub source $id',
-        sourceType: SourceType.officialManual,
-        retrievedAt: '2026-07-02',
-        reliability: Reliability.high,
-      );
+    id: id,
+    title: 'Stub source $id',
+    sourceType: SourceType.officialManual,
+    retrievedAt: '2026-07-02',
+    reliability: Reliability.high,
+  );
 }
 
 Plugin _plugin(String id, String name) => Plugin(
-      id: id,
-      name: name,
-      vendor: 'Image-Line',
-      category: 'Synth',
-      type: PluginType.generator,
-      tier: PluginTier.free,
-      description: 'A $name plugin.',
-      tags: const ['synth'],
-      capabilities: const ['presets'],
-      sources: const ['src-x'],
-    );
+  id: id,
+  name: name,
+  vendor: 'Image-Line',
+  category: 'Synth',
+  type: PluginType.generator,
+  tier: PluginTier.free,
+  description: 'A $name plugin.',
+  tags: const ['synth'],
+  capabilities: const ['presets'],
+  sources: const ['src-x'],
+);
 
 Widget _app(VaultRepository repo) => ProviderScope(
-      overrides: [vaultRepositoryProvider.overrideWithValue(repo)],
-      child: const TonaryApp(),
-    );
+  overrides: [vaultRepositoryProvider.overrideWithValue(repo)],
+  child: const TonaryApp(),
+);
 
 void main() {
   testWidgets('boots to Home with the MVP bottom-nav tabs', (tester) async {
     await tester.pumpWidget(_app(_FakeVaultRepository(const [])));
     await tester.pumpAndSettle();
 
-    expect(find.text('Your dark-first sound-design intelligence layer.'),
-        findsOneWidget);
+    expect(
+      find.text('Your dark-first sound-design intelligence layer.'),
+      findsOneWidget,
+    );
     for (final label in ['Home', 'Vault', 'Scout', 'Briefs', 'Settings']) {
       expect(find.text(label), findsWidgets, reason: 'missing tab: $label');
     }
   });
 
-  testWidgets('Vault lists seeded plugins and opens a detail screen',
-      (tester) async {
+  testWidgets('Vault lists seeded plugins and opens a detail screen', (
+    tester,
+  ) async {
     final repo = _FakeVaultRepository([
       _plugin('flex', 'FLEX'),
       _plugin('fruity-parametric-eq-2', 'Fruity Parametric EQ 2'),
@@ -94,8 +97,9 @@ void main() {
     expect(find.text('CATEGORY'), findsOneWidget); // a detail section header
   });
 
-  testWidgets('Vault shows the empty state when there are no plugins',
-      (tester) async {
+  testWidgets('Vault shows the empty state when there are no plugins', (
+    tester,
+  ) async {
     await tester.pumpWidget(_app(_FakeVaultRepository(const [])));
     await tester.pumpAndSettle();
 
