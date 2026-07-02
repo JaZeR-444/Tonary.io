@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 ///   display = Space Grotesk (H1–H3 / hero ONLY)
 ///   mono    = IBM Plex Mono (ids, params, token references)
 ///
-/// Recommendation: the font families below are declared by name. Bundle the
-/// actual font files (or add `google_fonts`) before shipping; until then Flutter
-/// falls back to the platform default. Tracked in `.claude/memory/open-questions.md`.
+/// The font families below are bundled offline as OFL assets (see
+/// `pubspec.yaml` `fonts:` and `assets/fonts/`). Inter and Space Grotesk are
+/// variable fonts (Flutter maps `fontWeight` to the wght axis); IBM Plex Mono
+/// ships as static weights.
 abstract final class TonaryTypography {
   static const String fontUi = 'Inter';
   static const String fontDisplay = 'Space Grotesk';
