@@ -27,4 +27,4 @@
 - **OQ-11 — Flutter token mapping.** How faithfully to translate web CSS tokens into `ThemeData` + theme extensions; any values needing tuning for mobile OLED. (`../brand/visual-direction.md`)
 
 ## Legal (blocking — see `known-risks.md`)
-- **OQ-12 — Licensing/attribution** for FL Studio manual-derived content and factory-preset reproduction. Blocks publishing Vault.
+- **OQ-12 — Licensing/attribution** for FL Studio manual-derived content and factory-preset reproduction. Blocks publishing Vault. Decision brief: [`../outputs/oq-12-licensing-decision-brief.md`](../outputs/oq-12-licensing-decision-brief.md) — resolves to one call: self-accept the conservative content policy for an initial release, or route to counsel first.
