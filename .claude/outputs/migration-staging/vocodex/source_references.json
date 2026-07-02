@@ -1,0 +1,24 @@
+[
+  {
+    "id": "src-vocodex-manual",
+    "title": "Vocodex - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vocodex.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Primary reference for Vocodex's carrier/modulator model, band controls, and output stage."
+  },
+  {
+    "id": "src-vocodex-dive",
+    "title": "Vocodex - DEEPER DIVES research compilation",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": null,
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Internal research cross-checked to the official manual; prose re-authored, not reproduced."
+  }
+]

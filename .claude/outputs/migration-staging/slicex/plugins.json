@@ -1,0 +1,33 @@
+[
+  {
+    "id": "slicex",
+    "name": "Slicex",
+    "vendor": "Image-Line",
+    "category": "Beat Slicer / Sampler",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A beat slicer and sampler that auto-detects transients to cut a loop into playable slices, each editable in a built-in wave editor. It provides dual decks for layering or crossfading two loops, eight articulation slots (filters and envelopes) assignable to slices, and one-click dump of the sliced groove to the piano roll as MIDI.",
+    "tags": [
+      "slicer",
+      "sampler",
+      "drums",
+      "loops",
+      "beat"
+    ],
+    "capabilities": [
+      "auto-slicing-transient-detection",
+      "per-slice-wave-editor",
+      "dual-decks",
+      "articulation-slots",
+      "midi-dump"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Slicex.htm",
+    "sources": [
+      "src-slicex-manual",
+      "src-slicex-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

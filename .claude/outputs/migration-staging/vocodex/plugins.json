@@ -1,0 +1,33 @@
+[
+  {
+    "id": "vocodex",
+    "name": "Vocodex",
+    "vendor": "Image-Line",
+    "category": "Vocoder / Voice",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A vocoder that imposes the spectral character of a modulator (typically a voice) onto a carrier signal. It includes a built-in Sytrus-based internal carrier so no external synth is required, band contouring for speech intelligibility, band unison for thickness, an envelope follower for hold/release control, and a built-in Soundgoodizer maximizer on the output.",
+    "tags": [
+      "vocoder",
+      "voice",
+      "spectral",
+      "creative",
+      "robot"
+    ],
+    "capabilities": [
+      "internal-sytrus-carrier",
+      "band-contouring",
+      "band-unison",
+      "envelope-follower",
+      "output-maximizer"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vocodex.htm",
+    "sources": [
+      "src-vocodex-manual",
+      "src-vocodex-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

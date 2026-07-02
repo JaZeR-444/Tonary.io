@@ -1,0 +1,24 @@
+[
+  {
+    "id": "vocodex-carrier-modulator",
+    "topic": "Carrier and modulator",
+    "subjectRefs": ["vocodex"],
+    "body": "A vocoder shapes a carrier (a harmonically rich synth tone) with the moving spectrum of a modulator (usually speech). Vocodex ships with a built-in Sytrus-based internal carrier, so a talking synth can be built inside one plugin without routing an external instrument.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-vocodex-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vocodex-intelligibility",
+    "topic": "Intelligibility and thickness",
+    "subjectRefs": ["vocodex"],
+    "body": "Band contouring emphasises the frequency bands that carry consonants and vowels, keeping vocoded speech readable; band unison thickens the result; and the built-in Soundgoodizer maximiser lifts the final level. The envelope follower's hold and release times set how tightly the output tracks the modulator.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-vocodex-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

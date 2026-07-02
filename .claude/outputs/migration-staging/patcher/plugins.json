@@ -1,0 +1,33 @@
+[
+  {
+    "id": "patcher",
+    "name": "Patcher",
+    "vendor": "Image-Line",
+    "category": "Modular Routing",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A modular routing environment that hosts other generators and effects on a visual patch canvas. You wire nodes to define audio and MIDI signal flow, chain any number of plugins inside one instance, split signals by frequency or amplitude for multiband processing, and design a custom control surface (knobs, sliders, XY pads) that exposes the whole patch as a single instrument or effect.",
+    "tags": [
+      "modular",
+      "routing",
+      "container",
+      "control-surface",
+      "multiband"
+    ],
+    "capabilities": [
+      "visual-node-routing",
+      "unlimited-plugin-chaining",
+      "custom-control-surface",
+      "multiband-split",
+      "midi-routing"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Patcher.htm",
+    "sources": [
+      "src-patcher-manual",
+      "src-patcher-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

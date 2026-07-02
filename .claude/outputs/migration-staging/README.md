@@ -14,6 +14,12 @@
 | [`harmor/`](harmor/) | 1 plugin · 3 notes · 2 sources | deferred | ✅ pass (see [`harmor/STAGING-README.md`](harmor/STAGING-README.md)) | 🔴 pending |
 | [`maximus/`](maximus/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`gross-beat/`](gross-beat/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`slicex/`](slicex/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`vocodex/`](vocodex/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`patcher/`](patcher/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+
+**Deferred for now:** Edison — its DEEPER DIVES capability list is a doc template (not real facts) and its
+tier is ambiguous; skipped rather than guess a commercial fact (no-fabrication rule).
 
 ## Gate #4 checklist (applies to every candidate above)
 - No verbatim/near-verbatim manual text — all descriptions/notes re-authored from the underlying facts.
