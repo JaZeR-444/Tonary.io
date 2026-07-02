@@ -1,0 +1,33 @@
+[
+  {
+    "id": "gross-beat",
+    "name": "Gross Beat",
+    "vendor": "Image-Line",
+    "category": "Time & Volume / Creative Effect",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A time-and-volume shaper built on a continuously recording 2-bar rolling buffer. Time envelopes manipulate playback position for stutters, scratches and reverse; volume envelopes gate and swell the signal. Envelopes are recalled from 36 time and 36 volume slots triggered by MIDI notes.",
+    "tags": [
+      "time",
+      "volume",
+      "buffer",
+      "glitch",
+      "rhythmic"
+    ],
+    "capabilities": [
+      "rolling-buffer-2bar",
+      "time-envelope",
+      "volume-envelope",
+      "72-slots",
+      "midi-triggering"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Gross%20Beat.htm",
+    "sources": [
+      "src-gross-beat-manual",
+      "src-gross-beat-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

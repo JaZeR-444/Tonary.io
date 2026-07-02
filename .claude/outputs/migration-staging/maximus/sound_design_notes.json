@@ -1,0 +1,24 @@
+[
+  {
+    "id": "maximus-band-structure",
+    "topic": "Low / Mid / High + Master bands",
+    "subjectRefs": ["maximus"],
+    "body": "Maximus processes three crossover bands (Low, Mid, High) plus a Master stage independently, so you can compress, limit or saturate each frequency region on its own before the combined output. Crossover points set where the bands split.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-maximus-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "maximus-spline-envelope",
+    "topic": "Spline dynamics envelope",
+    "subjectRefs": ["maximus"],
+    "body": "Each band's dynamics are drawn as a spline curve mapping input level to output, so a single graph can compress, expand or gate. Pre gain drives the band into the curve; post gain sets makeup and ceiling; adaptive release trades pumping for transparency.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-maximus-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

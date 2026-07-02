@@ -1,0 +1,24 @@
+[
+  {
+    "id": "gross-beat-rolling-buffer",
+    "topic": "2-bar rolling buffer",
+    "subjectRefs": ["gross-beat"],
+    "body": "Gross Beat continuously records the incoming audio into a circular 2-bar buffer (about 4 seconds at 120 BPM), overwriting the oldest audio. Effects come from replaying that buffer at a manipulated position rather than from generating new sound.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": ["src-gross-beat-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "gross-beat-envelopes-slots",
+    "topic": "Time / volume envelopes and slots",
+    "subjectRefs": ["gross-beat"],
+    "body": "A time envelope maps playback position over two bars on a 2D grid; a 45-degree diagonal is normal playback, and deviations create stutter, reverse or scratch effects. A volume envelope shapes amplitude for gating and swells. Both are stored across 72 slots (36 time, 36 volume) and triggered by MIDI notes, with grid snap from 1/4 down to 1/32 or freehand.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": ["src-gross-beat-manual"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]
