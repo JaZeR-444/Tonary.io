@@ -6,6 +6,7 @@ import '../../../design_system/components/tonary_badge.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
 import '../../../shared/models/models.dart';
 import '../../../shared/widgets/async_value_view.dart';
+import '../../../shared/widgets/tier_badge.dart';
 import '../application/briefs_providers.dart';
 import '../application/plugin_comparison.dart';
 
@@ -172,10 +173,7 @@ Future<String?> _pickPlugin(
           return ListTile(
             title: Text(p.name),
             subtitle: Text(p.category),
-            trailing: TonaryBadge(p.tier.wire,
-                tone: p.tier.wire == 'Free'
-                    ? BadgeTone.success
-                    : BadgeTone.brand),
+            trailing: TierBadge(p.tier),
             onTap: () => Navigator.of(context).pop(p.id),
           );
         },

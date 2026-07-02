@@ -5,6 +5,7 @@ import '../../../design_system/colors/tonary_colors.dart';
 import '../../../design_system/components/tonary_badge.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
 import '../../../shared/widgets/async_value_view.dart';
+import '../../../shared/widgets/tier_badge.dart';
 import '../../saved/application/saved_providers.dart';
 import '../application/vault_providers.dart';
 
@@ -73,7 +74,7 @@ class _Body extends StatelessWidget {
           spacing: TonarySpacing.sm,
           runSpacing: TonarySpacing.sm,
           children: [
-            TonaryBadge(p.tier.wire, tone: BadgeTone.success),
+            TierBadge(p.tier),
             TonaryBadge(p.type.wire, tone: BadgeTone.info),
             TonaryBadge(p.vendorName ?? p.vendor),
           ],

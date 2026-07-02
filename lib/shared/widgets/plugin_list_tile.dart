@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../design_system/colors/tonary_colors.dart';
-import '../../design_system/components/tonary_badge.dart';
 import '../../design_system/spacing/tonary_spacing.dart';
-import '../models/enums.dart';
 import '../models/models.dart';
+import 'tier_badge.dart';
 
 /// A full-width plugin row (name · category · tier badge) shared by any list of
 /// plugins — Vault and Search read from the same tile so a row looks and behaves
@@ -35,12 +34,7 @@ class PluginListTile extends StatelessWidget {
               ?.copyWith(color: c.textSecondary),
         ),
       ),
-      trailing: TonaryBadge(
-        plugin.tier.wire,
-        tone: plugin.tier == PluginTier.free
-            ? BadgeTone.success
-            : BadgeTone.brand,
-      ),
+      trailing: TierBadge(plugin.tier),
       onTap: onTap,
     );
   }
