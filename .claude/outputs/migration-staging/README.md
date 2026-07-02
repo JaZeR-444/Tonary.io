@@ -17,9 +17,13 @@
 | [`slicex/`](slicex/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`vocodex/`](vocodex/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 | [`patcher/`](patcher/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`newtone/`](newtone/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`harmless/`](harmless/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
+| [`fruity-limiter/`](fruity-limiter/) | 1 plugin · 2 notes · 2 sources | deferred | ✅ pass | 🔴 pending |
 
-**Deferred for now:** Edison — its DEEPER DIVES capability list is a doc template (not real facts) and its
-tier is ambiguous; skipped rather than guess a commercial fact (no-fabrication rule).
+**Deferred (won't guess a commercial fact):** Edison, DirectWave — DEEPER DIVES capability lists are doc
+templates (not real facts); Transient Processor — tier (Free vs Premium) unverified. Skipped rather than
+fabricate (no-fabrication rule); revisit when the manual fact is confirmed.
 
 ## Gate #4 checklist (applies to every candidate above)
 - No verbatim/near-verbatim manual text — all descriptions/notes re-authored from the underlying facts.

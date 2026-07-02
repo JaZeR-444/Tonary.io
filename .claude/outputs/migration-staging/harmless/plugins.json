@@ -1,0 +1,33 @@
+[
+  {
+    "id": "harmless",
+    "name": "Harmless",
+    "vendor": "Image-Line",
+    "category": "Additive-Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A synthesizer that applies subtractive-style filtering and effects to an additive harmonic core before the sound is rendered. A single-page, colour-coded interface exposes harmonic masking (which partials are allowed to sound), a specialized pluck filter that models string decay, and an unusual phaser that can shift pitch and create resonant shapes.",
+    "tags": [
+      "synth",
+      "additive",
+      "subtractive",
+      "harmonic",
+      "modern"
+    ],
+    "capabilities": [
+      "additive-core",
+      "harmonic-masking",
+      "pluck-filter",
+      "phaser",
+      "single-page-ui"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Harmless.htm",
+    "sources": [
+      "src-harmless-manual",
+      "src-harmless-dive"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]
