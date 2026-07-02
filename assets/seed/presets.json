@@ -1,0 +1,55 @@
+[
+  {
+    "id": "flex-dark-evolving-pad",
+    "pluginId": "flex",
+    "name": "Dark Evolving Pad",
+    "category": "Pad",
+    "params": {
+      "cutoffPct": 35,
+      "resonancePct": 20,
+      "attackPct": 75,
+      "sustainPct": 100,
+      "releasePct": 80,
+      "reverbMixPct": 25
+    },
+    "useCases": ["intro-atmosphere", "background-texture"],
+    "genreTags": ["cinematic", "lo-fi"],
+    "notes": "Illustrative starting point (suffixed Pct), not captured factory values. Ranges follow FLEX guidance: dark pads sit around 30-40% cutoff with long attack/release; automate a brightness macro over 4-8 bars for slow evolution.",
+    "sources": ["src-flex-dive"],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "sytrus-fm-sub-bass",
+    "pluginId": "sytrus",
+    "name": "FM Sub Bass",
+    "category": "Bass",
+    "params": {
+      "operatorRatio": "1:1",
+      "modAmountPct": 30,
+      "attackPct": 2,
+      "releasePct": 10
+    },
+    "notes": "Illustrative FM bass patch. A near-sine carrier with light operator modulation gives a rounded sub; keep operator frequency in Ratio mode for a tuned, harmonic result. Values are illustrative, not factory captures.",
+    "useCases": ["808-alternative", "sub-foundation"],
+    "genreTags": ["trap", "hip-hop"],
+    "sources": ["src-sytrus-dive"],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "eq2-vocal-clarity-archetype",
+    "pluginId": "fruity-parametric-eq-2",
+    "name": "Vocal Clarity Starting Curve",
+    "category": "Vocal EQ",
+    "params": {
+      "band1": "high-pass ~80Hz",
+      "band2": "cut ~250Hz (de-mud)",
+      "band5": "gentle boost ~2.5kHz (presence)",
+      "band7": "high-shelf air ~10kHz"
+    },
+    "notes": "Illustrative EQ starting curve using the 7-band functional model (HP foundation, low-mid de-mud, presence, air). Bandwidth is inverted (lower % = wider). Always EQ by ear against the source; frequencies are approximate.",
+    "useCases": ["lead-vocal", "dialogue-cleanup"],
+    "genreTags": ["pop", "rnb"],
+    "sources": ["src-eq2-dive"],
+    "createdAt": "2026-07-02"
+  }
+]

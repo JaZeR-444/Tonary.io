@@ -1,0 +1,68 @@
+[
+  {
+    "id": "src-flex-manual",
+    "title": "FLEX — FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FLEX.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Primary reference for FLEX identity, macro model, and master FX chain."
+  },
+  {
+    "id": "src-flex-dive",
+    "title": "FL Studio DEEPER DIVES — FLEX research",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": "Tonary",
+    "author": "FL Studio DEEPER DIVES research corpus",
+    "retrievedAt": "2026-02-07",
+    "reliability": "High",
+    "notes": "Project research (parameter dictionary, troubleshooting, best practices). Numeric settings are documented as illustrative ranges, not factory defaults."
+  },
+  {
+    "id": "src-sytrus-manual",
+    "title": "Sytrus — FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sytrus.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Reference for Sytrus as a 6-operator FM/RM synthesizer with modulation matrix."
+  },
+  {
+    "id": "src-sytrus-dive",
+    "title": "FL Studio DEEPER DIVES — Sytrus research",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": "Tonary",
+    "author": "FL Studio DEEPER DIVES research corpus",
+    "retrievedAt": "2026-02-07",
+    "reliability": "Medium",
+    "notes": "Project research (operator specs, genre applications). Some quantitative claims are uncorroborated and flagged as such."
+  },
+  {
+    "id": "src-eq2-manual",
+    "title": "Fruity Parametric EQ 2 — FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Reference for the 7-band parametric EQ, HQ/LIN modes, and the inverted bandwidth convention."
+  },
+  {
+    "id": "src-eq2-dive",
+    "title": "FL Studio DEEPER DIVES — Fruity Parametric EQ 2 research",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": "Tonary",
+    "author": "FL Studio DEEPER DIVES research corpus",
+    "retrievedAt": "2026-02-07",
+    "reliability": "High",
+    "notes": "Project research: the 7-band functional model, frequency zones, and symptom→solution rules."
+  }
+]

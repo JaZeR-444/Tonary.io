@@ -1,0 +1,101 @@
+[
+  {
+    "id": "warm-analog-bass-flex",
+    "title": "Warm Analog Bass with FLEX",
+    "goal": "Create a rounded, mono-safe analog-style bass suitable for trap.",
+    "pluginChain": ["flex", "fruity-parametric-eq-2"],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "flex",
+        "action": "Load a subtractive bass preset and keep it dry — no reverb or delay on the low end.",
+        "tip": "Lower a brightness macro for a darker tone; illustrative cutoff around 30-40%."
+      },
+      {
+        "order": 2,
+        "pluginId": "flex",
+        "action": "Shorten the envelope Release (~5-10%) so notes stay tight and do not overlap.",
+        "tip": "Check the bass in mono; wide bass loses power on club systems."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "High-pass rumble below the fundamental (Band 1) and gently lift the body around 100-200Hz."
+      }
+    ],
+    "difficulty": "Beginner",
+    "timeEstimate": "PT10M",
+    "genreTags": ["trap", "hip-hop"],
+    "presetRefs": [],
+    "sources": ["src-flex-dive", "src-eq2-dive"],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "vocal-clarity-eq2",
+    "title": "Vocal Clarity with Fruity Parametric EQ 2",
+    "goal": "Clean up and open a lead vocal without making it harsh.",
+    "pluginChain": ["fruity-parametric-eq-2"],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "High-pass with Band 1 around 80Hz to remove rumble and free up headroom.",
+        "tip": "Never boost Band 1 unless you are designing bass."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "Cut low-mid mud around 200-300Hz (Band 2/3) with a moderate bandwidth.",
+        "tip": "Bandwidth is inverted here: lower % = wider."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "Add a gentle presence lift near 2-3kHz (Band 5) for intelligibility.",
+        "tip": "Presence stacks across tracks — overuse causes harshness."
+      },
+      {
+        "order": 4,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "Optionally add a high-shelf 'air' around 10kHz (Band 7) for modern gloss."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT12M",
+    "genreTags": ["pop", "rnb"],
+    "presetRefs": ["eq2-vocal-clarity-archetype"],
+    "sources": ["src-eq2-dive", "src-eq2-manual"],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "fm-sub-bass-sytrus",
+    "title": "FM Sub Bass with Sytrus",
+    "goal": "Design a tuned, harmonically rich sub bass using FM.",
+    "pluginChain": ["sytrus", "fruity-parametric-eq-2"],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "sytrus",
+        "action": "Start from a simple algorithm with one operator modulating a near-sine carrier.",
+        "tip": "Keep operator frequency in Ratio mode so the pitch stays tuned."
+      },
+      {
+        "order": 2,
+        "pluginId": "sytrus",
+        "action": "Raise modulation amount gradually to add harmonics; keep the envelope attack near-instant and release short.",
+        "tip": "Small modulation changes shift timbre a lot — move slowly."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "High-pass sub-rumble and tame any harsh upper harmonic with a narrow cut."
+      }
+    ],
+    "difficulty": "Advanced",
+    "timeEstimate": "PT20M",
+    "genreTags": ["trap", "electronic"],
+    "presetRefs": ["sytrus-fm-sub-bass"],
+    "sources": ["src-sytrus-dive", "src-eq2-dive"],
+    "createdAt": "2026-07-02"
+  }
+]

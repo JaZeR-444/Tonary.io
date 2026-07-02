@@ -1,0 +1,50 @@
+[
+  {
+    "id": "flex",
+    "name": "FLEX",
+    "vendor": "Image-Line",
+    "category": "Preset Synth / Rompler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A preset-driven synthesizer combining subtractive, wavetable, multisample, FM and AM engines, played through a fixed set of designer-defined macros and a master FX chain (filter, delay, reverb, limiter).",
+    "tags": ["synth", "presets", "macros", "rompler", "hybrid"],
+    "capabilities": ["preset-packs", "macro-controls", "ahdsr-envelope", "master-fx-chain", "midi-dump"],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FLEX.htm",
+    "sources": ["src-flex-manual", "src-flex-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sytrus",
+    "name": "Sytrus",
+    "vendor": "Image-Line",
+    "category": "FM Synthesizer",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "An advanced hybrid synthesizer built on six operators with FM, ring modulation and subtractive synthesis, routed through a modulation matrix, per-operator envelopes, three filters and built-in effects.",
+    "tags": ["synth", "fm", "operators", "modulation-matrix", "sound-design"],
+    "capabilities": ["fm-synthesis", "ring-modulation", "modulation-matrix", "per-operator-envelopes", "built-in-fx"],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sytrus.htm",
+    "sources": ["src-sytrus-manual", "src-sytrus-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-parametric-eq-2",
+    "name": "Fruity Parametric EQ 2",
+    "vendor": "Image-Line",
+    "category": "EQ / Filter",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A 7-band parametric equalizer with adjustable frequency, gain and bandwidth per band, multiple filter types and slopes, optional high-quality and linear-phase modes, and a spectral analyzer for precise tonal shaping.",
+    "tags": ["eq", "mixing", "filter", "mastering"],
+    "capabilities": ["parametric-eq", "spectrum-analyzer", "linear-phase-mode", "high-quality-mode", "per-band-slope"],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm",
+    "sources": ["src-eq2-manual", "src-eq2-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "flex-macro-locking-tip",
+    "topic": "Lock values while browsing FLEX presets",
+    "subjectRefs": ["flex"],
+    "body": "FLEX exposes a small set of macros instead of raw synth parameters, so auditioning is fast. Enable panel locks (or lock Master Volume) to keep loudness and effect levels consistent while you browse presets, so sounds compare fairly.",
+    "evidenceLevel": "Documented",
+    "noteType": "Tip",
+    "sources": ["src-flex-manual", "src-flex-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "flex-bass-mono-tip",
+    "topic": "Keep FLEX bass mono and dry",
+    "subjectRefs": ["flex"],
+    "body": "For low end, keep FLEX bass centered (mono) and free of reverb/delay. Wide or wet bass causes phase cancellation and loses power on club systems; check the vectorscope for a near-vertical line before exporting.",
+    "evidenceLevel": "Community",
+    "noteType": "Caveat",
+    "sources": ["src-flex-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "eq2-bandwidth-inverted",
+    "topic": "Bandwidth is inverted on Fruity Parametric EQ 2",
+    "subjectRefs": ["fruity-parametric-eq-2"],
+    "body": "On Fruity Parametric EQ 2 the bandwidth (Q) control is inverted relative to intuition: a lower percentage is a wider band and a higher percentage is narrower. Keep this in mind when dialing surgical cuts versus broad tonal shaping.",
+    "evidenceLevel": "Documented",
+    "noteType": "Caveat",
+    "sources": ["src-eq2-manual", "src-eq2-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "eq2-highpass-cleanup-note",
+    "topic": "Use Band 1 to clean low-end rumble",
+    "subjectRefs": ["fruity-parametric-eq-2"],
+    "body": "A high-pass on Band 1 removes sub-fundamental rumble that muddies a mix and frees headroom. The spectral display helps place the cutoff just below the note's fundamental. Avoid boosting Band 1 unless you are deliberately designing bass.",
+    "evidenceLevel": "Documented",
+    "noteType": "Explanation",
+    "sources": ["src-eq2-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sytrus-ratio-vs-fixed",
+    "topic": "Ratio vs Fixed operator frequency in Sytrus",
+    "subjectRefs": ["sytrus"],
+    "body": "Each Sytrus operator can run in Ratio or Fixed frequency mode. Ratio keeps the operator tuned to the played note (musical, tracks the keyboard) while Fixed holds a set frequency (useful for formants and metallic or noise-like textures). For tuned bass and leads, keep operators in Ratio mode.",
+    "evidenceLevel": "Documented",
+    "noteType": "Explanation",
+    "sources": ["src-sytrus-manual", "src-sytrus-dive"],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  }
+]
