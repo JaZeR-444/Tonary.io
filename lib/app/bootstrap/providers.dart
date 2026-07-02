@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../data/repositories/app_meta_repository.dart';
 import '../../data/repositories/vault_repository.dart';
 import '../../data/sources/drift/tonary_database.dart';
 
@@ -12,4 +13,9 @@ final databaseProvider = Provider<TonaryDatabase>(
 /// Read API over the curated knowledge base (Vault / Scout / Briefs / Flow).
 final vaultRepositoryProvider = Provider<VaultRepository>(
   (ref) => VaultRepositoryImpl(ref.watch(databaseProvider)),
+);
+
+/// Durable key-value flags (e.g. onboarding-complete).
+final appMetaRepositoryProvider = Provider<AppMetaRepository>(
+  (ref) => AppMetaRepositoryImpl(ref.watch(databaseProvider)),
 );

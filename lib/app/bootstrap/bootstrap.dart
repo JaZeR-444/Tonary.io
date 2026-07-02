@@ -2,8 +2,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../data/repositories/app_meta_repository.dart';
 import '../../data/sources/drift/tonary_database.dart';
 import '../../data/sources/seed/seed_loader.dart';
+import '../../features/onboarding/application/onboarding_providers.dart';
 import '../tonary_app.dart';
 import 'providers.dart';
 
@@ -24,8 +26,12 @@ Future<Widget> bootstrap() async {
     seedVersion: kSeedVersion,
   );
 
+  // First run opens onboarding; thereafter, straight to Home.
+  final meta = AppMetaRepositoryImpl(db);
+  final onboarded = (await meta.get(onboardingCompleteKey)) == 'true';
+
   return ProviderScope(
     overrides: [databaseProvider.overrideWithValue(db)],
-    child: const TonaryApp(),
+    child: TonaryApp(initialLocation: onboarded ? '/home' : '/onboarding'),
   );
 }

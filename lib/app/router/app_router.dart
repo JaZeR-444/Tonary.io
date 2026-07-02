@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../design_system/colors/tonary_colors.dart';
 import '../../features/briefs/presentation/briefs_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
+import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/scout/presentation/scout_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
@@ -20,9 +21,10 @@ final class AppRouter {
 
   /// Builds a fresh router. [TonaryApp] creates one per instance (once in
   /// production; fresh per widget test) so navigation state never leaks between
-  /// tests — see `.claude/rules/qa-rules.md`.
-  static GoRouter createRouter() => GoRouter(
-    initialLocation: '/home',
+  /// tests — see `.claude/rules/qa-rules.md`. [initialLocation] lets bootstrap
+  /// open on `/onboarding` on first run.
+  static GoRouter createRouter({String initialLocation = '/home'}) => GoRouter(
+    initialLocation: initialLocation,
     routes: [
       StatefulShellRoute.indexedStack(
         builder: (context, state, navigationShell) =>
@@ -57,6 +59,10 @@ final class AppRouter {
           ]),
         ],
       ),
+      // First-run onboarding — full-screen, above the shell. Bootstrap opens
+      // here when the onboarding-complete flag is unset.
+      GoRoute(
+          path: '/onboarding', builder: (_, _) => const OnboardingScreen()),
       // Search is a full-screen route above the shell (not a 6th tab), reached
       // from the Vault app bar — see `.claude/rules/mobile-first-rules.md`.
       GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),

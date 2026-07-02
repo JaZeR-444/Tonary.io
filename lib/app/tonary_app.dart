@@ -10,14 +10,18 @@ import 'theme/tonary_theme.dart';
 /// shared global — production sees one, and each widget test gets a fresh
 /// navigation stack (no leakage between tests).
 class TonaryApp extends StatefulWidget {
-  const TonaryApp({super.key});
+  const TonaryApp({super.key, this.initialLocation = '/home'});
+
+  /// Where the app opens. Bootstrap passes `/onboarding` on first run.
+  final String initialLocation;
 
   @override
   State<TonaryApp> createState() => _TonaryAppState();
 }
 
 class _TonaryAppState extends State<TonaryApp> {
-  final GoRouter _router = AppRouter.createRouter();
+  late final GoRouter _router =
+      AppRouter.createRouter(initialLocation: widget.initialLocation);
 
   @override
   Widget build(BuildContext context) {
