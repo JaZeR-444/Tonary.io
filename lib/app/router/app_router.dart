@@ -5,6 +5,7 @@ import '../../design_system/colors/tonary_colors.dart';
 import '../../features/briefs/presentation/briefs_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
 import '../../features/scout/presentation/scout_screen.dart';
+import '../../features/search/presentation/search_screen.dart';
 import '../../features/settings/presentation/settings_screen.dart';
 import '../../features/vault/presentation/plugin_detail_screen.dart';
 import '../../features/vault/presentation/vault_screen.dart';
@@ -17,7 +18,10 @@ import '../../features/vault/presentation/vault_screen.dart';
 final class AppRouter {
   AppRouter._();
 
-  static final GoRouter router = GoRouter(
+  /// Builds a fresh router. [TonaryApp] creates one per instance (once in
+  /// production; fresh per widget test) so navigation state never leaks between
+  /// tests — see `.claude/rules/qa-rules.md`.
+  static GoRouter createRouter() => GoRouter(
     initialLocation: '/home',
     routes: [
       StatefulShellRoute.indexedStack(
@@ -52,6 +56,18 @@ final class AppRouter {
                 path: '/settings', builder: (_, _) => const SettingsScreen()),
           ]),
         ],
+      ),
+      // Search is a full-screen route above the shell (not a 6th tab), reached
+      // from the Vault app bar — see `.claude/rules/mobile-first-rules.md`.
+      GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
+      // Plugin detail as a top-level route for entry points outside the Vault
+      // shell branch (e.g. Search). Vault's own list uses the in-shell
+      // '/vault/:id' so it keeps the bottom nav; pushing that from above the
+      // shell would duplicate the branch's page keys.
+      GoRoute(
+        path: '/plugin/:id',
+        builder: (_, state) =>
+            PluginDetailScreen(pluginId: state.pathParameters['id']!),
       ),
     ],
   );

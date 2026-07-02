@@ -3,11 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../design_system/colors/tonary_colors.dart';
-import '../../../design_system/components/tonary_badge.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
-import '../../../shared/models/enums.dart';
 import '../../../shared/models/models.dart';
 import '../../../shared/widgets/async_value_view.dart';
+import '../../../shared/widgets/plugin_list_tile.dart';
 import '../application/vault_providers.dart';
 
 /// Tonary Vault — list of curated plugin records (list → detail).
@@ -18,7 +17,16 @@ class VaultScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final plugins = ref.watch(vaultPluginsProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Vault')),
+      appBar: AppBar(
+        title: const Text('Vault'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            tooltip: 'Search plugins',
+            onPressed: () => context.push('/search'),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: AsyncValueView<List<Plugin>>(
           value: plugins,
@@ -34,44 +42,13 @@ class VaultScreen extends ConsumerWidget {
               height: 1,
               color: context.tonaryColors.borderSubtle,
             ),
-            itemBuilder: (context, i) => _PluginTile(plugin: list[i]),
+            itemBuilder: (context, i) => PluginListTile(
+              plugin: list[i],
+              onTap: () => context.push('/vault/${list[i].id}'),
+            ),
           ),
         ),
       ),
-    );
-  }
-}
-
-class _PluginTile extends StatelessWidget {
-  const _PluginTile({required this.plugin});
-  final Plugin plugin;
-
-  @override
-  Widget build(BuildContext context) {
-    final c = context.tonaryColors;
-    return ListTile(
-      contentPadding: const EdgeInsets.symmetric(
-        horizontal: TonarySpacing.lg,
-        vertical: TonarySpacing.xs,
-      ),
-      title: Text(plugin.name, style: Theme.of(context).textTheme.labelLarge),
-      subtitle: Padding(
-        padding: const EdgeInsets.only(top: TonarySpacing.xs),
-        child: Text(
-          plugin.category,
-          style: Theme.of(context)
-              .textTheme
-              .bodySmall
-              ?.copyWith(color: c.textSecondary),
-        ),
-      ),
-      trailing: TonaryBadge(
-        plugin.tier.wire,
-        tone: plugin.tier == PluginTier.free
-            ? BadgeTone.success
-            : BadgeTone.brand,
-      ),
-      onTap: () => context.push('/vault/${plugin.id}'),
     );
   }
 }

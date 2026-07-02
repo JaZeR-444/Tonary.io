@@ -1,11 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import 'router/app_router.dart';
 import 'theme/tonary_theme.dart';
 
 /// Root widget: a dark-first [MaterialApp.router] wired to [AppRouter].
-class TonaryApp extends StatelessWidget {
+///
+/// Stateful so the router is created once per app instance rather than being a
+/// shared global — production sees one, and each widget test gets a fresh
+/// navigation stack (no leakage between tests).
+class TonaryApp extends StatefulWidget {
   const TonaryApp({super.key});
+
+  @override
+  State<TonaryApp> createState() => _TonaryAppState();
+}
+
+class _TonaryAppState extends State<TonaryApp> {
+  final GoRouter _router = AppRouter.createRouter();
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +28,7 @@ class TonaryApp extends StatelessWidget {
       // Dark-first: no light theme at launch. themeMode pinned to dark.
       darkTheme: TonaryTheme.dark(),
       themeMode: ThemeMode.dark,
-      routerConfig: AppRouter.router,
+      routerConfig: _router,
     );
   }
 }

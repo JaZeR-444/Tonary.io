@@ -14,9 +14,9 @@
 - Avoid top-corner-only primary actions; the top area is for context/titles, not the main tap target.
 
 ## Navigation
-- **Bottom navigation** is the primary app-level nav (Home, Scout, Vault, Review, Flow — see [../brand/ui-language.md](../brand/ui-language.md)).
+- **Bottom navigation** is the primary app-level nav. MVP tabs: **Home, Vault, Scout, Briefs, Settings** (Review & Flow are deferred — see [../project/mvp-scope.md](../project/mvp-scope.md)). Full module set: Scout, Vault, Review, Flow, Briefs (see [../brand/ui-language.md](../brand/ui-language.md)).
 - No hamburger drawer as the primary nav pattern. No desktop sidebar.
-- Keep the bar to 5 items max for thumb comfort; surface Briefs/Search/Settings contextually or as secondary entries.
+- Keep the bar to 5 items max for thumb comfort; surface Search contextually (e.g. an app-bar action / Home entry), not as a sixth tab.
 
 ## Tap targets & spacing
 - **Minimum tap target 48×48dp** (Material) — enforce even when the visual glyph is smaller (use padding/hit area).
