@@ -40,13 +40,13 @@ Tonary is **not** a rebrand of the legacy FL Studio Master Hub, not a generic pl
 
 Source of truth: `Tonary Brand Kit/` + `.claude/brand/`. Enforced in review.
 
-- **Dark-first.** Core surfaces: bg-app `#07090a`, bg-shell `#0e1114`, surface-card `#151a1f`. Text primary `#f8faf2`.
-- **Color law:** Amber `#ffb13b` = **brand action only** (not decoration). Cyan `#38bdf8` = focus/system. Green `#33d17a` = affirmative. Violet `#a78bfa` = exploratory/creative. Red `#f87171` = exceptional/danger.
-- On a filled bright-accent button/pill, the **label must be dark** (`#07090a`), never light.
-- Use the derived **outline-control `#5a666c`** for control borders, chart axes, keyboard-visible boundaries.
-- Never convey meaning by color alone. `text-muted #7e8a82` is microcopy/placeholder only — not body text.
+- **Dark-first.** Core surfaces: bg-app `#08070f`, bg-shell `#0b0916`, surface-card `#100e20`. Text primary `#f4f2fb`.
+- **Color law:** Violet `#6b5cd6` = **brand action only** (not decoration). Lavender `#8b7bf0` = focus/system. Green `#5fbf8f` = affirmative. Lavender `#a99ee6` = exploratory/creative. Rose `#e06a82` = exceptional/danger.
+- On a filled bright-accent button/pill, the **label must be light** (`#f4f2fb`), never dark (dark labels are light-theme only).
+- Use the derived **outline-control `#6b6493`** for control borders, chart axes, keyboard-visible boundaries.
+- Never convey meaning by color alone. `text-muted #837da3` is microcopy/placeholder only — not body text.
 - Fonts: **Inter** (UI), **Space Grotesk** (display, H1–H3/hero only), **IBM Plex Mono** (mono/IDs). Buttons never below 14px/600.
-- Honor reduced-motion (`MediaQuery.disableAnimations`). Focus ring = two-layer cyan, never glow alone.
+- Honor reduced-motion (`MediaQuery.disableAnimations`). Focus ring = two-layer violet, never glow alone.
 - Full detail: `.claude/brand/brand-rules.md`, `.claude/brand/visual-direction.md`, `.claude/brand/voice-and-tone.md`.
 
 ## 5. Architecture rules
@@ -110,7 +110,7 @@ Tonary.io/
 - Never overwrite or delete existing useful work (or the source folders) without inspecting it first.
 - Never create empty placeholder files.
 - Never report success unless the files actually exist and are non-empty (verify).
-- Never turn amber into a general decoration color, or convey meaning by color alone.
+- Never turn violet into a general decoration color, or convey meaning by color alone.
 
 ## 12. How Claude reports work after every change
 

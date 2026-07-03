@@ -25,7 +25,7 @@
 | `capabilities` | string[] | yes | What it can do (verbs/features) | `["wavetable-synthesis","macro-controls","built-in-fx"]` |
 | `parametersRef` | string \| null | no | Id/path of the parameter set (kept separate for size) | `flex-parameters` |
 | `presetRefs` | string[] | no | Preset Record ids linked to this plugin | `["flex-dark-pad-01"]` |
-| `color` | string (hex) | no | Categorical accent | `#a78bfa` |
+| `color` | string (hex) | no | Categorical accent | `#a99ee6` |
 | `manualUrl` | string (url) | no | Official manual page | `https://www.image-line.com/fl-studio-learning/...` |
 | `sources` | string[] (Source Reference ids) | yes | Evidence backing this record | `["src-flex-manual","src-flex-orig-research"]` |
 | `createdAt` | string (ISO 8601) | no | Record creation date | `2026-07-02` |
@@ -45,7 +45,7 @@
   "capabilities": ["wavetable-synthesis", "multisample-playback", "macro-controls", "built-in-fx-chain"],
   "parametersRef": "flex-parameters",
   "presetRefs": ["flex-dark-pad-01"],
-  "color": "#a78bfa",
+  "color": "#a99ee6",
   "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/",
   "sources": ["src-flex-manual", "src-flex-orig-research"],
   "createdAt": "2026-07-02",

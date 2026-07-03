@@ -108,8 +108,8 @@ flows — the seed dataset ships in the binary and hydrates Drift on first run. 
 Brand tokens (dark-first) live in `design_system/tokens/` and are exposed through
 `ThemeData` plus `TonaryColors` / `TonaryTypography` theme extensions. Semantic Dart
 names (`TonaryColors.bgApp`) — never the legacy `--citrus-console-*` CSS variable
-names. Color law is enforced in review: amber = brand action, cyan = focus/system,
-green = affirmative, violet = exploratory, red = exceptional.
+names. Color law is enforced in review: violet = brand action, lavender = focus/system,
+green = success, lavender = exploratory, rose = exceptional.
 
 ## Open Questions
 

@@ -9,7 +9,7 @@
 - **[D-002] Tonary is a NEW product, not a rebrand of FL Studio Master Hub.** Different framing ("intelligence layer," not "database"), architecture, and brand. — Explicit project mandate.
 - **[D-003] Mobile-first Flutter (iOS + Android), offline-first.** Hard pivot away from the legacy desktop-first Next.js web app. — Project mandate.
 - **[D-004] Official modules = Scout, Vault, Review, Flow, Briefs.** No other modules are "official." — Brand architecture.
-- **[D-005] Adopt the Tonary Brand Kit as-is.** Dark-first; color law (amber=action, cyan=focus, green=affirmative, violet=creative, red=exceptional); Inter/Space Grotesk/IBM Plex Mono; derived `outline-control #5a666c` required. — Brand kit is production-grade.
+- **[D-005] Adopt the Tonary Brand Kit as-is.** Dark-first; color law (violet=action, lavender=focus, green=success, lavender=creative, rose=exceptional); Inter/Space Grotesk/IBM Plex Mono; derived `outline-control #6b6493` required. — Brand kit is production-grade.
 - **[D-006] FL Studio is third-party context, not Tonary branding.** Never use Browser/Plugin Database/Channel Rack/Mixer/Playlist as Tonary module/product names. — Naming rules.
 - **[D-007] Legacy content is source material, not a blueprint.** Migrate via a map, cite every fact, never bulk-import or fabricate. — `../outputs/migration-map.md`.
 - **[D-008] Every content record must cite a Source Reference.** Evidence-backed by construction. — Trust is a core differentiator.

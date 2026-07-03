@@ -46,8 +46,8 @@ Cover the layers with logic and no Flutter dependency:
 
 - `design_system/components/` — branded buttons, cards, chips, inputs, nav bar.
 - **Dark-first** rendering; capture the primary dark theme (and any secondary surface
-  states). Verify the **color law** visually: amber only on brand-action, dark label
-  (`#07090a`) on filled amber, cyan focus ring (two-layer), correct surface tokens.
+  states). Verify the **color law** visually: violet only on brand-action, light label
+  (`#f4f2fb`) on the filled violet brand button, violet focus ring (two-layer), correct surface tokens.
 - **Recommendation:** use `alchemist` or `golden_toolkit` for stable cross-platform
   goldens; pin fonts (Inter / Space Grotesk / IBM Plex Mono) so goldens are
   deterministic. Keep goldens for components, not whole screens (screens churn).

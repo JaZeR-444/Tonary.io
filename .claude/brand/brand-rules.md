@@ -18,45 +18,45 @@ in design review and code review. When unsure, prefer restraint.
 
 | Role | Token | Hex | Enforced use |
 | --- | --- | --- | --- |
-| Global canvas | bg-app | `#07090a` | App background, deepest shell, full-screen views. Also the dark label color on bright fills. |
-| Shell / chrome | bg-shell | `#0e1114` | Nav, sidebars, dock regions, app chrome. |
-| Default surface | surface-card | `#151a1f` | Cards, inputs, panels, tables. Best default fill. |
-| Elevated surface | surface-raised | `#1d242b` | Modals, hover-lifted cards, selected rows. Use sparingly. |
-| Interaction surface | surface-hover | `#26313a` | Hover/pressed/active row backgrounds. Fills only, not text. |
-| Decorative divider | border-subtle | `#2f3a43` | Non-essential dividers only. Never a control outline. |
-| Strong divider | border-strong | `#43505a` | Data rows, modal edges. Still too weak for outline-only controls. |
-| **Control outline (DERIVED)** | **outline-control** | **`#5a666c`** | **Required for control outlines, chart axes, interactive borders. The missing production token.** |
-| Primary text | text-primary | `#f8faf2` | All main UI text, headings, data values. |
-| Supporting text | text-secondary | `#b8c0b5` | Descriptions, metadata, side labels. |
-| Microcopy only | text-muted | `#7e8a82` | Placeholder, timestamps, tiny metadata **only**. Never body copy. |
-| Brand action (amber) | accent-primary | `#ffb13b` | Primary CTA fill, active nav, selected action. |
-| Amber hover | amber-hover | `#ffc766` | CTA hover, highlight, logo spark. |
-| Amber active | amber-active | `#da9834` | Pressed/active CTA. |
-| Affirmative (green) | success | `#33d17a` | Success badges, confirmations, live-good states. |
-| Focus/system (cyan) | info | `#38bdf8` | Focus ring, info badges, sync/live indicators. |
-| Exploratory (violet) | creative | `#a78bfa` | Discovery states, experimental labels, sound-design tags. |
-| Warning (orange) | warning | `#f59e0b` | Caution badges, incomplete states. |
-| Exceptional (red) | danger | `#f87171` | Errors, destructive actions, failed states. |
+| Global canvas | bg-app | `#08070f` | App background, deepest shell, full-screen views. |
+| Shell / chrome | bg-shell | `#0b0916` | Nav, sidebars, dock regions, app chrome. |
+| Default surface | surface-card | `#100e20` | Cards, inputs, panels, tables. Best default fill. |
+| Elevated surface | surface-raised | `#17142c` | Modals, hover-lifted cards, selected rows. Use sparingly. |
+| Interaction surface | surface-hover | `#201b3a` | Hover/pressed/active row backgrounds. Fills only, not text. |
+| Decorative divider | border-subtle | `#1b1836` | Non-essential dividers only. Never a control outline. |
+| Strong divider | border-strong | `#37315a` | Data rows, modal edges. Still too weak for outline-only controls. |
+| **Control outline (DERIVED)** | **outline-control** | **`#6b6493`** | **Required for control outlines, chart axes, interactive borders. The missing production token.** |
+| Primary text | text-primary | `#f4f2fb` | All main UI text, headings, data values. |
+| Supporting text | text-secondary | `#b8b2d6` | Descriptions, metadata, side labels. |
+| Microcopy only | text-muted | `#837da3` | Placeholder, timestamps, tiny metadata **only**. Never body copy. |
+| Brand action (amber) | accent-primary | `#6b5cd6` | Primary CTA fill, active nav, selected action. |
+| Amber hover | amber-hover | `#7c6ee2` | CTA hover, highlight, logo spark. |
+| Amber active | amber-active | `#5b4dc4` | Pressed/active CTA. |
+| Affirmative (green) | success | `#5fbf8f` | Success badges, confirmations, live-good states. |
+| Focus/system (cyan) | info | `#8b7bf0` | Focus ring, info badges, sync/live indicators. |
+| Exploratory (violet) | creative | `#a99ee6` | Discovery states, experimental labels, sound-design tags. |
+| Warning (orange) | warning | `#d8ab52` | Caution badges, incomplete states. |
+| Exceptional (red) | danger | `#e06a82` | Errors, destructive actions, failed states. |
 
 Derived soft surfaces (tinted status backgrounds — never the accent itself):
 `brand #2b2419` · `success #122820` · `info #13262f` · `warning #2a2213` · `danger #2a1d1f`.
 
 ## 3. The color law (meaning is fixed)
-- **Amber = brand action.** Cyan = focus/system. Green = affirmative. Violet = exploratory. Red = exceptional.
+- **Violet = brand action.** Lavender = focus/system. Green = success. Amber = warning. Rose = error. Cyan = restrained technical support.
 - Colors carry fixed meaning. Do not repurpose green for a brand accent or violet for an error.
 
 ## 4. Amber is not decoration
 - Amber marks the one decisive action in a view: save, generate, review, compare, import, continue.
 - Do **not** amber-tint whole cards, whole navbars, backgrounds, dividers, or icon sets.
-- If more than one amber element competes for attention in a view, one of them is wrong.
+- If more than one violet element competes for attention in a view, one of them is wrong.
 
 ## 5. Bright-accent → label must be dark
 - On any filled bright-accent surface (amber, green, cyan, violet, orange, red), the label/foreground
-  must be dark (`#07090a`). Never light text on a bright fill — it fails contrast and looks cheap.
+  must be dark (`#08070f`). Never light text on a bright fill — it fails contrast and looks cheap.
 - Bright accents as **foreground text/icons on dark surfaces** are correct and encouraged.
 
 ## 6. Outline-control token is required
-- `outline-control #5a666c` is the production outline for secondary buttons, inputs, and chart axes.
+- `outline-control #6b6493` is the production outline for secondary buttons, inputs, and chart axes.
 - The weaker source borders (`border-subtle`, `border-strong`) are **not** substitutes. The outline is not optional.
 
 ## 7. No meaning by color alone
@@ -66,7 +66,7 @@ Derived soft surfaces (tinted status backgrounds — never the accent itself):
 ## 8. Premium, restrained posture
 - No neon glow as a sole state indicator. No purple glassmorphism. No "Deep Space Cyberpunk" theme
   (that was the legacy Master Hub — a different, discarded product).
-- Focus ring = two-layer cyan, never a glow alone. Motion is quick and functional (see visual-direction.md).
+- Focus ring = two-layer violet, never a glow alone. Motion is quick and functional (see visual-direction.md).
 - Display face (Space Grotesk) only for H1–H3 / hero — never in tables, forms, nav, tabs, or badges.
 
 Recommendation: Encode these as lint-checkable rules in [../rules/brand-rules.md](../rules/brand-rules.md)

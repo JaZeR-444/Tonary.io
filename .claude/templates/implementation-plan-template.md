@@ -38,7 +38,7 @@
 1. `flutter analyze` clean.
 2. `flutter test` green.
 3. Manual: launch on `<iOS sim / Android emu>`, walk `<flow>` with network OFF.
-4. Confirm brand/color law (amber = action only).
+4. Confirm brand/color law (violet = action only).
 
 ## Rollback
 - `<feature flag / revert commit>` — `<data migration reversible? Y/N>`

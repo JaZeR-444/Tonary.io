@@ -25,7 +25,7 @@ Adding or reworking any screen inside a `features/<module>/presentation/` folder
    - *Error* — cause + retry; cyan is system/focus, red only for exceptional failure.
    - *Loaded* — the real content.
 5. **Responsive & ergonomics.** Test small (≈360dp) and large phones; min 44–48dp touch targets; safe-area aware; primary actions within thumb arc.
-6. **Motion & a11y.** Use motion tokens (micro 120 / fast 160 / base 180ms); honor `MediaQuery.disableAnimations`. Two-layer cyan focus ring. Semantics labels on interactive/icon-only controls. Meet contrast; never color-only meaning.
+6. **Motion & a11y.** Use motion tokens (micro 120 / fast 160 / base 180ms); honor `MediaQuery.disableAnimations`. two-layer violet focus ring. Semantics labels on interactive/icon-only controls. Meet contrast; never color-only meaning.
 7. **Golden test.** Golden for the loaded state (light-not-applicable; dark-first) plus at least empty/error. Widget-test the primary action.
 
 ## Output / report format
@@ -40,6 +40,6 @@ Open Questions: <list>
 
 ## Guardrails
 - No raw hex or ad-hoc TextStyles — tokens only.
-- Amber = brand action only; never decorative. Filled bright-accent buttons use dark (`#07090a`) labels.
+- Violet = brand action only; never decorative. Filled bright-accent buttons use light (`#f4f2fb`) labels.
 - Never ship a screen missing empty/error states.
 - No desktop-first layouts or two-pane assumptions.

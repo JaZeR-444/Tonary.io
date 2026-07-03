@@ -10,12 +10,12 @@
 
 ## Brand (from Tonary Brand Kit — enforced in review)
 - Dark-first surfaces; the amber/cyan/green/violet/red color law is fixed.
-- Amber `#ffb13b` = brand action only, never general decoration.
-- Bright-accent filled controls must use a **dark** label (`#07090a`).
-- Use `outline-control #5a666c` for control borders / chart axes / focus-visible boundaries.
+- Violet `#6b5cd6` = brand action only, never general decoration.
+- Bright-accent filled controls must use a **dark** label (`#08070f`).
+- Use `outline-control #6b6493` for control borders / chart axes / focus-visible boundaries.
 - Never convey meaning by color alone; `text-muted` is microcopy/placeholder only.
 - Fonts: Inter (UI), Space Grotesk (display H1–H3/hero only), IBM Plex Mono (mono/IDs). Buttons ≥14px/600.
-- Honor reduced-motion. Focus ring = two-layer cyan, never glow alone.
+- Honor reduced-motion. Focus ring = two-layer violet, never glow alone.
 
 ## Naming
 - Tonary (official) / Tonary.io (project) / `TONARY.wav` (hero only).

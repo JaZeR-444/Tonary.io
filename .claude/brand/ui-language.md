@@ -50,7 +50,7 @@ Avoid vague filler: "Go", "Do it", "Submit" (prefer the specific action), "Click
 | Premium | Pro, Paid, Plus | One tier word: `Premium` (paired with `Free`). |
 
 ## Microcopy discipline
-- Microcopy uses `text-muted (#7e8a82)` and caps ~50 characters/line. Body copy aims 60–72 chars/line.
+- Microcopy uses `text-muted (#837da3)` and caps ~50 characters/line. Body copy aims 60–72 chars/line.
 - Placeholders are never the only label — every input keeps a persistent visible label.
 - No emoji, no exclamation spam, no internal jargon (DTO/kebab ids) in user-facing text.
 

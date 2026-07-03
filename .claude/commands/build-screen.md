@@ -24,8 +24,8 @@
 3. Lay out mobile-first: single-column, safe-area aware, thumb-reachable primary action, scrollable body. No fixed desktop widths.
 4. Bind state via Riverpod; render all four states — loading, empty, error, loaded. Empty state must guide the next action.
 5. Apply tokens only: `TonaryColors.*`, `TonaryTypography.*`, spacing scale. Display face for H1–H3/hero only, never in nav/tabs/badges/forms.
-6. Enforce color law: amber = brand action, cyan = focus/system, green = affirmative, violet = exploratory, red = exceptional. Filled bright-accent buttons use dark label `#07090a`.
-7. Add motion using the named tokens (micro 120ms … panel 260ms); honor `MediaQuery.disableAnimations`. Two-layer cyan focus ring.
+6. Enforce color law: violet = brand action, lavender = focus/system, green = success, lavender = exploratory, rose = exceptional. Filled bright-accent buttons use a light label `#f4f2fb`.
+7. Add motion using the named tokens (micro 120ms … panel 260ms); honor `MediaQuery.disableAnimations`. two-layer violet focus ring.
 8. Verify accessibility: ≥44px touch targets, semantics labels, contrast, never meaning-by-color-alone.
 
 **Output / report format:**

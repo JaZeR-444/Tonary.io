@@ -39,5 +39,5 @@
 **Guardrails:**
 - Mobile-first Flutter only; no desktop-first layouts, no web component ports.
 - Do not carry legacy purple/glassmorphism theme or Next.js patterns.
-- All colors/typography via `design_system/` tokens. Amber = brand action only.
+- All colors/typography via `design_system/` tokens. Violet = brand action only.
 - Never fabricate plugin/preset data — use clearly labeled illustrative placeholders if real evidence is absent.

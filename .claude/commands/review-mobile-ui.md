@@ -18,12 +18,12 @@
 
 **Execution steps (checklist):**
 1. **Tokens:** No raw hex or magic px outside `design_system/`. Colors resolve to `TonaryColors.*`, text to `TonaryTypography.*`.
-2. **Color law:** Amber = brand action only (not decoration). Cyan = focus/system. Green = affirmative. Violet = exploratory. Red = exceptional. Meaning never conveyed by color alone. On filled bright-accent buttons the label is dark `#07090a`.
+2. **Color law:** Violet = brand action only (not decoration). Lavender = focus/system. Green = success. Lavender = exploratory. Rose = exceptional. Meaning never conveyed by color alone. On filled bright-accent buttons the label is light `#f4f2fb`.
 3. **Type:** Display face (Space Grotesk) only for H1–H3/hero — never in tables, forms, nav, tabs, badges. Buttons ≥14px/600. `text-muted` limited to microcopy/placeholder.
-4. **Surfaces:** Correct elevation ladder (bg-app → bg-shell → surface-card → surface-raised → surface-hover). Borders use border-subtle/strong; control outlines use outline-control `#5a666c`.
+4. **Surfaces:** Correct elevation ladder (bg-app → bg-shell → surface-card → surface-raised → surface-hover). Borders use border-subtle/strong; control outlines use outline-control `#6b6493`.
 5. **Mobile-first:** Single-column, safe-area aware, primary action thumb-reachable, no fixed desktop widths, no horizontal body scroll.
 6. **States:** Loading, empty, error, loaded all handled; empty state guides next action.
-7. **Motion:** Uses named tokens (micro/fast/base/medium/panel/chart); honors `MediaQuery.disableAnimations`. Focus ring is two-layer cyan, not glow alone.
+7. **Motion:** Uses named tokens (micro/fast/base/medium/panel/chart); honors `MediaQuery.disableAnimations`. Focus ring is two-layer violet, not glow alone.
 8. **A11y:** ≥44px targets, semantics labels, sufficient contrast, dynamic text scaling tolerated.
 
 **Output / report format:**

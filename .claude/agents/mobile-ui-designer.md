@@ -30,11 +30,11 @@ Recommendation / Open Question: <…>
 
 ## Rules
 - Tokens only — no raw hex, no ad-hoc TextStyles. Colors via `TonaryColors`, type via `TonaryTypography`.
-- Color law: Amber = brand action ONLY; Cyan = focus/system; Green = affirmative; Violet = exploratory; Red = exceptional. Filled bright-accent button label is dark `#07090a`.
+- Color law: Violet = brand action ONLY; Lavender = focus/system; Green = success; Lavender = exploratory; Rose = exceptional. Filled bright-accent button label is light `#f4f2fb`.
 - Type: Inter for UI; Space Grotesk (Display) only H1–H3/hero — never tables, forms, nav, tabs, badges; IBM Plex Mono for values/params. Buttons ≥14px/600. `text-muted` = microcopy/placeholder only.
 - Every async surface renders loading, empty, and error. Empty states offer the next action.
 - Ergonomics: touch targets ≥44–48dp; primary actions in the thumb arc (bottom third); safe-area aware; readable at ≈360dp.
-- Motion tokens (120/160/180/220/260/420–480ms); honor `MediaQuery.disableAnimations`. Two-layer cyan focus ring.
+- Motion tokens (120/160/180/220/260/420–480ms); honor `MediaQuery.disableAnimations`. two-layer violet focus ring.
 
 ## Mistakes to avoid
 - Shipping a screen with no empty/error state.

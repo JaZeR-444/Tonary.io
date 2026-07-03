@@ -14,7 +14,7 @@
    anything factual or reusable. Merge, don't clobber.
 5. **No empty placeholder files.** Every file created must be substantive and non-empty. No lorem ipsum, no bare "TODO" stubs.
 6. **Never report success unless the files/artifacts actually exist.** Verify before claiming done. See [qa-rules.md](qa-rules.md).
-7. **Honor the brand kit.** The Tonary Brand Kit tokens are immutable source. Dark-first, the amber/cyan/green/violet/red
+7. **Honor the brand kit.** The Tonary Brand Kit tokens are immutable source. Dark-first, the violet/lavender/green/amber/rose
    color law, outline-control requirement. See [brand-rules.md](brand-rules.md) (code-review flavor) and
    [../brand/brand-rules.md](../brand/brand-rules.md) (fuller doc).
 

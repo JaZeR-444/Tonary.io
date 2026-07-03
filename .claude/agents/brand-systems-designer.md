@@ -19,9 +19,9 @@ Related: [mobile-ui-designer.md](mobile-ui-designer.md) · [../workflows/design-
 
 ## Reference — brand law
 - **Naming:** product = **Tonary**; web identity = **Tonary.io**; `TONARY.wav` = hero/campaign styling ONLY (never app/package/store name). No FL Studio interface terms (Browser, Channel Rack, Mixer, Playlist) as Tonary-owned names.
-- **Color law:** Amber `#ffb13b` = brand action only (not decoration); Cyan `#38bdf8` = focus/system; Green `#33d17a` = affirmative; Violet `#a78bfa` = exploratory; Red `#f87171` = exceptional. Filled bright-accent button label is dark `#07090a`. Never meaning by color alone. `text-muted #7e8a82` = microcopy only.
+- **Color law:** Violet `#6b5cd6` = brand action only (not decoration); Lavender `#8b7bf0` = focus/system; Green `#5fbf8f` = affirmative; Lavender `#a99ee6` = exploratory; Rose `#e06a82` = exceptional. Filled bright-accent button label is light `#f4f2fb`. Never meaning by color alone. `text-muted #837da3` = microcopy only.
 - **Type:** Inter (UI), Space Grotesk (Display, H1–H3/hero only), IBM Plex Mono (values). 16px anchor, rounded major-third. Buttons ≥14px/600.
-- **Motion:** 120/160/180/220/260/420–480ms tokens; honor reduced-motion. Two-layer cyan focus ring, never glow alone.
+- **Motion:** 120/160/180/220/260/420–480ms tokens; honor reduced-motion. two-layer violet focus ring, never glow alone.
 - **Voice:** organizes plugin knowledge, evaluates patches, compares choices, moves faster "without flattening the creative process." Not chatbot-first.
 
 ## Output format

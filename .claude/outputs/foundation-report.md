@@ -58,7 +58,7 @@ Tonary.io/
 
 ## 6. Brand & naming decisions
 - **Tonary** (official) / **Tonary.io** (project) / **TONARY.wav** (hero only — never app/package/store name).
-- Dark-first; **color law**: amber=action, cyan=focus/system, green=affirmative, violet=creative, red=exceptional. Amber ≠ decoration; bright-fill labels must be dark; derived `outline-control #5a666c` required.
+- Dark-first; **color law**: violet=action, lavender=focus/system, green=success, lavender=creative, rose=exceptional. Violet ≠ decoration; violet-fill labels must be light; derived `outline-control #6b6493` required.
 - Fonts: Inter (UI) / Space Grotesk (display H1–H3/hero) / IBM Plex Mono (mono/IDs).
 - FL Studio interface terms are **third-party context**, never Tonary branding. ([naming-rules.md](../brand/naming-rules.md), [brand-rules.md](../brand/brand-rules.md))
 

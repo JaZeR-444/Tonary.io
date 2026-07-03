@@ -97,8 +97,8 @@ Each feature folder is internally sub-structured:
 - **Does NOT:** contain business logic, data access, or feature screens; use legacy
   `--citrus-console-*` names.
 - **Claude should use this when…** styling anything or adding a reusable branded
-  component. Enforce the color law (amber = action, cyan = focus, green = affirmative,
-  violet = exploratory, red = exceptional).
+  component. Enforce the color law (violet = action, lavender = focus, green = success,
+  lavender = exploratory, rose = exceptional).
 
 ## Feature → module map
 

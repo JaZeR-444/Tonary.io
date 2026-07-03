@@ -27,8 +27,8 @@
 - **User Saved Item** — a user-local saved reference (User Session).
 
 ## Design tokens (see `../brand/`)
-- **outline-control** `#5a666c` — derived neutral for control borders / chart axes / focus boundaries.
-- **Color law** — amber=action, cyan=focus/system, green=affirmative, violet=creative/exploratory, red=exceptional/danger.
+- **outline-control** `#6b6493` — derived neutral for control borders / chart axes / focus boundaries.
+- **Color law** — violet=action, lavender=focus/system, green=success, lavender=creative/exploratory, rose=exceptional/danger.
 
 ## Tech
 - **Riverpod / go_router / Drift / freezed** — recommended Flutter stack (see `../architecture/`).

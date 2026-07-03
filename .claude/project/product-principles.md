@@ -27,7 +27,7 @@ Tonary is a premium, dark-first **sound-design intelligence layer** for FL Studi
 
 10. **Modular by design.** Only five official modules exist — **Scout, Vault, Review, Flow, Briefs**. Features map cleanly to one. We do not spawn parallel concepts or reuse FL Studio interface terms (Browser, Channel Rack, Mixer, Playlist) as Tonary-owned names.
 
-11. **Color law is disciplined.** Amber = brand action (and nothing else decorative). Cyan = focus/system. Green = affirmative. Violet = exploratory. Red = exceptional. `text-muted` is placeholder/microcopy only, never body text.
+11. **Color law is disciplined.** Violet = brand action (and nothing else decorative). Lavender = focus/system. Green = success. Lavender = exploratory. Rose = exceptional. `text-muted` is placeholder/microcopy only, never body text.
 
 12. **Pragmatic architecture.** Clean-ish layers (presentation → domain → data), not over-engineering. `Recommendation:` Riverpod + go_router + Drift. Ship value; refactor when a real seam appears.
 

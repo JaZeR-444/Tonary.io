@@ -15,7 +15,7 @@
 - [ ] `flutter test` (unit + golden) green
 - [ ] Offline-first flow works (network OFF)
 - [ ] Accessibility (tap targets ≥48dp, AA contrast, semantics, reduced-motion)
-- [ ] Brand/color law (amber = action only; dark label on bright button; no meaning-by-color-alone)
+- [ ] Brand/color law (violet = action only; light label on the violet button; no meaning-by-color-alone)
 
 ## Results
 | Check | Result | Evidence / Notes |

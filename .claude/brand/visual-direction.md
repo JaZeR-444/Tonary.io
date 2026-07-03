@@ -21,8 +21,8 @@ quietly premium. Every visual choice earns its place. No decoration for decorati
 
 ## Surface depth
 Depth is built by elevation and outline, not glow or blur:
-`bg-app (#07090a)` → `bg-shell (#0e1114)` → `surface-card (#151a1f)` → `surface-raised (#1d242b)` → `surface-hover (#26313a)`.
-- Controls get an `outline-control (#5a666c)` border, not a drop shadow, to read as interactive on dark.
+`bg-app (#08070f)` → `bg-shell (#0b0916)` → `surface-card (#100e20)` → `surface-raised (#17142c)` → `surface-hover (#201b3a)`.
+- Controls get an `outline-control (#6b6493)` border, not a drop shadow, to read as interactive on dark.
 - Modals sit on `surface-raised` with an `outline-control` border and a dark scrim — grounded, never glassy.
 
 ## Motion tokens
@@ -39,7 +39,7 @@ Depth is built by elevation and outline, not glow or blur:
 - Motion is functional feedback, never spectacle. Ease-out on enter, ease-in on exit.
 - **Honor reduced motion.** In Flutter, gate animations on `MediaQuery.of(context).disableAnimations`
   (maps to `prefers-reduced-motion`). When disabled, cut to end-state instantly — no partial motion.
-- Focus feedback = two-layer cyan ring, never a glow alone.
+- Focus feedback = two-layer violet ring, never a glow alone.
 
 ## Mobile adaptation of the web brand kit
 Recommendation: The brand kit was authored web-first (CSS `--citrus-console-*` variables). For the Flutter app:

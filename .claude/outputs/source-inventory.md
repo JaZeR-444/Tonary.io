@@ -50,7 +50,7 @@ Plus one superseded archive — `Project - FL Studio Plugin`.
   - **Implementation Assets:** `tonary-brand-tokens.css`, `tonary-brand-tokens.json` (the full source + derived token set — colors, fonts, type scale, motion).
   - **Reference Tables (CSV):** brand_tokens_db, typography_scale_db, component_rules_db, accessibility_checks_db, motion_tokens_db, rollout_tasks_db, resource_page_index.
   - **Visual References:** `tonary-color-swatch-board.svg`.
-- **Confirms the naming rules** (Tonary official / Tonary.io project / `.wav` hero only) and the **color law** (amber=action, cyan=focus, green=affirmative, violet=creative, red=exceptional). Dark-first, light theme not required at launch.
+- **Confirms the naming rules** (Tonary official / Tonary.io project / `.wav` hero only) and the **color law** (violet=action, lavender=focus, green=success, lavender=creative, rose=exceptional). Dark-first, light theme not required at launch.
 - **Directly reusable** in Tonary via `.claude/brand/` and, later, `lib/design_system/tokens/`.
 
 ## 4. `Project - FL Studio Plugin/`  — ARCHIVE (superseded)

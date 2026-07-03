@@ -30,8 +30,8 @@ Scaffold
 _Semantic Dart names from `TonaryColors` / `TonaryTypography` — not raw hex._
 | Element | Token | Note |
 |---|---|---|
-| Canvas | `bgApp` | `#07090a` |
-| Card | `surfaceCard` | `#151a1f` |
+| Canvas | `bgApp` | `#08070f` |
+| Card | `surfaceCard` | `#100e20` |
 | Primary action | `accentPrimary` (amber) | label must be `bgApp` dark |
 | Focus ring | `infoFocus` (cyan) | two-layer, never glow alone |
 | Body text | `textPrimary` | `textMuted` = placeholder ONLY |

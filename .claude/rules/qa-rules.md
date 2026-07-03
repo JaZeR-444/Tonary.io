@@ -22,7 +22,7 @@ A change is **not done** until every applicable gate below passes. If a gate can
 
 ## Gate 4 — Brand compliance
 - Passes the code-review guardrail checklist in [brand-rules.md](brand-rules.md): color law, amber-not-decoration,
-  dark labels on bright fills, `outline-control` usage, naming, voice.
+  light labels on the violet brand fill, `outline-control` usage, naming, voice.
 - No hardcoded hex; tokens only. Display face reserved for H1–H3/hero.
 
 ## Gate 5 — Build passes

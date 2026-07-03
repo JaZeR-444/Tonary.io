@@ -43,7 +43,7 @@ _List each screen; link to its screen-spec._
 ## Acceptance Criteria
 - [ ] `<Given / When / Then, testable>`
 - [ ] Offline path verified (no network required for core view).
-- [ ] Dark-first tokens only; amber reserved for brand action.
+- [ ] Dark-first tokens only; violet reserved for brand action.
 
 ## Risks & Open Questions
 - `Open Question:` `<unknown>`

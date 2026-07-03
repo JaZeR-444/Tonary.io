@@ -5,7 +5,7 @@
 > [../brand/brand-rules.md](../brand/brand-rules.md). Widths/targets in [mobile-first-rules.md](mobile-first-rules.md).
 
 ## Focus visibility
-- Every interactive element has a **visible focus state**. Focus ring = **two-layer cyan** (`#38bdf8`), never a glow alone.
+- Every interactive element has a **visible focus state**. Focus ring = **two-layer violet** (`#8b7bf0`), never a glow alone.
 - Inputs on focus: cyan border + outside ring. Focus must be visible on `bg-app`, `bg-shell`, and `surface-card`.
 - Never remove focus indicators. Keyboard/switch/AT users depend on them.
 
@@ -16,15 +16,15 @@
 
 ## Contrast
 - **Text: ≥ 4.5:1** against its background (large text ≥ 3:1). **Non-text (icons, borders, control outlines): ≥ 3:1**.
-- Use `text-primary #f8faf2` for body; `text-secondary #b8c0b5` for supporting copy. `text-muted #7e8a82` is
+- Use `text-primary #f4f2fb` for body; `text-secondary #b8b2d6` for supporting copy. `text-muted #837da3` is
   **placeholder/microcopy only** — never body text, never on raised/hover fills.
-- Control outlines use `outline-control #5a666c` (3.17:1 on shell) — the weaker source borders fail non-text contrast.
-- Bright-accent fills carry **dark** labels (`#07090a`); never light text on a bright fill.
+- Control outlines use `outline-control #6b6493` (3.17:1 on shell) — the weaker source borders fail non-text contrast.
+- Violet brand fills carry **light** labels (`#f4f2fb`); reserve dark labels for the light theme.
 
 ## No meaning by color alone
 - Status, series, and selection must also be conveyed by icon, label, shape, position, or dash/marker pattern.
 - Data-viz: accent colors **plus** dash/marker redundancy. Axes use `outline-control`. Never color-only series.
-- Selected state uses more than a color swap (amber left rule, soft surface, checkmark, or border emphasis).
+- Selected state uses more than a color swap (violet left rule, soft surface, checkmark, or border emphasis).
 
 ## Required states (every data-driven view)
 Every screen/list that loads data must design and implement all of:
@@ -46,9 +46,9 @@ Every screen/list that loads data must design and implement all of:
 - Long tables (e.g. parameter data) scroll horizontally inside their own container; the page body never scrolls sideways.
 
 ## Component behavior (from the brand kit)
-- Navbar/bottom nav is not an amber strip; only the active item gets accent (amber text/pill or filled icon).
-- Cards: hover/press → `surface-raised`; selected ≠ full amber fill. Full amber cards are marketing-only.
-- Primary button: amber fill + dark label, hover `amber-hover`, active `amber-active`, focus cyan ring.
+- Navbar/bottom nav is not an violet strip; only the active item gets accent (violet text/pill or filled icon).
+- Cards: hover/press → `surface-raised`; selected ≠ full violet fill. Full violet cards are marketing-only.
+- Primary button: violet fill + light label, hover `brand-hover`, active `brand-active`, focus violet ring.
 - Secondary button: `surface-card` + `outline-control` (the outline is not optional). Ghost: soft tinted fill + accent label.
 - Inputs keep a **persistent visible label**; placeholders are never the only label.
 - Modals sit on `surface-raised` + `outline-control` + dark scrim — grounded, not glassy; enter 220–260ms.

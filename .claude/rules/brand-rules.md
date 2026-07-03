@@ -8,17 +8,17 @@ Fail the review if any check below is violated. Each item is intended to be mech
 
 ## Color law checklist
 - [ ] **No hardcoded hex** in widgets/components. Colors come from `TonaryColors` tokens only.
-- [ ] **Amber (`#ffb13b`) is brand action only** — not backgrounds, dividers, whole cards, whole navbars, or icon sets.
-      More than one competing amber element in a view = fail.
-- [ ] **Bright-accent fills carry a dark label** (`#07090a`). Light/`text-primary` text on any bright fill = fail.
-- [ ] **Color meaning is fixed:** amber=action, cyan=focus/system, green=affirmative, violet=exploratory, red=exceptional. No repurposing.
+- [ ] **Violet (`#6b5cd6`) is brand action only** — not backgrounds, dividers, whole cards, whole navbars, or icon sets.
+      More than one competing violet element in a view = fail.
+- [ ] **The violet brand fill carries a light label** (`#f4f2fb`). Dark text on the violet brand fill = fail (dark labels are light-theme only).
+- [ ] **Color meaning is fixed:** violet=action, lavender=focus/system, green=success, amber=warning, rose=error; cyan=restrained support. No repurposing.
 - [ ] **No meaning by color alone** — every status/series/selection also has icon, label, shape, or dash/marker.
-- [ ] **`text-muted` (`#7e8a82`) is placeholder/microcopy only** — never body text, never on raised/hover fills.
+- [ ] **`text-muted` (`#837da3`) is placeholder/microcopy only** — never body text, never on raised/hover fills.
 
 ## Outline & surface checklist
-- [ ] **Control outlines use `outline-control` (`#5a666c`)** — secondary buttons, inputs, chart axes. `border-subtle`/`border-strong` as a control outline = fail.
+- [ ] **Control outlines use `outline-control` (`#6b6493`)** — secondary buttons, inputs, chart axes. `border-subtle`/`border-strong` as a control outline = fail.
 - [ ] Depth via elevation (`bg-app → surface-card → surface-raised → surface-hover`), **not glow or glassmorphism**.
-- [ ] No neon glow as a **sole** state indicator. Focus = two-layer cyan ring, not glow alone.
+- [ ] No neon glow as a **sole** state indicator. Focus = two-layer violet ring, not glow alone.
 - [ ] Modals: `surface-raised` + `outline-control` + dark scrim — grounded, not glassy.
 
 ## Typography checklist
