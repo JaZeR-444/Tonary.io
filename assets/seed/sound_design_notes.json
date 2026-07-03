@@ -991,5 +991,20 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-peak-controller-sidechain",
+    "topic": "Peak-follower sidechain",
+    "subjectRefs": [
+      "fruity-peak-controller"
+    ],
+    "body": "Feeding a kick into a Peak Controller turns its level into an automation signal; link that to another track's volume and it ducks in time with the kick - the classic sidechain pump without a compressor. The same output can drive a filter cutoff or send level.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-peak-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

@@ -2745,5 +2745,380 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-peak-controller",
+    "name": "Fruity Peak Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / Envelope Follower",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal controller that converts a source's audio level into an automation signal (peak follower) and also generates LFOs (sine, triangle, square, saw, random), for sidechain-style modulation of any linked parameter.",
+    "tags": [
+      "controller",
+      "envelope-follower",
+      "lfo",
+      "modulation"
+    ],
+    "capabilities": [
+      "peak-follower",
+      "lfo-generator",
+      "parameter-linking"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Peak%20Controller.htm",
+    "sources": [
+      "src-fruity-peak-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-envelope-controller",
+    "name": "Fruity Envelope Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / Envelope",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal controller that generates MIDI-triggered envelopes and LFOs, plus key, velocity and randomization sources, to modulate parameters in time with notes.",
+    "tags": [
+      "controller",
+      "envelope",
+      "modulation",
+      "midi"
+    ],
+    "capabilities": [
+      "midi-triggered-envelopes",
+      "lfo",
+      "key-velocity-mapping",
+      "randomization"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Envelope%20Controller.htm",
+    "sources": [
+      "src-fruity-envelope-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-formula-controller",
+    "name": "Fruity Formula Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / Logic",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal controller with a math engine (sin, cos, tan, log, abs, round, random and more) that computes an automation value from up to three linkable inputs, for logic- and formula-driven modulation.",
+    "tags": [
+      "controller",
+      "formula",
+      "logic",
+      "modulation"
+    ],
+    "capabilities": [
+      "math-engine",
+      "dynamic-inputs",
+      "formula-control"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Formula%20Controller.htm",
+    "sources": [
+      "src-fruity-formula-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-keyboard-controller",
+    "name": "Fruity Keyboard Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / MIDI",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal controller that maps automation values to individual keyboard notes and to velocity, so which note is played (and how hard) drives effect parameters.",
+    "tags": [
+      "controller",
+      "midi",
+      "keyboard",
+      "modulation"
+    ],
+    "capabilities": [
+      "note-mapping",
+      "velocity-mapping"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Keyboard%20Controller.htm",
+    "sources": [
+      "src-fruity-keyboard-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-x-y-controller",
+    "name": "Fruity X-Y Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / Vector Pad",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal vector controller providing X and Y automation outputs from a 2D pad, with smoothing for organic transitions between the mapped parameters.",
+    "tags": [
+      "controller",
+      "xy",
+      "vector",
+      "modulation"
+    ],
+    "capabilities": [
+      "xy-pad",
+      "smoothing",
+      "dual-output"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20X-Y%20Controller.htm",
+    "sources": [
+      "src-fruity-x-y-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "wave-candy",
+    "name": "Wave Candy",
+    "vendor": "Image-Line",
+    "category": "Metering / Analysis",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A metering and analysis plugin combining a zoomable oscilloscope, a linear/log spectrum analyzer and other visualizers for monitoring signals at any point in the mixer.",
+    "tags": [
+      "analyzer",
+      "oscilloscope",
+      "spectrum",
+      "metering"
+    ],
+    "capabilities": [
+      "oscilloscope",
+      "spectrum-analyzer",
+      "metering"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wave%20Candy.htm",
+    "sources": [
+      "src-wave-candy-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-db-meter",
+    "name": "Fruity dB Meter",
+    "vendor": "Image-Line",
+    "category": "Metering",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A level meter with a large peak display and a digital readout of exact dB values on hover, for monitoring loudness at any mixer point.",
+    "tags": [
+      "meter",
+      "level",
+      "db",
+      "metering"
+    ],
+    "capabilities": [
+      "peak-display",
+      "db-readout",
+      "metering"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20dB%20Meter.htm",
+    "sources": [
+      "src-fruity-db-meter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-center",
+    "name": "Fruity Center",
+    "vendor": "Image-Line",
+    "category": "Utility / Restoration",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A zero-latency utility that removes DC offset by re-centering the waveform vertically, cleaning up signals before further processing.",
+    "tags": [
+      "utility",
+      "dc-offset",
+      "restoration",
+      "mixing"
+    ],
+    "capabilities": [
+      "dc-removal",
+      "zero-latency"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Center.htm",
+    "sources": [
+      "src-fruity-center-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-send",
+    "name": "Fruity Send",
+    "vendor": "Image-Line",
+    "category": "Routing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A routing utility that extracts a signal from a mixer slot - optionally pre-fader - and sends it elsewhere while later slots keep processing, enabling flexible parallel routing.",
+    "tags": [
+      "routing",
+      "send",
+      "aux",
+      "mixing"
+    ],
+    "capabilities": [
+      "pre-fader-send",
+      "chain-extraction",
+      "routing"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Send.htm",
+    "sources": [
+      "src-fruity-send-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-panomatic",
+    "name": "Fruity PanOMatic",
+    "vendor": "Image-Line",
+    "category": "Panner / Tremolo",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An auto-panner and volume LFO that automatically moves sound left/right (auto-pan) and modulates volume up/down (tremolo), with tempo-sync options.",
+    "tags": [
+      "autopan",
+      "tremolo",
+      "modulation",
+      "effect"
+    ],
+    "capabilities": [
+      "auto-pan",
+      "tremolo",
+      "volume-lfo"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20PanOMatic.htm",
+    "sources": [
+      "src-fruity-panomatic-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-mute-2",
+    "name": "Fruity Mute 2",
+    "vendor": "Image-Line",
+    "category": "Utility / Signal Control",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A click-free mute utility with smooth on/off handling, placeable before effects (stopping the input) or after (stopping the output) for clean gating and routing.",
+    "tags": [
+      "mute",
+      "utility",
+      "gate",
+      "routing"
+    ],
+    "capabilities": [
+      "click-free-mute",
+      "pre-post-placement"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Mute%202.htm",
+    "sources": [
+      "src-fruity-mute-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "synthmaker",
+    "name": "SynthMaker",
+    "vendor": "Image-Line",
+    "category": "Modular DSP / Builder",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A visual programming environment for building custom instruments and effects from modular DSP blocks, wiring low-level signal-processing chains graphically.",
+    "tags": [
+      "modular",
+      "dsp",
+      "builder",
+      "synth"
+    ],
+    "capabilities": [
+      "visual-programming",
+      "modular-dsp",
+      "plugin-creation"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/SynthMaker.htm",
+    "sources": [
+      "src-synthmaker-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "control-surface",
+    "name": "Control Surface",
+    "vendor": "Image-Line",
+    "category": "Controller / Automation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A plugin providing a customizable panel of knobs, sliders and switches that can be linked to and automate other parameters, acting as a central control hub for a project.",
+    "tags": [
+      "controller",
+      "control-surface",
+      "automation",
+      "utility"
+    ],
+    "capabilities": [
+      "custom-control-panel",
+      "parameter-linking",
+      "automation"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Control%20Surface.htm",
+    "sources": [
+      "src-control-surface-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "dashboard",
+    "name": "Dashboard",
+    "vendor": "Image-Line",
+    "category": "Controller / MIDI Mapping",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A plugin for designing custom control-panel layouts and mapping their knobs and sliders to MIDI hardware, used to build tailored performance and automation surfaces.",
+    "tags": [
+      "controller",
+      "dashboard",
+      "midi",
+      "mapping"
+    ],
+    "capabilities": [
+      "control-layout-design",
+      "midi-mapping"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Dashboard.htm",
+    "sources": [
+      "src-dashboard-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

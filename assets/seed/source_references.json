@@ -1395,5 +1395,159 @@
     "retrievedAt": "2026-07-02",
     "reliability": "High",
     "notes": "Official reference for Wave Traveller."
+  },
+  {
+    "id": "src-fruity-peak-controller-manual",
+    "title": "Fruity Peak Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Peak%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Peak Controller."
+  },
+  {
+    "id": "src-fruity-envelope-controller-manual",
+    "title": "Fruity Envelope Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Envelope%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Envelope Controller."
+  },
+  {
+    "id": "src-fruity-formula-controller-manual",
+    "title": "Fruity Formula Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Formula%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Formula Controller."
+  },
+  {
+    "id": "src-fruity-keyboard-controller-manual",
+    "title": "Fruity Keyboard Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Keyboard%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Keyboard Controller."
+  },
+  {
+    "id": "src-fruity-x-y-controller-manual",
+    "title": "Fruity X-Y Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20X-Y%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity X-Y Controller."
+  },
+  {
+    "id": "src-wave-candy-manual",
+    "title": "Wave Candy - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wave%20Candy.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Wave Candy."
+  },
+  {
+    "id": "src-fruity-db-meter-manual",
+    "title": "Fruity dB Meter - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20dB%20Meter.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity dB Meter."
+  },
+  {
+    "id": "src-fruity-center-manual",
+    "title": "Fruity Center - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Center.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Center."
+  },
+  {
+    "id": "src-fruity-send-manual",
+    "title": "Fruity Send - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Send.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Send."
+  },
+  {
+    "id": "src-fruity-panomatic-manual",
+    "title": "Fruity PanOMatic - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20PanOMatic.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity PanOMatic."
+  },
+  {
+    "id": "src-fruity-mute-2-manual",
+    "title": "Fruity Mute 2 - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Mute%202.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Mute 2."
+  },
+  {
+    "id": "src-synthmaker-manual",
+    "title": "SynthMaker - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/SynthMaker.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Official reference for SynthMaker (legacy)."
+  },
+  {
+    "id": "src-control-surface-manual",
+    "title": "Control Surface - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Control%20Surface.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Official reference for Control Surface."
+  },
+  {
+    "id": "src-dashboard-manual",
+    "title": "Dashboard - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Dashboard.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Official reference for Dashboard."
   }
 ]
