@@ -3120,5 +3120,246 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "kepler-exo",
+    "name": "Kepler Exo",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An advanced polyphonic subtractive synthesizer emulating classic Roland analog voices in the JUNO and JUPITER style, extending Kepler with more oscillators, voices and modulation for lush pads and rich analog leads.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "analog",
+      "juno",
+      "jupiter"
+    ],
+    "capabilities": [
+      "juno-jupiter-emulation",
+      "polyphonic",
+      "analog-modeling",
+      "modulation"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Kepler%20Exo.htm",
+    "sources": [
+      "src-kepler-exo-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-voltage-controller",
+    "name": "Fruity Voltage Controller",
+    "vendor": "Image-Line",
+    "category": "Controller / CV",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An internal controller that outputs a steady, adjustable control value to offset or bias any linked parameter - the simplest way to set or automate a fixed control level.",
+    "tags": [
+      "controller",
+      "cv",
+      "offset",
+      "automation"
+    ],
+    "capabilities": [
+      "constant-control",
+      "offset-bias",
+      "parameter-linking"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Voltage%20Controller.htm",
+    "sources": [
+      "src-fruity-voltage-controller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-big-clock",
+    "name": "Fruity Big Clock",
+    "vendor": "Image-Line",
+    "category": "Utility / Display",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A large on-screen clock that displays song position and time in bars/beats or minutes/seconds, for easy reading during performance or long sessions.",
+    "tags": [
+      "utility",
+      "clock",
+      "timer",
+      "display"
+    ],
+    "capabilities": [
+      "time-display",
+      "bars-beats",
+      "song-position"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Big%20Clock.htm",
+    "sources": [
+      "src-fruity-big-clock-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-notebook",
+    "name": "Fruity NoteBook",
+    "vendor": "Image-Line",
+    "category": "Utility / Notepad",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A simple in-project notepad for storing text - lyrics, to-do lists or session notes - saved with the project.",
+    "tags": [
+      "utility",
+      "notepad",
+      "notes",
+      "text"
+    ],
+    "capabilities": [
+      "text-notes",
+      "project-storage"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20NoteBook.htm",
+    "sources": [
+      "src-fruity-notebook-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-notebook-2",
+    "name": "Fruity NoteBook 2",
+    "vendor": "Image-Line",
+    "category": "Utility / Notepad",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An updated in-project notepad with multiple pages for storing lyrics, arrangement notes and reminders inside the project.",
+    "tags": [
+      "utility",
+      "notepad",
+      "notes",
+      "text"
+    ],
+    "capabilities": [
+      "multi-page-notes",
+      "project-storage"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20NoteBook%202.htm",
+    "sources": [
+      "src-fruity-notebook-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-html-notebook",
+    "name": "Fruity HTML NoteBook",
+    "vendor": "Image-Line",
+    "category": "Utility / Notebook",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An in-project notebook that renders HTML pages, for richer formatted notes and reference material stored with the project.",
+    "tags": [
+      "utility",
+      "notebook",
+      "html",
+      "text"
+    ],
+    "capabilities": [
+      "html-notes",
+      "project-storage"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20HTML%20NoteBook.htm",
+    "sources": [
+      "src-fruity-html-notebook-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "tuner",
+    "name": "Tuner",
+    "vendor": "Image-Line",
+    "category": "Chromatic Tuner",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A chromatic instrument tuner that displays the pitch of incoming audio against the nearest note, for tuning guitars and other instruments through the DAW.",
+    "tags": [
+      "tuner",
+      "utility",
+      "pitch",
+      "tracking"
+    ],
+    "capabilities": [
+      "chromatic-tuning",
+      "pitch-display"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Tuner.htm",
+    "sources": [
+      "src-tuner-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "midi-out",
+    "name": "MIDI Out",
+    "vendor": "Image-Line",
+    "category": "MIDI / Utility",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A plugin that sends MIDI note and controller data to external hardware or other software, bridging FL's sequencer to outboard synths and MIDI devices.",
+    "tags": [
+      "midi",
+      "output",
+      "hardware",
+      "utility"
+    ],
+    "capabilities": [
+      "midi-output",
+      "external-routing",
+      "controller-data"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/MIDI%20Out.htm",
+    "sources": [
+      "src-midi-out-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "beepmap",
+    "name": "BeepMap",
+    "vendor": "Image-Line",
+    "category": "Image Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A generator that synthesizes sound from bitmap images, mapping image data to frequency and time to produce complex, evolving textures.",
+    "tags": [
+      "synth",
+      "image-synthesis",
+      "experimental",
+      "texture"
+    ],
+    "capabilities": [
+      "image-synthesis",
+      "bitmap-to-sound",
+      "texture"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BeepMap.htm",
+    "sources": [
+      "src-beepmap-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

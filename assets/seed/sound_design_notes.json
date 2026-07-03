@@ -1006,5 +1006,20 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "kepler-exo-poly",
+    "topic": "Poly analog emulation",
+    "subjectRefs": [
+      "kepler-exo"
+    ],
+    "body": "Kepler Exo extends the JUNO-style Kepler toward JUPITER territory: more oscillators and voices with deeper modulation, so it covers big polyphonic pads and stacked analog leads rather than just single-oscillator patches.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-kepler-exo-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

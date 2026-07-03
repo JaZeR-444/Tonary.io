@@ -1549,5 +1549,104 @@
     "retrievedAt": "2026-07-02",
     "reliability": "Medium",
     "notes": "Official reference for Dashboard."
+  },
+  {
+    "id": "src-kepler-exo-manual",
+    "title": "Kepler Exo - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Kepler%20Exo.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Kepler Exo."
+  },
+  {
+    "id": "src-fruity-voltage-controller-manual",
+    "title": "Fruity Voltage Controller - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Voltage%20Controller.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Voltage Controller."
+  },
+  {
+    "id": "src-fruity-big-clock-manual",
+    "title": "Fruity Big Clock - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Big%20Clock.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Big Clock."
+  },
+  {
+    "id": "src-fruity-notebook-manual",
+    "title": "Fruity NoteBook - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20NoteBook.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity NoteBook."
+  },
+  {
+    "id": "src-fruity-notebook-2-manual",
+    "title": "Fruity NoteBook 2 - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20NoteBook%202.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity NoteBook 2."
+  },
+  {
+    "id": "src-fruity-html-notebook-manual",
+    "title": "Fruity HTML NoteBook - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20HTML%20NoteBook.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity HTML NoteBook."
+  },
+  {
+    "id": "src-tuner-manual",
+    "title": "Tuner - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Tuner.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Tuner."
+  },
+  {
+    "id": "src-midi-out-manual",
+    "title": "MIDI Out - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/MIDI%20Out.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for MIDI Out."
+  },
+  {
+    "id": "src-beepmap-manual",
+    "title": "BeepMap - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BeepMap.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Official reference for BeepMap; function cross-checked to the manual."
   }
 ]
