@@ -966,5 +966,159 @@
     "retrievedAt": "2026-07-02",
     "reliability": "High",
     "notes": "Official reference for Pitch Shifter."
+  },
+  {
+    "id": "src-gms-manual",
+    "title": "GMS - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/GMS.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for GMS."
+  },
+  {
+    "id": "src-sakura-manual",
+    "title": "Sakura - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sakura.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Sakura."
+  },
+  {
+    "id": "src-kepler-manual",
+    "title": "Kepler - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Kepler.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Kepler."
+  },
+  {
+    "id": "src-ogun-manual",
+    "title": "Ogun - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Ogun.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Ogun."
+  },
+  {
+    "id": "src-simsynth-live-manual",
+    "title": "SimSynth Live - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/SimSynth%20Live.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for SimSynth Live."
+  },
+  {
+    "id": "src-minisynth-manual",
+    "title": "MiniSynth - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/MiniSynth.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for MiniSynth."
+  },
+  {
+    "id": "src-transistor-bass-manual",
+    "title": "Transistor Bass - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Transistor%20Bass.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Transistor Bass."
+  },
+  {
+    "id": "src-wasp-manual",
+    "title": "Wasp - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wasp.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Wasp."
+  },
+  {
+    "id": "src-fl-keys-manual",
+    "title": "FL Keys - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FL%20Keys.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for FL Keys."
+  },
+  {
+    "id": "src-fl-slayer-manual",
+    "title": "FL Slayer - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FL%20Slayer.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for FL Slayer."
+  },
+  {
+    "id": "src-plucked-manual",
+    "title": "Plucked! - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Plucked.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Plucked!."
+  },
+  {
+    "id": "src-fruity-drumsynth-live-manual",
+    "title": "Fruity DrumSynth Live - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20DrumSynth%20Live.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity DrumSynth Live."
+  },
+  {
+    "id": "src-drumaxx-manual",
+    "title": "Drumaxx - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Drumaxx.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Drumaxx."
+  },
+  {
+    "id": "src-hardcore-manual",
+    "title": "Hardcore - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Hardcore.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Hardcore."
   }
 ]

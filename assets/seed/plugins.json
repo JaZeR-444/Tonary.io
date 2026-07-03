@@ -1682,5 +1682,389 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "gms",
+    "name": "GMS",
+    "vendor": "Image-Line",
+    "category": "Hybrid Wavetable Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A hybrid wavetable synthesizer with three independent oscillators using custom waveshapes. It supports FM, ring-mod, oscillator sync and standard subtractive modes, with an advanced unison engine for thick, detuned, stereo-spread textures.",
+    "tags": [
+      "synth",
+      "wavetable",
+      "hybrid",
+      "fm",
+      "unison"
+    ],
+    "capabilities": [
+      "triple-oscillator",
+      "hybrid-fm-rm-sync",
+      "wavetable",
+      "advanced-unison"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/GMS.htm",
+    "sources": [
+      "src-gms-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "sakura",
+    "name": "Sakura",
+    "vendor": "Image-Line",
+    "category": "Physical Modeling Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A physical-modelling synthesizer for string and plucked tones. Two string engines layer, driven by exciters (pluck, bow, scrape, hammer or noise) and shaped by a body resonator that simulates wood, metal or box size.",
+    "tags": [
+      "synth",
+      "physical-modeling",
+      "strings",
+      "plucked"
+    ],
+    "capabilities": [
+      "dual-string-engine",
+      "exciter-control",
+      "body-simulation"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Sakura.htm",
+    "sources": [
+      "src-sakura-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "kepler",
+    "name": "Kepler",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A subtractive synthesizer emulating the Roland JUNO-6. Digitally controlled oscillators (pulse, saw, square) with a sub-oscillator for low-end weight, and a built-in vintage chorus (modes I and II) for instant width.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "juno",
+      "analog",
+      "vintage"
+    ],
+    "capabilities": [
+      "dco-emulation",
+      "sub-oscillator",
+      "vintage-chorus"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Kepler.htm",
+    "sources": [
+      "src-kepler-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "ogun",
+    "name": "Ogun",
+    "vendor": "Image-Line",
+    "category": "Additive Synth",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An additive synthesizer with a massive engine stacking thousands of sine harmonics (up to 32,767). Harmonic mapping draws custom spectral curves to define timbre, and a separate impulse EQ shapes the harmonic content of the note's attack.",
+    "tags": [
+      "synth",
+      "additive",
+      "harmonic",
+      "metallic"
+    ],
+    "capabilities": [
+      "massive-additive",
+      "harmonic-mapping",
+      "impulse-eq"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Ogun.htm",
+    "sources": [
+      "src-ogun-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "simsynth-live",
+    "name": "SimSynth Live",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A subtractive synthesizer with a Warm mode that doubles oscillators for instant detuned thickness, a state-variable filter mixing low/band/high-pass, and an LFO routable to pitch, filter or pulse width.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "analog",
+      "classic"
+    ],
+    "capabilities": [
+      "warm-mode-doubling",
+      "svf-filter",
+      "lfo-routing"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/SimSynth%20Live.htm",
+    "sources": [
+      "src-simsynth-live-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "minisynth",
+    "name": "MiniSynth",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A compact subtractive synth built around a multi-mode oscillator that reconfigures for saw, pulse, bell and supersaw, a single Modifier knob giving per-waveform shaping (PWM, detune, pitch), and integrated delay, chorus, phaser and distortion.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "supersaw",
+      "simple"
+    ],
+    "capabilities": [
+      "multi-mode-oscillator",
+      "modifier-knob",
+      "integrated-fx"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/MiniSynth.htm",
+    "sources": [
+      "src-minisynth-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "transistor-bass",
+    "name": "Transistor Bass",
+    "vendor": "Image-Line",
+    "category": "Bass Synth / 303",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A monophonic bass synth emulating the Roland TB-303. It morphs smoothly between square and sawtooth, includes an integrated 128-program sequencer holding both synth settings and patterns, and a Rat-style overdrive for acid grit.",
+    "tags": [
+      "synth",
+      "bass",
+      "acid",
+      "303",
+      "mono"
+    ],
+    "capabilities": [
+      "tb303-emulation",
+      "square-saw-morph",
+      "integrated-sequencer",
+      "overdrive"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Transistor%20Bass.htm",
+    "sources": [
+      "src-transistor-bass-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "wasp",
+    "name": "Wasp",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A compact subtractive synthesizer with dual ADSR envelopes (amp and filter), LFO modulation routable to pitch and filter, and a built-in distortion for extra grit.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "gritty",
+      "compact"
+    ],
+    "capabilities": [
+      "dual-envelopes",
+      "lfo-modulation",
+      "built-in-distortion"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wasp.htm",
+    "sources": [
+      "src-wasp-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fl-keys",
+    "name": "FL Keys",
+    "vendor": "Image-Line",
+    "category": "Keyboard / Rompler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A sample-based keyboard rompler covering pianos, e-pianos and organs. It adds realism controls (key-release noise, hammer/pedal artifacts), velocity-sensitive samples for dynamics, and built-in overdrive and tremolo for Rhodes-style tones.",
+    "tags": [
+      "piano",
+      "keys",
+      "rompler",
+      "rhodes"
+    ],
+    "capabilities": [
+      "sample-rompler",
+      "realism-controls",
+      "velocity-samples",
+      "built-in-fx"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FL%20Keys.htm",
+    "sources": [
+      "src-fl-keys-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fl-slayer",
+    "name": "FL Slayer",
+    "vendor": "Image-Line",
+    "category": "Guitar Modeling / Amp Sim",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A guitar physical-modelling instrument and amp simulator. It models string vibration and pickup harmonics, includes integrated amp and cabinet distortion, and offers specialized playing modes (autochords, strumming, power chords, glissando).",
+    "tags": [
+      "guitar",
+      "physical-modeling",
+      "amp-sim",
+      "strings"
+    ],
+    "capabilities": [
+      "guitar-modeling",
+      "integrated-amp-cab",
+      "playing-modes"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/FL%20Slayer.htm",
+    "sources": [
+      "src-fl-slayer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "plucked",
+    "name": "Plucked!",
+    "vendor": "Image-Line",
+    "category": "Physical Modeling Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A physical-modelling synthesizer using Karplus-Strong synthesis: a delay line excited to produce string vibrations. Decay sets how long the string rings, and Color adjusts damping from nylon-like to steel-like character.",
+    "tags": [
+      "synth",
+      "physical-modeling",
+      "strings",
+      "plucked"
+    ],
+    "capabilities": [
+      "karplus-strong",
+      "decay-control",
+      "color-damping"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Plucked.htm",
+    "sources": [
+      "src-plucked-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-drumsynth-live",
+    "name": "Fruity DrumSynth Live",
+    "vendor": "Image-Line",
+    "category": "Percussion Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A percussion synthesizer with dual noise/oscillator engines for thump and sizzle, a morphing bend-wheel to move between two drum patches, and envelope retriggering to build claps and multi-hit effects.",
+    "tags": [
+      "drums",
+      "percussion",
+      "synth",
+      "claps"
+    ],
+    "capabilities": [
+      "dual-noise-osc",
+      "morph-bend-wheel",
+      "envelope-retrigger"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20DrumSynth%20Live.htm",
+    "sources": [
+      "src-fruity-drumsynth-live-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "drumaxx",
+    "name": "Drumaxx",
+    "vendor": "Image-Line",
+    "category": "Drum Machine / Modeling",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "A drum-machine instrument built on modelled percussion synthesis, providing tunable, editable drum voices across pads rather than fixed samples.",
+    "tags": [
+      "drums",
+      "synth",
+      "modeling",
+      "machine"
+    ],
+    "capabilities": [
+      "modeled-percussion",
+      "tunable-voices",
+      "pad-layout"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Drumaxx.htm",
+    "sources": [
+      "src-drumaxx-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "hardcore",
+    "name": "Hardcore",
+    "vendor": "Image-Line",
+    "category": "Amp Sim / Multi-FX",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A guitar amp simulator and multi-effects rack. It offers five cabinet models for air and resonance, a drag-and-drop pedal chain to reorder effects, and a standalone mode for live use.",
+    "tags": [
+      "amp-sim",
+      "guitar",
+      "multi-fx",
+      "cabinet"
+    ],
+    "capabilities": [
+      "cabinet-simulation",
+      "pedal-chain",
+      "standalone-mode"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Hardcore.htm",
+    "sources": [
+      "src-hardcore-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

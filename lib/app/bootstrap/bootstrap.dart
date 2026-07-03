@@ -15,7 +15,7 @@ import 'providers.dart';
 /// v3: first content release — 27 reviewed plugins promoted from staging
 ///     (owner-authorized OQ-12 gate #5, 2026-07-02); 30 plugins total.
 /// v4+: ongoing direct migration of remaining FL plugins into the seed.
-const int kSeedVersion = 5;
+const int kSeedVersion = 6;
 
 /// App bootstrap. Runs before the first frame: opens the offline database and
 /// hydrates it from the bundled seed (offline-first — the DB is the source of

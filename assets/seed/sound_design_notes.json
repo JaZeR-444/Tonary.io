@@ -856,5 +856,65 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "kepler-juno",
+    "topic": "JUNO-style DCO + chorus",
+    "subjectRefs": [
+      "kepler"
+    ],
+    "body": "Kepler recreates the JUNO-6 signal path: stable digitally controlled oscillators plus a sub-oscillator for weight, finished by the famous built-in chorus. Engaging chorus mode I or II is the quickest way to the lush, wide pad sound the JUNO is known for.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-kepler-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "transistor-bass-303",
+    "topic": "303 acid workflow",
+    "subjectRefs": [
+      "transistor-bass"
+    ],
+    "body": "Morphing between square and saw sets the base tone; the integrated sequencer stores 128 programs of both the patch and its pattern, so slides and accents live with the sound. Pushing the Rat-style overdrive gives the screaming acid character.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-transistor-bass-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "plucked-karplus",
+    "topic": "Karplus-Strong strings",
+    "subjectRefs": [
+      "plucked"
+    ],
+    "body": "Karplus-Strong synthesis excites a short delay line and lets it decay, naturally producing plucked-string timbres for very little CPU. Decay controls sustain (ringing vs muted) and Color sets damping, moving from soft nylon to bright steel character.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-plucked-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "ogun-additive",
+    "topic": "Massive additive spectra",
+    "subjectRefs": [
+      "ogun"
+    ],
+    "body": "Ogun stacks up to 32,767 sine harmonics, so timbre is defined by drawing spectral curves rather than filtering an oscillator. A separate impulse EQ shapes the attack's harmonics, which is how it gets its bright, bell- and metal-like tones.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-ogun-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]
