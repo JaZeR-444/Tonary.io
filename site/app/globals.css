@@ -1,21 +1,34 @@
 @import "tailwindcss";
 
-/* Tonary brand tokens (mirrors the app design system + .claude/brand). */
+/* Obsidian Orchid — icon-anchored violet brand system (assets/branding/palette). */
 @theme {
-  --color-bg-app: #07090a;
-  --color-bg-shell: #0e1114;
-  --color-surface-card: #151a1f;
-  --color-surface-raised: #1b2228;
-  --color-text-primary: #f8faf2;
-  --color-text-secondary: #b8c0b5;
-  --color-text-muted: #7e8a82;
-  --color-amber: #ffb13b;
-  --color-amber-hover: #ffc766;
-  --color-cyan: #38bdf8;
-  --color-green: #33d17a;
-  --color-violet: #a78bfa;
-  --color-red: #f87171;
-  --color-outline: #5a666c;
+  /* Surfaces — violet-tinted obsidian (dark, default) */
+  --color-bg-app: #08070f;
+  --color-bg-shell: #0b0916;
+  --color-bg-panel: #100e20;
+  --color-bg-elevated: #17142c;
+  --color-bg-hover: #201b3a;
+
+  --color-border-subtle: #1b1836;
+  --color-border-strong: #37315a;
+
+  --color-text-primary: #f4f2fb;
+  --color-text-secondary: #b8b2d6;
+  --color-text-muted: #837da3;
+
+  /* Brand — violet / lavender first */
+  --color-brand-primary: #6b5cd6;
+  --color-brand-primary-hover: #7c6ee2;
+  --color-brand-primary-text: #ffffff;
+  --color-brand-secondary: #a99ee6;
+  --color-brand-accent: #7cbfe6;
+
+  /* Semantic states (muted — never brand) */
+  --color-state-success: #5fbf8f;
+  --color-state-warning: #d8ab52;
+  --color-state-error: #e06a82;
+  --color-state-info: #6ba8e0;
+  --color-focus: #8b7bf0;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), var(--font-inter), sans-serif;
@@ -39,13 +52,13 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-amber);
-  color: var(--color-bg-app);
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-primary-text);
 }
 
-/* Two-layer cyan focus ring — never glow alone (brand a11y rule). */
+/* Two-layer violet focus ring — never glow alone (a11y). */
 :focus-visible {
-  outline: 2px solid var(--color-cyan);
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
   border-radius: 4px;
 }

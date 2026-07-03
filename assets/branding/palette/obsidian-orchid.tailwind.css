@@ -1,0 +1,49 @@
+/* Obsidian Orchid — Tailwind v4 theme. Import after `@import "tailwindcss";` */
+@theme {
+  /* core */
+  --color-core-black: #050507;
+  --color-core-obsidian: #08070f;
+  --color-core-ink: #12102a;
+  --color-core-white: #ffffff;
+  /* brand */
+  --color-brand-primary: #6b5cd6;
+  --color-brand-primary-hover: #7c6ee2;
+  --color-brand-primary-active: #5b4dc4;
+  --color-brand-secondary: #a99ee6;
+  --color-brand-accent: #7cbfe6;
+  --color-brand-soft: #cabff7;
+  --color-brand-muted: #4c4573;
+  /* surface */
+  --color-surface-base: #08070f;
+  --color-surface-muted: #0b0916;
+  --color-surface-raised: #100e20;
+  --color-surface-elevated: #17142c;
+  --color-surface-overlay: #201b3a;
+  /* text */
+  --color-text-primary: #f4f2fb;
+  --color-text-secondary: #b8b2d6;
+  --color-text-muted: #837da3;
+  --color-text-disabled: #4e4869;
+  --color-text-inverse: #0a0813;
+  /* border */
+  --color-border-subtle: #1b1836;
+  --color-border-default: #262146;
+  --color-border-strong: #37315a;
+  --color-border-focus: #8b7bf0;
+  /* state */
+  --color-state-success: #5fbf8f;
+  --color-state-warning: #d8ab52;
+  --color-state-error: #e06a82;
+  --color-state-info: #6ba8e0;
+}
+
+:root {
+  --grad-orchid-bloom: linear-gradient(135deg, #6b5cd6 0%, #a99ee6 100%);
+  --grad-violet-signal: linear-gradient(135deg, #4c3fa0 0%, #8b7bf0 100%);
+  --grad-lavender-veil: linear-gradient(180deg, #a99ee6 0%, #6b5cd6 100%);
+  --grad-obsidian-depth: linear-gradient(180deg, #14112a 0%, #08070f 62%, #050507 100%);
+  --grad-raised-panel: linear-gradient(180deg, #191532 0%, #100e20 100%);
+  --grad-glass-overlay: linear-gradient(180deg, rgba(139,123,240,0.07) 0%, rgba(139,123,240,0.02) 100%);
+  --grad-focus-glow: radial-gradient(circle at 50% 0%, rgba(139,123,240,0.30) 0%, rgba(139,123,240,0) 70%);
+  --grad-icon-glow: radial-gradient(circle at 50% 42%, rgba(107,92,214,0.38) 0%, rgba(107,92,214,0) 66%);
+}

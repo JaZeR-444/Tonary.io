@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obsidian Orchid — Brand System</title>
+<style>
+  @font-face { font-family:'Inter'; src:url('../../fonts/Inter-Variable.ttf') format('truetype'); font-weight:100 900; font-display:swap; }
+  @font-face { font-family:'Space Grotesk'; src:url('../../fonts/SpaceGrotesk-Variable.ttf') format('truetype'); font-weight:400 700; font-display:swap; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('../../fonts/IBMPlexMono-Regular.ttf') format('truetype'); font-weight:400; font-display:swap; }
+
+  :root{
+    --core-black:#050507; --core-obsidian:#08070f; --core-ink:#12102a; --core-white:#fff;
+    --brand-primary:#6b5cd6; --brand-primary-hover:#7c6ee2; --brand-primary-active:#5b4dc4;
+    --brand-secondary:#a99ee6; --brand-accent:#7cbfe6; --brand-soft:#cabff7;
+    --brand-muted:#4c4573; --brand-glow:rgba(139,123,240,.35);
+    --surface-base:#08070f; --surface-muted:#0b0916; --surface-raised:#100e20;
+    --surface-elevated:#17142c; --surface-overlay:#201b3a;
+    --text-primary:#f4f2fb; --text-secondary:#b8b2d6; --text-muted:#837da3;
+    --text-disabled:#4e4869; --text-inverse:#0a0813;
+    --border-subtle:#1b1836; --border-default:#262146; --border-strong:#37315a; --border-focus:#8b7bf0;
+    --state-success:#5fbf8f; --state-warning:#d8ab52; --state-error:#e06a82; --state-info:#6ba8e0;
+
+    --grad-orchid-bloom:linear-gradient(135deg,#6b5cd6 0%,#a99ee6 100%);
+    --grad-violet-signal:linear-gradient(135deg,#4c3fa0 0%,#8b7bf0 100%);
+    --grad-lavender-veil:linear-gradient(180deg,#a99ee6 0%,#6b5cd6 100%);
+    --grad-obsidian-depth:linear-gradient(180deg,#14112a 0%,#08070f 62%,#050507 100%);
+    --grad-raised-panel:linear-gradient(180deg,#191532 0%,#100e20 100%);
+    --grad-glass-overlay:linear-gradient(180deg,rgba(139,123,240,.07) 0%,rgba(139,123,240,.02) 100%);
+    --grad-focus-glow:radial-gradient(circle at 50% 0%,rgba(139,123,240,.30) 0%,rgba(139,123,240,0) 70%);
+    --grad-icon-glow:radial-gradient(circle at 50% 42%,rgba(107,92,214,.38) 0%,rgba(107,92,214,0) 66%);
+
+    --r:14px; --r-sm:10px; --r-lg:20px;
+  }
+
+  /* Light mode token overrides */
+  html[data-theme="light"]{
+    --surface-base:#f6f4fc; --surface-muted:#eeeaf8; --surface-raised:#fff; --surface-elevated:#fff; --surface-overlay:#fff;
+    --text-primary:#12102a; --text-secondary:#423b63; --text-muted:#6b6488; --text-disabled:#a49fbe;
+    --border-subtle:#e4def4; --border-default:#d3cbe8; --border-strong:#b7add4; --border-focus:#5b4dc4;
+    --brand-primary:#5b4dc4; --brand-primary-hover:#4c3fb0; --brand-secondary:#6f5fd0; --brand-accent:#3d84c0;
+  }
+  /* The product mock is dark-first — keep it dark regardless of guide theme */
+  .app{
+    --surface-base:#08070f; --surface-muted:#0b0916; --surface-raised:#100e20; --surface-elevated:#17142c; --surface-overlay:#201b3a;
+    --text-primary:#f4f2fb; --text-secondary:#b8b2d6; --text-muted:#837da3; --text-disabled:#4e4869;
+    --border-subtle:#1b1836; --border-default:#262146; --border-strong:#37315a;
+    --brand-primary:#6b5cd6; --brand-secondary:#a99ee6;
+  }
+  /* Theme toggle */
+  .themetoggle{position:fixed;top:18px;right:18px;z-index:99;font:inherit;font-size:12px;font-weight:600;
+    font-family:'IBM Plex Mono',monospace;letter-spacing:.05em;color:var(--text-secondary);
+    background:var(--surface-elevated);border:1px solid var(--border-default);border-radius:999px;padding:8px 14px;cursor:pointer}
+  .themetoggle:hover{color:var(--text-primary);border-color:var(--border-strong)}
+  /* Contrast table */
+  .ctable{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  .ctable th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);font-weight:600;padding:0 12px 12px 0}
+  .ctable td{padding:12px 12px 12px 0;border-top:1px solid var(--border-subtle);vertical-align:middle}
+  .cswatch{display:inline-flex;align-items:center;gap:0;border-radius:8px;overflow:hidden;border:1px solid var(--border-subtle)}
+  .cswatch span{width:40px;height:30px;display:grid;place-items:center;font-size:12px;font-weight:700}
+  .ratio{font-family:'IBM Plex Mono',monospace;font-weight:600}
+  .pill{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:999px;margin-right:6px}
+  .pass{background:color-mix(in srgb,var(--state-success) 18%,transparent);color:var(--state-success)}
+  .fail{background:color-mix(in srgb,var(--state-error) 18%,transparent);color:var(--state-error)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,sans-serif; background:var(--surface-base); color:var(--text-primary);
+    -webkit-font-smoothing:antialiased; line-height:1.5;
+  }
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,.display{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.02em}
+  .mono{font-family:'IBM Plex Mono',monospace}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted)}
+  section{padding:56px 0;border-top:1px solid var(--border-subtle)}
+  .sub{color:var(--text-secondary);max-width:60ch}
+
+  /* ---------- Identity header ---------- */
+  .hero{position:relative;overflow:hidden;padding:72px 0 60px}
+  .hero::before{content:"";position:absolute;inset:-40% 0 auto 0;height:520px;background:var(--grad-icon-glow);pointer-events:none}
+  .hero .wrap{position:relative}
+  .idrow{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .idmark{width:76px;height:76px;border-radius:20px;background:var(--surface-elevated);border:1px solid var(--border-default);display:grid;place-items:center;box-shadow:0 10px 40px -12px var(--brand-glow)}
+  .idmark img{width:76px;height:76px}
+  .hero h1{font-size:44px;font-weight:700;line-height:1.02}
+  .hero .io{color:var(--brand-secondary)}
+  .position{margin-top:20px;font-size:19px;color:var(--text-secondary);max-width:64ch}
+  .coreswatches{display:flex;column-gap:10px;row-gap:32px;margin-top:28px;flex-wrap:wrap}
+  .coreswatches .cs{width:64px;height:64px;border-radius:12px;border:1px solid var(--border-subtle);position:relative}
+  .coreswatches .cs span{position:absolute;left:0;right:0;bottom:-20px;font-size:10px;text-align:center;color:var(--text-muted)}
+  .usage{margin-top:44px;font-size:14px;color:var(--text-muted);max-width:70ch;border-left:2px solid var(--border-focus);padding-left:14px}
+
+  /* ---------- Role cards ---------- */
+  .grid{display:grid;gap:14px}
+  .roles{grid-template-columns:repeat(3,1fr)}
+  .role{background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--r);overflow:hidden}
+  .role .chip{height:76px;border-bottom:1px solid var(--border-subtle)}
+  .role .body{padding:14px 16px}
+  .role .name{font-weight:600;font-size:14px}
+  .role .tok{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--brand-secondary);margin-top:3px}
+  .role .hex{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-muted);margin-top:2px}
+  .role .rule{font-size:12.5px;color:var(--text-secondary);margin-top:10px}
+
+  /* ---------- App mock ---------- */
+  .app{border:1px solid var(--border-default);border-radius:var(--r-lg);overflow:hidden;background:var(--grad-obsidian-depth);display:grid;grid-template-columns:216px 1fr;min-height:560px}
+  .side{background:var(--surface-muted);border-right:1px solid var(--border-subtle);padding:18px 12px;display:flex;flex-direction:column;gap:4px}
+  .brandline{display:flex;align-items:center;gap:9px;padding:6px 8px 16px}
+  .brandline img{width:24px;height:24px}
+  .brandline b{font-family:'Space Grotesk';font-size:15px}
+  .nav{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:var(--r-sm);color:var(--text-secondary);font-size:13.5px;font-weight:500;cursor:default}
+  .nav svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.7}
+  .nav:hover{background:var(--surface-raised)}
+  .nav.active{background:color-mix(in srgb,var(--brand-primary) 16%,transparent);color:var(--text-primary)}
+  .nav.active svg{stroke:var(--brand-secondary)}
+  .navlabel{margin:14px 8px 4px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-disabled)}
+  .main{padding:20px 22px 26px;display:flex;flex-direction:column;gap:18px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:14px}
+  .search{flex:1;max-width:360px;display:flex;align-items:center;gap:9px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--r-sm);padding:9px 12px;color:var(--text-muted);font-size:13px}
+  .search svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
+  .avatar{width:32px;height:32px;border-radius:50%;background:var(--grad-orchid-bloom);border:1px solid var(--border-strong)}
+  .row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font:inherit;font-size:13.5px;font-weight:600;border-radius:var(--r-sm);padding:10px 16px;border:1px solid transparent;cursor:default}
+  .btn-primary{background:var(--brand-primary);color:#fff}
+  .btn-primary:hover{background:var(--brand-primary-hover)}
+  .btn-secondary{background:var(--surface-elevated);border-color:var(--border-default);color:var(--text-primary)}
+  .btn-ghost{background:transparent;color:var(--brand-secondary)}
+  .field{display:flex;flex-direction:column;gap:7px;max-width:340px}
+  .field label{font-size:12px;color:var(--text-secondary)}
+  .input{background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--r-sm);padding:10px 12px;color:var(--text-primary);font:inherit;font-size:13.5px}
+  .input.foc{border-color:var(--border-focus);box-shadow:0 0 0 3px color-mix(in srgb,var(--border-focus) 30%,transparent)}
+  .toggle{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--text-secondary)}
+  .sw{width:38px;height:22px;border-radius:22px;background:var(--brand-primary);position:relative}
+  .sw::after{content:"";position:absolute;top:2px;right:2px;width:18px;height:18px;border-radius:50%;background:#fff}
+  .sw.off{background:var(--surface-overlay)}
+  .sw.off::after{left:2px;right:auto;background:var(--text-muted)}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px}
+  .badge-brand{background:color-mix(in srgb,var(--brand-primary) 18%,transparent);color:var(--brand-secondary)}
+  .badge-ok{background:color-mix(in srgb,var(--state-success) 16%,transparent);color:var(--state-success)}
+  .badge-warn{background:color-mix(in srgb,var(--state-warning) 16%,transparent);color:var(--state-warning)}
+  .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+  .card{background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--r);padding:18px}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .metric .k{font-size:12px;color:var(--text-muted)}
+  .metric .v{font-family:'Space Grotesk';font-size:26px;font-weight:600;margin-top:4px}
+  .metric .d{font-size:12px;color:var(--state-success);margin-top:2px}
+  .alert{display:flex;gap:12px;align-items:flex-start;border-radius:var(--r);padding:14px 16px;border:1px solid;background:color-mix(in srgb,var(--state-info) 10%,var(--surface-raised));border-color:color-mix(in srgb,var(--state-info) 40%,var(--border-subtle))}
+  .alert .ai{width:18px;height:18px;border-radius:50%;background:var(--state-info);flex:none;margin-top:1px}
+  .alert .t{font-size:13px;font-weight:600}
+  .alert .m{font-size:12.5px;color:var(--text-secondary);margin-top:2px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);font-weight:600;padding:0 0 10px}
+  td{padding:11px 0;border-top:1px solid var(--border-subtle);color:var(--text-secondary)}
+  td b{color:var(--text-primary);font-weight:600}
+  .empty{text-align:center;padding:34px 20px;border:1px dashed var(--border-default);border-radius:var(--r);color:var(--text-muted)}
+  .empty .em-ic{width:44px;height:44px;border-radius:12px;background:var(--grad-icon-glow),var(--surface-elevated);margin:0 auto 12px;border:1px solid var(--border-subtle)}
+  /* creative analysis card */
+  .analysis{background:var(--grad-raised-panel);border:1px solid var(--border-default);border-radius:var(--r);padding:18px;position:relative;overflow:hidden}
+  .analysis::before{content:"";position:absolute;inset:0;background:var(--grad-focus-glow);opacity:.7;pointer-events:none}
+  .analysis .inner{position:relative}
+  .bars{display:flex;align-items:flex-end;gap:5px;height:64px;margin-top:14px}
+  .bars i{flex:1;border-radius:3px;background:var(--grad-lavender-veil);opacity:.85}
+  .eq{display:flex;gap:4px;align-items:center}
+  .eq i{width:4px;border-radius:3px;background:var(--brand-secondary)}
+
+  /* ---------- Gradients ---------- */
+  .ggrid{grid-template-columns:repeat(4,1fr)}
+  .gcard .g{height:120px;border-radius:var(--r);border:1px solid var(--border-subtle)}
+  .gcard .gn{font-size:13px;font-weight:600;margin-top:10px}
+  .gcard .gu{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--text-muted);margin-top:3px}
+
+  .foot{padding:40px 0 64px;color:var(--text-muted);font-size:12.5px}
+  @media(max-width:900px){
+    .roles,.gerid,.ggrid{grid-template-columns:repeat(2,1fr)}
+    .app{grid-template-columns:1fr}.side{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--border-subtle)}
+    .metrics{grid-template-columns:1fr}
+    .hero h1{font-size:34px}
+  }
+  @media(max-width:560px){.roles,.ggrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<button class="themetoggle" id="themeToggle" aria-label="Toggle light / dark">◐ Light</button>
+
+<!-- IDENTITY -->
+<header class="hero">
+  <div class="wrap">
+    <div class="idrow">
+      <span class="idmark"><img src="../exports/icon-512.png" alt="Obsidian Orchid"></span>
+      <div>
+        <p class="eyebrow">Brand System · v2.0</p>
+        <h1>Obsidian&nbsp;Orchid<span class="io"></span></h1>
+      </div>
+    </div>
+    <p class="position">A lavender-on-obsidian identity for a premium creative &amp; music-tech interface — dark, calm, softly technical, and drawn directly from the icon's violet palette.</p>
+    <div class="coreswatches">
+      <div class="cs" style="background:#050507"><span>Obsidian</span></div>
+      <div class="cs" style="background:#12102a"><span>Ink</span></div>
+      <div class="cs" style="background:#6b5cd6"><span>Primary</span></div>
+      <div class="cs" style="background:#a99ee6"><span>Secondary</span></div>
+      <div class="cs" style="background:#cabff7"><span>Soft</span></div>
+      <div class="cs" style="background:#f4f2fb"><span>White</span></div>
+    </div>
+    <p class="usage"><b>Primary usage.</b> Violet leads every brand moment. Surfaces stay near-black with a faint indigo tint. Cyan appears only as a quiet technical highlight; green / amber / rose are reserved strictly for success / warning / error. Let contrast, spacing, and the mark do the work — never more than one loud accent per view.</p>
+  </div>
+</header>
+
+<!-- ROLE CARDS -->
+<section><div class="wrap">
+  <p class="eyebrow">Roles</p>
+  <h2 style="font-size:26px;margin:8px 0 4px">Brand &amp; semantic roles</h2>
+  <p class="sub" style="margin-bottom:26px">Every colour has one job. Brand is violet; states are muted and used only for meaning.</p>
+  <div class="grid roles">
+    <div class="role"><div class="chip" style="background:#6b5cd6"></div><div class="body"><div class="name">Brand Primary</div><div class="tok">--brand-primary</div><div class="hex">#6B5CD6</div><div class="rule">Primary actions, active nav, selected state. White label.</div></div></div>
+    <div class="role"><div class="chip" style="background:#a99ee6"></div><div class="body"><div class="name">Brand Secondary</div><div class="tok">--brand-secondary</div><div class="hex">#A99EE6</div><div class="rule">Links, brand text accents, icon tint on dark.</div></div></div>
+    <div class="role"><div class="chip" style="background:#7cbfe6"></div><div class="body"><div class="name">Brand Accent</div><div class="tok">--brand-accent</div><div class="hex">#7CBFE6</div><div class="rule">Restrained cool highlight — technical details only.</div></div></div>
+    <div class="role"><div class="chip" style="background:#08070f"></div><div class="body"><div class="name">Surface Base</div><div class="tok">--surface-base</div><div class="hex">#08070F</div><div class="rule">App background — violet-tinted obsidian.</div></div></div>
+    <div class="role"><div class="chip" style="background:#f4f2fb"></div><div class="body"><div class="name">Text Primary</div><div class="tok">--text-primary</div><div class="hex">#F4F2FB</div><div class="rule">Headings and body copy on dark surfaces.</div></div></div>
+    <div class="role"><div class="chip" style="background:#8b7bf0"></div><div class="body"><div class="name">Focus Ring</div><div class="tok">--border-focus</div><div class="hex">#8B7BF0</div><div class="rule">Keyboard focus — two-layer violet ring.</div></div></div>
+    <div class="role"><div class="chip" style="background:#5fbf8f"></div><div class="body"><div class="name">Success</div><div class="tok">--state-success</div><div class="hex">#5FBF8F</div><div class="rule">Confirmations only — muted, never decorative.</div></div></div>
+    <div class="role"><div class="chip" style="background:#d8ab52"></div><div class="body"><div class="name">Warning</div><div class="tok">--state-warning</div><div class="hex">#D8AB52</div><div class="rule">Cautions and non-blocking issues.</div></div></div>
+    <div class="role"><div class="chip" style="background:#e06a82"></div><div class="body"><div class="name">Error</div><div class="tok">--state-error</div><div class="hex">#E06A82</div><div class="rule">Destructive / blocking states only.</div></div></div>
+  </div>
+</div></section>
+
+<!-- REAL UI -->
+<section><div class="wrap">
+  <p class="eyebrow">In context</p>
+  <h2 style="font-size:26px;margin:8px 0 4px">The system, applied</h2>
+  <p class="sub" style="margin-bottom:26px">Real components on real surfaces — this is how the palette behaves inside the product.</p>
+  <div class="app">
+    <aside class="side">
+      <div class="brandline"><img src="../exports/icon-512.png" alt=""><b>Tonary</b></div>
+      <div class="nav active"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16"/></svg>Vault</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>Scout</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h10M7 16h6"/></svg>Briefs</div>
+      <div class="navlabel">Library</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5"/></svg>Flow</div>
+      <div class="nav"><svg viewBox="0 0 24 24"><path d="M6 3v12a3 3 0 1 0 3 3M18 3v9a3 3 0 1 1-3 3"/></svg>Saved</div>
+    </aside>
+    <div class="main">
+      <div class="topbar">
+        <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>Search plugins, presets, chains…</div>
+        <div style="display:flex;align-items:center;gap:12px"><span class="badge badge-brand"><span class="dot"></span>Pro</span><span class="avatar"></span></div>
+      </div>
+
+      <div class="metrics">
+        <div class="card metric"><div class="k">Plugins indexed</div><div class="v">312</div><div class="d">+18 this week</div></div>
+        <div class="card metric"><div class="k">Comparisons</div><div class="v">1,204</div><div class="d">+6.2%</div></div>
+        <div class="card metric"><div class="k">Saved recipes</div><div class="v">47</div><div class="d" style="color:var(--text-muted)">offline</div></div>
+      </div>
+
+      <div class="row" style="align-items:flex-end">
+        <button class="btn btn-primary">Get early access</button>
+        <button class="btn btn-secondary">See the modules</button>
+        <button class="btn btn-ghost">Learn more</button>
+        <span class="toggle"><span class="sw"></span>Offline mode</span>
+        <span class="toggle"><span class="sw off"></span>Beta features</span>
+      </div>
+
+      <div class="row">
+        <div class="field"><label>Plugin name</label><input class="input foc" value="Sytrus"></div>
+        <div style="display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap">
+          <span class="badge badge-brand"><span class="dot"></span>Synth</span>
+          <span class="badge badge-ok"><span class="dot"></span>Verified</span>
+          <span class="badge badge-warn"><span class="dot"></span>Needs source</span>
+        </div>
+      </div>
+
+      <div class="alert"><span class="ai"></span><div><div class="t">Grounded, offline-first</div><div class="m">Every fact cites a source. Unknown values stay flagged — never guessed.</div></div></div>
+
+      <div class="analysis"><div class="inner">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div><div style="font-family:'Space Grotesk';font-size:16px;font-weight:600">Tonal analysis · Sytrus</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">FM · additive · 3-osc bright lead</div></div>
+          <span class="badge badge-brand"><span class="dot"></span>Bright</span>
+        </div>
+        <div class="bars"><i style="height:40%"></i><i style="height:62%"></i><i style="height:85%"></i><i style="height:70%"></i><i style="height:95%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:88%"></i><i style="height:52%"></i><i style="height:72%"></i></div>
+      </div></div>
+
+      <div class="card">
+        <table>
+          <thead><tr><th>Plugin</th><th>Type</th><th>Tier</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><b>FLEX</b></td><td>Generator</td><td>Free</td><td><span class="badge badge-ok"><span class="dot"></span>Verified</span></td></tr>
+            <tr><td><b>Fruity Parametric EQ 2</b></td><td>Effect</td><td>Free</td><td><span class="badge badge-ok"><span class="dot"></span>Verified</span></td></tr>
+            <tr><td><b>Harmor</b></td><td>Generator</td><td>Premium</td><td><span class="badge badge-warn"><span class="dot"></span>Draft</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="empty"><div class="em-ic"></div><div style="color:var(--text-secondary);font-weight:600;font-size:14px">No presets saved yet</div><div style="font-size:12.5px;margin-top:4px">Bookmark a preset from any plugin to see it here.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTRAST -->
+<section><div class="wrap">
+  <p class="eyebrow">Accessibility</p>
+  <h2 style="font-size:26px;margin:8px 0 4px">Contrast, auto-checked</h2>
+  <p class="sub" style="margin-bottom:20px">WCAG 2.1 ratios computed live for the key pairings. Normal text targets AA 4.5 · AAA 7; non-text (focus, borders) targets 3.0.</p>
+  <table class="ctable">
+    <thead><tr><th>Pairing</th><th>Sample</th><th>Ratio</th><th>Result</th></tr></thead>
+    <tbody id="ctbody"></tbody>
+  </table>
+</div></section>
+
+<!-- GRADIENTS -->
+<section><div class="wrap">
+  <p class="eyebrow">Gradients</p>
+  <h2 style="font-size:26px;margin:8px 0 4px">Eight, restrained</h2>
+  <p class="sub" style="margin-bottom:26px">Dark, soft, atmospheric — violet and lavender only. Built to sit behind the mark, not shout over it.</p>
+  <div class="grid ggrid">
+    <div class="gcard"><div class="g" style="background:var(--grad-orchid-bloom)"></div><div class="gn">Orchid Bloom</div><div class="gu">brand · primary CTA</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-violet-signal)"></div><div class="gn">Violet Signal</div><div class="gu">brand · deep feature</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-lavender-veil)"></div><div class="gn">Lavender Veil</div><div class="gu">brand · soft fills</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-obsidian-depth)"></div><div class="gn">Obsidian Depth</div><div class="gu">surface · app shell</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-raised-panel)"></div><div class="gn">Raised Panel</div><div class="gu">surface · cards</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-glass-overlay),var(--surface-raised)"></div><div class="gn">Glass Overlay</div><div class="gu">surface · overlays</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-focus-glow),var(--surface-base)"></div><div class="gn">Focus Glow</div><div class="gu">accent · focus / hero</div></div>
+    <div class="gcard"><div class="g" style="background:var(--grad-icon-glow),var(--surface-base)"></div><div class="gn">Icon Glow</div><div class="gu">accent · behind the mark</div></div>
+  </div>
+</div></section>
+
+<footer class="foot"><div class="wrap">Obsidian Orchid · icon-anchored violet brand system · <span class="mono">assets/branding/palette/</span></div></footer>
+
+<script>
+  // Light / dark toggle
+  var t = document.getElementById('themeToggle');
+  t.addEventListener('click', function(){
+    var light = document.documentElement.getAttribute('data-theme') === 'light';
+    document.documentElement.setAttribute('data-theme', light ? 'dark' : 'light');
+    t.textContent = light ? '◐ Light' : '◑ Dark';
+    render();
+  });
+
+  // WCAG contrast — computed live so the table can never drift from the tokens
+  function lum(hex){
+    var n=hex.replace('#',''); var c=[0,2,4].map(function(i){var v=parseInt(n.substr(i,2),16)/255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);});
+    return 0.2126*c[0]+0.7152*c[1]+0.0722*c[2];
+  }
+  function ratio(a,b){var l1=lum(a),l2=lum(b);return (Math.max(l1,l2)+0.05)/(Math.min(l1,l2)+0.05);}
+  function px(name){return getComputedStyle(document.documentElement).getPropertyValue(name).trim();}
+  var PAIRS=[
+    ['Text primary / Surface base','--text-primary','--surface-base','text'],
+    ['Text secondary / Surface base','--text-secondary','--surface-base','text'],
+    ['Text muted / Surface raised','--text-muted','--surface-raised','text'],
+    ['Label / Brand primary','#ffffff','--brand-primary','text'],
+    ['Brand secondary / Surface base','--brand-secondary','--surface-base','text'],
+    ['Success / Surface raised','--state-success','--surface-raised','text'],
+    ['Error / Surface raised','--state-error','--surface-raised','text'],
+    ['Focus ring / Surface base','--border-focus','--surface-base','nontext'],
+  ];
+  function hexOf(v){return v.charAt(0)==='#'?v:px(v);}
+  function render(){
+    var b=document.getElementById('ctbody'); b.innerHTML='';
+    PAIRS.forEach(function(p){
+      var fg=hexOf(p[1]), bg=hexOf(p[2]); if(fg.length===4){fg='#'+fg[1]+fg[1]+fg[2]+fg[2]+fg[3]+fg[3];}
+      var r=ratio(fg,bg); var nontext=p[3]==='nontext';
+      var aa = nontext ? r>=3 : r>=4.5;
+      var aaa= nontext ? r>=4.5 : r>=7;
+      var badges = nontext
+        ? '<span class="pill '+(aa?'pass':'fail')+'">'+(aa?'PASS 3:1':'FAIL 3:1')+'</span>'
+        : '<span class="pill '+(aa?'pass':'fail')+'">'+(aa?'AA':'AA ✗')+'</span><span class="pill '+(aaa?'pass':'fail')+'">'+(aaa?'AAA':'AAA ✗')+'</span>';
+      b.insertAdjacentHTML('beforeend',
+        '<tr><td>'+p[0]+'</td><td><span class="cswatch"><span style="background:'+bg+';color:'+fg+'">Aa</span></span></td>'+
+        '<td class="ratio">'+r.toFixed(2)+':1</td><td>'+badges+'</td></tr>');
+    });
+  }
+  render();
+</script>
+</body>
+</html>

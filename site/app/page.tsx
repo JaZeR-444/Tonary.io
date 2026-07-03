@@ -66,7 +66,7 @@ function Wordmark() {
     <span className="inline-flex items-center gap-2.5">
       <Image src="/mark.png" alt="" width={28} height={28} priority />
       <span className="font-display text-lg font-bold tracking-tight">
-        Tonary<span className="text-amber">.io</span>
+        Tonary<span className="text-brand-primary">.io</span>
       </span>
     </span>
   );
@@ -78,11 +78,11 @@ export default function Home() {
       {/* Ambient backdrop — subtle radial, not glow-as-meaning */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-[600px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(56,189,248,0.06),transparent_70%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[600px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(139,123,240,0.07),transparent_70%)]"
       />
 
       {/* Nav */}
-      <header className="sticky top-0 z-50 border-b border-outline/40 bg-bg-app/80 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-border-subtle/40 bg-bg-app/80 backdrop-blur">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <Wordmark />
           <div className="flex items-center gap-6">
@@ -100,7 +100,7 @@ export default function Home() {
             </a>
             <a
               href={MAILTO}
-              className="rounded-lg bg-amber px-4 py-2 text-sm font-semibold text-bg-app transition-colors hover:bg-amber-hover"
+              className="rounded-lg bg-brand-primary px-4 py-2 text-sm font-semibold text-brand-primary-text transition-colors hover:bg-brand-primary-hover"
             >
               Get early access
             </a>
@@ -112,8 +112,8 @@ export default function Home() {
         {/* Hero */}
         <section className="grid grid-cols-1 items-center gap-12 py-20 md:grid-cols-2 md:py-28">
           <div>
-            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-outline bg-surface-card px-3 py-1 font-mono text-xs text-text-secondary">
-              <span className="h-1.5 w-1.5 rounded-full bg-green" />
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-border-subtle bg-bg-panel px-3 py-1 font-mono text-xs text-text-secondary">
+              <span className="h-1.5 w-1.5 rounded-full bg-state-success" />
               Dark-first · Offline-first · Evidence-backed
             </p>
             <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
@@ -127,13 +127,13 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href={MAILTO}
-                className="rounded-lg bg-amber px-5 py-3 font-semibold text-bg-app transition-colors hover:bg-amber-hover"
+                className="rounded-lg bg-brand-primary px-5 py-3 font-semibold text-brand-primary-text transition-colors hover:bg-brand-primary-hover"
               >
                 Get early access
               </a>
               <a
                 href="#modules"
-                className="rounded-lg border border-outline bg-surface-card px-5 py-3 font-semibold text-text-primary transition-colors hover:bg-surface-raised"
+                className="rounded-lg border border-border-subtle bg-bg-panel px-5 py-3 font-semibold text-text-primary transition-colors hover:bg-bg-elevated"
               >
                 See the modules
               </a>
@@ -160,10 +160,10 @@ export default function Home() {
             {modules.map((m) => (
               <div
                 key={m.name}
-                className="rounded-2xl border border-outline bg-surface-card p-6 transition-colors hover:bg-surface-raised"
+                className="rounded-2xl border border-border-subtle bg-bg-panel p-6 transition-colors hover:bg-bg-elevated"
               >
                 <div className="flex items-center justify-between">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-outline bg-surface-raised text-lg text-text-primary">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-border-subtle bg-bg-elevated text-lg text-text-primary">
                     {m.glyph}
                   </span>
                   <StatusPill status={m.status} />
@@ -186,9 +186,9 @@ export default function Home() {
             title="A reference that respects the craft"
             sub="Not a plugin database. Not an AI chatbot. Not a DAW. A calm, trustworthy intelligence layer."
           />
-          <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-outline bg-outline/60 sm:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-border-subtle bg-border-subtle/60 sm:grid-cols-2">
             {features.map((f) => (
-              <div key={f.title} className="bg-surface-card p-8">
+              <div key={f.title} className="bg-bg-panel p-8">
                 <h3 className="font-display text-lg font-semibold">{f.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                   {f.body}
@@ -222,10 +222,10 @@ export default function Home() {
 
         {/* CTA band */}
         <section className="py-16">
-          <div className="relative overflow-hidden rounded-3xl border border-outline bg-surface-card p-10 text-center sm:p-16">
+          <div className="relative overflow-hidden rounded-3xl border border-border-subtle bg-bg-panel p-10 text-center sm:p-16">
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_80%_at_50%_0%,rgba(255,177,59,0.08),transparent_70%)]"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_80%_at_50%_0%,rgba(139,123,240,0.10),transparent_70%)]"
             />
             <div className="relative">
               <Image
@@ -243,7 +243,7 @@ export default function Home() {
               </p>
               <a
                 href={MAILTO}
-                className="mt-8 inline-block rounded-lg bg-amber px-6 py-3 font-semibold text-bg-app transition-colors hover:bg-amber-hover"
+                className="mt-8 inline-block rounded-lg bg-brand-primary px-6 py-3 font-semibold text-brand-primary-text transition-colors hover:bg-brand-primary-hover"
               >
                 Get early access
               </a>
@@ -253,7 +253,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-outline/40">
+      <footer className="border-t border-border-subtle/40">
         <div className="mx-auto max-w-6xl px-6 py-12">
           <div className="flex flex-col justify-between gap-8 sm:flex-row">
             <div className="max-w-md">
@@ -269,13 +269,13 @@ export default function Home() {
               </p>
               <a
                 href="mailto:contact@jazeratx.com"
-                className="mt-2 inline-block text-text-primary transition-colors hover:text-amber"
+                className="mt-2 inline-block text-text-primary transition-colors hover:text-brand-primary"
               >
                 contact@jazeratx.com
               </a>
             </div>
           </div>
-          <div className="mt-10 border-t border-outline/40 pt-6">
+          <div className="mt-10 border-t border-border-subtle/40 pt-6">
             <p className="text-xs leading-relaxed text-text-muted">
               Tonary is independent — not affiliated with, endorsed by, or
               sponsored by Image-Line. “FL Studio” and “Image-Line” are
@@ -303,7 +303,7 @@ function SectionHeading({
 }) {
   return (
     <div className="max-w-2xl">
-      <p className="font-mono text-xs uppercase tracking-wider text-cyan">
+      <p className="font-mono text-xs uppercase tracking-wider text-brand-accent">
         {eyebrow}
       </p>
       <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
@@ -319,12 +319,12 @@ function StatusPill({ status }: { status: string }) {
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[11px] ${
-        available ? "text-green" : "text-text-muted"
+        available ? "text-state-success" : "text-text-muted"
       }`}
     >
       <span
         className={`h-1.5 w-1.5 rounded-full ${
-          available ? "bg-green" : "bg-text-muted"
+          available ? "bg-state-success" : "bg-text-muted"
         }`}
       />
       {status}
@@ -344,7 +344,7 @@ function PhoneFrame({
   const w = small ? 220 : 270;
   const h = Math.round((w * 844) / 390);
   return (
-    <div className="rounded-[2.4rem] border border-outline bg-bg-shell p-2 shadow-2xl shadow-black/50">
+    <div className="rounded-[2.4rem] border border-border-subtle bg-bg-shell p-2 shadow-2xl shadow-black/50">
       <Image
         src={src}
         alt=""

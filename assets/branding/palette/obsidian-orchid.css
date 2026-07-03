@@ -1,0 +1,61 @@
+:root {
+  --core-black: #050507;  /* rgb(5, 5, 7) · hsl(240, 17, 2) */
+  --core-obsidian: #08070f;  /* rgb(8, 7, 15) · hsl(248, 36, 4) */
+  --core-ink: #12102a;  /* rgb(18, 16, 42) · hsl(245, 45, 11) */
+  --core-white: #ffffff;  /* rgb(255, 255, 255) · hsl(0, 0, 100) */
+  --brand-primary: #6b5cd6;  /* rgb(107, 92, 214) · hsl(247, 60, 60) */
+  --brand-primary-hover: #7c6ee2;  /* rgb(124, 110, 226) · hsl(247, 67, 66) */
+  --brand-primary-active: #5b4dc4;  /* rgb(91, 77, 196) · hsl(247, 50, 54) */
+  --brand-secondary: #a99ee6;  /* rgb(169, 158, 230) · hsl(249, 59, 76) */
+  --brand-accent: #7cbfe6;  /* rgb(124, 191, 230) · hsl(202, 68, 69) */
+  --brand-soft: #cabff7;  /* rgb(202, 191, 247) · hsl(252, 78, 86) */
+  --brand-muted: #4c4573;  /* rgb(76, 69, 115) · hsl(249, 25, 36) */
+  --brand-glow: rgba(139,123,240,0.35);
+  --surface-base: #08070f;  /* rgb(8, 7, 15) · hsl(248, 36, 4) */
+  --surface-muted: #0b0916;  /* rgb(11, 9, 22) · hsl(249, 42, 6) */
+  --surface-raised: #100e20;  /* rgb(16, 14, 32) · hsl(247, 39, 9) */
+  --surface-elevated: #17142c;  /* rgb(23, 20, 44) · hsl(248, 38, 13) */
+  --surface-overlay: #201b3a;  /* rgb(32, 27, 58) · hsl(250, 36, 17) */
+  --text-primary: #f4f2fb;  /* rgb(244, 242, 251) · hsl(253, 53, 97) */
+  --text-secondary: #b8b2d6;  /* rgb(184, 178, 214) · hsl(250, 31, 77) */
+  --text-muted: #837da3;  /* rgb(124, 118, 153) · hsl(250, 15, 53) */
+  --text-disabled: #4e4869;  /* rgb(78, 72, 105) · hsl(251, 19, 35) */
+  --text-inverse: #0a0813;  /* rgb(10, 8, 19) · hsl(251, 41, 5) */
+  --border-subtle: #1b1836;  /* rgb(27, 24, 54) · hsl(246, 38, 15) */
+  --border-default: #262146;  /* rgb(38, 33, 70) · hsl(248, 36, 20) */
+  --border-strong: #37315a;  /* rgb(55, 49, 90) · hsl(249, 29, 27) */
+  --border-focus: #8b7bf0;  /* rgb(139, 123, 240) · hsl(248, 80, 71) */
+  --state-success: #5fbf8f;  /* rgb(95, 191, 143) · hsl(150, 43, 56) */
+  --state-warning: #d8ab52;  /* rgb(216, 171, 82) · hsl(40, 63, 58) */
+  --state-error: #e06a82;  /* rgb(224, 106, 130) · hsl(348, 66, 65) */
+  --state-info: #6ba8e0;  /* rgb(107, 168, 224) · hsl(209, 65, 65) */
+  --grad-orchid-bloom: linear-gradient(135deg, #6b5cd6 0%, #a99ee6 100%);
+  --grad-violet-signal: linear-gradient(135deg, #4c3fa0 0%, #8b7bf0 100%);
+  --grad-lavender-veil: linear-gradient(180deg, #a99ee6 0%, #6b5cd6 100%);
+  --grad-obsidian-depth: linear-gradient(180deg, #14112a 0%, #08070f 62%, #050507 100%);
+  --grad-raised-panel: linear-gradient(180deg, #191532 0%, #100e20 100%);
+  --grad-glass-overlay: linear-gradient(180deg, rgba(139,123,240,0.07) 0%, rgba(139,123,240,0.02) 100%);
+  --grad-focus-glow: radial-gradient(circle at 50% 0%, rgba(139,123,240,0.30) 0%, rgba(139,123,240,0) 70%);
+  --grad-icon-glow: radial-gradient(circle at 50% 42%, rgba(107,92,214,0.38) 0%, rgba(107,92,214,0) 66%);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+  --surface-base: #f6f4fc;  /* rgb(246, 244, 252) · hsl(255, 57, 97) */
+  --surface-muted: #eeeaf8;  /* rgb(238, 234, 248) · hsl(257, 50, 95) */
+  --surface-raised: #ffffff;  /* rgb(255, 255, 255) · hsl(0, 0, 100) */
+  --surface-elevated: #ffffff;  /* rgb(255, 255, 255) · hsl(0, 0, 100) */
+  --surface-overlay: #ffffff;  /* rgb(255, 255, 255) · hsl(0, 0, 100) */
+  --text-primary: #12102a;  /* rgb(18, 16, 42) · hsl(245, 45, 11) */
+  --text-secondary: #423b63;  /* rgb(66, 59, 99) · hsl(250, 25, 31) */
+  --text-muted: #6b6488;  /* rgb(107, 100, 136) · hsl(252, 15, 46) */
+  --text-disabled: #a49fbe;  /* rgb(164, 159, 190) · hsl(250, 19, 68) */
+  --text-inverse: #f4f2fb;  /* rgb(244, 242, 251) · hsl(253, 53, 97) */
+  --border-subtle: #e4def4;  /* rgb(228, 222, 244) · hsl(256, 50, 91) */
+  --border-default: #d3cbe8;  /* rgb(211, 203, 232) · hsl(257, 39, 85) */
+  --border-strong: #b7add4;  /* rgb(183, 173, 212) · hsl(255, 31, 75) */
+  --border-focus: #5b4dc4;  /* rgb(91, 77, 196) · hsl(247, 50, 54) */
+  --brand-primary: #5b4dc4;  /* rgb(91, 77, 196) · hsl(247, 50, 54) */
+  --brand-secondary: #7c6ee2;  /* rgb(124, 110, 226) · hsl(247, 67, 66) */
+  --brand-accent: #3d84c0;  /* rgb(61, 132, 192) · hsl(207, 52, 50) */
+  }
+}

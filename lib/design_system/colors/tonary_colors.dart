@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 /// Tonary semantic color tokens (dark-first), sourced verbatim from the
 /// Tonary Brand Kit. See `.claude/brand/brand-rules.md` for the color law.
 ///
-/// Color law (enforced in review):
-///   amber  = brand action ONLY (never general decoration)
-///   cyan   = focus / system
-///   green  = affirmative
-///   violet = exploratory / creative
-///   red    = exceptional / danger
+/// Color law (Obsidian Orchid — icon-anchored, violet-first; enforced in review):
+///   violet   = brand action ONLY (primary) — never general decoration
+///   lavender = focus / system + creative accent
+///   green    = success ONLY
+///   amber    = warning ONLY
+///   rose     = error / danger
+/// Cyan is a restrained technical support accent only, never brand identity.
 ///
 /// Use semantic Dart names (e.g. [bgApp], [outlineControl]) — never raw hex in
 /// widgets, and never the legacy `--citrus-console-*` CSS names.
@@ -64,14 +65,14 @@ class TonaryColors extends ThemeExtension<TonaryColors> {
   final Color textMuted;
 
   // Accents (each owns one meaning — see color law above)
-  final Color accentPrimary; // amber — brand action
+  final Color accentPrimary; // royal violet — brand action
   final Color accentPrimaryHover;
   final Color accentPrimaryActive;
-  final Color accentSuccess; // green
-  final Color accentInfo; // cyan — focus/system
-  final Color accentCreative; // violet
-  final Color accentWarning; // orange
-  final Color accentDanger; // red
+  final Color accentSuccess; // green — success only
+  final Color accentInfo; // violet — focus/system
+  final Color accentCreative; // lavender — creative
+  final Color accentWarning; // amber — warning only
+  final Color accentDanger; // rose — error/danger
 
   // Soft semantic surfaces (derived)
   final Color brandSoft;
@@ -82,30 +83,30 @@ class TonaryColors extends ThemeExtension<TonaryColors> {
 
   /// The canonical dark-first palette. This is the single source of truth in code.
   static const TonaryColors dark = TonaryColors(
-    bgApp: Color(0xFF07090A),
-    bgShell: Color(0xFF0E1114),
-    surfaceCard: Color(0xFF151A1F),
-    surfaceRaised: Color(0xFF1D242B),
-    surfaceHover: Color(0xFF26313A),
-    borderSubtle: Color(0xFF2F3A43),
-    borderStrong: Color(0xFF43505A),
-    outlineControl: Color(0xFF5A666C),
-    textPrimary: Color(0xFFF8FAF2),
-    textSecondary: Color(0xFFB8C0B5),
-    textMuted: Color(0xFF7E8A82),
-    accentPrimary: Color(0xFFFFB13B),
-    accentPrimaryHover: Color(0xFFFFC766),
-    accentPrimaryActive: Color(0xFFDA9834),
-    accentSuccess: Color(0xFF33D17A),
-    accentInfo: Color(0xFF38BDF8),
-    accentCreative: Color(0xFFA78BFA),
-    accentWarning: Color(0xFFF59E0B),
-    accentDanger: Color(0xFFF87171),
-    brandSoft: Color(0xFF2B2419),
-    successSoft: Color(0xFF122820),
-    infoSoft: Color(0xFF13262F),
+    bgApp: Color(0xFF08070F),
+    bgShell: Color(0xFF0B0916),
+    surfaceCard: Color(0xFF100E20),
+    surfaceRaised: Color(0xFF17142C),
+    surfaceHover: Color(0xFF201B3A),
+    borderSubtle: Color(0xFF1B1836),
+    borderStrong: Color(0xFF37315A),
+    outlineControl: Color(0xFF6B6493),
+    textPrimary: Color(0xFFF4F2FB),
+    textSecondary: Color(0xFFB8B2D6),
+    textMuted: Color(0xFF837DA3),
+    accentPrimary: Color(0xFF6B5CD6),
+    accentPrimaryHover: Color(0xFF7C6EE2),
+    accentPrimaryActive: Color(0xFF5B4DC4),
+    accentSuccess: Color(0xFF5FBF8F),
+    accentInfo: Color(0xFF8B7BF0),
+    accentCreative: Color(0xFFA99EE6),
+    accentWarning: Color(0xFFD8AB52),
+    accentDanger: Color(0xFFE06A82),
+    brandSoft: Color(0xFF1B1740),
+    successSoft: Color(0xFF13251E),
+    infoSoft: Color(0xFF191534),
     warningSoft: Color(0xFF2A2213),
-    dangerSoft: Color(0xFF2A1D1F),
+    dangerSoft: Color(0xFF2A1A22),
   );
 
   @override

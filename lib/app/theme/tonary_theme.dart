@@ -14,9 +14,9 @@ abstract final class TonaryTheme {
       surface: c.bgApp,
       onSurface: c.textPrimary,
       primary: c.accentPrimary,
-      onPrimary: c.bgApp, // dark label on bright amber — brand law
+      onPrimary: c.textPrimary, // light label on royal-violet primary
       secondary: c.accentInfo,
-      onSecondary: c.bgApp,
+      onSecondary: c.textPrimary,
       error: c.accentDanger,
       onError: c.bgApp,
       outline: c.outlineControl,

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://design-tokens.org",
+  "name": "Obsidian Orchid",
+  "version": "2.0.0",
+  "color": {
+    "core": {
+      "black": {
+        "value": "#050507",
+        "type": "color"
+      },
+      "obsidian": {
+        "value": "#08070f",
+        "type": "color"
+      },
+      "ink": {
+        "value": "#12102a",
+        "type": "color"
+      },
+      "white": {
+        "value": "#ffffff",
+        "type": "color"
+      }
+    },
+    "brand": {
+      "primary": {
+        "value": "#6b5cd6",
+        "type": "color"
+      },
+      "primary-hover": {
+        "value": "#7c6ee2",
+        "type": "color"
+      },
+      "primary-active": {
+        "value": "#5b4dc4",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "#a99ee6",
+        "type": "color"
+      },
+      "accent": {
+        "value": "#7cbfe6",
+        "type": "color"
+      },
+      "soft": {
+        "value": "#cabff7",
+        "type": "color"
+      },
+      "muted": {
+        "value": "#4c4573",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "base": {
+        "value": "#08070f",
+        "type": "color"
+      },
+      "muted": {
+        "value": "#0b0916",
+        "type": "color"
+      },
+      "raised": {
+        "value": "#100e20",
+        "type": "color"
+      },
+      "elevated": {
+        "value": "#17142c",
+        "type": "color"
+      },
+      "overlay": {
+        "value": "#201b3a",
+        "type": "color"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#f4f2fb",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "#b8b2d6",
+        "type": "color"
+      },
+      "muted": {
+        "value": "#837da3",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "#4e4869",
+        "type": "color"
+      },
+      "inverse": {
+        "value": "#0a0813",
+        "type": "color"
+      }
+    },
+    "border": {
+      "subtle": {
+        "value": "#1b1836",
+        "type": "color"
+      },
+      "default": {
+        "value": "#262146",
+        "type": "color"
+      },
+      "strong": {
+        "value": "#37315a",
+        "type": "color"
+      },
+      "focus": {
+        "value": "#8b7bf0",
+        "type": "color"
+      }
+    },
+    "state": {
+      "success": {
+        "value": "#5fbf8f",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#d8ab52",
+        "type": "color"
+      },
+      "error": {
+        "value": "#e06a82",
+        "type": "color"
+      },
+      "info": {
+        "value": "#6ba8e0",
+        "type": "color"
+      }
+    }
+  },
+  "gradient": {
+    "orchid-bloom": {
+      "value": "linear-gradient(135deg, #6b5cd6 0%, #a99ee6 100%)",
+      "type": "gradient"
+    },
+    "violet-signal": {
+      "value": "linear-gradient(135deg, #4c3fa0 0%, #8b7bf0 100%)",
+      "type": "gradient"
+    },
+    "lavender-veil": {
+      "value": "linear-gradient(180deg, #a99ee6 0%, #6b5cd6 100%)",
+      "type": "gradient"
+    },
+    "obsidian-depth": {
+      "value": "linear-gradient(180deg, #14112a 0%, #08070f 62%, #050507 100%)",
+      "type": "gradient"
+    },
+    "raised-panel": {
+      "value": "linear-gradient(180deg, #191532 0%, #100e20 100%)",
+      "type": "gradient"
+    },
+    "glass-overlay": {
+      "value": "linear-gradient(180deg, rgba(139,123,240,0.07) 0%, rgba(139,123,240,0.02) 100%)",
+      "type": "gradient"
+    },
+    "focus-glow": {
+      "value": "radial-gradient(circle at 50% 0%, rgba(139,123,240,0.30) 0%, rgba(139,123,240,0) 70%)",
+      "type": "gradient"
+    },
+    "icon-glow": {
+      "value": "radial-gradient(circle at 50% 42%, rgba(107,92,214,0.38) 0%, rgba(107,92,214,0) 66%)",
+      "type": "gradient"
+    }
+  }
+}

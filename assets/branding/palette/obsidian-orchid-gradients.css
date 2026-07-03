@@ -1,0 +1,24 @@
+:root {
+  --grad-orchid-bloom: linear-gradient(135deg, #6b5cd6 0%, #a99ee6 100%);
+  --grad-violet-signal: linear-gradient(135deg, #4c3fa0 0%, #8b7bf0 100%);
+  --grad-lavender-veil: linear-gradient(180deg, #a99ee6 0%, #6b5cd6 100%);
+  --grad-obsidian-depth: linear-gradient(180deg, #14112a 0%, #08070f 62%, #050507 100%);
+  --grad-raised-panel: linear-gradient(180deg, #191532 0%, #100e20 100%);
+  --grad-glass-overlay: linear-gradient(180deg, rgba(139,123,240,0.07) 0%, rgba(139,123,240,0.02) 100%);
+  --grad-focus-glow: radial-gradient(circle at 50% 0%, rgba(139,123,240,0.30) 0%, rgba(139,123,240,0) 70%);
+  --grad-icon-glow: radial-gradient(circle at 50% 42%, rgba(107,92,214,0.38) 0%, rgba(107,92,214,0) 66%);
+}
+
+/* Utility classes */
+.grad-orchid-bloom { background: var(--grad-orchid-bloom); }
+.grad-violet-signal { background: var(--grad-violet-signal); }
+.grad-lavender-veil { background: var(--grad-lavender-veil); }
+.grad-obsidian-depth { background: var(--grad-obsidian-depth); }
+.grad-raised-panel { background: var(--grad-raised-panel); }
+.grad-glass-overlay { background: var(--grad-glass-overlay); }
+.grad-focus-glow { background: var(--grad-focus-glow); }
+.grad-icon-glow { background: var(--grad-icon-glow); }
+
+/* Gradient text (brand only) */
+.text-grad-orchid-bloom { background: var(--grad-orchid-bloom); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.text-grad-violet-signal { background: var(--grad-violet-signal); -webkit-background-clip:text; background-clip:text; color:transparent; }
