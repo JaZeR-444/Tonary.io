@@ -14,6 +14,7 @@ Future<void> _pumpAt(WidgetTester tester, String location) async {
   useGoldenCanvas(tester);
   await tester.pumpWidget(goldenApp(location));
   await tester.pumpAndSettle();
+  await precacheImages(tester);
 }
 
 void main() {

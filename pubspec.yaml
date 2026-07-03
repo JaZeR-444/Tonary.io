@@ -75,6 +75,8 @@ flutter:
   # Bundled offline seed dataset (hydrated into Drift on first run).
   assets:
     - assets/seed/
+    # Brand mark for in-app branding (home header, onboarding, about).
+    - assets/branding/exports/icon-512.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

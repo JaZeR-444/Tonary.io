@@ -43,6 +43,19 @@ Future<void> loadTonaryFonts() async {
   }
 }
 
+/// Precaches every [Image] asset in the pumped tree so goldens capture it.
+/// Asset decode is real async I/O that the fake test clock doesn't drive, so
+/// `pumpAndSettle` alone can snapshot before an `Image.asset` has painted.
+Future<void> precacheImages(WidgetTester tester) async {
+  await tester.runAsync(() async {
+    await Future.wait([
+      for (final element in find.byType(Image).evaluate())
+        precacheImage((element.widget as Image).image, element),
+    ]);
+  });
+  await tester.pumpAndSettle();
+}
+
 /// Applies the golden phone canvas to [tester] and restores it afterwards.
 void useGoldenCanvas(WidgetTester tester) {
   tester.view.physicalSize = goldenPhoneSize;

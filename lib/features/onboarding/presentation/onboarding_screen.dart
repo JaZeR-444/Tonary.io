@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../design_system/colors/tonary_colors.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
+import '../../../shared/widgets/tonary_mark.dart';
 import '../application/onboarding_providers.dart';
 
 /// First-run onboarding — a short, skippable intro. Completing (or skipping)
@@ -146,7 +147,12 @@ class _OnboardPage extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(data.icon, size: 56, color: c.accentInfo),
+          // The hero page leads with the brand mark; later pages use a module
+          // glyph to preview what each does.
+          if (data.hero)
+            const TonaryMark(size: 72)
+          else
+            Icon(data.icon, size: 56, color: c.accentInfo),
           const SizedBox(height: TonarySpacing.xl2),
           Text(data.title, style: titleStyle, textAlign: TextAlign.center),
           const SizedBox(height: TonarySpacing.md),

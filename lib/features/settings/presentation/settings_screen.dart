@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../design_system/colors/tonary_colors.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
+import '../../../shared/widgets/tonary_mark.dart';
 import '../application/settings_providers.dart';
 
 /// Settings — grounded, read-mostly: appearance (dark-first, locked for launch),
@@ -86,7 +87,7 @@ class SettingsScreen extends ConsumerWidget {
               title: 'About',
               children: [
                 _SettingRow(
-                  icon: Icons.graphic_eq,
+                  leading: const TonaryMark(size: 22),
                   title: 'Tonary',
                   value: '',
                   subtitle:
@@ -158,13 +159,18 @@ class _Section extends StatelessWidget {
 /// One read-only setting: leading icon, title, optional trailing value + subtitle.
 class _SettingRow extends StatelessWidget {
   const _SettingRow({
-    required this.icon,
     required this.title,
     required this.value,
+    this.icon,
+    this.leading,
     this.subtitle,
-  });
+  }) : assert(icon != null || leading != null, 'provide an icon or a leading');
 
-  final IconData icon;
+  /// Leading glyph. Ignored when [leading] is supplied.
+  final IconData? icon;
+
+  /// Custom leading widget (e.g. the brand mark); overrides [icon].
+  final Widget? leading;
   final String title;
   final String value;
   final String? subtitle;
@@ -180,7 +186,7 @@ class _SettingRow extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(icon, size: 20, color: c.textSecondary),
+          leading ?? Icon(icon, size: 20, color: c.textSecondary),
           const SizedBox(width: TonarySpacing.md),
           Expanded(
             child: Column(
