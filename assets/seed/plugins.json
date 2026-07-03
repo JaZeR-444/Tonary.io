@@ -2450,5 +2450,300 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "directwave-sampler",
+    "name": "DirectWave Sampler",
+    "vendor": "Image-Line",
+    "category": "Sampler",
+    "type": "Generator",
+    "tier": "Premium",
+    "description": "An advanced multi-timbral sampling engine that imports and plays sampled instruments across key and velocity zones, with per-zone filters, envelopes and modulation, and support for common sampler formats.",
+    "tags": [
+      "sampler",
+      "rompler",
+      "multisample",
+      "instrument"
+    ],
+    "capabilities": [
+      "multi-zone-sampling",
+      "format-import",
+      "per-zone-modulation"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/DirectWave.htm",
+    "sources": [
+      "src-directwave-sampler-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "edison",
+    "name": "Edison",
+    "vendor": "Image-Line",
+    "category": "Wave Editor / Recorder",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An integrated audio editor and recorder that captures audio from any point in the mixer and provides waveform editing - trim, normalize, and spectral tools - directly inside the DAW.",
+    "tags": [
+      "editor",
+      "recorder",
+      "audio",
+      "utility"
+    ],
+    "capabilities": [
+      "audio-recording",
+      "waveform-editing",
+      "spectral-tools"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Edison.htm",
+    "sources": [
+      "src-edison-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "soundfont-player",
+    "name": "SoundFont Player",
+    "vendor": "Image-Line",
+    "category": "SoundFont Player",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A player for SoundFont (.sf2) instruments with a preset browser to access the multiple instruments inside a bank, plus envelope and LFO overrides to customise the built-in parameters.",
+    "tags": [
+      "soundfont",
+      "sampler",
+      "sf2",
+      "rompler"
+    ],
+    "capabilities": [
+      "sf2-playback",
+      "preset-browser",
+      "envelope-lfo-override"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/SoundFont%20Player.htm",
+    "sources": [
+      "src-soundfont-player-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "speech-synthesizer",
+    "name": "Speech Synthesizer",
+    "vendor": "Image-Line",
+    "category": "Text-to-Speech",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A text-to-speech generator that turns any phrase into an audible speech sample, with a choice of voice personalities (such as Classic and Giant) for robotic and character vocals.",
+    "tags": [
+      "speech",
+      "tts",
+      "voice",
+      "vocal"
+    ],
+    "capabilities": [
+      "text-to-speech",
+      "voice-personalities"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Speech%20Synthesizer.htm",
+    "sources": [
+      "src-speech-synthesizer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "drumpad",
+    "name": "Drumpad",
+    "vendor": "Image-Line",
+    "category": "Drum Sampler / Pads",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A pad-based drum sampler with an MPC-style layout for triggering drum samples, aimed at quick fingerdrumming and touch performance.",
+    "tags": [
+      "drums",
+      "pads",
+      "sampler",
+      "mpc"
+    ],
+    "capabilities": [
+      "pad-sampler",
+      "drum-triggering"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Drumpad.htm",
+    "sources": [
+      "src-drumpad-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "emphasis",
+    "name": "Emphasis",
+    "vendor": "Image-Line",
+    "category": "Exciter / Transient",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A dynamic enhancer and exciter that boosts low-level detail and excites transients while raising RMS loudness, keeping punch intact as the signal gets louder.",
+    "tags": [
+      "exciter",
+      "dynamics",
+      "loudness",
+      "mixing"
+    ],
+    "capabilities": [
+      "dynamic-enhancement",
+      "transient-preservation",
+      "exciter"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Emphasis.htm",
+    "sources": [
+      "src-emphasis-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "emphasizer",
+    "name": "Emphasizer",
+    "vendor": "Image-Line",
+    "category": "Harmonic Enhancer",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A harmonic enhancement and excitement processor that adds character and perceived presence to a signal through added harmonic content.",
+    "tags": [
+      "exciter",
+      "harmonic",
+      "enhancer",
+      "effect"
+    ],
+    "capabilities": [
+      "harmonic-enhancement",
+      "excitement"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Emphasizer.htm",
+    "sources": [
+      "src-emphasizer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "frequency-splitter",
+    "name": "Frequency Splitter",
+    "vendor": "Image-Line",
+    "category": "Crossover / Splitter",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A crossover tool that splits a signal into frequency bands routed to separate paths, enabling multiband processing such as mono bass with widened highs.",
+    "tags": [
+      "crossover",
+      "multiband",
+      "splitter",
+      "mixing"
+    ],
+    "capabilities": [
+      "band-splitting",
+      "crossover",
+      "multiband-routing"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Frequency%20Splitter.htm",
+    "sources": [
+      "src-frequency-splitter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-bank",
+    "name": "Fruity Delay Bank",
+    "vendor": "Image-Line",
+    "category": "Multi-Tap Delay / Filter Bank",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-tap delay and filter bank with complex routing (a bank can feed the next bank or the main output) and grain controls that chop echoes into textures for evolving, granular delays.",
+    "tags": [
+      "delay",
+      "multi-tap",
+      "filter-bank",
+      "texture"
+    ],
+    "capabilities": [
+      "multi-tap-delay",
+      "filter-bank",
+      "complex-routing",
+      "granular"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%20Bank.htm",
+    "sources": [
+      "src-fruity-delay-bank-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-lsd",
+    "name": "Fruity LSD",
+    "vendor": "Image-Line",
+    "category": "MIDI Output / DLS Player",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A plugin that routes MIDI to the system's General MIDI synthesizer, playing the 128 standard GM sounds and custom DLS sound banks.",
+    "tags": [
+      "midi",
+      "gm",
+      "dls",
+      "utility"
+    ],
+    "capabilities": [
+      "general-midi",
+      "dls-support",
+      "midi-output"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20LSD.htm",
+    "sources": [
+      "src-fruity-lsd-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "wave-traveller",
+    "name": "Wave Traveller",
+    "vendor": "Image-Line",
+    "category": "Scratch Generator / Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A scratch generator and sampler with a spline path editor for drawing playback speed and direction curves, with different scratch patterns mapped to MIDI notes.",
+    "tags": [
+      "scratch",
+      "dj",
+      "sampler",
+      "turntable"
+    ],
+    "capabilities": [
+      "spline-path-editor",
+      "scratch-patterns",
+      "key-assignment"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wave%20Traveller.htm",
+    "sources": [
+      "src-wave-traveller-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

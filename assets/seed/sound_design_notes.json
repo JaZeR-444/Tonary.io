@@ -961,5 +961,35 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "edison-recording",
+    "topic": "Record anywhere in the signal path",
+    "subjectRefs": [
+      "edison"
+    ],
+    "body": "Because Edison loads as an effect, it can capture audio at any mixer insert - the raw input, a bus, or the master - and hold it for editing. That makes it handy for grabbing takes, bouncing a wet effect chain to a clip, or trimming and normalising a one-shot without leaving the project.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-edison-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "frequency-splitter-routing",
+    "topic": "Split-band processing",
+    "subjectRefs": [
+      "frequency-splitter"
+    ],
+    "body": "Splitting a signal at a crossover frequency lets you treat bands differently - keep the sub mono and centred while widening and brightening the highs - then recombine them. It is the building block for multiband width, saturation and dynamics.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-frequency-splitter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]
