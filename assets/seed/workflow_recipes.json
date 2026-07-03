@@ -3,7 +3,10 @@
     "id": "warm-analog-bass-flex",
     "title": "Warm Analog Bass with FLEX",
     "goal": "Create a rounded, mono-safe analog-style bass suitable for trap.",
-    "pluginChain": ["flex", "fruity-parametric-eq-2"],
+    "pluginChain": [
+      "flex",
+      "fruity-parametric-eq-2"
+    ],
     "steps": [
       {
         "order": 1,
@@ -25,16 +28,24 @@
     ],
     "difficulty": "Beginner",
     "timeEstimate": "PT10M",
-    "genreTags": ["trap", "hip-hop"],
+    "genreTags": [
+      "trap",
+      "hip-hop"
+    ],
     "presetRefs": [],
-    "sources": ["src-flex-dive", "src-eq2-dive"],
+    "sources": [
+      "src-flex-dive",
+      "src-eq2-dive"
+    ],
     "createdAt": "2026-07-02"
   },
   {
     "id": "vocal-clarity-eq2",
     "title": "Vocal Clarity with Fruity Parametric EQ 2",
     "goal": "Clean up and open a lead vocal without making it harsh.",
-    "pluginChain": ["fruity-parametric-eq-2"],
+    "pluginChain": [
+      "fruity-parametric-eq-2"
+    ],
     "steps": [
       {
         "order": 1,
@@ -62,16 +73,27 @@
     ],
     "difficulty": "Intermediate",
     "timeEstimate": "PT12M",
-    "genreTags": ["pop", "rnb"],
-    "presetRefs": ["eq2-vocal-clarity-archetype"],
-    "sources": ["src-eq2-dive", "src-eq2-manual"],
+    "genreTags": [
+      "pop",
+      "rnb"
+    ],
+    "presetRefs": [
+      "eq2-vocal-clarity-archetype"
+    ],
+    "sources": [
+      "src-eq2-dive",
+      "src-eq2-manual"
+    ],
     "createdAt": "2026-07-02"
   },
   {
     "id": "fm-sub-bass-sytrus",
     "title": "FM Sub Bass with Sytrus",
     "goal": "Design a tuned, harmonically rich sub bass using FM.",
-    "pluginChain": ["sytrus", "fruity-parametric-eq-2"],
+    "pluginChain": [
+      "sytrus",
+      "fruity-parametric-eq-2"
+    ],
     "steps": [
       {
         "order": 1,
@@ -93,9 +115,392 @@
     ],
     "difficulty": "Advanced",
     "timeEstimate": "PT20M",
-    "genreTags": ["trap", "electronic"],
-    "presetRefs": ["sytrus-fm-sub-bass"],
-    "sources": ["src-sytrus-dive", "src-eq2-dive"],
+    "genreTags": [
+      "trap",
+      "electronic"
+    ],
+    "presetRefs": [
+      "sytrus-fm-sub-bass"
+    ],
+    "sources": [
+      "src-sytrus-dive",
+      "src-eq2-dive"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "vocal-clarity-chain",
+    "title": "Clean Vocal Chain",
+    "goal": "Tune, de-clutter and control a lead vocal so it sits forward in the mix.",
+    "pluginChain": [
+      "newtone",
+      "fruity-parametric-eq-2",
+      "fruity-limiter"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "newtone",
+        "action": "Correct obvious pitch drift by note, keeping the contour natural rather than fully snapping.",
+        "tip": "Edit the pitch line inside a note before moving the whole note."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-parametric-eq-2",
+        "action": "High-pass below ~90Hz, dip boxiness around 300-500Hz, and add a gentle presence lift near 4-6kHz.",
+        "tip": "Cut before you boost - clearing mud often removes the need for a big top-end lift."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-limiter",
+        "action": "Use the compressor stage for gentle levelling, then a touch of limiting to hold peaks.",
+        "tip": "Aim for a few dB of gain reduction, not a squashed sound."
+      }
+    ],
+    "difficulty": "Beginner",
+    "timeEstimate": "PT12M",
+    "genreTags": [
+      "pop",
+      "hip-hop",
+      "rnb"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "trance-gate-lead",
+    "title": "Trance Gate Lead",
+    "goal": "Turn a sustained chord into a pumping, rhythmic trance lead.",
+    "pluginChain": [
+      "poizone",
+      "fruity-reeverb-2"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "poizone",
+        "action": "Hold a chord and enable the 16-step trance gate to chop it into a rhythm.",
+        "tip": "Program a syncopated gate pattern rather than straight 16ths for movement."
+      },
+      {
+        "order": 2,
+        "pluginId": "poizone",
+        "action": "Add unison detune and stereo spread for width, and set a moderate filter cutoff to keep it bright.",
+        "tip": "Automate the cutoff up over 8 bars for a classic build."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-reeverb-2",
+        "action": "Add a medium hall with mid/side width so the reverb sits around the dry lead.",
+        "tip": "Shorten the bass-multiplier so the low mids stay clear."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT15M",
+    "genreTags": [
+      "trance",
+      "edm"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "lofi-drum-bus",
+    "title": "Lo-Fi Drum Bus",
+    "goal": "Give a clean drum loop dusty, glued lo-fi character.",
+    "pluginChain": [
+      "fruity-squeeze",
+      "fruity-soft-clipper",
+      "multiband-delay"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-squeeze",
+        "action": "Add a little squarize (bit reduction) and puncher for stepped digital grit.",
+        "tip": "A small amount goes a long way - keep the transients readable."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-soft-clipper",
+        "action": "Push the bus into the soft clipper to round peaks and glue the kit.",
+        "tip": "Clip for tone and cohesion, not just loudness."
+      },
+      {
+        "order": 3,
+        "pluginId": "multiband-delay",
+        "action": "Echo only the high band lightly for a tape-like ambience while keeping the low end dry.",
+        "tip": "Reverse or scale the delay for a woozier feel."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT12M",
+    "genreTags": [
+      "lofi",
+      "hip-hop"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "acid-303-line",
+    "title": "Acid 303 Line",
+    "goal": "Program a screaming acid bassline with slides and grit.",
+    "pluginChain": [
+      "transistor-bass",
+      "fruity-fast-dist",
+      "fruity-delay-2"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "transistor-bass",
+        "action": "Write a mono pattern with slides and accents, morphing the oscillator toward saw.",
+        "tip": "Slides between notes are what make the 303 sing - use them sparingly for emphasis."
+      },
+      {
+        "order": 2,
+        "pluginId": "transistor-bass",
+        "action": "Automate the filter cutoff and resonance across the loop for the classic acid squelch.",
+        "tip": "High resonance near self-oscillation gives the vocal 'wah'."
+      },
+      {
+        "order": 3,
+        "pluginId": "fruity-fast-dist",
+        "action": "Drive the line for grit, choosing the harsher A/B mode for aggression.",
+        "tip": "Distortion after the filter emphasises the resonant peak."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT15M",
+    "genreTags": [
+      "acid",
+      "techno"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "shimmer-pad",
+    "title": "Shimmer Pad",
+    "goal": "Build an evolving, angelic pad with a rising harmonic tail.",
+    "pluginChain": [
+      "harmless",
+      "luxeverb"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "harmless",
+        "action": "Start from a soft additive pad and mask harsh upper harmonics for a smooth tone.",
+        "tip": "Slow the amp attack so chords bloom in."
+      },
+      {
+        "order": 2,
+        "pluginId": "luxeverb",
+        "action": "Use a large mode (Space or Lush) and dial in pitch-shifted feedback for the shimmer.",
+        "tip": "Keep the dry/wet mostly wet for an ambient bed."
+      }
+    ],
+    "difficulty": "Beginner",
+    "timeEstimate": "PT10M",
+    "genreTags": [
+      "ambient",
+      "cinematic"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "sidechain-pump",
+    "title": "Sidechain Pump without a Compressor",
+    "goal": "Duck a pad in time with the kick using a peak follower.",
+    "pluginChain": [
+      "fruity-peak-controller",
+      "flex"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-peak-controller",
+        "action": "Insert a Peak Controller on the kick track so its level becomes an automation signal.",
+        "tip": "Set a short decay so the duck recovers between hits."
+      },
+      {
+        "order": 2,
+        "pluginId": "flex",
+        "action": "Right-click the pad's volume and link it to the Peak Controller's peak output, inverted.",
+        "tip": "Inverted mapping means loud kick equals quiet pad - the pump."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT10M",
+    "genreTags": [
+      "house",
+      "edm"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "fm-bell-lead",
+    "title": "FM Bell Lead",
+    "goal": "Design a bright metallic bell and place it in space.",
+    "pluginChain": [
+      "fruity-dx10",
+      "fruity-reeverb-2"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-dx10",
+        "action": "Raise the Coarse ratio toward a non-integer value for a clangorous, bell-like tone and add Wave Brightness.",
+        "tip": "Add a little vibrato LFO so sustained notes feel alive."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-reeverb-2",
+        "action": "Add a bright plate/hall so the bell rings out.",
+        "tip": "Predelay-style separation keeps the attack clear before the tail."
+      }
+    ],
+    "difficulty": "Beginner",
+    "timeEstimate": "PT8M",
+    "genreTags": [
+      "pop",
+      "edm"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "wide-master-polish",
+    "title": "Wide Master Polish",
+    "goal": "Add width and instant polish to a finished stereo mix.",
+    "pluginChain": [
+      "fruity-stereo-enhancer",
+      "spreader",
+      "soundgoodizer"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-stereo-enhancer",
+        "action": "Nudge side level up for width, checking mono compatibility as you go.",
+        "tip": "Keep the low end centred - widen the mids and highs."
+      },
+      {
+        "order": 2,
+        "pluginId": "spreader",
+        "action": "Apply gentle psychoacoustic widening that stays mono-safe.",
+        "tip": "Bypass and compare - width should not thin the centre."
+      },
+      {
+        "order": 3,
+        "pluginId": "soundgoodizer",
+        "action": "Blend in a mode (A or B) at a low amount for cohesion and loudness.",
+        "tip": "This is a finishing sheen, not a mastering chain."
+      }
+    ],
+    "difficulty": "Beginner",
+    "timeEstimate": "PT10M",
+    "genreTags": [
+      "pop",
+      "edm"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "robot-vocoder",
+    "title": "Robot Vocoder Vocal",
+    "goal": "Turn a spoken or sung phrase into a talking synth.",
+    "pluginChain": [
+      "vocodex",
+      "fruity-delay-2"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "vocodex",
+        "action": "Use the built-in Sytrus carrier and feed the voice as the modulator, tuning band contouring for intelligibility.",
+        "tip": "Play sustained chords on the carrier so words ring out."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-delay-2",
+        "action": "Add a tempo-synced stereo delay for space and rhythmic interest.",
+        "tip": "Filter the feedback so repeats sit behind the dry phrase."
+      }
+    ],
+    "difficulty": "Intermediate",
+    "timeEstimate": "PT12M",
+    "genreTags": [
+      "electronic",
+      "pop"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
+    "createdAt": "2026-07-02"
+  },
+  {
+    "id": "granular-texture",
+    "title": "Granular Texture Bed",
+    "goal": "Turn a one-shot or vocal into an evolving ambient texture.",
+    "pluginChain": [
+      "fruity-granulizer",
+      "fruity-convolver"
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "pluginId": "fruity-granulizer",
+        "action": "Load a sample and stretch it far down with wide grain spacing for a shimmering cloud.",
+        "tip": "Automate Spacing for movement between smooth and stuttered."
+      },
+      {
+        "order": 2,
+        "pluginId": "fruity-convolver",
+        "action": "Send the grains into a long impulse-response space, shaping the tail's width with the envelopes.",
+        "tip": "A cathedral or FX impulse turns grains into an ambient wash."
+      }
+    ],
+    "difficulty": "Advanced",
+    "timeEstimate": "PT15M",
+    "genreTags": [
+      "ambient",
+      "experimental"
+    ],
+    "presetRefs": [],
+    "sources": [
+      "src-tonary-flow"
+    ],
     "createdAt": "2026-07-02"
   }
 ]

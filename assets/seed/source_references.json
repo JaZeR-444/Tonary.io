@@ -1648,5 +1648,16 @@
     "retrievedAt": "2026-07-02",
     "reliability": "Medium",
     "notes": "Official reference for BeepMap; function cross-checked to the manual."
+  },
+  {
+    "id": "src-tonary-flow",
+    "title": "Tonary Flow - original workflow authoring",
+    "sourceType": "original-research",
+    "url": null,
+    "publisher": null,
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "Medium",
+    "notes": "Original sound-design technique authored for Tonary, combining documented plugin capabilities. Opinion/technique, not a sourced factory value."
   }
 ]
