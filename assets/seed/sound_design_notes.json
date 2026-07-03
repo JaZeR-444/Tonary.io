@@ -916,5 +916,50 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "frequency-shifter-vs-pitch",
+    "topic": "Shift vs pitch",
+    "subjectRefs": [
+      "frequency-shifter"
+    ],
+    "body": "A pitch shifter multiplies all frequencies by the same ratio, preserving harmony; a frequency shifter adds the same number of Hz to every partial, which detunes the harmonic series into clangorous, metallic and bell-like territory. Small shifts also work as a subtle chorus-like thickener.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-frequency-shifter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "transient-processor-punch",
+    "topic": "Level-independent attack",
+    "subjectRefs": [
+      "transient-processor"
+    ],
+    "body": "Because it reacts to transients rather than a level threshold, the same setting adds punch to a quiet ghost note and a loud accent equally. Boost attack for snap, cut release to tighten a room, and split the low frequencies out so the kick keeps its weight.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-transient-processor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "luxeverb-shimmer",
+    "topic": "Shimmer tails",
+    "subjectRefs": [
+      "luxeverb"
+    ],
+    "body": "Feeding the reverb tail through a pitch shifter and back into itself grows a rising, harmonic 'shimmer' - octave-up feedback layered onto the decay. LuxeVerb's six modes range from tight rooms to vast cathedral and lush ambiences.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-luxeverb-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

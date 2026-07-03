@@ -2066,5 +2066,389 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "frequency-shifter",
+    "name": "Frequency Shifter",
+    "vendor": "Image-Line",
+    "category": "Frequency Shifter / Ring Mod",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A frequency shifter and ring modulator. Unlike a pitch shifter it moves every frequency by a fixed number of Hz (linearly), breaking harmonic relationships for inharmonic, metallic and bell-like tones. Ring modulation, independent stereo detuning and a feedback loop extend the effect.",
+    "tags": [
+      "frequency-shifter",
+      "ring-mod",
+      "inharmonic",
+      "creative"
+    ],
+    "capabilities": [
+      "linear-hz-shift",
+      "ring-modulation",
+      "stereo-detune",
+      "feedback"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Frequency%20Shifter.htm",
+    "sources": [
+      "src-frequency-shifter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "pitcher",
+    "name": "Pitcher",
+    "vendor": "Image-Line",
+    "category": "Pitch Correction / Autotune",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A real-time pitch-correction and harmonizer (autotune). It snaps input pitch to the nearest note of a chosen scale, or follows notes played live on a MIDI keyboard, with control over correction speed and formants for natural or hard-tuned effects.",
+    "tags": [
+      "pitch-correction",
+      "autotune",
+      "vocal",
+      "harmonizer"
+    ],
+    "capabilities": [
+      "auto-correction",
+      "scale-snap",
+      "midi-control",
+      "formant"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Pitcher.htm",
+    "sources": [
+      "src-pitcher-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "effector",
+    "name": "Effector",
+    "vendor": "Image-Line",
+    "category": "Multi-Effect / Performance",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A performance-oriented multi-effect offering a set of switchable effects, each mapped to an X/Y pad for two-parameter control, with a built-in LFO and a dry/wet lever for momentary engagement - designed for live switching and automation.",
+    "tags": [
+      "multi-fx",
+      "performance",
+      "live",
+      "xy"
+    ],
+    "capabilities": [
+      "multi-effect",
+      "xy-control",
+      "lfo",
+      "dry-wet-lever"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Effector.htm",
+    "sources": [
+      "src-effector-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "transient-processor",
+    "name": "Transient Processor",
+    "vendor": "Image-Line",
+    "category": "Transient Shaper / Dynamics",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A transient shaper that boosts or cuts the attack and the release (sustain) of a signal independently of its level (threshold-independent). A split-frequency option keeps lows out of the processing path, and a drive control saturates the shaped transients.",
+    "tags": [
+      "transient",
+      "dynamics",
+      "punch",
+      "mixing"
+    ],
+    "capabilities": [
+      "attack-shaping",
+      "release-shaping",
+      "threshold-independent",
+      "split-frequency",
+      "drive"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Transient%20Processor.htm",
+    "sources": [
+      "src-transient-processor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "autogun",
+    "name": "Autogun",
+    "vendor": "Image-Line",
+    "category": "Preset Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A free preset-exploration synthesizer built on the Ogun additive engine. Rather than editing parameters directly, you browse an enormous numbered preset space to discover new sounds.",
+    "tags": [
+      "synth",
+      "additive",
+      "presets",
+      "free"
+    ],
+    "capabilities": [
+      "preset-exploration",
+      "additive-engine",
+      "numbered-presets"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Autogun.htm",
+    "sources": [
+      "src-autogun-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "distructor",
+    "name": "Distructor",
+    "vendor": "Image-Line",
+    "category": "Distortion / Saturation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-stage distortion and saturation effect offering several distortion and filtering stages for shaping grit, harmonics and tone.",
+    "tags": [
+      "distortion",
+      "saturation",
+      "multi-fx",
+      "effect"
+    ],
+    "capabilities": [
+      "multi-stage-distortion",
+      "filtering",
+      "saturation"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Distructor.htm",
+    "sources": [
+      "src-distructor-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "low-lifter",
+    "name": "Low Lifter",
+    "vendor": "Image-Line",
+    "category": "Psychoacoustic Bass",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A psychoacoustic bass processor that synthesises upper harmonics from sub frequencies so low end reads clearly on small speakers, deepening perceived bass without simply boosting level.",
+    "tags": [
+      "bass",
+      "psychoacoustic",
+      "low-end",
+      "mixing"
+    ],
+    "capabilities": [
+      "harmonic-synthesis",
+      "psychoacoustic-bass",
+      "sub-enhancement"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Low%20Lifter.htm",
+    "sources": [
+      "src-low-lifter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "luxeverb",
+    "name": "LuxeVerb",
+    "vendor": "Image-Line",
+    "category": "Algorithmic Reverb",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "An advanced algorithmic reverb with six specialised modes (Room, Plate, Hall, Cathedral, Space and Lush) and pitch-shifted feedback for shimmer and harmonic reverb tails.",
+    "tags": [
+      "reverb",
+      "algorithmic",
+      "shimmer",
+      "space"
+    ],
+    "capabilities": [
+      "six-reverb-modes",
+      "pitch-shifted-feedback",
+      "shimmer"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/LuxeVerb.htm",
+    "sources": [
+      "src-luxeverb-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "newtime",
+    "name": "Newtime",
+    "vendor": "Image-Line",
+    "category": "Time Stretch / Pitch",
+    "type": "Effect",
+    "tier": "Premium",
+    "description": "A time-stretching and pitch-shifting editor that changes audio length without altering pitch, or pitch without altering tempo, for warping and re-timing recorded audio.",
+    "tags": [
+      "time-stretch",
+      "pitch",
+      "editing",
+      "warp"
+    ],
+    "capabilities": [
+      "time-stretching",
+      "pitch-shifting",
+      "audio-warping"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Newtime.htm",
+    "sources": [
+      "src-newtime-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "spreader",
+    "name": "Spreader",
+    "vendor": "Image-Line",
+    "category": "Stereo / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A psychoacoustic stereo widener that expands the stereo image while guaranteeing mono compatibility, so widened material does not vanish when summed to mono.",
+    "tags": [
+      "stereo",
+      "width",
+      "mono-safe",
+      "mixing"
+    ],
+    "capabilities": [
+      "stereo-widening",
+      "mono-compatibility",
+      "psychoacoustic"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Spreader.htm",
+    "sources": [
+      "src-spreader-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "equo",
+    "name": "EQUO",
+    "vendor": "Image-Line",
+    "category": "Morphing Graphic EQ",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A morphing graphic equalizer. You draw several EQ curves into banks and morph between them via LFO, automation or manual control, turning EQ into a movement and modulation effect.",
+    "tags": [
+      "eq",
+      "morphing",
+      "filter",
+      "creative"
+    ],
+    "capabilities": [
+      "graphic-eq",
+      "eq-banks",
+      "morphing",
+      "lfo"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/EQUO.htm",
+    "sources": [
+      "src-equo-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "wasp-xt",
+    "name": "Wasp XT",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "An enhanced version of the Wasp subtractive synthesizer with a clearer layout, more controls, and a modulation matrix routing LFOs and envelopes to pitch, pulse-width and cutoff.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "modulation",
+      "gritty"
+    ],
+    "capabilities": [
+      "subtractive",
+      "modulation-matrix",
+      "enhanced-ui"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Wasp%20XT.htm",
+    "sources": [
+      "src-wasp-xt-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-spectroman",
+    "name": "Fruity Spectroman",
+    "vendor": "Image-Line",
+    "category": "Spectrum Analyzer",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A spectrum analyzer with a spectrograph mode (vertical peak bars across frequency) and a sonograph mode (a scrolling heatmap of frequency over time), for visual mixing and diagnosis.",
+    "tags": [
+      "analyzer",
+      "spectrum",
+      "metering",
+      "visual"
+    ],
+    "capabilities": [
+      "spectrograph",
+      "sonograph",
+      "analysis"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Spectroman.htm",
+    "sources": [
+      "src-fruity-spectroman-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-scratcher",
+    "name": "Fruity Scratcher",
+    "vendor": "Image-Line",
+    "category": "Turntable / Sampler",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A turntable emulator and sample manipulator. A virtual platter lets you click and drag the record or waveform to scratch, with an acceleration control for how quickly it returns to normal speed - for DJ-style scratches and tape stops.",
+    "tags": [
+      "turntable",
+      "scratch",
+      "dj",
+      "sampler"
+    ],
+    "capabilities": [
+      "virtual-platter",
+      "scratch",
+      "acceleration"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Scratcher.htm",
+    "sources": [
+      "src-fruity-scratcher-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]
