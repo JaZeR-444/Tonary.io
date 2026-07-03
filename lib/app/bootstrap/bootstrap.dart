@@ -14,7 +14,8 @@ import 'providers.dart';
 /// v2: pilot migration — FLEX, Sytrus, Fruity Parametric EQ 2 from DEEPER DIVES.
 /// v3: first content release — 27 reviewed plugins promoted from staging
 ///     (owner-authorized OQ-12 gate #5, 2026-07-02); 30 plugins total.
-const int kSeedVersion = 3;
+/// v4+: ongoing direct migration of remaining FL plugins into the seed.
+const int kSeedVersion = 4;
 
 /// App bootstrap. Runs before the first frame: opens the offline database and
 /// hydrates it from the bundled seed (offline-first — the DB is the source of

@@ -658,5 +658,159 @@
     "retrievedAt": "2026-07-02",
     "reliability": "Medium",
     "notes": "Internal research cross-checked to the official manual; prose re-authored, not reproduced."
+  },
+  {
+    "id": "src-3x-osc-manual",
+    "title": "3x Osc - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/3x%20Osc.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for 3x Osc."
+  },
+  {
+    "id": "src-boobass-manual",
+    "title": "BooBass - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BooBass.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for BooBass."
+  },
+  {
+    "id": "src-bassdrum-manual",
+    "title": "BassDrum - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BassDrum.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for BassDrum."
+  },
+  {
+    "id": "src-fruit-kick-manual",
+    "title": "Fruit Kick - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruit%20Kick.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruit Kick."
+  },
+  {
+    "id": "src-fruity-balance-manual",
+    "title": "Fruity Balance - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Balance.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Balance."
+  },
+  {
+    "id": "src-fruity-chorus-manual",
+    "title": "Fruity Chorus - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Chorus.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Chorus."
+  },
+  {
+    "id": "src-fruity-delay-manual",
+    "title": "Fruity Delay - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Delay."
+  },
+  {
+    "id": "src-fruity-delay-2-manual",
+    "title": "Fruity Delay 2 - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%202.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Delay 2."
+  },
+  {
+    "id": "src-fruity-fast-dist-manual",
+    "title": "Fruity Fast Dist - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Fast%20Dist.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Fast Dist."
+  },
+  {
+    "id": "src-fruity-flanger-manual",
+    "title": "Fruity Flanger - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Flanger.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Flanger."
+  },
+  {
+    "id": "src-fruity-phaser-manual",
+    "title": "Fruity Phaser - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Phaser.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Phaser."
+  },
+  {
+    "id": "src-fruity-free-filter-manual",
+    "title": "Fruity Free Filter - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Free%20Filter.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Free Filter."
+  },
+  {
+    "id": "src-fruity-fast-lp-manual",
+    "title": "Fruity Fast LP - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Fast%20LP.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Fast LP."
+  },
+  {
+    "id": "src-fruity-soft-clipper-manual",
+    "title": "Fruity Soft Clipper - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Soft%20Clipper.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Soft Clipper."
   }
 ]

@@ -917,5 +917,386 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "3x-osc",
+    "name": "3x Osc",
+    "vendor": "Image-Line",
+    "category": "Subtractive Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "FL Studio's classic three-oscillator subtractive synthesizer and default instrument. Three independently tunable oscillators (selectable waveforms, detune and phase) feed a filter and envelope, making it a common starting point for simple analog-style basses and leads.",
+    "tags": [
+      "synth",
+      "subtractive",
+      "oscillator",
+      "basic",
+      "default"
+    ],
+    "capabilities": [
+      "three-oscillators",
+      "waveform-select",
+      "detune-phase",
+      "subtractive"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/3x%20Osc.htm",
+    "sources": [
+      "src-3x-osc-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "boobass",
+    "name": "BooBass",
+    "vendor": "Image-Line",
+    "category": "Bass Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A minimal bass synthesizer with three tone controls (bass, mid and high) for quickly dialling a simple, usable bassline. Built for speed rather than deep editing.",
+    "tags": [
+      "synth",
+      "bass",
+      "simple",
+      "subtractive"
+    ],
+    "capabilities": [
+      "three-band-tone",
+      "simple-bass"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BooBass.htm",
+    "sources": [
+      "src-boobass-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "bassdrum",
+    "name": "BassDrum",
+    "vendor": "Image-Line",
+    "category": "Drum Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A drum synthesizer for building kick and percussion tones by synthesis rather than samples, shaping a tuned body together with attack and click components.",
+    "tags": [
+      "drums",
+      "kick",
+      "synth",
+      "percussion"
+    ],
+    "capabilities": [
+      "drum-synthesis",
+      "tuned-body",
+      "attack-shaping"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/BassDrum.htm",
+    "sources": [
+      "src-bassdrum-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruit-kick",
+    "name": "Fruit Kick",
+    "vendor": "Image-Line",
+    "category": "Drum Synth",
+    "type": "Generator",
+    "tier": "Free",
+    "description": "A dedicated kick-drum synthesizer built on a sine sweep from a high start frequency down to a low end frequency, with a click generator for transient attack and cut-through.",
+    "tags": [
+      "drums",
+      "kick",
+      "synth",
+      "sub"
+    ],
+    "capabilities": [
+      "sine-sweep",
+      "start-end-frequency",
+      "click-generator"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruit%20Kick.htm",
+    "sources": [
+      "src-fruit-kick-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-balance",
+    "name": "Fruity Balance",
+    "vendor": "Image-Line",
+    "category": "Utility / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A lightweight volume and pan utility for automating level and balance without touching the mixer faders.",
+    "tags": [
+      "utility",
+      "volume",
+      "pan",
+      "mixing"
+    ],
+    "capabilities": [
+      "volume",
+      "pan",
+      "automation-safe"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Balance.htm",
+    "sources": [
+      "src-fruity-balance-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-chorus",
+    "name": "Fruity Chorus",
+    "vendor": "Image-Line",
+    "category": "Modulation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A chorus that layers slightly delayed, detuned copies of the signal. Delay sets the voice offset (about 2-20 ms), depth sets the pitch-modulation amount, and a stereo control widens the effect via phase.",
+    "tags": [
+      "chorus",
+      "modulation",
+      "width",
+      "effect"
+    ],
+    "capabilities": [
+      "multi-voice-chorus",
+      "depth",
+      "stereo-width"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Chorus.htm",
+    "sources": [
+      "src-fruity-chorus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay",
+    "name": "Fruity Delay",
+    "vendor": "Image-Line",
+    "category": "Delay / Echo",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A simple echo line using time-based (ms/step) delay, with a feedback control for the number of repeats and a low-pass filter in the feedback path to darken echoes over time.",
+    "tags": [
+      "delay",
+      "echo",
+      "effect"
+    ],
+    "capabilities": [
+      "time-based-delay",
+      "feedback",
+      "feedback-lowpass"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay.htm",
+    "sources": [
+      "src-fruity-delay-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-2",
+    "name": "Fruity Delay 2",
+    "vendor": "Image-Line",
+    "category": "Delay / Stereo",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A digital stereo delay with feedback filtering (echoes get duller over time), stereo offset for Haas-style width, and tempo sync to project BPM steps.",
+    "tags": [
+      "delay",
+      "stereo",
+      "haas",
+      "effect"
+    ],
+    "capabilities": [
+      "stereo-delay",
+      "feedback-filtering",
+      "stereo-offset",
+      "tempo-sync"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%202.htm",
+    "sources": [
+      "src-fruity-delay-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-fast-dist",
+    "name": "Fruity Fast Dist",
+    "vendor": "Image-Line",
+    "category": "Distortion",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A quick distortion and saturation with a pre-amp drive, a threshold control that also sets frequency sensitivity, and an A/B switch offering two flavours from calm to nasty.",
+    "tags": [
+      "distortion",
+      "saturation",
+      "effect"
+    ],
+    "capabilities": [
+      "pre-amp-drive",
+      "threshold",
+      "ab-modes"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Fast%20Dist.htm",
+    "sources": [
+      "src-fruity-fast-dist-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-flanger",
+    "name": "Fruity Flanger",
+    "vendor": "Image-Line",
+    "category": "Modulation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A flanger that mixes the signal with a very short, modulated delayed copy to create sweeping comb-filter notches. Feedback intensifies the metallic resonance; inverting the feedback gives a hollower tone.",
+    "tags": [
+      "flanger",
+      "modulation",
+      "comb",
+      "effect"
+    ],
+    "capabilities": [
+      "comb-filter",
+      "feedback",
+      "invert-feedback"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Flanger.htm",
+    "sources": [
+      "src-fruity-flanger-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-phaser",
+    "name": "Fruity Phaser",
+    "vendor": "Image-Line",
+    "category": "Modulation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An all-pass phaser that creates moving notches in the spectrum. The number of stages sets how many notches (intensity), feedback sharpens the resonant peaks, and sweep range sets how far the notches travel.",
+    "tags": [
+      "phaser",
+      "modulation",
+      "allpass",
+      "effect"
+    ],
+    "capabilities": [
+      "all-pass-stages",
+      "feedback",
+      "sweep-range"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Phaser.htm",
+    "sources": [
+      "src-fruity-phaser-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-free-filter",
+    "name": "Fruity Free Filter",
+    "vendor": "Image-Line",
+    "category": "Filter / Tone Shaping",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A single-band multimode filter with selectable modes, a Q/resonance control for peak sharpness, and gain for EQ-style boost or cut, tuned for smooth automation.",
+    "tags": [
+      "filter",
+      "eq",
+      "tone",
+      "effect"
+    ],
+    "capabilities": [
+      "multimode",
+      "resonance-q",
+      "gain",
+      "automation-optimized"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Free%20Filter.htm",
+    "sources": [
+      "src-fruity-free-filter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-fast-lp",
+    "name": "Fruity Fast LP",
+    "vendor": "Image-Line",
+    "category": "Filter",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A low-CPU low-pass filter optimized for fast LFO and envelope modulation without zipper noise, with aggressive resonance capable of self-oscillation for acid-style squelches.",
+    "tags": [
+      "filter",
+      "lowpass",
+      "acid",
+      "effect"
+    ],
+    "capabilities": [
+      "low-pass",
+      "zero-zipper",
+      "self-oscillation",
+      "low-cpu"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Fast%20LP.htm",
+    "sources": [
+      "src-fruity-fast-lp-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-soft-clipper",
+    "name": "Fruity Soft Clipper",
+    "vendor": "Image-Line",
+    "category": "Dynamics / Saturation",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A soft clipper that rounds peaks with musical harmonic saturation, letting signals push past 0 dB for extra loudness and gluing transient-heavy material like drums.",
+    "tags": [
+      "clipper",
+      "saturation",
+      "dynamics",
+      "loudness"
+    ],
+    "capabilities": [
+      "soft-clipping",
+      "harmonic-saturation",
+      "loudness",
+      "glue"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Soft%20Clipper.htm",
+    "sources": [
+      "src-fruity-soft-clipper-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

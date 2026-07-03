@@ -766,5 +766,50 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruit-kick-sweep",
+    "topic": "Sine sweep kick",
+    "subjectRefs": [
+      "fruit-kick"
+    ],
+    "body": "Fruit Kick builds a kick from a sine wave that sweeps from a high start frequency down to a low end frequency; the speed and range of that sweep set the punch and pitch, while the click generator adds a transient so the kick cuts through a mix.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruit-kick-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-delay-2-haas",
+    "topic": "Stereo offset and Haas",
+    "subjectRefs": [
+      "fruity-delay-2"
+    ],
+    "body": "Offsetting the left and right delay times by a few milliseconds produces the Haas effect - the ear reads the tiny timing difference as stereo width rather than an echo. Feedback filtering rolls the repeats darker over time for a dub feel.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-delay-2-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-soft-clipper-glue",
+    "topic": "Clipping for loudness and glue",
+    "subjectRefs": [
+      "fruity-soft-clipper"
+    ],
+    "body": "A soft clipper rounds peaks instead of squaring them off, so a bus can be pushed hotter with musical harmonics rather than harsh digital clipping. On a drum bus it tames stray transients and glues the kit together.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-soft-clipper-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

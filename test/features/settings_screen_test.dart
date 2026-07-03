@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:tonary/app/bootstrap/bootstrap.dart' show kSeedVersion;
 import 'package:tonary/app/bootstrap/providers.dart';
 import 'package:tonary/app/tonary_app.dart';
 import 'package:tonary/data/repositories/vault_repository.dart';
@@ -75,7 +76,7 @@ void main() {
       expect(find.text(section), findsOneWidget, reason: 'missing $section');
     }
     // Real values — not fabricated.
-    expect(find.text('v3'), findsOneWidget); // kSeedVersion
+    expect(find.text('v$kSeedVersion'), findsOneWidget); // current seed version
     expect(find.textContaining('2 plugins'), findsOneWidget);
     // Live accessibility status (test env: animations enabled, scale 100%).
     expect(find.text('Off'), findsOneWidget); // reduced motion
