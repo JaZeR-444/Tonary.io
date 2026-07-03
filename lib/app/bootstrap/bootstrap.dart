@@ -15,6 +15,7 @@ import 'providers.dart';
 /// v3: first content release — 27 reviewed plugins promoted from staging
 ///     (owner-authorized OQ-12 gate #5, 2026-07-02); 30 plugins total.
 /// v4+: ongoing direct migration of remaining FL plugins into the seed.
+/// v11: full FL Studio native audio library — 120 plugins, all sourced (2026-07-03).
 const int kSeedVersion = 11;
 
 /// App bootstrap. Runs before the first frame: opens the offline database and

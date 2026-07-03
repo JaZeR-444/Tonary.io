@@ -58,4 +58,4 @@ Run before any batch enters the shipped seed dataset:
 - [ ] Non-affiliation disclaimer present in the build.
 
 When every box is checked **and** the human sign-off (gate #5) is on record, `/migrate-content` may publish the
-batch. Until then, only the reviewed pilot (FLEX, Sytrus, Fruity Parametric EQ 2) ships.
+batch. The full FL Studio native **audio** plugin library (120 plugins, all sourced) now ships under the owner-authorized OQ-12 gate #5 (2026-07-02); non-audio native entries (visualizers, controllers, ReWire, mobile) are out of scope for a sound-design layer.

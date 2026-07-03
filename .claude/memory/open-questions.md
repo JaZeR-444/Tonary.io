@@ -17,7 +17,7 @@
 ## Content & data
 - **OQ-07 — Plugin data completeness/accuracy.** ~190 folders, ~98 standardized, many partial. A completeness audit is required before seeding. (`../outputs/migration-map.md`)
 - **OQ-08 — Canonical-field precedence** when legacy `manifest.json` and DEEPER DIVES prose disagree. Recommendation: manual > manifest > prose, record the source.
-- **OQ-09 — Scope of plugin coverage at launch.** All FL stock plugins, or the flagship/priority set first? Recommendation: pilot FLEX/Sytrus/Fruity Parametric EQ 2, then priority list.
+- **OQ-09 — Scope of plugin coverage at launch.** RESOLVED (2026-07-03): the full FL Studio native **audio** library (120 plugins) is migrated and shipped. The ~12 remaining source folders are non-audio (mobile app, visualizers, controllers, ReWire, host wrapper) — out of scope for a sound-design layer.
 
 ## Design system
 - **OQ-13 — Font bundling.** The scaffold declares `Inter` / `Space Grotesk` / `IBM Plex Mono` by family name but the font files are **not bundled yet**, so the app currently falls back to the platform default. Bundle the `.ttf`s under `assets/fonts/` (+ `pubspec.yaml` `fonts:`) or add `google_fonts`. Recommendation: bundle for offline-first (no network font fetch). Decide before design-system polish.
