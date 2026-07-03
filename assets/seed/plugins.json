@@ -1298,5 +1298,389 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-parametric-eq",
+    "name": "Fruity Parametric EQ",
+    "vendor": "Image-Line",
+    "category": "Parametric EQ",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "The original parametric equalizer with multiple per-band filter types (peaking, shelf, low/high-pass, band-pass, notch), vertical gain sliders and frequency/Q knobs. The lighter predecessor to Parametric EQ 2.",
+    "tags": [
+      "eq",
+      "parametric",
+      "tone",
+      "mixing"
+    ],
+    "capabilities": [
+      "multiple-filter-types",
+      "gain-freq-q",
+      "parametric"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ.htm",
+    "sources": [
+      "src-fruity-parametric-eq-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-reeverb",
+    "name": "Fruity Reeverb",
+    "vendor": "Image-Line",
+    "category": "Algorithmic Reverb",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "The original algorithmic reverb with room-size and decay-time controls for classic hall and room tails; the lighter predecessor to Reeverb 2.",
+    "tags": [
+      "reverb",
+      "algorithmic",
+      "space",
+      "effect"
+    ],
+    "capabilities": [
+      "room-size",
+      "decay-time",
+      "algorithmic-reverb"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb.htm",
+    "sources": [
+      "src-fruity-reeverb-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-7-band-eq",
+    "name": "Fruity 7 Band EQ",
+    "vendor": "Image-Line",
+    "category": "Graphic EQ",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A simple graphic equalizer with seven fixed bands and instant visual feedback of the curve, for quick broad-stroke tone shaping at low CPU cost.",
+    "tags": [
+      "eq",
+      "graphic",
+      "tone",
+      "mixing"
+    ],
+    "capabilities": [
+      "seven-fixed-bands",
+      "graphic-eq",
+      "visual-curve"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%207%20Band%20EQ.htm",
+    "sources": [
+      "src-fruity-7-band-eq-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-bass-boost",
+    "name": "Fruity Bass Boost",
+    "vendor": "Image-Line",
+    "category": "Bass Enhancer / EQ",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A single-purpose bass enhancer that boosts a target low frequency by a set amount for quick low-end lift.",
+    "tags": [
+      "bass",
+      "eq",
+      "enhancer",
+      "low-end"
+    ],
+    "capabilities": [
+      "target-frequency",
+      "boost-amount",
+      "bass-enhancer"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Bass%20Boost.htm",
+    "sources": [
+      "src-fruity-bass-boost-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-stereo-enhancer",
+    "name": "Fruity Stereo Enhancer",
+    "vendor": "Image-Line",
+    "category": "Stereo / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A stereo width and phase utility that raises side level relative to mid, can offset one channel by up to 500 ms for psychoacoustic width, and adds pan and phase-inversion controls.",
+    "tags": [
+      "stereo",
+      "width",
+      "phase",
+      "mixing"
+    ],
+    "capabilities": [
+      "stereo-separation",
+      "phase-offset",
+      "pan",
+      "phase-invert"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Stereo%20Enhancer.htm",
+    "sources": [
+      "src-fruity-stereo-enhancer-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-stereo-shaper",
+    "name": "Fruity Stereo Shaper",
+    "vendor": "Image-Line",
+    "category": "Stereo / Mixing",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A stereo matrix processor with four sliders defining the relationship between left and right channels, enabling mid/side separation, channel swapping and width control.",
+    "tags": [
+      "stereo",
+      "mid-side",
+      "matrix",
+      "mixing"
+    ],
+    "capabilities": [
+      "mixer-matrix",
+      "mid-side",
+      "channel-routing"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Stereo%20Shaper.htm",
+    "sources": [
+      "src-fruity-stereo-shaper-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-phase-inverter",
+    "name": "Fruity Phase Inverter",
+    "vendor": "Image-Line",
+    "category": "Phase / Utility",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A minimal phase utility that flips the polarity of the left and/or right channel - useful for fixing phase cancellation or checking mono compatibility.",
+    "tags": [
+      "phase",
+      "polarity",
+      "utility",
+      "mixing"
+    ],
+    "capabilities": [
+      "left-invert",
+      "right-invert",
+      "polarity"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Phase%20Inverter.htm",
+    "sources": [
+      "src-fruity-phase-inverter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-squeeze",
+    "name": "Fruity Squeeze",
+    "vendor": "Image-Line",
+    "category": "Bit-Crusher / Lo-Fi",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A bit-crusher and lo-fi distortion. A squarize control reduces bit depth for digital grit and stepped artifacts, while a puncher section replaces samples with distorted nominal-level versions for aggressive lo-fi textures.",
+    "tags": [
+      "bitcrusher",
+      "lofi",
+      "distortion",
+      "effect"
+    ],
+    "capabilities": [
+      "bit-crush",
+      "squarize",
+      "puncher",
+      "lofi"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Squeeze.htm",
+    "sources": [
+      "src-fruity-squeeze-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vintage-chorus",
+    "name": "Vintage Chorus",
+    "vendor": "Image-Line",
+    "category": "Analog Chorus",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An analog chorus modelling a bucket-brigade (BBD) delay line, with classic I, II and I+II modes for authentic vintage ensemble textures.",
+    "tags": [
+      "chorus",
+      "analog",
+      "vintage",
+      "bbd"
+    ],
+    "capabilities": [
+      "bbd-emulation",
+      "classic-modes",
+      "analog-chorus"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vintage%20Chorus.htm",
+    "sources": [
+      "src-vintage-chorus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vintage-phaser",
+    "name": "Vintage Phaser",
+    "vendor": "Image-Line",
+    "category": "Analog Phaser",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "An analog phaser emulation in the style of the 1970s Small Stone circuit, with a dual-LFO system (separate L/R LFOs with phase offset) for wide, swirling sweeps.",
+    "tags": [
+      "phaser",
+      "analog",
+      "vintage",
+      "modulation"
+    ],
+    "capabilities": [
+      "small-stone-emulation",
+      "dual-lfo",
+      "analog-phaser"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vintage%20Phaser.htm",
+    "sources": [
+      "src-vintage-phaser-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "hyper-chorus",
+    "name": "Hyper Chorus",
+    "vendor": "Image-Line",
+    "category": "Chorus / Ensemble",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-tap chorus and ensemble with three X/Y pads controlling delay/feedback, modulation and movement, plus built-in auto-panning for spatial motion inside the chorus algorithm.",
+    "tags": [
+      "chorus",
+      "ensemble",
+      "modulation",
+      "width"
+    ],
+    "capabilities": [
+      "multi-tap-chorus",
+      "xy-pads",
+      "auto-panning",
+      "ensemble"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Hyper%20Chorus.htm",
+    "sources": [
+      "src-hyper-chorus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "multiband-delay",
+    "name": "Multiband Delay",
+    "vendor": "Image-Line",
+    "category": "Delay / Spectral",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multiband delay that splits the signal into bands, each with its own delay (0-100 ms), volume and pan, plus a master Scale knob that extends the range up to 1000 ms or reverses it for spectral delay effects.",
+    "tags": [
+      "delay",
+      "multiband",
+      "spectral",
+      "effect"
+    ],
+    "capabilities": [
+      "per-band-delay",
+      "per-band-vol-pan",
+      "delay-scaling",
+      "reverse"
+    ],
+    "color": "#38bdf8",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Multiband%20Delay.htm",
+    "sources": [
+      "src-multiband-delay-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-flangus",
+    "name": "Fruity Flangus",
+    "vendor": "Image-Line",
+    "category": "Flanger / Unison",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A multi-voice flanger and unison simulator that runs several flangers in parallel (Order) with stereo spread across the field for thick, chorus-like widening.",
+    "tags": [
+      "flanger",
+      "unison",
+      "width",
+      "modulation"
+    ],
+    "capabilities": [
+      "stacked-flangers",
+      "order",
+      "stereo-spread",
+      "unison-sim"
+    ],
+    "color": "#a78bfa",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Flangus.htm",
+    "sources": [
+      "src-fruity-flangus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "pitch-shifter",
+    "name": "Pitch Shifter",
+    "vendor": "Image-Line",
+    "category": "Pitch / Harmonizer",
+    "type": "Effect",
+    "tier": "Free",
+    "description": "A pitch shifter and harmonizer with a monophonic Voice mode (formant control for natural vocal shifts) and a polyphonic granular Music mode for chords and wide intervals.",
+    "tags": [
+      "pitch",
+      "harmonizer",
+      "formant",
+      "effect"
+    ],
+    "capabilities": [
+      "voice-mode",
+      "formant-control",
+      "music-mode-granular",
+      "harmonizer"
+    ],
+    "color": "#33d17a",
+    "manualUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Pitch%20Shifter.htm",
+    "sources": [
+      "src-pitch-shifter-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]

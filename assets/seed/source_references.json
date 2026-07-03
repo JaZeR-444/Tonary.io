@@ -812,5 +812,159 @@
     "retrievedAt": "2026-07-02",
     "reliability": "High",
     "notes": "Official reference for Fruity Soft Clipper."
+  },
+  {
+    "id": "src-fruity-parametric-eq-manual",
+    "title": "Fruity Parametric EQ - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Parametric EQ."
+  },
+  {
+    "id": "src-fruity-reeverb-manual",
+    "title": "Fruity Reeverb - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Reeverb."
+  },
+  {
+    "id": "src-fruity-7-band-eq-manual",
+    "title": "Fruity 7 Band EQ - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%207%20Band%20EQ.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity 7 Band EQ."
+  },
+  {
+    "id": "src-fruity-bass-boost-manual",
+    "title": "Fruity Bass Boost - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Bass%20Boost.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Bass Boost."
+  },
+  {
+    "id": "src-fruity-stereo-enhancer-manual",
+    "title": "Fruity Stereo Enhancer - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Stereo%20Enhancer.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Stereo Enhancer."
+  },
+  {
+    "id": "src-fruity-stereo-shaper-manual",
+    "title": "Fruity Stereo Shaper - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Stereo%20Shaper.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Stereo Shaper."
+  },
+  {
+    "id": "src-fruity-phase-inverter-manual",
+    "title": "Fruity Phase Inverter - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Phase%20Inverter.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Phase Inverter."
+  },
+  {
+    "id": "src-fruity-squeeze-manual",
+    "title": "Fruity Squeeze - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Squeeze.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Squeeze."
+  },
+  {
+    "id": "src-vintage-chorus-manual",
+    "title": "Vintage Chorus - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vintage%20Chorus.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Vintage Chorus."
+  },
+  {
+    "id": "src-vintage-phaser-manual",
+    "title": "Vintage Phaser - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Vintage%20Phaser.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Vintage Phaser."
+  },
+  {
+    "id": "src-hyper-chorus-manual",
+    "title": "Hyper Chorus - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Hyper%20Chorus.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Hyper Chorus."
+  },
+  {
+    "id": "src-multiband-delay-manual",
+    "title": "Multiband Delay - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Multiband%20Delay.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Multiband Delay."
+  },
+  {
+    "id": "src-fruity-flangus-manual",
+    "title": "Fruity Flangus - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Flangus.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Fruity Flangus."
+  },
+  {
+    "id": "src-pitch-shifter-manual",
+    "title": "Pitch Shifter - FL Studio Online Manual",
+    "sourceType": "official-manual",
+    "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Pitch%20Shifter.htm",
+    "publisher": "Image-Line",
+    "author": null,
+    "retrievedAt": "2026-07-02",
+    "reliability": "High",
+    "notes": "Official reference for Pitch Shifter."
   }
 ]

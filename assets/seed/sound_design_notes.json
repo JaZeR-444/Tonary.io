@@ -811,5 +811,50 @@
     ],
     "createdAt": "2026-07-02",
     "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "fruity-squeeze-lofi",
+    "topic": "Bit-crush and puncher",
+    "subjectRefs": [
+      "fruity-squeeze"
+    ],
+    "body": "Squarize lowers the effective bit depth, adding stepped quantisation grit, while the puncher replaces samples with distorted nominal-level versions - together they take a clean sound toward gritty lo-fi, from subtle warmth to full digital destruction.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-fruity-squeeze-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "multiband-delay-spectral",
+    "topic": "Per-band delay",
+    "subjectRefs": [
+      "multiband-delay"
+    ],
+    "body": "Because each frequency band has independent delay, volume and pan, you can echo only the highs while leaving the low end dry and tight - a clean way to add space to a mix bus without washing out the bass. The Scale knob stretches or reverses the whole range.",
+    "evidenceLevel": "Documented",
+    "noteType": "technique",
+    "sources": [
+      "src-multiband-delay-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
+  },
+  {
+    "id": "vintage-chorus-bbd",
+    "topic": "BBD analog character",
+    "subjectRefs": [
+      "vintage-chorus"
+    ],
+    "body": "Modelling a bucket-brigade delay line gives Vintage Chorus its soft, slightly dark analog character - different from a clean digital chorus. The I, II and I+II modes recreate classic hardware chorus voicings.",
+    "evidenceLevel": "Documented",
+    "noteType": "capability",
+    "sources": [
+      "src-vintage-chorus-manual"
+    ],
+    "createdAt": "2026-07-02",
+    "updatedAt": "2026-07-02"
   }
 ]
