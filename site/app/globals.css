@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Tonary brand tokens (mirrors the app design system + .claude/brand). */
+@theme {
+  --color-bg-app: #07090a;
+  --color-bg-shell: #0e1114;
+  --color-surface-card: #151a1f;
+  --color-surface-raised: #1b2228;
+  --color-text-primary: #f8faf2;
+  --color-text-secondary: #b8c0b5;
+  --color-text-muted: #7e8a82;
+  --color-amber: #ffb13b;
+  --color-amber-hover: #ffc766;
+  --color-cyan: #38bdf8;
+  --color-green: #33d17a;
+  --color-violet: #a78bfa;
+  --color-red: #f87171;
+  --color-outline: #5a666c;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-amber);
+  color: var(--color-bg-app);
+}
+
+/* Two-layer cyan focus ring — never glow alone (brand a11y rule). */
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
