@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 
 import '../../design_system/colors/tonary_colors.dart';
 import '../../features/briefs/presentation/briefs_screen.dart';
+import '../../features/flow/presentation/flow_screen.dart';
+import '../../features/flow/presentation/recipe_detail_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
 import '../../features/onboarding/presentation/onboarding_screen.dart';
 import '../../features/saved/presentation/saved_screen.dart';
@@ -80,6 +82,13 @@ final class AppRouter {
       GoRoute(path: '/search', builder: (_, _) => const SearchScreen()),
       // Saved items — full-screen, reached from Home.
       GoRoute(path: '/saved', builder: (_, _) => const SavedScreen()),
+      // Flow — workflow recipes, reached from Home.
+      GoRoute(path: '/flow', builder: (_, _) => const FlowScreen()),
+      GoRoute(
+        path: '/recipe/:id',
+        builder: (_, state) =>
+            RecipeDetailScreen(recipeId: state.pathParameters['id']!),
+      ),
       // Plugin detail as a top-level route for entry points outside the Vault
       // shell branch (e.g. Search). Vault's own list uses the in-shell
       // '/vault/:id' so it keeps the bottom nav; pushing that from above the

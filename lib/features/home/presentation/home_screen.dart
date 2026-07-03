@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../design_system/colors/tonary_colors.dart';
 import '../../../design_system/spacing/tonary_spacing.dart';
 import '../../../shared/models/models.dart';
+import '../../../shared/widgets/tonary_mark.dart';
 import '../../vault/application/vault_providers.dart';
 
 /// Home / launchpad — the branded entry surface into the shipped modules, with
@@ -24,8 +25,15 @@ class HomeScreen extends ConsumerWidget {
           padding: const EdgeInsets.all(TonarySpacing.lg),
           children: [
             const SizedBox(height: TonarySpacing.md),
-            // Display face (Space Grotesk) is reserved for the hero H1.
-            Text('Tonary', style: Theme.of(context).textTheme.displaySmall),
+            // Brand lockup: the mark alongside the hero wordmark. Display face
+            // (Space Grotesk) is reserved for this H1.
+            Row(
+              children: [
+                const TonaryMark(size: 40),
+                const SizedBox(width: TonarySpacing.md),
+                Text('Tonary', style: Theme.of(context).textTheme.displaySmall),
+              ],
+            ),
             const SizedBox(height: TonarySpacing.sm),
             Text(
               'Your dark-first sound-design intelligence layer.',
@@ -67,6 +75,12 @@ class HomeScreen extends ConsumerWidget {
               title: 'Search',
               subtitle: 'Find a plugin by name, tag, tier or type.',
               onTap: () => context.push('/search'),
+            ),
+            _ModuleCard(
+              icon: Icons.route_outlined,
+              title: 'Flow',
+              subtitle: 'Workflow recipes and sound-design playbooks.',
+              onTap: () => context.push('/flow'),
             ),
             _ModuleCard(
               icon: Icons.bookmark_border,
