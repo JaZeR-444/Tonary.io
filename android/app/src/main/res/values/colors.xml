@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Adaptive launcher icon background — Tonary bg-shell (#0e1114) -->
+    <color name="ic_launcher_background">#0E1114</color>
+    <!-- Splash / launch window background — Tonary bg-app (#07090a) -->
+    <color name="bg_app">#07090A</color>
+</resources>
