@@ -31,6 +31,27 @@ class SourceReference {
   final String? notes;
 }
 
+/// One documented control on a plugin. A sub-fact of its [Plugin] record —
+/// covered by the plugin's [Plugin.sources]. `range` is a display string
+/// (e.g. "-18–18 dB", "0-100%") so heterogeneous source formats map uniformly.
+class PluginParameter {
+  const PluginParameter({
+    required this.name,
+    this.section,
+    this.range,
+    this.defaultValue,
+    this.options = const [],
+    this.description,
+  });
+
+  final String name;
+  final String? section;
+  final String? range;
+  final String? defaultValue;
+  final List<String> options;
+  final String? description;
+}
+
 class Plugin {
   const Plugin({
     required this.id,
@@ -46,6 +67,7 @@ class Plugin {
     this.vendorName,
     this.color,
     this.manualUrl,
+    this.parameters = const [],
   });
 
   final String id;
@@ -61,6 +83,7 @@ class Plugin {
   final String? color;
   final String? manualUrl;
   final List<String> sources; // Source Reference ids
+  final List<PluginParameter> parameters; // documented controls (sourced)
 }
 
 class Preset {

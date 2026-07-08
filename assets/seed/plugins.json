@@ -28,7 +28,223 @@
       "src-flex-dive"
     ],
     "createdAt": "2026-07-02",
-    "updatedAt": "2026-07-02"
+    "updatedAt": "2026-07-03",
+    "parameters": [
+      {
+        "name": "Macros 1-8",
+        "section": "Slider (Horizontal)",
+        "range": "0-100%",
+        "defaultValue": "Varies by preset (designer-defined)",
+        "description": "Custom meta-controls specific to each preset. One macro often controls 10+ underlying parameters simultaneously."
+      },
+      {
+        "name": "Cutoff",
+        "section": "Knob (Rotary)",
+        "range": "20Hz - 20kHz (full audible range)",
+        "defaultValue": "Varies by preset",
+        "description": "Controls the brightness by filtering frequencies above (Low Pass) or below (High Pass) the cutoff point."
+      },
+      {
+        "name": "Resonance",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "Preset-specific (usually 10-30%)",
+        "description": "Boosts frequencies around the cutoff point, creating emphasis and 'squelch'."
+      },
+      {
+        "name": "Env Amt",
+        "section": "Knob (Rotary)",
+        "range": "-100% to +100%",
+        "defaultValue": "0% (no modulation)",
+        "description": "Controls how much the envelope modulates the filter cutoff."
+      },
+      {
+        "name": "Attack (A)",
+        "section": "Slider (Vertical)",
+        "range": "0-100% (0ms - 5s+)",
+        "defaultValue": "Varies by preset",
+        "description": "Time from 0% to 100% volume/brightness after key press."
+      },
+      {
+        "name": "Hold (H)",
+        "section": "Slider (Vertical)",
+        "range": "0-100%",
+        "defaultValue": "Varies by preset",
+        "description": "Time at peak level before decay starts."
+      },
+      {
+        "name": "Decay (D)",
+        "section": "Slider (Vertical)",
+        "range": "0-100%",
+        "defaultValue": "Varies by preset",
+        "description": "Time from peak level down to sustain level."
+      },
+      {
+        "name": "Sustain (S)",
+        "section": "Slider (Vertical)",
+        "range": "0-100% (volume level)",
+        "defaultValue": "Varies by preset",
+        "description": "Volume level maintained while key is held (after decay phase)."
+      },
+      {
+        "name": "Release (R)",
+        "section": "Slider (Vertical)",
+        "range": "0-100% (0ms - 5s+)",
+        "defaultValue": "Varies by preset",
+        "description": "Time from current level to 0% after key release."
+      },
+      {
+        "name": "Master Filter Type",
+        "section": "Dropdown Menu",
+        "defaultValue": "Off",
+        "options": [
+          "Off",
+          "Low Pass 6dB",
+          "Low Pass 12dB",
+          "Low Pass 24dB",
+          "High Pass 6dB",
+          "High Pass 12dB",
+          "High Pass 24dB",
+          "Band Pass",
+          "Notch",
+          "Peak",
+          "Phaser 1",
+          "Phaser 2",
+          "Phaser 3",
+          "Vowel",
+          "Comb+",
+          "Comb-",
+          "All Pass"
+        ],
+        "description": "Global filter applied to the final output. Different algorithms for mixing and creative effects."
+      },
+      {
+        "name": "Master Filter Cutoff",
+        "section": "Knob (Rotary)",
+        "range": "20Hz - 20kHz",
+        "defaultValue": "50% (varies by filter type)",
+        "description": "Sets the frequency point for the Master Filter."
+      },
+      {
+        "name": "Master Filter Resonance",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "0%",
+        "description": "Resonance/emphasis for the Master Filter."
+      },
+      {
+        "name": "Delay Type",
+        "section": "Dropdown Menu",
+        "defaultValue": "True Stereo",
+        "options": [
+          "Fake Stereo",
+          "True Stereo",
+          "Ping Pong"
+        ],
+        "description": "Delay algorithm type affecting stereo behavior."
+      },
+      {
+        "name": "Delay Time",
+        "section": "Knob (Rotary)",
+        "range": "1ms - 2000ms or tempo-synced",
+        "defaultValue": "1/4 note (tempo-synced)",
+        "description": "Time between delay repeats. Can be free-running or tempo-synced."
+      },
+      {
+        "name": "Delay Feedback",
+        "section": "Knob (Rotary)",
+        "range": "0-100%+ (can exceed 100% in some modes)",
+        "defaultValue": "30%",
+        "description": "Amount of delay output fed back into input - controls number of echoes."
+      },
+      {
+        "name": "Delay Mix",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "0% (Off)",
+        "description": "Balance between dry (unprocessed) and wet (delayed) signal."
+      },
+      {
+        "name": "Reverb Decay",
+        "section": "Knob (Rotary)",
+        "range": "0.1s - 10s",
+        "defaultValue": "2s",
+        "description": "Time for reverb tail to fade to silence."
+      },
+      {
+        "name": "Reverb Size",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "50%",
+        "description": "Simulated room/space size."
+      },
+      {
+        "name": "Reverb Mix",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "0% (Off)",
+        "description": "Balance between dry and reverb signal."
+      },
+      {
+        "name": "Reverb Color",
+        "section": "Knob (Rotary)",
+        "range": "0-100% (dark to bright)",
+        "defaultValue": "50%",
+        "description": "Tone/brightness of the reverb tail."
+      },
+      {
+        "name": "Reverb Mod",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "0%",
+        "description": "Adds pitch modulation/chorus to reverb tail."
+      },
+      {
+        "name": "Limiter Type",
+        "section": "Dropdown Menu",
+        "defaultValue": "Limiter",
+        "options": [
+          "Limiter",
+          "Warming",
+          "Heating",
+          "Distortion",
+          "Custom"
+        ],
+        "description": "Limiting/compression algorithm with different saturation colors."
+      },
+      {
+        "name": "Limiter Pre",
+        "section": "Knob (Rotary)",
+        "range": "0-100%",
+        "defaultValue": "0%",
+        "description": "Input gain into the limiter section. Drives saturation/distortion."
+      },
+      {
+        "name": "Master Volume",
+        "section": "Slider (Vertical)",
+        "range": "0-100%",
+        "defaultValue": "80% (varies)",
+        "description": "Final output level before FL Studio mixer."
+      },
+      {
+        "name": "Pitch",
+        "section": "Slider (Horizontal)",
+        "range": "-100 to +100 cents",
+        "defaultValue": "0 cents",
+        "description": "Fine pitch tuning in cents (100 cents = 1 semitone)."
+      },
+      {
+        "name": "Arpeggiator Icon",
+        "section": "Button (Icon)",
+        "defaultValue": "Preset-dependent",
+        "description": "Enables/disables built-in arpeggiator or sequencer for preset."
+      },
+      {
+        "name": "Dump Score Icon",
+        "section": "Button (Icon)",
+        "description": "Extracts MIDI notes from loop-based presets to Piano Roll."
+      }
+    ]
   },
   {
     "id": "sytrus",
@@ -59,7 +275,79 @@
       "src-sytrus-dive"
     ],
     "createdAt": "2026-07-02",
-    "updatedAt": "2026-07-02"
+    "updatedAt": "2026-07-03",
+    "parameters": [
+      {
+        "name": "Freq Ratio",
+        "section": "continuous",
+        "range": "0–128",
+        "defaultValue": "1",
+        "description": "Base frequency scaling"
+      },
+      {
+        "name": "FM Amount",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0",
+        "description": "FM intensity"
+      },
+      {
+        "name": "Filter Cutoff",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "1",
+        "description": "Filter shaping"
+      },
+      {
+        "name": "Filter Type",
+        "section": "stepped",
+        "range": "0–13",
+        "defaultValue": "Vanilla",
+        "description": "Saturation model"
+      },
+      {
+        "name": "Unison Voices",
+        "section": "stepped",
+        "range": "1–9",
+        "defaultValue": "1",
+        "description": "Thickness"
+      },
+      {
+        "name": "Unison Detune",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.1",
+        "description": "Spread"
+      },
+      {
+        "name": "Operator Feedback",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0",
+        "description": "Self-modulation"
+      },
+      {
+        "name": "LFO Depth",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0",
+        "description": "Modulation depth"
+      },
+      {
+        "name": "Oversampling",
+        "section": "stepped",
+        "range": "1–64",
+        "defaultValue": "2",
+        "description": "Aliasing reduction"
+      },
+      {
+        "name": "Reverb Mix",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0",
+        "description": "Space"
+      }
+    ]
   },
   {
     "id": "fruity-parametric-eq-2",
@@ -89,7 +377,82 @@
       "src-eq2-dive"
     ],
     "createdAt": "2026-07-02",
-    "updatedAt": "2026-07-02"
+    "updatedAt": "2026-07-03",
+    "parameters": [
+      {
+        "name": "Main Level",
+        "section": "Global",
+        "range": "-18–18 dB",
+        "description": "Output volume control."
+      },
+      {
+        "name": "Band Frequency",
+        "section": "Bands",
+        "range": "20–20000 Hz",
+        "description": "Center frequency for bands 1-7."
+      },
+      {
+        "name": "Band Gain",
+        "section": "Bands",
+        "range": "-18–18 dB",
+        "description": "Boost or Cut amount for Peaking/Shelf types."
+      },
+      {
+        "name": "Bandwidth (Q)",
+        "section": "Bands",
+        "range": "0–100 %",
+        "description": "Width of the affected frequency range. High % = Narrow."
+      },
+      {
+        "name": "Filter Type",
+        "section": "Bands",
+        "options": [
+          "Low Pass",
+          "Band Pass",
+          "High Pass",
+          "Notch",
+          "Low Shelf",
+          "Peaking",
+          "High Shelf"
+        ],
+        "description": "Topology of the filter band."
+      },
+      {
+        "name": "Filter Order (Slope)",
+        "section": "Bands",
+        "options": [
+          "Gentle 4",
+          "Gentle 6",
+          "Gentle 8",
+          "Steep 4",
+          "Steep 6",
+          "Steep 8"
+        ],
+        "description": "Steepness of the filter cutoff. Steep 8 = -48dB/Octave."
+      },
+      {
+        "name": "HQ (High Quality)",
+        "section": "Options",
+        "description": "Enables Oversampling to reduce frequency cramping near 20kHz."
+      },
+      {
+        "name": "LIN (Linear Phase)",
+        "section": "Options",
+        "description": "Enables FFT processing for zero phase shift (adds latency)."
+      },
+      {
+        "name": "Pivot Slope",
+        "section": "Visualization",
+        "options": [
+          "0dB",
+          "1.5dB",
+          "3dB",
+          "4.5dB",
+          "6dB"
+        ],
+        "description": "Changes the visual tilt of the spectral analyzer."
+      }
+    ]
   },
   {
     "id": "fpc",
@@ -607,7 +970,586 @@
       "src-harmor-dive"
     ],
     "createdAt": "2026-07-02",
-    "updatedAt": "2026-07-02"
+    "updatedAt": "2026-07-03",
+    "parameters": [
+      {
+        "name": "Polyphony",
+        "section": "Global",
+        "range": "1–64 voices",
+        "defaultValue": "16",
+        "description": "Maximum simultaneous voices"
+      },
+      {
+        "name": "Slide",
+        "section": "Global",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Portamento time between notes"
+      },
+      {
+        "name": "Mix (A/B)",
+        "section": "Global",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "Balance between engine A and B"
+      },
+      {
+        "name": "Output Volume",
+        "section": "Global",
+        "range": "0–100 %",
+        "defaultValue": "80",
+        "description": "Master output level"
+      },
+      {
+        "name": "Sub Level",
+        "section": "Timbre",
+        "range": "0–100 %",
+        "defaultValue": "100",
+        "description": "Overall sub timbre amplitude (partials 1-32)"
+      },
+      {
+        "name": "Sub Shape",
+        "section": "select",
+        "defaultValue": "Sine",
+        "options": [
+          "Sine",
+          "Triangle",
+          "Saw",
+          "Square",
+          "Custom"
+        ],
+        "description": "Harmonic distribution curve"
+      },
+      {
+        "name": "Sub Slope",
+        "section": "Timbre",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Harmonic rolloff steepness"
+      },
+      {
+        "name": "Sub Width",
+        "section": "Timbre",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Stereo spread of sub frequencies"
+      },
+      {
+        "name": "Main Level",
+        "section": "Timbre",
+        "range": "0–100 %",
+        "defaultValue": "80",
+        "description": "Overall main timbre amplitude (partials 33-516)"
+      },
+      {
+        "name": "Main Shape",
+        "section": "select",
+        "defaultValue": "Saw",
+        "options": [
+          "Saw",
+          "Square",
+          "Triangle",
+          "Sine",
+          "Custom"
+        ],
+        "description": "Harmonic distribution curve"
+      },
+      {
+        "name": "Main Slope",
+        "section": "Timbre",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Harmonic rolloff steepness"
+      },
+      {
+        "name": "Main Width",
+        "section": "Timbre",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Stereo spread of main harmonics"
+      },
+      {
+        "name": "Filter Curve",
+        "section": "custom_drawn",
+        "range": "-24–12 dB",
+        "description": "User-drawn frequency response curve"
+      },
+      {
+        "name": "Filter EG Amount",
+        "section": "Filter",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Envelope modulation depth"
+      },
+      {
+        "name": "Prism Amount",
+        "section": "Processors",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Harmonic warping intensity"
+      },
+      {
+        "name": "Prism Depth",
+        "section": "select",
+        "defaultValue": "Full",
+        "options": [
+          "Low",
+          "Full",
+          "Band"
+        ],
+        "description": "Frequency range affected"
+      },
+      {
+        "name": "Blur Amount",
+        "section": "Processors",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Partial smearing/density"
+      },
+      {
+        "name": "Pluck Amount",
+        "section": "Processors",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Frequency-dependent decay shaping"
+      },
+      {
+        "name": "Pluck Shape",
+        "section": "select",
+        "defaultValue": "Exponential",
+        "options": [
+          "Exponential",
+          "Linear"
+        ],
+        "description": "Decay curve type"
+      },
+      {
+        "name": "Pluck Tilt",
+        "section": "select",
+        "defaultValue": "Balanced",
+        "options": [
+          "Bass",
+          "Balanced",
+          "Treble"
+        ],
+        "description": "Low vs high frequency decay balance"
+      },
+      {
+        "name": "Strum Amount",
+        "section": "Processors",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Partial micro-detuning"
+      },
+      {
+        "name": "EG1 Attack",
+        "section": "Envelope 1",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Time to reach peak"
+      },
+      {
+        "name": "EG1 Decay",
+        "section": "Envelope 1",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "Time to reach sustain"
+      },
+      {
+        "name": "EG1 Sustain",
+        "section": "Envelope 1",
+        "range": "0–100 %",
+        "defaultValue": "80",
+        "description": "Hold level"
+      },
+      {
+        "name": "EG1 Release",
+        "section": "Envelope 1",
+        "range": "0–100 %",
+        "defaultValue": "20",
+        "description": "Release time"
+      },
+      {
+        "name": "EG1 Amount",
+        "section": "Envelope 1",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Modulation depth"
+      },
+      {
+        "name": "EG1 Destination",
+        "section": "select",
+        "defaultValue": "None",
+        "options": [
+          "None",
+          "Timbre",
+          "Filter",
+          "Prism",
+          "Volume",
+          "Pitch",
+          "Pan"
+        ],
+        "description": "Target parameter"
+      },
+      {
+        "name": "EG2 Attack",
+        "section": "Envelope 2",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Time to reach peak"
+      },
+      {
+        "name": "EG2 Decay",
+        "section": "Envelope 2",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "Time to reach sustain"
+      },
+      {
+        "name": "EG2 Sustain",
+        "section": "Envelope 2",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Hold level"
+      },
+      {
+        "name": "EG2 Release",
+        "section": "Envelope 2",
+        "range": "0–100 %",
+        "defaultValue": "20",
+        "description": "Release time"
+      },
+      {
+        "name": "EG2 Amount",
+        "section": "Envelope 2",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Modulation depth"
+      },
+      {
+        "name": "EG2 Destination",
+        "section": "select",
+        "defaultValue": "None",
+        "options": [
+          "None",
+          "Timbre",
+          "Filter",
+          "Prism",
+          "Volume",
+          "Pitch",
+          "Pan"
+        ],
+        "description": "Target parameter"
+      },
+      {
+        "name": "LFO1 Rate",
+        "section": "LFO",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "LFO speed"
+      },
+      {
+        "name": "LFO1 Sync",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Tempo synchronization"
+      },
+      {
+        "name": "LFO1 Shape",
+        "section": "select",
+        "defaultValue": "Sine",
+        "options": [
+          "Sine",
+          "Triangle",
+          "Saw",
+          "Square",
+          "Random"
+        ],
+        "description": "LFO waveform"
+      },
+      {
+        "name": "LFO1 Amount",
+        "section": "LFO",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Modulation depth"
+      },
+      {
+        "name": "LFO1 Destination",
+        "section": "select",
+        "defaultValue": "None",
+        "options": [
+          "None",
+          "Timbre",
+          "Filter",
+          "Prism",
+          "Volume",
+          "Pitch",
+          "Pan"
+        ],
+        "description": "Target parameter"
+      },
+      {
+        "name": "LFO1 Phase",
+        "section": "LFO",
+        "range": "0–360 degrees",
+        "defaultValue": "0",
+        "description": "Start phase"
+      },
+      {
+        "name": "LFO1 Retrig",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Restart on note"
+      },
+      {
+        "name": "LFO2 Rate",
+        "section": "LFO2",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "LFO speed"
+      },
+      {
+        "name": "LFO2 Sync",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Tempo synchronization"
+      },
+      {
+        "name": "LFO2 Shape",
+        "section": "select",
+        "defaultValue": "Sine",
+        "options": [
+          "Sine",
+          "Triangle",
+          "Saw",
+          "Square",
+          "Random"
+        ],
+        "description": "LFO waveform"
+      },
+      {
+        "name": "LFO2 Amount",
+        "section": "LFO2",
+        "range": "-100–100 %",
+        "defaultValue": "0",
+        "description": "Modulation depth"
+      },
+      {
+        "name": "LFO2 Destination",
+        "section": "select",
+        "defaultValue": "None",
+        "options": [
+          "None",
+          "Timbre",
+          "Filter",
+          "Prism",
+          "Volume",
+          "Pitch",
+          "Pan"
+        ],
+        "description": "Target parameter"
+      },
+      {
+        "name": "LFO2 Phase",
+        "section": "LFO2",
+        "range": "0–360 degrees",
+        "defaultValue": "0",
+        "description": "Start phase"
+      },
+      {
+        "name": "LFO2 Retrig",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Restart on note"
+      },
+      {
+        "name": "Unison Voices",
+        "section": "Unison",
+        "range": "1–9 voices",
+        "defaultValue": "1",
+        "description": "Voices per note"
+      },
+      {
+        "name": "Unison Detune",
+        "section": "Unison",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Pitch spread amount"
+      },
+      {
+        "name": "Unison Stereo",
+        "section": "Unison",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Pan spread"
+      },
+      {
+        "name": "Unison Blend",
+        "section": "Unison",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "Wet/dry mix"
+      },
+      {
+        "name": "Time",
+        "section": "Resynthesis",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Position in sample"
+      },
+      {
+        "name": "Speed",
+        "section": "Resynthesis",
+        "range": "-200–200 %",
+        "defaultValue": "100",
+        "description": "Playback rate (independent of pitch)"
+      },
+      {
+        "name": "Formant",
+        "section": "Resynthesis",
+        "range": "-12–12 semitones",
+        "defaultValue": "0",
+        "description": "Formant shift without pitch change"
+      },
+      {
+        "name": "Precision",
+        "section": "Resynthesis",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "Analysis accuracy"
+      },
+      {
+        "name": "Blending",
+        "section": "Resynthesis",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "Frame smoothing"
+      },
+      {
+        "name": "Window",
+        "section": "select",
+        "defaultValue": "Medium",
+        "options": [
+          "Small",
+          "Medium",
+          "Large"
+        ],
+        "description": "FFT window size"
+      },
+      {
+        "name": "Randomize",
+        "section": "Resynthesis",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Phase randomization"
+      },
+      {
+        "name": "Shift",
+        "section": "Resynthesis",
+        "range": "0–360 degrees",
+        "defaultValue": "0",
+        "description": "Phase offset"
+      },
+      {
+        "name": "Keep",
+        "section": "switch",
+        "defaultValue": "On",
+        "description": "Preserve original phase"
+      },
+      {
+        "name": "Chorus Depth",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Chorus modulation depth"
+      },
+      {
+        "name": "Chorus Rate",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "Chorus LFO speed"
+      },
+      {
+        "name": "Chorus Mix",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Chorus wet amount"
+      },
+      {
+        "name": "Delay Time",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "Echo delay time"
+      },
+      {
+        "name": "Delay Sync",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Tempo synchronization"
+      },
+      {
+        "name": "Delay Feedback",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "30",
+        "description": "Echo repeats"
+      },
+      {
+        "name": "Delay Mix",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Delay wet amount"
+      },
+      {
+        "name": "Reverb Size",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "Reverb room size"
+      },
+      {
+        "name": "Reverb Damping",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "50",
+        "description": "High frequency decay"
+      },
+      {
+        "name": "Reverb Mix",
+        "section": "Global Effects",
+        "range": "0–100 %",
+        "defaultValue": "0",
+        "description": "Reverb wet amount"
+      },
+      {
+        "name": "Pitch Bend Range",
+        "section": "MISC",
+        "range": "1–48 semitones",
+        "defaultValue": "12",
+        "description": "Pitch wheel range"
+      },
+      {
+        "name": "Legato",
+        "section": "switch",
+        "defaultValue": "Off",
+        "description": "Retrigger behavior"
+      },
+      {
+        "name": "Voice Cut",
+        "section": "select",
+        "defaultValue": "Oldest",
+        "options": [
+          "Oldest",
+          "Newest"
+        ],
+        "description": "Polyphony overflow behavior"
+      }
+    ]
   },
   {
     "id": "maximus",
@@ -823,7 +1765,79 @@
       "src-slicex-dive"
     ],
     "createdAt": "2026-07-02",
-    "updatedAt": "2026-07-02"
+    "updatedAt": "2026-07-03",
+    "parameters": [
+      {
+        "name": "Master Vol",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.8",
+        "description": "Global gain"
+      },
+      {
+        "name": "Master Pitch",
+        "section": "continuous",
+        "range": "-1200–1200",
+        "defaultValue": "0",
+        "description": "Global semitone shift"
+      },
+      {
+        "name": "Slice Cut Group",
+        "section": "stepped",
+        "range": "0–127",
+        "defaultValue": "0",
+        "description": "Self-choke group"
+      },
+      {
+        "name": "Slice Out Offset",
+        "section": "stepped",
+        "range": "0–10",
+        "defaultValue": "0",
+        "description": "Mixer routing"
+      },
+      {
+        "name": "Artic Filter Cutoff",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "1",
+        "description": "Articulator filter"
+      },
+      {
+        "name": "Artic Vol Attack",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0",
+        "description": "Slice fade-in"
+      },
+      {
+        "name": "Artic Vol Release",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.1",
+        "description": "Slice fade-out"
+      },
+      {
+        "name": "Artic LFO Speed",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.2",
+        "description": "Modulation rate"
+      },
+      {
+        "name": "Deck Crossfade",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.5",
+        "description": "Fade Deck A to B"
+      },
+      {
+        "name": "Artic Pan",
+        "section": "continuous",
+        "range": "0–1",
+        "defaultValue": "0.5",
+        "description": "Stereo placement"
+      }
+    ]
   },
   {
     "id": "soundgoodizer",

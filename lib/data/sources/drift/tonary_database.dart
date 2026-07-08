@@ -23,6 +23,7 @@ class Plugins extends Table {
   TextColumn get color => text().nullable()();
   TextColumn get manualUrl => text().nullable()();
   TextColumn get sources => text()(); // json array
+  TextColumn get parameters => text().nullable()(); // json array of param objects
   TextColumn get createdAt => text().nullable()();
   TextColumn get updatedAt => text().nullable()();
 
@@ -134,5 +135,14 @@ class TonaryDatabase extends _$TonaryDatabase {
   TonaryDatabase.forTesting(super.executor);
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
+
+  @override
+  MigrationStrategy get migration => MigrationStrategy(
+    onCreate: (m) => m.createAll(),
+    onUpgrade: (m, from, to) async {
+      // v2: plugin parameter records (Plugins.parameters json column).
+      if (from < 2) await m.addColumn(plugins, plugins.parameters);
+    },
+  );
 }

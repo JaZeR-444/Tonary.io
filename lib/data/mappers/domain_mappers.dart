@@ -37,6 +37,21 @@ abstract final class DomainMappers {
     color: r.color,
     manualUrl: r.manualUrl,
     sources: _list(r.sources),
+    parameters: r.parameters == null
+        ? const []
+        : (jsonDecode(r.parameters!) as List)
+              .map((e) => _pluginParam(e as Map<String, dynamic>))
+              .toList(),
+  );
+
+  static PluginParameter _pluginParam(Map<String, dynamic> j) => PluginParameter(
+    name: j['name'] as String,
+    section: j['section'] as String?,
+    range: j['range'] as String?,
+    defaultValue: j['defaultValue'] as String?,
+    options:
+        (j['options'] as List?)?.map((e) => e as String).toList() ?? const [],
+    description: j['description'] as String?,
   );
 
   static Preset preset(PresetRow r) => Preset(

@@ -142,6 +142,11 @@ class SeedLoader {
     color: Value(d.color),
     manualUrl: Value(d.manualUrl),
     sources: jsonEncode(d.sources),
+    parameters: Value(
+      d.parameters.isEmpty
+          ? null
+          : jsonEncode(d.parameters.map((p) => p.toJson()).toList()),
+    ),
     createdAt: Value(d.createdAt),
     updatedAt: Value(d.updatedAt),
   );

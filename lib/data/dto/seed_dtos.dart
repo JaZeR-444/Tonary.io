@@ -60,6 +60,7 @@ class PluginDto {
     this.manualUrl,
     this.createdAt,
     this.updatedAt,
+    this.parameters = const [],
   });
 
   final String id;
@@ -77,6 +78,7 @@ class PluginDto {
   final List<String> sources;
   final String? createdAt;
   final String? updatedAt;
+  final List<PluginParameterDto> parameters;
 
   factory PluginDto.fromJson(Map<String, dynamic> j) => PluginDto(
     id: j['id'] as String,
@@ -94,7 +96,51 @@ class PluginDto {
     sources: _stringList(j['sources']),
     createdAt: j['createdAt'] as String?,
     updatedAt: j['updatedAt'] as String?,
+    parameters:
+        (j['parameters'] as List?)
+            ?.map((e) => PluginParameterDto.fromJson(e as Map<String, dynamic>))
+            .toList() ??
+        const [],
   );
+}
+
+/// One documented plugin control. `range` is a display string so the varied
+/// source formats (dict / string / CSV) normalise to one shape.
+class PluginParameterDto {
+  PluginParameterDto({
+    required this.name,
+    this.section,
+    this.range,
+    this.defaultValue,
+    this.options = const [],
+    this.description,
+  });
+
+  final String name;
+  final String? section;
+  final String? range;
+  final String? defaultValue;
+  final List<String> options;
+  final String? description;
+
+  factory PluginParameterDto.fromJson(Map<String, dynamic> j) =>
+      PluginParameterDto(
+        name: j['name'] as String,
+        section: j['section'] as String?,
+        range: j['range'] as String?,
+        defaultValue: j['defaultValue'] as String?,
+        options: _stringList(j['options']),
+        description: j['description'] as String?,
+      );
+
+  Map<String, dynamic> toJson() => {
+    'name': name,
+    if (section != null) 'section': section,
+    if (range != null) 'range': range,
+    if (defaultValue != null) 'defaultValue': defaultValue,
+    if (options.isNotEmpty) 'options': options,
+    if (description != null) 'description': description,
+  };
 }
 
 class PresetDto {

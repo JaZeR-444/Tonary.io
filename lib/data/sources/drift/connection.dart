@@ -1,16 +1,5 @@
-import 'dart:io';
-
-import 'package:drift/drift.dart';
-import 'package:drift/native.dart';
-import 'package:path/path.dart' as p;
-import 'package:path_provider/path_provider.dart';
-
-/// Opens the on-device SQLite database file (offline-first source of truth).
-/// The native sqlite3 library is provided at runtime by `sqlite3_flutter_libs`.
-QueryExecutor openConnection() {
-  return LazyDatabase(() async {
-    final dir = await getApplicationDocumentsDirectory();
-    final file = File(p.join(dir.path, 'tonary.sqlite'));
-    return NativeDatabase.createInBackground(file);
-  });
-}
+// Offline-first database connection, resolved per platform:
+// native (dart:io + sqlite3) on mobile/desktop, Drift WASM on the web.
+// Both expose `openConnection()`.
+export 'connection_native.dart'
+    if (dart.library.js_interop) 'connection_web.dart';
